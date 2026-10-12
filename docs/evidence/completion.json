@@ -1,0 +1,11 @@
+{
+  "captured_at_utc": "2026-10-01T09:28:01.288899+00:00",
+  "phase1_complete": true,
+  "user_requested_inprocess_hello_complete": true,
+  "phase2_started": false,
+  "normal_test_methods": 38,
+  "sanitized_test_methods": 38,
+  "ui_guest_output_verified": true,
+  "heartbeat": "deleted; Luna chat remains available for questions",
+  "scope": "macOS research and user-requested tiny Catalyst/UIKit loader experiment; no device iOS execution established"
+}

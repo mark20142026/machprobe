@@ -1,0 +1,82 @@
+{
+  "ok" : true,
+  "result" : {
+    "agent" : {
+      "binary_hash" : "db82b772bf009b571c5888bc56c30393caebffc4d05b5c8a86f7e74bf8363453",
+      "pid" : 111
+    },
+    "battery" : {
+      "fraction" : 1,
+      "state" : 2
+    },
+    "boot_session_uuid" : "991F957C-E529-4993-B19D-1CC98BF0376F",
+    "boot_time" : 1790858097.6182051,
+    "brightness" : {
+      "auto" : null,
+      "value" : 0.5
+    },
+    "developer_mode" : {
+      "armed" : false,
+      "enabled" : true,
+      "writable" : true
+    },
+    "host" : "iPhone",
+    "ios_version" : "27.0.0",
+    "jailbreak" : {
+      "jbroot" : null,
+      "layout" : null,
+      "source" : "not detected"
+    },
+    "kernel" : "25.4.0",
+    "lock" : {
+      "locked" : true,
+      "passcode_enabled" : false,
+      "screen_off" : true
+    },
+    "low_power_mode" : {
+      "enabled" : false,
+      "method" : "powerd"
+    },
+    "memory_bytes" : 4270833664,
+    "model" : "iPhone99,11",
+    "network" : {
+      "addresses" : [
+        "lo0 127.0.0.1",
+        "lo0 ::1",
+        "lo0 fe80::1%lo0",
+        "utun0 fe80::20c3:4f22:1c36:f5e7%utun0",
+        "en0 fe80::1cbe:7bee:b4ff:6d3f%en0",
+        "en0 fd34:ea25:27ee:f19f:1c3b:da67:9951:85bc",
+        "en0 192.168.64.3",
+        "anpi0 fe80::20cb:10ff:fe14:7d8e%anpi0",
+        "en1 fe80::4a4:8917:4eea:e27f%en1",
+        "en1 169.254.213.71",
+        "utun1 fe80::3a06:e27c:c98f:ff28%utun1",
+        "utun2 fe80::578d:6c7b:3c33:b37f%utun2",
+        "utun3 fe80::ce81:b1c:bd2c:69e%utun3"
+      ]
+    },
+    "processor_count" : 4,
+    "rotation" : {
+      "degrees" : 0,
+      "device_orientation" : 0,
+      "locked" : false,
+      "name" : "portrait"
+    },
+    "screen" : {
+      "height" : 932,
+      "locked" : true,
+      "orientation" : 0,
+      "scale" : 3,
+      "screen_off" : true,
+      "width" : 430
+    },
+    "storage" : {
+      "available_bytes" : 43838459904,
+      "total_bytes" : 63983181824
+    },
+    "sysname" : "Darwin",
+    "uptime_seconds" : 803.79259191666677,
+    "volume" : 0.5
+  }
+}

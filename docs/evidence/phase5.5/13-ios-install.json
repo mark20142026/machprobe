@@ -1,0 +1,24 @@
+{
+  "ok" : true,
+  "result" : {
+    "build" : "1",
+    "bundle_id" : "research.machprobe.VelorenHost",
+    "bundle_path" : "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app",
+    "data_path" : "/private/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555",
+    "encrypted" : false,
+    "entitlements" : {
+      "com.apple.private.security.container-required" : "research.machprobe.VelorenHost",
+      "jb.pmap_cs_custom_trust" : "PMAP_CS_APP_STORE"
+    },
+    "executable" : "/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+    "group_containers" : {
+
+    },
+    "minimum_os" : "14.0",
+    "name" : "Veloren research runtime",
+    "sdk" : "",
+    "signer" : "Apple iPhone OS Application Signing",
+    "type" : "User",
+    "version" : "1.0"
+  }
+}

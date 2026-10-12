@@ -1,0 +1,13 @@
+test_appkit_opcodes_and_rejection_paths (test_fixups.FixupTests.test_appkit_opcodes_and_rejection_paths) ... ok
+test_all_mac_guests_preserved_in_ipa (test_package.IOSPackageTests.test_all_mac_guests_preserved_in_ipa) ... ok
+test_container_layout_and_original_nested_bytes (test_package.IOSPackageTests.test_container_layout_and_original_nested_bytes) ... ok
+test_ios_host_and_signed_native_control (test_package.IOSPackageTests.test_ios_host_and_signed_native_control) ... ok
+test_no_raw_guest_macho_for_recursive_installer_to_resign (test_package.IOSPackageTests.test_no_raw_guest_macho_for_recursive_installer_to_resign) ... ok
+test_recorded_vm_results_are_complete_and_hash_verified (test_package.IOSPackageTests.test_recorded_vm_results_are_complete_and_hash_verified) ... ok
+test_scene_manifest (test_package.IOSPackageTests.test_scene_manifest) ... ok
+test_verified_vm_evidence (test_package.IOSPackageTests.test_verified_vm_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.762s
+
+OK

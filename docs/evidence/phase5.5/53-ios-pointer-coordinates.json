@@ -1,0 +1,60 @@
+{
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "input" : {
+    "last_pointer" : {
+      "view_frame" : "{{0, 0}, {430, 932}}",
+      "view_bounds" : "{{0, 0}, {430, 932}}",
+      "point" : "{215, 455}",
+      "window_frame" : "{{0, 0}, {430, 932}}"
+    },
+    "delivered" : 0,
+    "held" : [
+
+    ],
+    "pointer_delivered" : 3
+  },
+  "run_id" : "05BAC6DC-89DE-4907-89D3-4F55C71D892C",
+  "pid" : 2388,
+  "events" : [
+    "guest window created",
+    "guest window awaiting UIKit scene",
+    "native GPU border sampling verified (six cases)",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "entering UIKit lifecycle",
+    "guest window presented: Veloren",
+    "applicationDidFinishLaunching:",
+    "guest window presented: Veloren",
+    "application activation requested",
+    "guest launch callback returned",
+    "deliver mouseMoved: to WinitView at {215, 455}",
+    "deliver mouseDown: to WinitView at {215, 455}",
+    "deliver mouseUp: to WinitView at {215, 455}"
+  ],
+  "guest_sha256" : "786b7ba15f46982a1bfbd3af53373c505d5dce0efb344dfe19a159b7e6e00b1d",
+  "rebases" : 146786,
+  "binds" : 1517,
+  "metal" : {
+    "managed_textures_translated" : 0
+  },
+  "stage" : "deliver mouseUp: to WinitView at {215, 455}",
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  }
+}

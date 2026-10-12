@@ -1,0 +1,86 @@
+{
+  "frames": {
+    "elapsed_seconds": 0,
+    "guest_draw_callbacks": 0,
+    "mean_guest_callback_ms": 0,
+    "average_fps": 0,
+    "max_guest_callback_ms": 0
+  },
+  "input": {
+    "last_pointer": {},
+    "delivered": 0,
+    "held": [],
+    "pointer_delivered": 0
+  },
+  "run_id": "FA3EAEC7-C427-4B2D-8F91-D7B8FCF79375",
+  "presentation": {
+    "gpu_present_buffer_rate": 0,
+    "gpu_failed_present_buffers": 0,
+    "elapsed_seconds": 0,
+    "gpu_completion_elapsed_seconds": 0,
+    "present_requests": 0,
+    "average_presented_fps": 0,
+    "gpu_completed_present_buffers": 0,
+    "presented_frames": 0
+  },
+  "audio": {
+    "engine_started": false,
+    "nonzero_samples": 0,
+    "peak_absolute": 0,
+    "error": "",
+    "frames_observed": 0
+  },
+  "events": [
+    "entering UIKit lifecycle",
+    "guest launch callback returned"
+  ],
+  "audio_probe": {
+    "callbacks": 0,
+    "before": {
+      "outputs": [],
+      "channels": 0,
+      "sample_rate": 0,
+      "duration": 0
+    },
+    "format_status": 0,
+    "category_ok": true,
+    "dispose_status": 0,
+    "running_session": {
+      "outputs": [],
+      "channels": 0,
+      "sample_rate": 0,
+      "duration": 0
+    },
+    "initialize_status": -10851,
+    "stop_status": 0,
+    "category_error": "",
+    "start_status": -10851,
+    "active_session": {
+      "outputs": [],
+      "channels": 0,
+      "sample_rate": 0,
+      "duration": 0
+    },
+    "format": {
+      "flags": 41,
+      "channels": 2,
+      "bytes_per_frame": 4,
+      "rate": 0
+    },
+    "create_status": 0,
+    "active_error": "",
+    "maximum_frames_per_slice": 4096,
+    "component_found": 1,
+    "active_ok": true,
+    "uninitialize_status": 0,
+    "last_frames": 0,
+    "maximum_status": 0,
+    "callback_status": 0,
+    "passed": 0
+  },
+  "metal": {
+    "managed_textures_translated": 0
+  },
+  "stage": "Audio probe complete",
+  "pid": 3567
+}

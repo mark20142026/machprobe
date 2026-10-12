@@ -1,0 +1,151 @@
+[2m2026-10-01T16:29:41.411408Z[0m [32m INFO[0m [2mveloren_common_frontend[0m[2m:[0m Setup terminal and file logging. [3mpath[0m[2m=[0m"/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen/logs" [3mfile[0m[2m=[0m"2026-10-01_voxygen.log"
+[2m2026-10-01T16:29:41.411523Z[0m [32m INFO[0m [2mveloren_voxygen[0m[2m:[0m Using userdata dir at: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata
+[2m2026-10-01T16:29:41.411533Z[0m [32m INFO[0m [2mveloren_voxygen[0m[2m:[0m Using config dir at: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen
+[2m2026-10-01T16:29:41.740410Z[0m [32m INFO[0m [2mveloren_voxygen::audio[0m[2m:[0m Samplerate is 44100
+[2m2026-10-01T16:29:41.743821Z[0m [31mERROR[0m [2mveloren_voxygen::audio[0m[2m:[0m failed to construct audio frontend manager. Is `pulseaudio-alsa` installed? [3me[0m[2m=[0mCpalError(Error { kind: InvalidInput, message: Some("Unknown property") })
+[2m2026-10-01T16:29:41.743935Z[0m [32m INFO[0m [2mveloren_common_assets[0m[2m:[0m Assets found path=/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/assets
+[2m2026-10-01T16:29:41.771254Z[0m [31mERROR[0m [2mwinit::platform_impl::macos::event_handler[0m[2m:[0m tried to run event handler, but no handler was set
+[2m2026-10-01T16:29:42.144098Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m graphics device #0 [3minfo.name[0m[2m=[0m"Apple Paravirtual device GPU" [3minfo.vendor[0m[2m=[0m0 [3minfo.backend[0m[2m=[0mMetal [3minfo.device[0m[2m=[0m0 [3minfo.device_type[0m[2m=[0mIntegratedGpu [3msupported_limits.max_texture_dimension_2d[0m[2m=[0m16384
+[2m2026-10-01T16:29:42.147505Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m selected graphics device [3minfo.name[0m[2m=[0m"Apple Paravirtual device GPU" [3minfo.vendor[0m[2m=[0m0 [3minfo.backend[0m[2m=[0mMetal [3minfo.device[0m[2m=[0m0 [3minfo.device_type[0m[2m=[0mIntegratedGpu [3msupported_limits.max_texture_dimension_2d[0m[2m=[0m16384
+[2m2026-10-01T16:29:42.164985Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m The features for GPU profiling (timestamp queries) are not available on this adapter
+[2m2026-10-01T16:29:42.164998Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m Using Bgra8UnormSrgb as the surface format
+[2m2026-10-01T16:29:42.165003Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m Using Rgba16Float as the intermediate format
+[2m2026-10-01T16:29:42.177081Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling skybox-vert
+[2m2026-10-01T16:29:42.177986Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling skybox-frag
+[2m2026-10-01T16:29:42.187352Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling debug-vert
+[2m2026-10-01T16:29:42.187959Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling debug-frag
+[2m2026-10-01T16:29:42.190876Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [88] and [91] are not greater than 1
+[2m2026-10-01T16:29:42.199573Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling figure-vert
+[2m2026-10-01T16:29:42.207548Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling figure-frag
+[2m2026-10-01T16:29:42.209511Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [86] and [89] are not greater than 1
+[2m2026-10-01T16:29:42.222292Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling terrain-vert
+[2m2026-10-01T16:29:42.229896Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling terrain-frag
+[2m2026-10-01T16:29:42.232863Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [103] and [106] are not greater than 1
+[2m2026-10-01T16:29:42.242860Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling fluid-vert
+[2m2026-10-01T16:29:42.246866Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling fluid-frag.shiny
+[2m2026-10-01T16:29:42.249789Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [99] and [102] are not greater than 1
+[2m2026-10-01T16:29:42.262985Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling sprite-vert
+[2m2026-10-01T16:29:42.272285Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling sprite-frag
+[2m2026-10-01T16:29:42.275387Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [99] and [102] are not greater than 1
+[2m2026-10-01T16:29:42.284354Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling lod-object-vert
+[2m2026-10-01T16:29:42.292164Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling lod-object-frag
+[2m2026-10-01T16:29:42.302986Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling particle-vert
+[2m2026-10-01T16:29:42.321772Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling particle-frag
+[2m2026-10-01T16:29:42.324645Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [96] and [99] are not greater than 1
+[2m2026-10-01T16:29:42.335889Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling rope-vert
+[2m2026-10-01T16:29:42.343032Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling rope-frag
+[2m2026-10-01T16:29:42.346840Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [86] and [89] are not greater than 1
+[2m2026-10-01T16:29:42.362725Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling trail-vert
+[2m2026-10-01T16:29:42.363415Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling trail-frag
+[2m2026-10-01T16:29:42.366123Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [89] and [92] are not greater than 1
+[2m2026-10-01T16:29:42.375179Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling ui-vert
+[2m2026-10-01T16:29:42.375925Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling ui-frag
+[2m2026-10-01T16:29:42.376905Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling premultiply-alpha-vert
+[2m2026-10-01T16:29:42.377232Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling premultiply-alpha-frag
+[2m2026-10-01T16:29:42.377435Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling lod-terrain-vert
+[2m2026-10-01T16:29:42.385730Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling lod-terrain-frag
+[2m2026-10-01T16:29:42.398863Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling clouds-vert
+[2m2026-10-01T16:29:42.399330Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling clouds-frag
+[2m2026-10-01T16:29:42.412323Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling dual-downsample-filtered-frag
+[2m2026-10-01T16:29:42.412751Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling dual-downsample-frag
+[2m2026-10-01T16:29:42.412984Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling dual-upsample-frag
+[2m2026-10-01T16:29:42.413272Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling postprocess-vert
+[2m2026-10-01T16:29:42.413928Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling postprocess-frag
+[2m2026-10-01T16:29:42.430820Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling blit-vert
+[2m2026-10-01T16:29:42.431168Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling blit-frag
+[2m2026-10-01T16:29:42.431573Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling point-light-shadows-vert
+[2m2026-10-01T16:29:42.432164Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling light-shadows-directed-vert
+[2m2026-10-01T16:29:42.432794Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling light-shadows-figure-vert
+[2m2026-10-01T16:29:42.433549Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling light-shadows-debug-vert
+[2m2026-10-01T16:29:42.434141Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling rain-occlusion-directed-vert
+[2m2026-10-01T16:29:42.434965Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling rain-occlusion-figure-vert
+[2m2026-10-01T16:30:37.413734Z[0m [32m INFO[0m [2mveloren_server[0m[2m:[0m Server data dir is: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/singleplayer_worlds/world-2026-10-1-9_6_44_659
+[2m2026-10-01T16:30:37.413834Z[0m [32m INFO[0m [2mveloren_server[0m[2m:[0m Authentication is disabled
+[2m2026-10-01T16:30:37.423617Z[0m [32m INFO[0m [2mrefinery_core::traits[0m[2m:[0m current version: 71
+[2m2026-10-01T16:30:37.424058Z[0m [32m INFO[0m [2mrefinery_core::traits::sync[0m[2m:[0m no migrations to apply
+[2m2026-10-01T16:30:37.424071Z[0m [32m INFO[0m [2mrefinery_core::traits::sync[0m[2m:[0m going to apply 0 migrations in multiple transactions.
+[2m2026-10-01T16:30:37.424176Z[0m [32m INFO[0m [2mveloren_server::persistence[0m[2m:[0m Applied 0 database migrations
+[2m2026-10-01T16:30:37.440404Z[0m [32m INFO[0m [2mveloren_server::persistence[0m[2m:[0m Database vacuumed
+[2m2026-10-01T16:30:37.442244Z[0m [33m WARN[0m [2mveloren_common_state::state[0m[2m:[0m Unable to set priority/schedule policy for dispatcher pool thread: priority must be within the range: 15..=47
+[2m2026-10-01T16:30:37.442349Z[0m [32m INFO[0m [2mveloren_common_state::plugin[0m[2m:[0m Searching "/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/assets/plugins" for plugins...
+[2m2026-10-01T16:30:37.443336Z[0m [32m INFO[0m [2mveloren_common_state::plugin[0m[2m:[0m "/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/assets/plugins" does not exist, no plugins loaded
+[2m2026-10-01T16:30:37.542076Z[0m [32m INFO[0m [2mveloren_world::sim[0m[2m:[0m Starting world generation
+[2m2026-10-01T16:30:39.313291Z[0m [32m INFO[0m [2mveloren_world::civ[0m[2m:[0m starting peak naming
+[2m2026-10-01T16:30:39.346627Z[0m [32m INFO[0m [2mveloren_world::civ[0m[2m:[0m all peaks named [3mnum_peaks[0m[2m=[0m74
+[2m2026-10-01T16:30:39.346745Z[0m [32m INFO[0m [2mveloren_world::civ[0m[2m:[0m starting biome naming
+[2m2026-10-01T16:30:39.497902Z[0m [32m INFO[0m [2mveloren_world::civ[0m[2m:[0m all biomes named [3mbiome_count[0m[2m=[0m415
+[2m2026-10-01T16:30:39.498111Z[0m [32m INFO[0m [2mveloren_world::civ[0m[2m:[0m starting civilisation creation
+[2m2026-10-01T16:30:40.282990Z[0m [33m WARN[0m [2mveloren_world::civ[0m[2m:[0m Failed to find starting site for civilisation.
+[2m2026-10-01T16:30:40.612396Z[0m [33m WARN[0m [2mveloren_world::civ[0m[2m:[0m Failed to find starting site for civilisation.
+[2m2026-10-01T16:30:40.908260Z[0m [33m WARN[0m [2mveloren_world::civ[0m[2m:[0m Failed to find starting site for civilisation.
+[2m2026-10-01T16:30:41.133409Z[0m [33m WARN[0m [2mveloren_world::civ[0m[2m:[0m Failed to find starting site for civilisation.
+[2m2026-10-01T16:30:41.982347Z[0m [33m WARN[0m [2mveloren_world::civ[0m[2m:[0m Failed to find starting site for civilisation.
+[2m2026-10-01T16:30:42.860202Z[0m [33m WARN[0m [2mveloren_world::civ[0m[2m:[0m Failed to find starting site for civilisation.
+[2m2026-10-01T16:30:43.241668Z[0m [33m WARN[0m [2mveloren_world::civ[0m[2m:[0m Failed to find starting site for civilisation.
+[2m2026-10-01T16:30:43.241694Z[0m [32m INFO[0m [2mveloren_world::civ[0m[2m:[0m all civilisations created [3minitial_civ_count[0m[2m=[0m48
+[2m2026-10-01T16:30:44.432148Z[0m [32m INFO[0m [2mveloren_world::civ[0m[2m:[0m all sites placed [3mcnt[0m[2m=[0m200
+[2m2026-10-01T16:30:44.673613Z[0m [32m INFO[0m [2mveloren_world::site::economy::context[0m[2m:[0m economy simulation start
+[2m2026-10-01T16:30:44.835807Z[0m [32m INFO[0m [2mveloren_world::site::economy::context[0m[2m:[0m economy simulation end
+[2m2026-10-01T16:30:44.835821Z[0m [32m INFO[0m [2mveloren_world::site::economy::context[0m[2m:[0m Towns 4-1201604 avg 129938 inhabitants
+[2m2026-10-01T16:30:44.835857Z[0m [32m INFO[0m [2mveloren_common_assets[0m[2m:[0m combine world.manifests.spots
+[2m2026-10-01T16:30:49.732936Z[0m [32m INFO[0m [2mveloren_common_assets[0m[2m:[0m combine common.recipe_book_manifest
+[2m2026-10-01T16:30:49.814973Z[0m [32m INFO[0m [2mveloren_server::automod[0m[2m:[0m Automod disabled
+[2m2026-10-01T16:30:49.854447Z[0m [32m INFO[0m [2mveloren_server::rtsim[0m[2m:[0m Looking for rtsim data at /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/singleplayer_worlds/world-2026-10-1-9_6_44_659/rtsim/data.dat...
+[2m2026-10-01T16:30:49.854505Z[0m [32m INFO[0m [2mveloren_server::rtsim[0m[2m:[0m Rtsim data found. Attempting to load...
+[2m2026-10-01T16:30:49.927734Z[0m [32m INFO[0m [2mveloren_server::rtsim[0m[2m:[0m Rtsim data loaded.
+[2m2026-10-01T16:30:49.927795Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Starting default rtsim rules...
+[2m2026-10-01T16:30:49.927798Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_rtsim::rule::migrate::Migrate' rule...
+[2m2026-10-01T16:30:49.927809Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_rtsim::rule::architect::Architect' rule...
+[2m2026-10-01T16:30:49.927811Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_rtsim::rule::replenish_resources::ReplenishResources' rule...
+[2m2026-10-01T16:30:49.927812Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_rtsim::rule::report::ReportEvents' rule...
+[2m2026-10-01T16:30:49.927814Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_rtsim::rule::sync_npcs::SyncNpcs' rule...
+[2m2026-10-01T16:30:49.927816Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_rtsim::rule::simulate_npcs::SimulateNpcs' rule...
+[2m2026-10-01T16:30:49.927818Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_rtsim::rule::npc_ai::NpcAi' rule...
+[2m2026-10-01T16:30:49.927819Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_rtsim::rule::cleanup::CleanUp' rule...
+[2m2026-10-01T16:30:49.945805Z[0m [32m INFO[0m [2mveloren_server::rtsim::rule[0m[2m:[0m Starting server rtsim rules...
+[2m2026-10-01T16:30:49.945819Z[0m [32m INFO[0m [2mveloren_rtsim[0m[2m:[0m Initiating 'veloren_server::rtsim::rule::deplete_resources::DepleteResources' rule...
+[2m2026-10-01T16:30:49.952105Z[0m [32m INFO[0m [2mveloren_server[0m[2m:[0m Server version: 6162d956 [2026-09-30]
+[2m2026-10-01T16:30:49.952142Z[0m [32m INFO[0m [2mveloren_voxygen::singleplayer[0m[2m:[0m Starting server-cli...
+[2m2026-10-01T16:30:49.956311Z[0m [32m INFO[0m [2mveloren_network::channel[0m[2m:[0m Accepting Mpsc from [3maddr[0m[2m=[0m14004 [3mcid[0m[2m=[0m0
+[2m2026-10-01T16:30:49.956484Z[0m [32m INFO[0m [1mnetwork[0m[1m{[0m[3mp[0m[2m=[0my2Skxb[1m}[0m[2m:[0m [2mveloren_network::channel[0m[2m:[0m Connecting Mpsc [3maddr[0m[2m=[0m14004
+[2m2026-10-01T16:30:49.956919Z[0m [32m INFO[0m [1mnetwork[0m[1m{[0m[3mp[0m[2m=[0my2Skxb[1m}[0m[2m:[0m[1m[0m[2m:[0m[1mhandshake[0m[1m{[0m[3mcid[0m[2m=[0m0[1m}[0m[2m:[0m [2mveloren_network_protocol::handshake[0m[2m:[0m This Handshake is now configured! [3mpid[0m[2m=[0mq7eqFX
+[2m2026-10-01T16:30:49.956943Z[0m [32m INFO[0m [1mnetwork[0m[1m{[0m[3mp[0m[2m=[0mq7eqFX[1m}[0m[2m:[0m[1m[0m[2m:[0m[1mhandshake[0m[1m{[0m[3mcid[0m[2m=[0m0[1m}[0m[2m:[0m [2mveloren_network_protocol::handshake[0m[2m:[0m This Handshake is now configured! [3mpid[0m[2m=[0my2Skxb
+[2m2026-10-01T16:30:50.125986Z[0m [32m INFO[0m [2mveloren_common_assets[0m[2m:[0m combine common.component_recipe_book
+[2m2026-10-01T16:30:50.206384Z[0m [32m INFO[0m [2mveloren_server::sys::msg::register[0m[2m:[0m New User [3musername[0m[2m=[0m"singleplayer"
+[2m2026-10-01T16:30:50.212927Z[0m [32m INFO[0m [2mveloren_voxygen::singleplayer[0m[2m:[0m Client connected!
+[2m2026-10-01T16:30:50.243561Z[0m [33m WARN[0m [2mveloren_common_state::state[0m[2m:[0m Unable to set priority/schedule policy for dispatcher pool thread: priority must be within the range: 15..=47
+[2m2026-10-01T16:30:50.243570Z[0m [32m INFO[0m [2mveloren_common_state::plugin[0m[2m:[0m Searching "/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/assets/plugins" for plugins...
+[2m2026-10-01T16:30:50.243601Z[0m [32m INFO[0m [2mveloren_common_state::plugin[0m[2m:[0m "/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/assets/plugins" does not exist, no plugins loaded
+[2m2026-10-01T16:31:26.555403Z[0m [32m INFO[0m [2mveloren_common_assets[0m[2m:[0m combine voxygen.item_image_manifest
+[2m2026-10-01T16:31:27.899519Z[0m [32m INFO[0m [2mveloren_voxygen::hud::chat[0m[2m:[0m Chat command info: Plain("How's the serenity?")
+[2m2026-10-01T16:31:29.271979Z[0m [31mERROR[0m [2mveloren_voxygen::panic_handler[0m[2m:[0m VOXYGEN HAS PANICKED
+
+A critical error has occurred and Voxygen has been forced to terminate in an unusual manner. Details about the error can be found below.
+
+Panic reason: class NSImage could not be found
+
+> What should I do?
+
+We need your help to fix this! You can help by contacting us and reporting this problem. To do this, open an issue on the Veloren issue tracker:
+
+https://www.gitlab.com/veloren/veloren/issues/new
+
+If you're on the Veloren community Discord server, we'd be grateful if you could also post a message in the #support channel.
+            
+> What should I include?
+
+The error information below will be useful in finding and fixing the problem. Please include as much information about your setup and the events that led up to the panic as possible.
+            
+Voxygen has logged information about the problem (including this message) to the file /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen/logs/2026-10-01_voxygen.log. Please include the contents of this file in your bug report.
+            
+
+> Error information
+
+The information below is intended for developers and testers.
+
+PanicHookInfo: panicked at /Users/gitlab/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/objc2-app-kit-0.2.2/src/generated/NSImage.rs:69:1:
+class NSImage could not be found 
+Game version: 6162d956 [2026-09-30]
+
+Backtrace:
+

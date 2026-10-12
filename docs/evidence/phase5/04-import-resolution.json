@@ -1,0 +1,7 @@
+{
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "error" : "unsupported AppKit import: _$sSo7NSSoundC6AppKitE4beepyyFZ",
+  "run_id" : "C30D7212-BDB9-45E7-A6BF-CCD93FF1F6B8",
+  "pid" : 1040,
+  "stage" : "load failed"
+}

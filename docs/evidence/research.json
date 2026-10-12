@@ -1,0 +1,233 @@
+{
+  "baseline_hashes": {
+    "file_io": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0",
+    "framework": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280",
+    "hello": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+    "metal_info": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3"
+  },
+  "captured_at_utc": "2026-10-01T08:54:13.960152+00:00",
+  "experiments": {
+    "abi_macros": {
+      "argv": [
+        "xcrun",
+        "clang",
+        "-arch",
+        "arm64",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-mmacosx-version-min=11.0",
+        "-dM",
+        "-E",
+        "-x",
+        "c",
+        "/dev/null"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "#define TARGET_IPHONE_SIMULATOR 0\n#define TARGET_OS_ARROW 1\n#define TARGET_OS_BRIDGE 0\n#define TARGET_OS_DRIVERKIT 0\n#define TARGET_OS_EMBEDDED 0\n#define TARGET_OS_FIRMWARE 0\n#define TARGET_OS_IOS 0\n#define TARGET_OS_IOSMAC 0\n#define TARGET_OS_IPHONE 0\n#define TARGET_OS_KERNELKIT 0\n#define TARGET_OS_LINUX 0\n#define TARGET_OS_MAC 1\n#define TARGET_OS_MACCATALYST 0\n#define TARGET_OS_NANO 0\n#define TARGET_OS_OSX 1\n#define TARGET_OS_SIMULATOR 0\n#define TARGET_OS_TV 0\n#define TARGET_OS_UEFI 0\n#define TARGET_OS_UIKITFORMAC 0\n#define TARGET_OS_UNIX 0\n#define TARGET_OS_VISION 0\n#define TARGET_OS_WATCH 0\n#define TARGET_OS_WIN32 0\n#define TARGET_OS_WINDOWS 0\n#define TARGET_OS_XR 0\n#define _HAS_BUILTIN_AVAILABLE_FEATS 1\n#define _LP64 1\n#define __AARCH64EL__ 1\n#define __AARCH64_CMODEL_SMALL__ 1\n#define __AARCH64_SIMD__ 1\n#define __APPLE_CC__ 6000\n#define __APPLE__ 1\n#define __ARM64_ARCH_8__ 1\n#define __ARM_64BIT_STATE 1\n#define __ARM_ACLE 202420\n#define __ARM_ACLE_VERSION(year,quarter,patch) (100 * (year) + 10 * (quarter) + (patch))\n#define __ARM_ALIGN_MAX_STACK_PWR 4\n#define __ARM_ARCH 8\n#define __ARM_ARCH_8_2__ 1\n#define __ARM_ARCH_8_3__ 1\n#define __ARM_ARCH_8_4__ 1\n#define __ARM_ARCH_8_5__ 1\n#define __ARM_ARCH_ISA_A64 1\n#define __ARM_ARCH_PROFILE 'A'\n#define __ARM_FEATURE_AES 1\n#define __ARM_FEATURE_ATOMICS 1\n#define __ARM_FEATURE_BTI 1\n#define __ARM_FEATURE_CLZ 1\n#define __ARM_FEATURE_COMPLEX 1\n#define __ARM_FEATURE_CRC32 1\n#define __ARM_FEATURE_CRYPTO 1\n#define __ARM_FEATURE_DIRECTED_ROUNDING 1\n#define __ARM_FEATURE_DIV 1\n#define __ARM_FEATURE_DOTPROD 1\n#define __ARM_FEATURE_FMA 1\n#define __ARM_FEATURE_FP16_FML 1\n#define __ARM_FEATURE_FP16_SCALAR_ARITHMETIC 1\n#define __ARM_FEATURE_FP16_VECTOR_ARITHMETIC 1\n#define __ARM_FEATURE_FRINT 1\n#define __ARM_FEATURE_IDIV 1\n#define __ARM_FEATURE_JCVT 1\n#define __ARM_FEATURE_LDREX 0xF\n#define __ARM_FEATURE_NUMERIC_MAXMIN 1\n#define __ARM_FEATURE_PAUTH 1\n#define __ARM_FEATURE_QRDMX 1\n#define __ARM_FEATURE_RCPC 1\n#define __ARM_FEATURE_SHA2 1\n#define __ARM_FEATURE_SHA3 1\n#define __ARM_FEATURE_SHA512 1\n#define __ARM_FEATURE_UNALIGNED 1\n#define __ARM_FP 0xE\n#define __ARM_FP16_ARGS 1\n#define __ARM_FP16_FORMAT_IEEE 1\n#define __ARM_NEON 1\n#define __ARM_NEON_FP 0xE\n#define __ARM_NEON_SVE_BRIDGE 1\n#define __ARM_NEON__ 1\n#define __ARM_PCS_AAPCS64 1\n#define __ARM_SIZEOF_MINIMAL_ENUM 4\n#define __ARM_SIZEOF_WCHAR_T 4\n#define __ARM_STATE_ZA 1\n#define __ARM_STATE_ZT0 1\n#define __ATOMIC_ACQUIRE 2\n#define __ATOMIC_ACQ_REL 4\n#define __ATOMIC_CONSUME 1\n#define __ATOMIC_RELAXED 0\n#define __ATOMIC_RELEASE 3\n#define __ATOMIC_SEQ_CST 5\n#define __BIGGEST_ALIGNMENT__ 8\n#define __BITINT_MAXWIDTH__ 128\n#define __BLOCKS__ 1\n#define __BOOL_WIDTH__ 1\n#define __BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__\n#define __CHAR16_TYPE__ unsigned short\n#define __CHAR32_TYPE__ unsigned int\n#define __CHAR_BIT__ 8\n#define __CLANG_ATOMIC_BOOL_LOCK_FREE 2\n#define __CLANG_ATOMIC_CHAR16_T_LOCK_FREE 2\n#define __CLANG_ATOMIC_CHAR32_T_LOCK_FREE 2\n#define __CLANG_ATOMIC_CHAR_LOCK_FREE 2\n#define __CLANG_ATOMIC_INT_LOCK_FREE 2\n#define __CLANG_ATOMIC_LLONG_LOCK_FREE 2\n#define __CLANG_ATOMIC_LONG_LOCK_FREE 2\n#define __CLANG_ATOMIC_POINTER_LOCK_FREE 2\n#define __CLANG_ATOMIC_SHORT_LOCK_FREE 2\n#define __CLANG_ATOMIC_WCHAR_T_LOCK_FREE 2\n#define __CONSTANT_CFSTRINGS__ 1\n#define __DBL_DECIMAL_DIG__ 17\n#define __DBL_DENORM_MIN__ 4.9406564584124654e-324\n#define __DBL_DIG__ 15\n#define __DBL_EPSILON__ 2.2204460492503131e-16\n#define __DBL_HAS_DENORM__ 1\n#define __DBL_HAS_INFINITY__ 1\n#define __DBL_HAS_QUIET_NAN__ 1\n#define __DBL_MANT_DIG__ 53\n#define __DBL_MAX_10_EXP__ 308\n#define __DBL_MAX_EXP__ 1024\n#define __DBL_MAX__ 1.7976931348623157e+308\n#define __DBL_MIN_10_EXP__ (-307)\n#define __DBL_MIN_EXP__ (-1021)\n#define __DBL_MIN__ 2.2250738585072014e-308\n#define __DBL_NORM_MAX__ 1.7976931348623157e+308\n#define __DECIMAL_DIG__ __LDBL_DECIMAL_DIG__\n#define __DYNAMIC__ 1\n#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 110000\n#define __ENVIRONMENT_OS_VERSION_MIN_REQUIRED__ 110000\n#define __FINITE_MATH_ONLY__ 0\n#define __FLT16_DECIMAL_DIG__ 5\n#define __FLT16_DENORM_MIN__ 5.9604644775390625e-8F16\n#define __FLT16_DIG__ 3\n#define __FLT16_EPSILON__ 9.765625e-4F16\n#define __FLT16_HAS_DENORM__ 1\n#define __FLT16_HAS_INFINITY__ 1\n#define __FLT16_HAS_QUIET_NAN__ 1\n#define __FLT16_MANT_DIG__ 11\n#define __FLT16_MAX_10_EXP__ 4\n#define __FLT16_MAX_EXP__ 16\n#define __FLT16_MAX__ 6.5504e+4F16\n#define __FLT16_MIN_10_EXP__ (-4)\n#define __FLT16_MIN_EXP__ (-13)\n#define __FLT16_MIN__ 6.103515625e-5F16\n#define __FLT16_NORM_MAX__ 6.5504e+4F16\n#define __FLT_DECIMAL_DIG__ 9\n#define __FLT_DENORM_MIN__ 1.40129846e-45F\n#define __FLT_DIG__ 6\n#define __FLT_EPSILON__ 1.19209290e-7F\n#define __FLT_HAS_DENORM__ 1\n#define __FLT_HAS_INFINITY__ 1\n#define __FLT_HAS_QUIET_NAN__ 1\n#define __FLT_MANT_DIG__ 24\n#define __FLT_MAX_10_EXP__ 38\n#define __FLT_MAX_EXP__ 128\n#define __FLT_MAX__ 3.40282347e+38F\n#define __FLT_MIN_10_EXP__ (-37)\n#define __FLT_MIN_EXP__ (-125)\n#define __FLT_MIN__ 1.17549435e-38F\n#define __FLT_NORM_MAX__ 3.40282347e+38F\n#define __FLT_RADIX__ 2\n#define __FPCLASS_NEGINF 0x0004\n#define __FPCLASS_NEGNORMAL 0x0008\n#define __FPCLASS_NEGSUBNORMAL 0x0010\n#define __FPCLASS_NEGZERO 0x0020\n#define __FPCLASS_POSINF 0x0200\n#define __FPCLASS_POSNORMAL 0x0100\n#define __FPCLASS_POSSUBNORMAL 0x0080\n#define __FPCLASS_POSZERO 0x0040\n#define __FPCLASS_QNAN 0x0002\n#define __FPCLASS_SNAN 0x0001\n#define __FP_FAST_FMA 1\n#define __FP_FAST_FMAF 1\n#define __FUNCTION_MULTI_VERSIONING_SUPPORT_LEVEL 202430\n#define __GCC_ASM_FLAG_OUTPUTS__ 1\n#define __GCC_ATOMIC_BOOL_LOCK_FREE 2\n#define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2\n#define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2\n#define __GCC_ATOMIC_CHAR_LOCK_FREE 2\n#define __GCC_ATOMIC_INT_LOCK_FREE 2\n#define __GCC_ATOMIC_LLONG_LOCK_FREE 2\n#define __GCC_ATOMIC_LONG_LOCK_FREE 2\n#define __GCC_ATOMIC_POINTER_LOCK_FREE 2\n#define __GCC_ATOMIC_SHORT_LOCK_FREE 2\n#define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1\n#define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2\n#define __GCC_CONSTRUCTIVE_SIZE 64\n#define __GCC_DESTRUCTIVE_SIZE 256\n#define __GCC_HAVE_DWARF2_CFI_ASM 1\n#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1\n#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_16 1\n#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 1\n#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 1\n#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 1\n#define __GNUC_MINOR__ 2\n#define __GNUC_PATCHLEVEL__ 1\n#define __GNUC_STDC_INLINE__ 1\n#define __GNUC__ 4\n#define __GXX_ABI_VERSION 1002\n#define __HAVE_FUNCTION_MULTI_VERSIONING 1\n#define __INT16_C(c) c\n#define __INT16_C_SUFFIX__ \n#define __INT16_FMTd__ \"hd\"\n#define __INT16_FMTi__ \"hi\"\n#define __INT16_MAX__ 32767\n#define __INT16_TYPE__ short\n#define __INT32_C(c) c\n#define __INT32_C_SUFFIX__ \n#define __INT32_FMTd__ \"d\"\n#define __INT32_FMTi__ \"i\"\n#define __INT32_MAX__ 2147483647\n#define __INT32_TYPE__ int\n#define __INT64_C(c) c##LL\n#define __INT64_C_SUFFIX__ LL\n#define __INT64_FMTd__ \"lld\"\n#define __INT64_FMTi__ \"lli\"\n#define __INT64_MAX__ 9223372036854775807LL\n#define __INT64_TYPE__ long long int\n#define __INT8_C(c) c\n#define __INT8_C_SUFFIX__ \n#define __INT8_FMTd__ \"hhd\"\n#define __INT8_FMTi__ \"hhi\"\n#define __INT8_MAX__ 127\n#define __INT8_TYPE__ signed char\n#define __INTMAX_C(c) c##L\n#define __INTMAX_C_SUFFIX__ L\n#define __INTMAX_FMTd__ \"ld\"\n#define __INTMAX_FMTi__ \"li\"\n#define __INTMAX_MAX__ 9223372036854775807L\n#define __INTMAX_TYPE__ long int\n#define __INTMAX_WIDTH__ 64\n#define __INTPTR_FMTd__ \"ld\"\n#define __INTPTR_FMTi__ \"li\"\n#define __INTPTR_MAX__ 9223372036854775807L\n#define __INTPTR_TYPE__ long int\n#define __INTPTR_WIDTH__ 64\n#define __INT_FAST16_FMTd__ \"hd\"\n#define __INT_FAST16_FMTi__ \"hi\"\n#define __INT_FAST16_MAX__ 32767\n#define __INT_FAST16_TYPE__ short\n#define __INT_FAST16_WIDTH__ 16\n#define __INT_FAST32_FMTd__ \"d\"\n#define __INT_FAST32_FMTi__ \"i\"\n#define __INT_FAST32_MAX__ 2147483647\n#define __INT_FAST32_TYPE__ int\n#define __INT_FAST32_WIDTH__ 32\n#define __INT_FAST64_FMTd__ \"lld\"\n#define __INT_FAST64_FMTi__ \"lli\"\n#define __INT_FAST64_MAX__ 9223372036854775807LL\n#define __INT_FAST64_TYPE__ long long int\n#define __INT_FAST64_WIDTH__ 64\n#define __INT_FAST8_FMTd__ \"hhd\"\n#define __INT_FAST8_FMTi__ \"hhi\"\n#define __INT_FAST8_MAX__ 127\n#define __INT_FAST8_TYPE__ signed char\n#define __INT_FAST8_WIDTH__ 8\n#define __INT_LEAST16_FMTd__ \"hd\"\n#define __INT_LEAST16_FMTi__ \"hi\"\n#define __INT_LEAST16_MAX__ 32767\n#define __INT_LEAST16_TYPE__ short\n#define __INT_LEAST16_WIDTH__ 16\n#define __INT_LEAST32_FMTd__ \"d\"\n#define __INT_LEAST32_FMTi__ \"i\"\n#define __INT_LEAST32_MAX__ 2147483647\n#define __INT_LEAST32_TYPE__ int\n#define __INT_LEAST32_WIDTH__ 32\n#define __INT_LEAST64_FMTd__ \"lld\"\n#define __INT_LEAST64_FMTi__ \"lli\"\n#define __INT_LEAST64_MAX__ 9223372036854775807LL\n#define __INT_LEAST64_TYPE__ long long int\n#define __INT_LEAST64_WIDTH__ 64\n#define __INT_LEAST8_FMTd__ \"hhd\"\n#define __INT_LEAST8_FMTi__ \"hhi\"\n#define __INT_LEAST8_MAX__ 127\n#define __INT_LEAST8_TYPE__ signed char\n#define __INT_LEAST8_WIDTH__ 8\n#define __INT_MAX__ 2147483647\n#define __INT_WIDTH__ 32\n#define __LDBL_DECIMAL_DIG__ 17\n#define __LDBL_DENORM_MIN__ 4.9406564584124654e-324L\n#define __LDBL_DIG__ 15\n#define __LDBL_EPSILON__ 2.2204460492503131e-16L\n#define __LDBL_HAS_DENORM__ 1\n#define __LDBL_HAS_INFINITY__ 1\n#define __LDBL_HAS_QUIET_NAN__ 1\n#define __LDBL_MANT_DIG__ 53\n#define __LDBL_MAX_10_EXP__ 308\n#define __LDBL_MAX_EXP__ 1024\n#define __LDBL_MAX__ 1.7976931348623157e+308L\n#define __LDBL_MIN_10_EXP__ (-307)\n#define __LDBL_MIN_EXP__ (-1021)\n#define __LDBL_MIN__ 2.2250738585072014e-308L\n#define __LDBL_NORM_MAX__ 1.7976931348623157e+308L\n#define __LITTLE_ENDIAN__ 1\n#define __LLONG_WIDTH__ 64\n#define __LONG_LONG_MAX__ 9223372036854775807LL\n#define __LONG_MAX__ 9223372036854775807L\n#define __LONG_WIDTH__ 64\n#define __LP64__ 1\n#define __MACH__ 1\n#define __MEMORY_SCOPE_DEVICE 1\n#define __MEMORY_SCOPE_SINGLE 4\n#define __MEMORY_SCOPE_SYSTEM 0\n#define __MEMORY_SCOPE_WRKGRP 2\n#define __MEMORY_SCOPE_WVFRNT 3\n#define __NO_INLINE__ 1\n#define __NO_MATH_ERRNO__ 1\n#define __OBJC_BOOL_IS_BOOL 1\n#define __OPENCL_MEMORY_SCOPE_ALL_SVM_DEVICES 3\n#define __OPENCL_MEMORY_SCOPE_DEVICE 2\n#define __OPENCL_MEMORY_SCOPE_SUB_GROUP 4\n#define __OPENCL_MEMORY_SCOPE_WORK_GROUP 1\n#define __OPENCL_MEMORY_SCOPE_WORK_ITEM 0\n#define __ORDER_BIG_ENDIAN__ 4321\n#define __ORDER_LITTLE_ENDIAN__ 1234\n#define __ORDER_PDP_ENDIAN__ 3412\n#define __PIC__ 2\n#define __POINTER_WIDTH__ 64\n#define __PRAGMA_REDEFINE_EXTNAME 1\n#define __PTRDIFF_FMTd__ \"ld\"\n#define __PTRDIFF_FMTi__ \"li\"\n#define __PTRDIFF_MAX__ 9223372036854775807L\n#define __PTRDIFF_TYPE__ long int\n#define __PTRDIFF_WIDTH__ 64\n#define __REGISTER_PREFIX__ \n#define __SCHAR_MAX__ 127\n#define __SHRT_MAX__ 32767\n#define __SHRT_WIDTH__ 16\n#define __SIG_ATOMIC_MAX__ 2147483647\n#define __SIG_ATOMIC_WIDTH__ 32\n#define __SIZEOF_DOUBLE__ 8\n#define __SIZEOF_FLOAT__ 4\n#define __SIZEOF_INT128__ 16\n#define __SIZEOF_INT__ 4\n#define __SIZEOF_LONG_DOUBLE__ 8\n#define __SIZEOF_LONG_LONG__ 8\n#define __SIZEOF_LONG__ 8\n#define __SIZEOF_POINTER__ 8\n#define __SIZEOF_PTRDIFF_T__ 8\n#define __SIZEOF_SHORT__ 2\n#define __SIZEOF_SIZE_T__ 8\n#define __SIZEOF_WCHAR_T__ 4\n#define __SIZEOF_WINT_T__ 4\n#define __SIZE_FMTX__ \"lX\"\n#define __SIZE_FMTo__ \"lo\"\n#define __SIZE_FMTu__ \"lu\"\n#define __SIZE_FMTx__ \"lx\"\n#define __SIZE_MAX__ 18446744073709551615UL\n#define __SIZE_TYPE__ long unsigned int\n#define __SIZE_WIDTH__ 64\n#define __SSP__ 1\n#define __STDC_EMBED_EMPTY__ 2\n#define __STDC_EMBED_FOUND__ 1\n#define __STDC_EMBED_NOT_FOUND__ 0\n#define __STDC_HOSTED__ 1\n#define __STDC_NO_THREADS__ 1\n#define __STDC_UTF_16__ 1\n#define __STDC_UTF_32__ 1\n#define __STDC_VERSION__ 201710L\n#define __STDC__ 1\n#define __UINT16_C(c) c\n#define __UINT16_C_SUFFIX__ \n#define __UINT16_FMTX__ \"hX\"\n#define __UINT16_FMTo__ \"ho\"\n#define __UINT16_FMTu__ \"hu\"\n#define __UINT16_FMTx__ \"hx\"\n#define __UINT16_MAX__ 65535\n#define __UINT16_TYPE__ unsigned short\n#define __UINT32_C(c) c##U\n#define __UINT32_C_SUFFIX__ U\n#define __UINT32_FMTX__ \"X\"\n#define __UINT32_FMTo__ \"o\"\n#define __UINT32_FMTu__ \"u\"\n#define __UINT32_FMTx__ \"x\"\n#define __UINT32_MAX__ 4294967295U\n#define __UINT32_TYPE__ unsigned int\n#define __UINT64_C(c) c##ULL\n#define __UINT64_C_SUFFIX__ ULL\n#define __UINT64_FMTX__ \"llX\"\n#define __UINT64_FMTo__ \"llo\"\n#define __UINT64_FMTu__ \"llu\"\n#define __UINT64_FMTx__ \"llx\"\n#define __UINT64_MAX__ 18446744073709551615ULL\n#define __UINT64_TYPE__ long long unsigned int\n#define __UINT8_C(c) c\n#define __UINT8_C_SUFFIX__ \n#define __UINT8_FMTX__ \"hhX\"\n#define __UINT8_FMTo__ \"hho\"\n#define __UINT8_FMTu__ \"hhu\"\n#define __UINT8_FMTx__ \"hhx\"\n#define __UINT8_MAX__ 255\n#define __UINT8_TYPE__ unsigned char\n#define __UINTMAX_C(c) c##UL\n#define __UINTMAX_C_SUFFIX__ UL\n#define __UINTMAX_FMTX__ \"lX\"\n#define __UINTMAX_FMTo__ \"lo\"\n#define __UINTMAX_FMTu__ \"lu\"\n#define __UINTMAX_FMTx__ \"lx\"\n#define __UINTMAX_MAX__ 18446744073709551615UL\n#define __UINTMAX_TYPE__ long unsigned int\n#define __UINTMAX_WIDTH__ 64\n#define __UINTPTR_FMTX__ \"lX\"\n#define __UINTPTR_FMTo__ \"lo\"\n#define __UINTPTR_FMTu__ \"lu\"\n#define __UINTPTR_FMTx__ \"lx\"\n#define __UINTPTR_MAX__ 18446744073709551615UL\n#define __UINTPTR_TYPE__ long unsigned int\n#define __UINTPTR_WIDTH__ 64\n#define __UINT_FAST16_FMTX__ \"hX\"\n#define __UINT_FAST16_FMTo__ \"ho\"\n#define __UINT_FAST16_FMTu__ \"hu\"\n#define __UINT_FAST16_FMTx__ \"hx\"\n#define __UINT_FAST16_MAX__ 65535\n#define __UINT_FAST16_TYPE__ unsigned short\n#define __UINT_FAST32_FMTX__ \"X\"\n#define __UINT_FAST32_FMTo__ \"o\"\n#define __UINT_FAST32_FMTu__ \"u\"\n#define __UINT_FAST32_FMTx__ \"x\"\n#define __UINT_FAST32_MAX__ 4294967295U\n#define __UINT_FAST32_TYPE__ unsigned int\n#define __UINT_FAST64_FMTX__ \"llX\"\n#define __UINT_FAST64_FMTo__ \"llo\"\n#define __UINT_FAST64_FMTu__ \"llu\"\n#define __UINT_FAST64_FMTx__ \"llx\"\n#define __UINT_FAST64_MAX__ 18446744073709551615ULL\n#define __UINT_FAST64_TYPE__ long long unsigned int\n#define __UINT_FAST8_FMTX__ \"hhX\"\n#define __UINT_FAST8_FMTo__ \"hho\"\n#define __UINT_FAST8_FMTu__ \"hhu\"\n#define __UINT_FAST8_FMTx__ \"hhx\"\n#define __UINT_FAST8_MAX__ 255\n#define __UINT_FAST8_TYPE__ unsigned char\n#define __UINT_LEAST16_FMTX__ \"hX\"\n#define __UINT_LEAST16_FMTo__ \"ho\"\n#define __UINT_LEAST16_FMTu__ \"hu\"\n#define __UINT_LEAST16_FMTx__ \"hx\"\n#define __UINT_LEAST16_MAX__ 65535\n#define __UINT_LEAST16_TYPE__ unsigned short\n#define __UINT_LEAST32_FMTX__ \"X\"\n#define __UINT_LEAST32_FMTo__ \"o\"\n#define __UINT_LEAST32_FMTu__ \"u\"\n#define __UINT_LEAST32_FMTx__ \"x\"\n#define __UINT_LEAST32_MAX__ 4294967295U\n#define __UINT_LEAST32_TYPE__ unsigned int\n#define __UINT_LEAST64_FMTX__ \"llX\"\n#define __UINT_LEAST64_FMTo__ \"llo\"\n#define __UINT_LEAST64_FMTu__ \"llu\"\n#define __UINT_LEAST64_FMTx__ \"llx\"\n#define __UINT_LEAST64_MAX__ 18446744073709551615ULL\n#define __UINT_LEAST64_TYPE__ long long unsigned int\n#define __UINT_LEAST8_FMTX__ \"hhX\"\n#define __UINT_LEAST8_FMTo__ \"hho\"\n#define __UINT_LEAST8_FMTu__ \"hhu\"\n#define __UINT_LEAST8_FMTx__ \"hhx\"\n#define __UINT_LEAST8_MAX__ 255\n#define __UINT_LEAST8_TYPE__ unsigned char\n#define __USER_LABEL_PREFIX__ _\n#define __VERSION__ \"Apple LLVM 21.0.0 (clang-2100.3.34.2)\"\n#define __WCHAR_MAX__ 2147483647\n#define __WCHAR_TYPE__ int\n#define __WCHAR_WIDTH__ 32\n#define __WINT_MAX__ 2147483647\n#define __WINT_TYPE__ int\n#define __WINT_WIDTH__ 32\n#define __aarch64__ 1\n#define __apple_build_version__ 21000334\n#define __arm64 1\n#define __arm64__ 1\n#define __block __attribute__((__blocks__(byref)))\n#define __clang__ 1\n#define __clang_literal_encoding__ \"UTF-8\"\n#define __clang_major__ 21\n#define __clang_minor__ 0\n#define __clang_patchlevel__ 0\n#define __clang_version__ \"21.0.0 (clang-2100.3.34.2)\"\n#define __clang_wide_literal_encoding__ \"UTF-32\"\n#define __llvm__ 1\n#define __nonnull _Nonnull\n#define __null_unspecified _Null_unspecified\n#define __nullable _Nullable\n#define __pic__ 2\n#define __strong \n#define __unsafe_unretained \n#define __weak __attribute__((objc_gc(weak)))\n"
+    },
+    "entitlements_file_io": {
+      "argv": [
+        "codesign",
+        "-d",
+        "--entitlements",
+        ":-",
+        "/Users/<user>/machprobe/build/file_io"
+      ],
+      "returncode": 0,
+      "stderr": "Executable=/Users/<user>/machprobe/build/file_io\nwarning: Specifying ':' in the path is deprecated and will not work in a future release\n",
+      "stdout": ""
+    },
+    "entitlements_framework": {
+      "argv": [
+        "codesign",
+        "-d",
+        "--entitlements",
+        ":-",
+        "/Users/<user>/machprobe/build/framework"
+      ],
+      "returncode": 0,
+      "stderr": "Executable=/Users/<user>/machprobe/build/framework\nwarning: Specifying ':' in the path is deprecated and will not work in a future release\n",
+      "stdout": ""
+    },
+    "entitlements_hello": {
+      "argv": [
+        "codesign",
+        "-d",
+        "--entitlements",
+        ":-",
+        "/Users/<user>/machprobe/build/hello"
+      ],
+      "returncode": 0,
+      "stderr": "Executable=/Users/<user>/machprobe/build/hello\nwarning: Specifying ':' in the path is deprecated and will not work in a future release\n",
+      "stdout": ""
+    },
+    "entitlements_metal_info": {
+      "argv": [
+        "codesign",
+        "-d",
+        "--entitlements",
+        ":-",
+        "/Users/<user>/machprobe/build/metal_info"
+      ],
+      "returncode": 0,
+      "stderr": "Executable=/Users/<user>/machprobe/build/metal_info\nwarning: Specifying ':' in the path is deprecated and will not work in a future release\n",
+      "stdout": ""
+    },
+    "filesystem_presence": {
+      "/System/Library/Frameworks/Metal.framework/Versions/A/Metal": {
+        "exists": false,
+        "is_regular_file": false,
+        "is_symlink": false
+      },
+      "/usr/lib/libSystem.B.dylib": {
+        "exists": false,
+        "is_regular_file": false,
+        "is_symlink": false
+      },
+      "/usr/lib/libobjc.A.dylib": {
+        "exists": false,
+        "is_regular_file": false,
+        "is_symlink": false
+      }
+    },
+    "ios_sdk_lookup": {
+      "argv": [
+        "xcrun",
+        "--sdk",
+        "iphoneos",
+        "--show-sdk-path"
+      ],
+      "returncode": 1,
+      "stderr": "xcrun: error: SDK \"iphoneos\" cannot be located\nxcrun: error: SDK \"iphoneos\" cannot be located\nxcrun: error: unable to lookup item 'Path' in SDK 'iphoneos'\n",
+      "stdout": ""
+    },
+    "modern_build": {
+      "argv": [
+        "xcrun",
+        "clang",
+        "-arch",
+        "arm64",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-mmacosx-version-min=13.0",
+        "-Wl,-fixup_chains",
+        "samples/hello.c",
+        "-o",
+        "/Users/<user>/machprobe/build/variants/hello-modern"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "modern_inspect": {
+      "argv": [
+        "build/machprobe",
+        "inspect",
+        "/Users/<user>/machprobe/build/variants/hello-modern",
+        "--json"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"build_versions\": [\n    {\n      \"minimum_os\": \"13.0.0\",\n      \"platform\": \"macOS\",\n      \"platform_id\": 1,\n      \"sdk\": \"27.0.0\",\n      \"source\": \"LC_BUILD_VERSION\",\n      \"tools\": [\n        {\n          \"tool\": 3,\n          \"version\": \"27037.1.0\"\n        }\n      ]\n    }\n  ],\n  \"code_signing\": [\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 33024,\n      \"size\": 416\n    }\n  ],\n  \"defined_external_symbols\": [\n    {\n      \"description\": 16,\n      \"name\": \"__mh_execute_header\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294967296\n    },\n    {\n      \"description\": 0,\n      \"name\": \"_main\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294968416\n    }\n  ],\n  \"diagnostics\": [],\n  \"dylibs\": [\n    {\n      \"compatibility_version\": \"1.0.0\",\n      \"current_version\": \"1359.0.0\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/usr/lib/libSystem.B.dylib\"\n    }\n  ],\n  \"encryption\": [],\n  \"entry_points\": [\n    {\n      \"entryoff\": 1120,\n      \"source\": \"LC_MAIN\",\n      \"stacksize\": 0,\n      \"virtual_address\": 4294968416\n    }\n  ],\n  \"exports\": [\n    {\n      \"address_or_offset\": 0,\n      \"flags\": 0,\n      \"name\": \"__mh_execute_header\",\n      \"source\": \"export_trie\"\n    },\n    {\n      \"address_or_offset\": 1120,\n      \"flags\": 0,\n      \"name\": \"_main\",\n      \"source\": \"export_trie\"\n    }\n  ],\n  \"header\": {\n    \"architecture\": \"arm64\",\n    \"cpu_subtype\": 0,\n    \"cpu_type\": 16777228,\n    \"file_type\": \"MH_EXECUTE\",\n    \"file_type_id\": 2,\n    \"flags\": 2097285,\n    \"ncmds\": 17,\n    \"sizeofcmds\": 1056,\n    \"subtype_base\": 0,\n    \"subtype_capabilities\": 0\n  },\n  \"linkedit\": [\n    {\n      \"command\": \"LC_DYLD_CHAINED_FIXUPS\",\n      \"offset\": 32768,\n      \"size\": 96\n    },\n    {\n      \"command\": \"LC_DYLD_EXPORTS_TRIE\",\n      \"offset\": 32864,\n      \"size\": 48\n    },\n    {\n      \"command\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 32912,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DATA_IN_CODE\",\n      \"offset\": 32920,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 33024,\n      \"size\": 416\n    }\n  ],\n  \"load_commands\": [\n    {\n      \"command\": 25,\n      \"index\": 0,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 32,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 25,\n      \"index\": 1,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 104,\n      \"required_by_dyld\": false,\n      \"size\": 392\n    },\n    {\n      \"command\": 25,\n      \"index\": 2,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 496,\n      \"required_by_dyld\": false,\n      \"size\": 152\n    },\n    {\n      \"command\": 25,\n      \"index\": 3,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 648,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 2147483700,\n      \"index\": 4,\n      \"name\": \"LC_DYLD_CHAINED_FIXUPS\",\n      \"offset\": 720,\n      \"required_by_dyld\": true,\n      \"size\": 16\n    },\n    {\n      \"command\": 2147483699,\n      \"index\": 5,\n      \"name\": \"LC_DYLD_EXPORTS_TRIE\",\n      \"offset\": 736,\n      \"required_by_dyld\": true,\n      \"size\": 16\n    },\n    {\n      \"command\": 2,\n      \"index\": 6,\n      \"name\": \"LC_SYMTAB\",\n      \"offset\": 752,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 11,\n      \"index\": 7,\n      \"name\": \"LC_DYSYMTAB\",\n      \"offset\": 776,\n      \"required_by_dyld\": false,\n      \"size\": 80\n    },\n    {\n      \"command\": 14,\n      \"index\": 8,\n      \"name\": \"LC_LOAD_DYLINKER\",\n      \"offset\": 856,\n      \"required_by_dyld\": false,\n      \"size\": 32,\n      \"value\": \"/usr/lib/dyld\"\n    },\n    {\n      \"command\": 27,\n      \"index\": 9,\n      \"name\": \"LC_UUID\",\n      \"offset\": 888,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 50,\n      \"index\": 10,\n      \"name\": \"LC_BUILD_VERSION\",\n      \"offset\": 912,\n      \"required_by_dyld\": false,\n      \"size\": 32\n    },\n    {\n      \"command\": 42,\n      \"index\": 11,\n      \"name\": \"LC_SOURCE_VERSION\",\n      \"offset\": 944,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 2147483688,\n      \"index\": 12,\n      \"name\": \"LC_MAIN\",\n      \"offset\": 960,\n      \"required_by_dyld\": true,\n      \"size\": 24\n    },\n    {\n      \"command\": 12,\n      \"index\": 13,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 984,\n      \"required_by_dyld\": false,\n      \"size\": 56\n    },\n    {\n      \"command\": 38,\n      \"index\": 14,\n      \"name\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 1040,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 41,\n      \"index\": 15,\n      \"name\": \"LC_DATA_IN_CODE\",\n      \"offset\": 1056,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 29,\n      \"index\": 16,\n      \"name\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 1072,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    }\n  ],\n  \"path\": \"/Users/<user>/machprobe/build/variants/hello-modern\",\n  \"rpaths\": [],\n  \"schema_version\": 1,\n  \"segments\": [\n    {\n      \"fileoff\": 0,\n      \"filesize\": 0,\n      \"initprot\": 0,\n      \"maxprot\": 0,\n      \"name\": \"__PAGEZERO\",\n      \"sections\": [],\n      \"vmaddr\": 0,\n      \"vmsize\": 4294967296\n    },\n    {\n      \"fileoff\": 0,\n      \"filesize\": 16384,\n      \"initprot\": 5,\n      \"maxprot\": 5,\n      \"name\": \"__TEXT\",\n      \"sections\": [\n        {\n          \"address\": 4294968416,\n          \"flags\": 2147484672,\n          \"name\": \"__text\",\n          \"offset\": 1120,\n          \"segment\": \"__TEXT\",\n          \"size\": 52\n        },\n        {\n          \"address\": 4294968468,\n          \"flags\": 2147484680,\n          \"name\": \"__stubs\",\n          \"offset\": 1172,\n          \"segment\": \"__TEXT\",\n          \"size\": 12\n        },\n        {\n          \"address\": 4294968480,\n          \"flags\": 2,\n          \"name\": \"__cstring\",\n          \"offset\": 1184,\n          \"segment\": \"__TEXT\",\n          \"size\": 23\n        },\n        {\n          \"address\": 4294968504,\n          \"flags\": 0,\n          \"name\": \"__unwind_info\",\n          \"offset\": 1208,\n          \"segment\": \"__TEXT\",\n          \"size\": 88\n        }\n      ],\n      \"vmaddr\": 4294967296,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 16384,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA_CONST\",\n      \"sections\": [\n        {\n          \"address\": 4294983680,\n          \"flags\": 6,\n          \"name\": \"__got\",\n          \"offset\": 16384,\n          \"segment\": \"__DATA_CONST\",\n          \"size\": 8\n        }\n      ],\n      \"vmaddr\": 4294983680,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 32768,\n      \"filesize\": 672,\n      \"initprot\": 1,\n      \"maxprot\": 1,\n      \"name\": \"__LINKEDIT\",\n      \"sections\": [],\n      \"vmaddr\": 4295000064,\n      \"vmsize\": 16384\n    }\n  ],\n  \"slice_offset\": 0,\n  \"slice_size\": 33440,\n  \"slices\": [],\n  \"symbol_coverage\": \"LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded\",\n  \"undefined_symbols\": [\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_puts\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    }\n  ],\n  \"uuids\": [\n    \"752c731f-6ac5-3768-904e-00effe245609\"\n  ]\n}\n"
+    },
+    "modern_otool": {
+      "argv": [
+        "otool",
+        "-l",
+        "/Users/<user>/machprobe/build/variants/hello-modern"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "/Users/<user>/machprobe/build/variants/hello-modern:\nLoad command 0\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __PAGEZERO\n   vmaddr 0x0000000000000000\n   vmsize 0x0000000100000000\n  fileoff 0\n filesize 0\n  maxprot 0x00000000\n initprot 0x00000000\n   nsects 0\n    flags 0x0\nLoad command 1\n      cmd LC_SEGMENT_64\n  cmdsize 392\n  segname __TEXT\n   vmaddr 0x0000000100000000\n   vmsize 0x0000000000004000\n  fileoff 0\n filesize 16384\n  maxprot 0x00000005\n initprot 0x00000005\n   nsects 4\n    flags 0x0\nSection\n  sectname __text\n   segname __TEXT\n      addr 0x0000000100000460\n      size 0x0000000000000034\n    offset 1120\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __stubs\n   segname __TEXT\n      addr 0x0000000100000494\n      size 0x000000000000000c\n    offset 1172\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000408\n reserved1 0 (index into indirect symbol table)\n reserved2 12 (size of stubs)\nSection\n  sectname __cstring\n   segname __TEXT\n      addr 0x00000001000004a0\n      size 0x0000000000000017\n    offset 1184\n     align 2^0 (1)\n    reloff 0\n    nreloc 0\n     flags 0x00000002\n reserved1 0\n reserved2 0\nSection\n  sectname __unwind_info\n   segname __TEXT\n      addr 0x00000001000004b8\n      size 0x0000000000000058\n    offset 1208\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 2\n      cmd LC_SEGMENT_64\n  cmdsize 152\n  segname __DATA_CONST\n   vmaddr 0x0000000100004000\n   vmsize 0x0000000000004000\n  fileoff 16384\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 1\n    flags 0x10\nSection\n  sectname __got\n   segname __DATA_CONST\n      addr 0x0000000100004000\n      size 0x0000000000000008\n    offset 16384\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000006\n reserved1 1 (index into indirect symbol table)\n reserved2 0\nLoad command 3\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __LINKEDIT\n   vmaddr 0x0000000100008000\n   vmsize 0x0000000000004000\n  fileoff 32768\n filesize 672\n  maxprot 0x00000001\n initprot 0x00000001\n   nsects 0\n    flags 0x0\nLoad command 4\n      cmd LC_DYLD_CHAINED_FIXUPS\n  cmdsize 16\n  dataoff 32768\n datasize 96\nLoad command 5\n      cmd LC_DYLD_EXPORTS_TRIE\n  cmdsize 16\n  dataoff 32864\n datasize 48\nLoad command 6\n     cmd LC_SYMTAB\n cmdsize 24\n  symoff 32920\n   nsyms 3\n  stroff 32976\n strsize 40\nLoad command 7\n            cmd LC_DYSYMTAB\n        cmdsize 80\n      ilocalsym 0\n      nlocalsym 0\n     iextdefsym 0\n     nextdefsym 2\n      iundefsym 2\n      nundefsym 1\n         tocoff 0\n           ntoc 0\n      modtaboff 0\n        nmodtab 0\n   extrefsymoff 0\n    nextrefsyms 0\n indirectsymoff 32968\n  nindirectsyms 2\n      extreloff 0\n        nextrel 0\n      locreloff 0\n        nlocrel 0\nLoad command 8\n          cmd LC_LOAD_DYLINKER\n      cmdsize 32\n         name /usr/lib/dyld (offset 12)\nLoad command 9\n     cmd LC_UUID\n cmdsize 24\n    uuid 752C731F-6AC5-3768-904E-00EFFE245609\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform 1\n    minos 13.0\n      sdk 27.0\n   ntools 1\n     tool 3\n  version 27037.1\nLoad command 11\n      cmd LC_SOURCE_VERSION\n  cmdsize 16\n  version 0.0\nLoad command 12\n       cmd LC_MAIN\n   cmdsize 24\n  entryoff 1120\n stacksize 0\nLoad command 13\n          cmd LC_LOAD_DYLIB\n      cmdsize 56\n         name /usr/lib/libSystem.B.dylib (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 1359.0.0\ncompatibility version 1.0.0\nLoad command 14\n      cmd LC_FUNCTION_STARTS\n  cmdsize 16\n  dataoff 32912\n datasize 8\nLoad command 15\n      cmd LC_DATA_IN_CODE\n  cmdsize 16\n  dataoff 32920\n datasize 0\nLoad command 16\n      cmd LC_CODE_SIGNATURE\n  cmdsize 16\n  dataoff 33024\n datasize 416\n"
+    },
+    "modern_run": {
+      "argv": [
+        "/Users/<user>/machprobe/build/variants/hello-modern"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Hello from macOS ARM64\n"
+    },
+    "modern_sha256": "30284abe55ce95c5df388c807ad12f8d73637847eca1b5eb7c53b7480eb09043",
+    "objc_disassembly": {
+      "argv": [
+        "otool",
+        "-tvV",
+        "build/metal_info"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "build/metal_info:\n(__TEXT,__text) section\n_main:\n00000001000007f0\tsub\tsp, sp, #0x70\n00000001000007f4\tstp\tx29, x30, [sp, #0x60]\n00000001000007f8\tadd\tx29, sp, #0x60\n00000001000007fc\tstur\twzr, [x29, #-0x4]\n0000000100000800\tbl\t0x100000920 ; symbol stub for: _objc_autoreleasePoolPush\n0000000100000804\tstur\tx0, [x29, #-0x20]\n0000000100000808\tbl\t0x10000092c ; symbol stub for: _MTLCreateSystemDefaultDevice\n000000010000080c\tstur\tx0, [x29, #-0x10]\n0000000100000810\tldur\tx8, [x29, #-0x10]\n0000000100000814\tcbnz\tx8, 0x100000844\n0000000100000818\tb\t0x10000081c\n000000010000081c\tadrp\tx8, 4 ; 0x100004000\n0000000100000820\tldr\tx8, [x8, #0x18] ; literal pool symbol address: ___stderrp\n0000000100000824\tldr\tx1, [x8]\n0000000100000828\tadrp\tx0, 0 ; 0x100000000\n000000010000082c\tadd\tx0, x0, #0xa80 ; literal pool for: \"No Metal device available\\n\"\n0000000100000830\tbl\t0x100000938 ; symbol stub for: _fputs\n0000000100000834\tmov\tw8, #0x1\n0000000100000838\tstur\tw8, [x29, #-0x4]\n000000010000083c\tstur\tw8, [x29, #-0x14]\n0000000100000840\tb\t0x1000008e4\n0000000100000844\tldr\tx1, [sp, #0x20]\n0000000100000848\tldur\tx0, [x29, #-0x10]\n000000010000084c\tbl\t_objc_msgSend$name\n0000000100000850\tmov\tx29, x29\n0000000100000854\tbl\t0x100000944 ; symbol stub for: _objc_retainAutoreleasedReturnValue\n0000000100000858\tstur\tx0, [x29, #-0x28]\n000000010000085c\tbl\t0x100000950 ; symbol stub for: _objc_retainAutorelease\n0000000100000860\tldur\tx0, [x29, #-0x28]\n0000000100000864\tldr\tx1, [sp, #0x20]\n0000000100000868\tbl\t_objc_msgSend$UTF8String\n000000010000086c\tldr\tx1, [sp, #0x20]\n0000000100000870\tstr\tx0, [sp, #0x28]\n0000000100000874\tldur\tx0, [x29, #-0x10]\n0000000100000878\tbl\t_objc_msgSend$registryID\n000000010000087c\tldr\tx1, [sp, #0x20]\n0000000100000880\tstr\tx0, [sp, #0x30]\n0000000100000884\tldur\tx0, [x29, #-0x10]\n0000000100000888\tbl\t_objc_msgSend$hasUnifiedMemory\n000000010000088c\tldr\tx10, [sp, #0x28]\n0000000100000890\tmov\tx11, x0\n0000000100000894\tldr\tx0, [sp, #0x30]\n0000000100000898\tadrp\tx9, 0 ; 0x100000000\n000000010000089c\tadd\tx9, x9, #0xad6 ; literal pool for: \"no\"\n00000001000008a0\tadrp\tx8, 0 ; 0x100000000\n00000001000008a4\tadd\tx8, x8, #0xad2 ; literal pool for: \"yes\"\n00000001000008a8\tands\tw11, w11, #0x1\n00000001000008ac\tcsel\tx8, x8, x9, ne\n00000001000008b0\tmov\tx9, sp\n00000001000008b4\tstr\tx10, [x9]\n00000001000008b8\tstr\tx0, [x9, #0x8]\n00000001000008bc\tstr\tx8, [x9, #0x10]\n00000001000008c0\tadrp\tx0, 0 ; 0x100000000\n00000001000008c4\tadd\tx0, x0, #0xa9b ; literal pool for: \"Metal device: %s\\nRegistry ID: %llu\\nUnified memory: %s\\n\"\n00000001000008c8\tbl\t0x10000095c ; symbol stub for: _printf\n00000001000008cc\tldur\tx0, [x29, #-0x28]\n00000001000008d0\tadrp\tx8, 4 ; 0x100004000\n00000001000008d4\tldr\tx8, [x8, #0x20] ; literal pool symbol address: _objc_release\n00000001000008d8\tblr\tx8\n00000001000008dc\tstur\twzr, [x29, #-0x14]\n00000001000008e0\tb\t0x1000008e4\n00000001000008e4\tsub\tx0, x29, #0x10\n00000001000008e8\tmov\tx1, #0x0\n00000001000008ec\tbl\t0x100000968 ; symbol stub for: _objc_storeStrong\n00000001000008f0\tldur\tx0, [x29, #-0x20]\n00000001000008f4\tbl\t0x100000974 ; symbol stub for: _objc_autoreleasePoolPop\n00000001000008f8\tldur\tw8, [x29, #-0x14]\n00000001000008fc\tcbz\tw8, 0x100000908\n0000000100000900\tb\t0x100000904\n0000000100000904\tb\t0x100000910\n0000000100000908\tstur\twzr, [x29, #-0x4]\n000000010000090c\tb\t0x100000910\n0000000100000910\tldur\tw0, [x29, #-0x4]\n0000000100000914\tldp\tx29, x30, [sp, #0x60]\n0000000100000918\tadd\tsp, sp, #0x70\n000000010000091c\tret\n"
+    },
+    "objc_selectors": {
+      "argv": [
+        "otool",
+        "-v",
+        "-s",
+        "__TEXT",
+        "__objc_methname",
+        "build/metal_info"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "build/metal_info:\nContents of (__TEXT,__objc_methname) section\n0000000100000ad9  UTF8String\n0000000100000ae4  hasUnifiedMemory\n0000000100000af5  name\n0000000100000afa  registryID\n"
+    },
+    "toolchain_selection": {
+      "argv": [
+        "xcode-select",
+        "-p"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "/Library/Developer/CommandLineTools\n"
+    }
+  },
+  "headers": {
+    "cache_api": {
+      "path": "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach-o/dyld.h",
+      "selected_lines": {
+        "argv": [
+          "rg",
+          "-n",
+          "_dyld_shared_cache_contains_path",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach-o/dyld.h"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "128:extern bool _dyld_shared_cache_contains_path(const char* path)               __API_AVAILABLE(macos(11.0), ios(14.0), watchos(7.0), tvos(14.0)) DYLD_DRIVERKIT_UNAVAILABLE;\n"
+      },
+      "sha256": "063806f7bf9787ac1a9290eb3211e1c1e51571a3bc0f30cbb58a69647bd21d2b"
+    },
+    "loader": {
+      "path": "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach-o/loader.h",
+      "selected_lines": {
+        "argv": [
+          "rg",
+          "-n",
+          "LC_BUILD_VERSION|LC_VERSION_MIN_|PLATFORM_MACOS |PLATFORM_IOS |PLATFORM_IOSSIMULATOR |PLATFORM_MACCATALYST |LC_MAIN|entryoff|LC_DYLD_CHAINED_FIXUPS",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach-o/loader.h"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "233:\t\t\t\t\t   LC_BUILD_VERSION load commands with\n326:#define LC_VERSION_MIN_MACOSX 0x24   /* build for MacOSX min OS version */\n327:#define LC_VERSION_MIN_IPHONEOS 0x25 /* build for iPhoneOS min OS version */\n331:#define LC_MAIN (0x28|LC_REQ_DYLD) /* replacement for LC_UNIXTHREAD */\n338:#define LC_VERSION_MIN_TVOS 0x2F /* build for AppleTV min OS version */\n339:#define LC_VERSION_MIN_WATCHOS 0x30 /* build for Watch min OS version */\n341:#define LC_BUILD_VERSION 0x32 /* build for platform min OS version */\n343:#define LC_DYLD_CHAINED_FIXUPS (0x34 | LC_REQ_DYLD) /* used with linkedit_data_command */\n1254:\t\t\t\t   LC_DYLD_CHAINED_FIXUPS, or LC_LAZY_LOAD_DYLIB_INFO */\n1293:    uint32_t\tcmd;\t\t/* LC_VERSION_MIN_MACOSX or\n1294:\t\t\t\t   LC_VERSION_MIN_IPHONEOS or\n1295:\t\t\t\t   LC_VERSION_MIN_WATCHOS or\n1296:\t\t\t\t   LC_VERSION_MIN_TVOS */\n1308:    uint32_t\tcmd;\t\t/* LC_BUILD_VERSION */\n1325:#define PLATFORM_MACOS 1\n1326:#define PLATFORM_IOS 2\n1330:#define PLATFORM_MACCATALYST 6\n1331:#define PLATFORM_IOSSIMULATOR 7\n1616:    uint32_t  cmd;\t/* LC_MAIN only used in MH_EXECUTE filetypes */\n1618:    uint64_t  entryoff;\t/* file (__TEXT) offset of main() */\n1695:#define PLATFORM_MACCATALYST PLATFORM_MACCATALYST\n"
+      },
+      "sha256": "5862aeb7fbf183453080bc887c0d502fe25a86ff5bd81291bbcc408bd7fe6e74"
+    },
+    "metal": {
+      "path": "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h",
+      "selected_lines": {
+        "argv": [
+          "rg",
+          "-n",
+          "MTLCreateSystemDefaultDevice|registryID API_|hasUnifiedMemory API_|lowPower API_|removable API_",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "130:MTL_EXTERN id <MTLDevice> __nullable MTLCreateSystemDefaultDevice(void) API_AVAILABLE(macos(10.11), ios(8.0)) NS_RETURNS_RETAINED;\n135: On iOS, tvOS and visionOS, this API returns an array containing the same device that MTLCreateSystemDefaultDevice would have returned, or an empty array if it would have failed.\n475:@property (readonly) uint64_t registryID API_AVAILABLE(macos(10.13), ios(11.0)) ;\n493:@property (readonly, getter=isLowPower) BOOL lowPower API_DEPRECATED(\"Not applicable on Apple Silicon\", macos(10.11, 27.0), macCatalyst(13.0, 27.0)) API_UNAVAILABLE(ios);\n507:@property (readonly, getter=isRemovable) BOOL removable API_DEPRECATED(\"Not applicable on Apple Silicon\", macos(10.13, 27.0), macCatalyst(13.0, 27.0)) API_UNAVAILABLE(ios);\n515:@property (readonly) BOOL hasUnifiedMemory API_AVAILABLE(macos(10.15), ios(13.0));\n"
+      },
+      "sha256": "bb4222866870a4a703cd1581fe55cf4fee4769fbee5efc795af51fbff95f2989"
+    }
+  }
+}

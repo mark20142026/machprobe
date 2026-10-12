@@ -1,0 +1,103 @@
+build/phase4/original/extracted/DashboardCalculator.app/Contents/MacOS/DashboardCalculator:
+Contents of (__DATA_CONST,__objc_classlist) section
+000000010000c7f8 0x100010690
+    isa        0x100010658
+    superclass 0x0 _OBJC_CLASS_$__TtCs12_SwiftObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x100010422 Swift class
+        flags          0x80
+        instanceStart  16
+        instanceSize   112
+        reserved       0x0
+        ivarLayout     0x0
+        name           0x10000b830 _TtC19DashboardCalculator10Calculator
+        baseMethods    0x0
+        baseProtocols  0x0
+        ivars          0x1000102f8
+            entsize   32
+            count     9
+            offset    0x10000a618 16
+            name      0x10000b856 formatter
+            type      0x10000b860 
+            alignment 3
+            size      16
+            offset    0x10000a620 32
+            name      0x10000b861 maxDigits
+            type      0x10000b860 
+            alignment 3
+            size      8
+            offset    0x10000a628 40
+            name      0x10000b870 previousExpression
+            type      0x10000b860 
+            alignment 3
+            size      8
+            offset    0x10000a630 48
+            name      0x10000b890 currentExpression
+            type      0x10000b860 
+            alignment 3
+            size      17
+            offset    0x10000a638 65
+            name      0x10000b8a2 state
+            type      0x10000b860 
+            alignment 0
+            size      1
+            offset    0x10000a640 66
+            name      0x10000b8a8 previousState
+            type      0x10000b860 
+            alignment 0
+            size      1
+            offset    0x10000a648 72
+            name      0x10000b8b6 operatorState
+            type      0x10000b860 
+            alignment 3
+            size      16
+            offset    0x10000a650 88
+            name      0x10000b8c4 lastKeyPressed
+            type      0x10000b860 
+            alignment 3
+            size      16
+            offset    0x10000a658 104
+            name      0x10000b8d3 memory
+            type      0x10000b860 
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x0
+Meta Class
+    isa        0x0 _OBJC_METACLASS_$__TtCs12_SwiftObject
+    superclass 0x0 _OBJC_METACLASS_$__TtCs12_SwiftObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x1000102b0
+        flags          0x81 RO_META
+        instanceStart  40
+        instanceSize   40
+        reserved       0x0
+        ivarLayout     0x0
+        name           0x10000b830 _TtC19DashboardCalculator10Calculator
+        baseMethods    0x0
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+Contents of (__DATA,__objc_classrefs) section
+00000001000104c0 0x0 _OBJC_CLASS_$_NSNumberFormatter
+00000001000104c8 0x0 _OBJC_CLASS_$_NSNumber
+00000001000104d0 0x0 _OBJC_CLASS_$_NSImage
+00000001000104d8 0x0 _OBJC_CLASS_$_NSSound
+Contents of (__DATA,__objc_selrefs) section
+    0x10000b6ec init
+    0x10000b6f1 setNumberStyle:
+    0x10000b701 setExponentSymbol:
+    0x10000b714 setAlwaysShowsDecimalSeparator:
+    0x10000b734 setHasThousandSeparators:
+    0x10000b74e setMaximumIntegerDigits:
+    0x10000b767 setMaximumFractionDigits:
+    0x10000b781 initWithDouble:
+    0x10000b791 stringFromNumber:
+    0x10000b7a3 maximumIntegerDigits
+    0x10000b7b8 imageNamed:
+Contents of (__DATA_CONST,__objc_imageinfo) section
+    version 0
+    flags   0x5050740 Swift 5 or later

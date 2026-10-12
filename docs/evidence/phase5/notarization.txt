@@ -1,0 +1,2 @@
+Processing: /Users/<user>/machprobe/build/phase5/original/extracted/Strataris.app
+The validate action worked!

@@ -1,0 +1,22 @@
+{
+  "ok" : true,
+  "result" : {
+    "count" : 1,
+    "processes" : [
+      {
+        "bundle_id" : "research.machprobe.VelorenHost",
+        "cpu_seconds" : 62.655529333333334,
+        "executable" : "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+        "footprint_bytes" : 792659600,
+        "jetsam_limit_mb" : 2147483647,
+        "jetsam_priority" : 100,
+        "name" : "VelorenHost",
+        "pid" : 2489,
+        "ppid" : 1,
+        "resident_bytes" : 804077568,
+        "start_time" : 1790870747.6095979,
+        "uid" : 501
+      }
+    ]
+  }
+}

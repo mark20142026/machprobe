@@ -1,0 +1,337 @@
+{
+  "guests": {
+    "framework": {
+      "loads": 1,
+      "embedded_size": 50424,
+      "output": "CoreFoundation string length: 11\n",
+      "passed": true,
+      "stage": "finished",
+      "exit": 0,
+      "bytes_match_original": true,
+      "admission_mode": "prepackaged guest inside signed iOS dylib",
+      "standalone_error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "embedded_bytes_match_original": true,
+      "embedded_sha256": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280",
+      "sha256": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280"
+    },
+    "metal_compute": {
+      "loads": 1,
+      "embedded_size": 52544,
+      "output": "METAL_RESULT count=16 values=7,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52 checksum=472\n",
+      "passed": true,
+      "stage": "finished",
+      "exit": 0,
+      "bytes_match_original": true,
+      "admission_mode": "prepackaged guest inside signed iOS dylib",
+      "standalone_error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "embedded_bytes_match_original": true,
+      "embedded_sha256": "9e7d45fbad5c204f844bafb6caf44881bb9fba1642f06c6100388b648194c503",
+      "sha256": "9e7d45fbad5c204f844bafb6caf44881bb9fba1642f06c6100388b648194c503"
+    },
+    "file_io": {
+      "loads": 1,
+      "embedded_size": 51000,
+      "output": "File I/O round trip OK\n",
+      "passed": true,
+      "stage": "finished",
+      "exit": 0,
+      "bytes_match_original": true,
+      "admission_mode": "prepackaged guest inside signed iOS dylib",
+      "standalone_error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "embedded_bytes_match_original": true,
+      "embedded_sha256": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0",
+      "sha256": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0"
+    },
+    "appkit_gui": {
+      "loads": 1,
+      "states": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "embedded_size": 53384,
+      "guest_action_address": 4355869120,
+      "draw_list": [
+        {
+          "kind": "title",
+          "text": "macOS guest window",
+          "rect": [
+            0,
+            0,
+            340,
+            28
+          ]
+        },
+        {
+          "kind": "label",
+          "text": "Guest clicks: 0",
+          "rect": [
+            20,
+            45,
+            300,
+            45
+          ]
+        },
+        {
+          "kind": "button",
+          "text": "+",
+          "rect": [
+            20,
+            130,
+            90,
+            55
+          ]
+        },
+        {
+          "kind": "button",
+          "text": "-",
+          "rect": [
+            125,
+            130,
+            90,
+            55
+          ]
+        },
+        {
+          "kind": "button",
+          "text": "Reset",
+          "rect": [
+            230,
+            130,
+            90,
+            55
+          ]
+        }
+      ],
+      "passed": 1,
+      "stage": "finished",
+      "exit": 0,
+      "bytes_match_original": true,
+      "admission_mode": "prepackaged guest inside signed iOS dylib",
+      "standalone_error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "embedded_bytes_match_original": true,
+      "embedded_sha256": "01485fd5302f1f69f441691f3bcfdf2e81ae7698034f1ccd0d1e70fa5356be9c",
+      "metal_renderer": {
+        "passed": true,
+        "device": "Apple Paravirtual device GPU",
+        "pixels_checked": 4096,
+        "error": ""
+      },
+      "sha256": "01485fd5302f1f69f441691f3bcfdf2e81ae7698034f1ccd0d1e70fa5356be9c"
+    },
+    "metal_info": {
+      "loads": 1,
+      "embedded_size": 51096,
+      "output": "Metal device: Apple Paravirtual device GPU\nRegistry ID: 4294967730\nUnified memory: yes\n",
+      "passed": true,
+      "stage": "finished",
+      "exit": 0,
+      "bytes_match_original": true,
+      "admission_mode": "prepackaged guest inside signed iOS dylib",
+      "standalone_error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "embedded_bytes_match_original": true,
+      "embedded_sha256": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3",
+      "sha256": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3"
+    },
+    "interactive": {
+      "loads": 1,
+      "states": [
+        {
+          "counter": 1,
+          "rc": 0,
+          "sequence": 1
+        },
+        {
+          "counter": 0,
+          "rc": 0,
+          "sequence": 2
+        },
+        {
+          "counter": -1,
+          "rc": 0,
+          "sequence": 3
+        },
+        {
+          "counter": 0,
+          "rc": 0,
+          "sequence": 4
+        }
+      ],
+      "embedded_size": 51944,
+      "input_passed": true,
+      "stage": "finished",
+      "bytes_match_original": true,
+      "admission_mode": "prepackaged guest inside signed iOS dylib",
+      "standalone_error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "embedded_bytes_match_original": true,
+      "embedded_sha256": "3f446948d3d274fc7370560b79626763e3b9700ca0619caf638c557f4d638409",
+      "open_status": 0,
+      "sha256": "3f446948d3d274fc7370560b79626763e3b9700ca0619caf638c557f4d638409"
+    },
+    "foundation": {
+      "loads": 1,
+      "embedded_size": 52072,
+      "output": "FOUNDATION_RESULT weak=cleared class=NSString selector=length length=17 count=2 value=phase2-foundation|PHASE2-FOUNDATION\n",
+      "passed": true,
+      "stage": "finished",
+      "exit": 0,
+      "bytes_match_original": true,
+      "admission_mode": "prepackaged guest inside signed iOS dylib",
+      "standalone_error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "embedded_bytes_match_original": true,
+      "embedded_sha256": "052fe8e2cd7655afd65d77f954e81425dbf841105ef3b37085a8b4fdb3d9a6c5",
+      "sha256": "052fe8e2cd7655afd65d77f954e81425dbf841105ef3b37085a8b4fdb3d9a6c5"
+    },
+    "hello": {
+      "loads": 1,
+      "embedded_size": 50216,
+      "output": "Hello from macOS ARM64\n",
+      "passed": true,
+      "stage": "finished",
+      "exit": 0,
+      "bytes_match_original": true,
+      "admission_mode": "prepackaged guest inside signed iOS dylib",
+      "standalone_error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "embedded_bytes_match_original": true,
+      "embedded_sha256": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+      "sha256": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6"
+    }
+  },
+  "uid": 501,
+  "run_id": "C2B0B5A8-B745-4CC3-B7C6-29F2B5278B0B",
+  "ios": "27.0",
+  "stress": {
+    "duplicate_diagnostic": "resident guest already active",
+    "wrong_size_diagnostic": "invalid embedded guest section",
+    "truncated_rejected": 1,
+    "truncated_diagnostic": "invalid or oversized fixture file",
+    "outside_container_read_rc": 0,
+    "cycles": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "misaligned_diagnostic": "invalid resident guest range",
+    "live_images_after": 0,
+    "fd_after": 7,
+    "wrong_size_rejected": 1,
+    "misaligned_rejected": 1,
+    "errors": [],
+    "fd_before": 7,
+    "fd_scan_limit": 256,
+    "container_kept_resident": false,
+    "regions_before": 137,
+    "outside_container_errno": 0,
+    "dyld_only_control": {
+      "regions_before": 158,
+      "passed": true,
+      "regions_after": 178,
+      "cycles": 20
+    },
+    "resident_container_control": {
+      "duplicate_diagnostic": "resident guest already active",
+      "wrong_size_diagnostic": "invalid embedded guest section",
+      "truncated_rejected": 1,
+      "truncated_diagnostic": "invalid or oversized fixture file",
+      "outside_container_read_rc": 0,
+      "cycles": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "misaligned_diagnostic": "invalid resident guest range",
+      "live_images_after": 0,
+      "fd_after": 7,
+      "wrong_size_rejected": 1,
+      "misaligned_rejected": 1,
+      "errors": [],
+      "fd_before": 7,
+      "fd_scan_limit": 256,
+      "container_kept_resident": true,
+      "regions_before": 160,
+      "outside_container_errno": 0,
+      "regions_after": 160,
+      "passed": true,
+      "duplicate_rejected": 1,
+      "vm_specific_images": [
+        "/usr/lib/SystemHook-vphone.dylib",
+        "/usr/lib/libcamfix.dylib"
+      ]
+    },
+    "regions_after": 157,
+    "passed": true,
+    "duplicate_rejected": 1,
+    "vm_specific_images": [
+      "/usr/lib/SystemHook-vphone.dylib",
+      "/usr/lib/libcamfix.dylib"
+    ]
+  },
+  "interactive_state": {
+    "counter": 0,
+    "message": "Guest counter: 0",
+    "sequence": 4
+  },
+  "environment": "iOS VM; installation may add entitlements",
+  "admission_controls": {
+    "copied_ios_host": {
+      "registration_errno": 85,
+      "registration_error": "Bad executable (or shared library)",
+      "registration_rc": -1,
+      "platform": 2
+    },
+    "installed_ios_host": {
+      "validation_errno": 0,
+      "registration_rc": 0,
+      "registration_errno": 0,
+      "platform": 2,
+      "validation_rc": 0,
+      "covered_bytes": 192512,
+      "validation_message": ""
+    },
+    "host_copy_hash_matches": true,
+    "recompiled_ios_hello": {
+      "registration_errno": 85,
+      "registration_error": "Bad executable (or shared library)",
+      "registration_rc": -1,
+      "platform": 2
+    }
+  },
+  "complete": true,
+  "pid": 657
+}

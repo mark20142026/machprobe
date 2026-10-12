@@ -1,0 +1,23 @@
+{
+  "captured_at_utc": "2026-10-01T09:25:44.075852+00:00",
+  "method": "CUA native accessibility tree and screenshot inspected after final rebuild; separate native CLI run captured below",
+  "window_title": "macOS hello inside UIKit",
+  "visible_labels": [
+    "UIKit host",
+    "\u25cf",
+    "\u25cf",
+    "\u25cf",
+    "macOS hello",
+    "Hello from macOS ARM64"
+  ],
+  "appearance": "Outer UIKit host, inner dark titlebar and black guest output surface. No source code, logs or loader counters displayed.",
+  "result": "Guest greeting visibly rendered",
+  "host_platform": 6,
+  "guest_platform": 1,
+  "host_sha256": "731b959f587ee8b75bd75d20924476a95fd36fa2b6c8f7d8a60599dbaaf31407",
+  "guest_sha256": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+  "original_guest_sha256": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+  "native_cli_stdout": "Hello from macOS ARM64\nTarget returned: 0\nMapped segments: 4; rebases: 1; binds: 2; puts calls: 1\n",
+  "native_cli_returncode": 0,
+  "limitations": "Observed on macOS in adapted Catalyst host only. Inner window is host-rendered puts output, not an AppKit guest window. Device iOS remains untested."
+}

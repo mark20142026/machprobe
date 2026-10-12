@@ -1,0 +1,448 @@
+dispatch thunk of Foundation.JSONDecoder.decode<A where A: Swift.Decodable>(_: A.Type, from: Foundation.Data) throws -> A
+Foundation.JSONDecoder.init() -> Foundation.JSONDecoder
+type metadata accessor for Foundation.JSONDecoder
+dispatch thunk of Foundation.JSONEncoder.encode<A where A: Swift.Encodable>(A) throws -> Foundation.Data
+Foundation.JSONEncoder.init() -> Foundation.JSONEncoder
+type metadata accessor for Foundation.JSONEncoder
+static Foundation.CharacterSet.whitespacesAndNewlines.getter : Foundation.CharacterSet
+type metadata accessor for Foundation.CharacterSet
+static Foundation.Notification._unconditionallyBridgeFromObjectiveC(__C.NSNotification?) -> Foundation.Notification
+type metadata accessor for Foundation.Notification
+Foundation.DateComponents.day.getter : Swift.Int?
+Foundation.DateComponents.month.getter : Swift.Int?
+type metadata accessor for Foundation.DateComponents
+Foundation._convertNSErrorToError(__C.NSError?) -> Swift.Error
+Foundation.URL.init(fileURLWithPath: __shared Swift.String) -> Foundation.URL
+Foundation.URL._bridgeToObjectiveC() -> __C.NSURL
+Foundation.URL.appendingPathComponent(_: Swift.String, isDirectory: Swift.Bool) -> Foundation.URL
+Foundation.URL.appendingPathComponent(Swift.String) -> Foundation.URL
+static Foundation.URL._unconditionallyBridgeFromObjectiveC(__C.NSURL?) -> Foundation.URL
+Foundation.URL.path.getter : Swift.String
+type metadata accessor for Foundation.URL
+nominal type descriptor for Foundation.URL
+Foundation.Data.init(contentsOf: __shared Foundation.URL, options: __C.NSDataReadingOptions) throws -> Foundation.Data
+static Foundation.Data._unconditionallyBridgeFromObjectiveC(__C.NSData?) -> Foundation.Data
+Foundation.Data.write(to: Foundation.URL, options: __C.NSDataWritingOptions) throws -> ()
+Foundation.Date._bridgeToObjectiveC() -> __C.NSDate
+Foundation.Date.init() -> Foundation.Date
+type metadata accessor for Foundation.Date
+Foundation.Calendar.dateComponents(_: Swift.Set<Foundation.Calendar.Component>, from: Foundation.Date) -> Foundation.DateComponents
+static Foundation.Calendar.current.getter : Foundation.Calendar
+enum case for Foundation.Calendar.Component.day(Foundation.Calendar.Component.Type) -> Foundation.Calendar.Component
+enum case for Foundation.Calendar.Component.month(Foundation.Calendar.Component.Type) -> Foundation.Calendar.Component
+type metadata accessor for Foundation.Calendar.Component
+nominal type descriptor for Foundation.Calendar.Component
+protocol conformance descriptor for Foundation.Calendar.Component : Swift.Hashable in Foundation
+protocol conformance descriptor for Foundation.Calendar.Component : Swift.Equatable in Foundation
+type metadata accessor for Foundation.Calendar
+nominal type descriptor for CoreGraphics.CGFloat
+protocol descriptor for CoreFoundation._CFObject
+static (extension in CoreFoundation):CoreFoundation._CFObject.== infix(A, A) -> Swift.Bool
+(extension in CoreFoundation):CoreFoundation._CFObject.hash(into: inout Swift.Hasher) -> ()
+(extension in CoreFoundation):CoreFoundation._CFObject.hashValue.getter : Swift.Int
+base conformance descriptor for CoreFoundation._CFObject: Swift.Hashable
+associated type descriptor for Swift._ObjectiveCBridgeable._ObjectiveCType
+Darwin.stdout.getter : Swift.UnsafeMutablePointer<__C.__sFILE>
+associated type descriptor for Swift.CaseIterable.AllCases
+enum case for Dispatch.DispatchTimeInterval.nanoseconds(Dispatch.DispatchTimeInterval.Type) -> (Swift.Int) -> Dispatch.DispatchTimeInterval
+enum case for Dispatch.DispatchTimeInterval.milliseconds(Dispatch.DispatchTimeInterval.Type) -> (Swift.Int) -> Dispatch.DispatchTimeInterval
+type metadata accessor for Dispatch.DispatchTimeInterval
+type metadata accessor for Dispatch.DispatchWorkItemFlags
+nominal type descriptor for Dispatch.DispatchWorkItemFlags
+protocol conformance descriptor for Dispatch.DispatchWorkItemFlags : Swift.SetAlgebra in Dispatch
+enum case for Dispatch.DispatchQoS.QoSClass.userInitiated(Dispatch.DispatchQoS.QoSClass.Type) -> Dispatch.DispatchQoS.QoSClass
+type metadata accessor for Dispatch.DispatchQoS.QoSClass
+static Dispatch.DispatchQoS.unspecified.getter : Dispatch.DispatchQoS
+type metadata accessor for Dispatch.DispatchQoS
+static Dispatch.DispatchTime.now() -> Dispatch.DispatchTime
+type metadata accessor for Dispatch.DispatchTime
+Dispatch.+ infix(Dispatch.DispatchTime, Swift.Double) -> Dispatch.DispatchTime
+associated type descriptor for Swift.RawRepresentable.RawValue
+type metadata accessor for CoreAudio.UnsafeMutableAudioBufferListPointer
+CoreAudio.UnsafeMutableAudioBufferListPointer.init(Swift.UnsafeMutablePointer<__C.AudioBufferList>) -> CoreAudio.UnsafeMutableAudioBufferListPointer
+CoreAudio.UnsafeMutableAudioBufferListPointer.subscript.read : (Swift.Int) -> __C.AudioBuffer
+value witness table for Builtin.UnknownObject
+value witness table for Builtin.BridgeObject
+value witness table for Builtin.Int64
+value witness table for Builtin.NativeObject
+(extension in Foundation):Swift.Dictionary._bridgeToObjectiveC() -> __C.NSDictionary
+static (extension in Foundation):Swift.Dictionary._unconditionallyBridgeFromObjectiveC(__C.NSDictionary?) -> [A : B]
+method descriptor for Swift.Encodable.encode(to: Swift.Encoder) throws -> ()
+protocol descriptor for Swift.Encodable
+dispatch thunk of Swift.Hashable._rawHashValue(seed: Swift.Int) -> Swift.Int
+method descriptor for Swift.Hashable._rawHashValue(seed: Swift.Int) -> Swift.Int
+method descriptor for Swift.Hashable.hash(into: inout Swift.Hasher) -> ()
+method descriptor for Swift.Hashable.hashValue.getter : Swift.Int
+protocol descriptor for Swift.Hashable
+base conformance descriptor for Swift.Hashable: Swift.Equatable
+Swift.Character.hash(into: inout Swift.Hasher) -> ()
+(extension in Swift):Swift.BidirectionalCollection< where A.Element == Swift.String>.joined(separator: Swift.String) -> Swift.String
+dispatch thunk of static Swift.Equatable.== infix(A, A) -> Swift.Bool
+method descriptor for static Swift.Equatable.== infix(A, A) -> Swift.Bool
+protocol descriptor for Swift.Equatable
+(extension in Foundation):Swift.String._bridgeToObjectiveC() -> __C.NSString
+static (extension in Foundation):Swift.String._forceBridgeFromObjectiveC(_: __C.NSString, result: inout Swift.String?) -> ()
+static (extension in Foundation):Swift.String._conditionallyBridgeFromObjectiveC(_: __C.NSString, result: inout Swift.String?) -> Swift.Bool
+static (extension in Foundation):Swift.String._unconditionallyBridgeFromObjectiveC(__C.NSString?) -> Swift.String
+(extension in Foundation):Swift.String.init(format: __shared Swift.String, _: Swift.CVarArg...) -> Swift.String
+Swift.String.uppercased() -> Swift.String
+static Swift.String._fromSubstring(__shared Swift.Substring) -> Swift.String
+static Swift.String._uncheckedFromUTF8(Swift.UnsafeBufferPointer<Swift.UInt8>) -> Swift.String
+Swift.String.hash(into: inout Swift.Hasher) -> ()
+Swift.String.count.getter : Swift.Int
+Swift.String.index(before: Swift.String.Index) -> Swift.String.Index
+Swift.String.index(_: Swift.String.Index, offsetBy: Swift.Int, limitedBy: Swift.String.Index) -> Swift.String.Index?
+Swift.String.append(Swift.String) -> ()
+Swift.String.remove(at: Swift.String.Index) -> Swift.Character
+Swift.String.Iterator.next() -> Swift.Character?
+Swift.String.UTF8View._foreignIndex(after: Swift.String.Index) -> Swift.String.Index
+Swift.String.UTF8View._foreignIndex(_: Swift.String.Index, offsetBy: Swift.Int) -> Swift.String.Index
+Swift.String.UTF8View._foreignSubscript(position: Swift.String.Index) -> Swift.UInt8
+Swift.String.UTF16View.index(_: Swift.String.Index, offsetBy: Swift.Int) -> Swift.String.Index
+Swift.String.hasPrefix(Swift.String) -> Swift.Bool
+Swift.String.hashValue.getter : Swift.Int
+type metadata for Swift.String
+protocol witness table for Swift.String : Swift.Hashable in Swift
+protocol witness table for Swift.String : Swift.Sequence in Swift
+protocol conformance descriptor for Swift.String : Swift.StringProtocol in Swift
+protocol witness table for Swift.String : Swift.LosslessStringConvertible in Swift
+protocol conformance descriptor for Swift.String : Swift.CVarArg in Foundation
+Swift.String.init<A where A: Swift.LosslessStringConvertible, A: Swift.Sequence, A.Swift.Sequence.Element == Swift.Character>(A) -> Swift.String
+Swift.String.subscript.getter : (Swift.Range<Swift.String.Index>) -> Swift.Substring
+method descriptor for Swift.RawRepresentable.rawValue.getter : A.RawValue
+method descriptor for Swift.RawRepresentable.init(rawValue: A.RawValue) -> A?
+protocol descriptor for Swift.RawRepresentable
+generic pre-specialization <Swift.AnyObject> of Swift.Array._makeUniqueAndReserveCapacityIfNotUnique() -> ()
+(extension in Foundation):Swift.Array._bridgeToObjectiveC() -> __C.NSArray
+static (extension in Foundation):Swift.Array._unconditionallyBridgeFromObjectiveC(__C.NSArray?) -> [A]
+generic pre-specialization <Swift.AnyObject> of Swift.Array._createNewBuffer(bufferIsUnique: Swift.Bool, minimumCapacity: Swift.Int, growForAppend: Swift.Bool) -> ()
+static Swift.Array._allocateBufferUninitialized(minimumCapacity: Swift.Int) -> Swift._ArrayBuffer<A>
+generic pre-specialization <Swift.AnyObject> of Swift.Array._appendElementAssumeUniqueAndCapacity(_: Swift.Int, newElement: __owned A) -> ()
+protocol conformance descriptor for <A where A: Swift.Encodable> [A] : Swift.Encodable in Swift
+protocol conformance descriptor for [A] : Swift.BidirectionalCollection in Swift
+protocol conformance descriptor for [A] : Swift.Sequence in Swift
+protocol conformance descriptor for <A where A: Swift.Decodable> [A] : Swift.Decodable in Swift
+protocol conformance descriptor for [A] : Swift.Collection in Swift
+type metadata for Swift.Bool
+static Swift.MainActor.shared.getter : Swift.MainActor
+type metadata accessor for Swift.MainActor
+type metadata for Swift.Double
+protocol witness table for Swift.Double : Swift.CVarArg in Swift
+method descriptor for Swift.Decodable.init(from: Swift.Decoder) throws -> A
+protocol descriptor for Swift.Decodable
+type metadata for Swift.Float
+protocol witness table for Swift.Float : Swift.CVarArg in Swift
+(extension in Foundation):Swift.Int._bridgeToObjectiveC() -> __C.NSNumber
+static (extension in Foundation):Swift.Int._forceBridgeFromObjectiveC(_: __C.NSNumber, result: inout Swift.Int?) -> ()
+static (extension in Foundation):Swift.Int._conditionallyBridgeFromObjectiveC(_: __C.NSNumber, result: inout Swift.Int?) -> Swift.Bool
+static (extension in Foundation):Swift.Int._unconditionallyBridgeFromObjectiveC(__C.NSNumber?) -> Swift.Int
+Swift.Int.hashValue.getter : Swift.Int
+type metadata for Swift.Int
+protocol witness table for Swift.Int : Swift.Hashable in Swift
+protocol witness table for Swift.Int : Swift.CustomStringConvertible in Swift
+protocol witness table for Swift.Int : Swift.CVarArg in Swift
+(extension in CoreGraphics):__C.CGContextRef.textPosition.setter : __C.CGPoint
+type metadata accessor for (extension in Dispatch):__C.OS_dispatch_queue.Attributes
+nominal type descriptor for (extension in Dispatch):__C.OS_dispatch_queue.Attributes
+protocol conformance descriptor for (extension in Dispatch):__C.OS_dispatch_queue.Attributes : Swift.SetAlgebra in Dispatch
+(extension in Dispatch):__C.OS_dispatch_queue.asyncAfter(deadline: Dispatch.DispatchTime, qos: Dispatch.DispatchQoS, flags: Dispatch.DispatchWorkItemFlags, execute: @convention(block) () -> ()) -> ()
+enum case for (extension in Dispatch):__C.OS_dispatch_queue.AutoreleaseFrequency.inherit((extension in Dispatch):__C.OS_dispatch_queue.AutoreleaseFrequency.Type) -> (extension in Dispatch):__C.OS_dispatch_queue.AutoreleaseFrequency
+type metadata accessor for (extension in Dispatch):__C.OS_dispatch_queue.AutoreleaseFrequency
+static (extension in Dispatch):__C.OS_dispatch_queue.main.getter : __C.OS_dispatch_queue
+(extension in Dispatch):__C.OS_dispatch_queue.async(group: __C.OS_dispatch_group?, qos: Dispatch.DispatchQoS, flags: Dispatch.DispatchWorkItemFlags, execute: @convention(block) () -> ()) -> ()
+(extension in Dispatch):__C.OS_dispatch_queue.init(label: Swift.String, qos: Dispatch.DispatchQoS, attributes: (extension in Dispatch):__C.OS_dispatch_queue.Attributes, autoreleaseFrequency: (extension in Dispatch):__C.OS_dispatch_queue.AutoreleaseFrequency, target: __C.OS_dispatch_queue?) -> __C.OS_dispatch_queue
+static (extension in Dispatch):__C.OS_dispatch_queue.global(qos: Dispatch.DispatchQoS.QoSClass) -> __C.OS_dispatch_queue
+type metadata accessor for (extension in Dispatch):__C.OS_dispatch_source.TimerFlags
+nominal type descriptor for (extension in Dispatch):__C.OS_dispatch_source.TimerFlags
+protocol conformance descriptor for (extension in Dispatch):__C.OS_dispatch_source.TimerFlags : Swift.SetAlgebra in Dispatch
+static (extension in Dispatch):__C.OS_dispatch_source.makeTimerSource(flags: (extension in Dispatch):__C.OS_dispatch_source.TimerFlags, queue: __C.OS_dispatch_queue?) -> __C.OS_dispatch_source_timer
+(extension in Dispatch):__C.OS_dispatch_source.setEventHandler(qos: Dispatch.DispatchQoS, flags: Dispatch.DispatchWorkItemFlags, handler: (@convention(block) () -> ())?) -> ()
+(extension in Dispatch):__C.OS_dispatch_source.resume() -> ()
+(extension in Dispatch):__C.OS_dispatch_source_timer.schedule(deadline: Dispatch.DispatchTime, repeating: Dispatch.DispatchTimeInterval, leeway: Dispatch.DispatchTimeInterval) -> ()
+static (extension in AppKit):__C.NSSound.beep() -> ()
+Swift.Substring.UTF8View.distance(from: Swift.String.Index, to: Swift.String.Index) -> Swift.Int
+type metadata for Swift.UInt
+(extension in Foundation):Swift.StringProtocol.trimmingCharacters(in: Foundation.CharacterSet) -> Swift.String
+Swift._bridgeAnyObjectToAny(Swift.AnyObject?) -> Any
+dispatch thunk of Swift.SetAlgebra.init<A where A1: Swift.Sequence, A.Element == A1.Element>(__owned A1) -> A
+static Swift._SetStorage.copy(original: Swift.__RawSetStorage) -> Swift._SetStorage<A>
+static Swift._SetStorage.resize(original: Swift.__RawSetStorage, capacity: Swift.Int, move: Swift.Bool) -> Swift._SetStorage<A>
+static Swift._SetStorage.allocate(capacity: Swift.Int) -> Swift._SetStorage<A>
+nominal type descriptor for Swift._SetStorage
+Swift._StringGuts.grow(Swift.Int) -> ()
+protocol descriptor for Swift.CaseIterable
+associated conformance descriptor for Swift.CaseIterable.Swift.CaseIterable.AllCases: Swift.Collection
+method descriptor for static Swift.CaseIterable.allCases.getter : A.AllCases
+nominal type descriptor for Swift.StaticString
+generic pre-specialization <Swift.AnyObject> of Swift._ArrayBuffer._getElementSlowPath(Swift.Int) -> Swift.AnyObject
+Swift._StringObject.sharedUTF8.getter : Swift.UnsafeBufferPointer<Swift.UInt8>
+static Swift.ContiguousArray._allocateBufferUninitialized(minimumCapacity: Swift.Int) -> Swift._ContiguousArrayBuffer<A>
+Swift._print_unlocked<A, B where B: Swift.TextOutputStream>(A, inout B) -> ()
+Swift._assertionFailure(_: Swift.StaticString, _: Swift.String, file: Swift.StaticString, line: Swift.UInt, flags: Swift.UInt32) -> Swift.Never
+Swift._CocoaArrayWrapper.endIndex.getter : Swift.Int
+static Swift._DictionaryStorage.copy(original: Swift.__RawDictionaryStorage) -> Swift._DictionaryStorage<A, B>
+static Swift._DictionaryStorage.resize(original: Swift.__RawDictionaryStorage, capacity: Swift.Int, move: Swift.Bool) -> Swift._DictionaryStorage<A, B>
+static Swift._DictionaryStorage.allocate(capacity: Swift.Int) -> Swift._DictionaryStorage<A, B>
+nominal type descriptor for Swift._DictionaryStorage
+protocol descriptor for Swift._SwiftNewtypeWrapper
+base conformance descriptor for Swift._SwiftNewtypeWrapper: Swift.RawRepresentable
+base conformance descriptor for Swift._SwiftNewtypeWrapper: Swift._HasCustomAnyHashableRepresentation
+(extension in Swift):Swift._SwiftNewtypeWrapper< where A: Swift.Hashable, A.Swift.RawRepresentable.RawValue: Swift.Hashable>._toCustomAnyHashable() -> Swift.AnyHashable?
+protocol descriptor for Swift._ObjectiveCBridgeable
+method descriptor for static Swift._ObjectiveCBridgeable._forceBridgeFromObjectiveC(_: A._ObjectiveCType, result: inout A?) -> ()
+method descriptor for static Swift._ObjectiveCBridgeable._conditionallyBridgeFromObjectiveC(_: A._ObjectiveCType, result: inout A?) -> Swift.Bool
+method descriptor for static Swift._ObjectiveCBridgeable._unconditionallyBridgeFromObjectiveC(A._ObjectiveCType?) -> A
+method descriptor for Swift._ObjectiveCBridgeable._bridgeToObjectiveC() -> A._ObjectiveCType
+Swift._findStringSwitchCase(cases: [Swift.StaticString], string: Swift.String) -> Swift.Int
+Swift.KeyedDecodingContainer.decodeIfPresent(_: Swift.String.Type, forKey: A) throws -> Swift.String?
+Swift.KeyedDecodingContainer.decode(_: Swift.String.Type, forKey: A) throws -> Swift.String
+Swift.KeyedDecodingContainer.decode(_: Swift.Int.Type, forKey: A) throws -> Swift.Int
+nominal type descriptor for Swift.KeyedDecodingContainer
+Swift.KeyedEncodingContainer.encodeIfPresent(_: Swift.String?, forKey: A) throws -> ()
+Swift.KeyedEncodingContainer.encode(_: Swift.String, forKey: A) throws -> ()
+Swift.KeyedEncodingContainer.encode(_: Swift.Int, forKey: A) throws -> ()
+nominal type descriptor for Swift.KeyedEncodingContainer
+Swift._minimumMergeRunLength(Swift.Int) -> Swift.Int
+protocol descriptor for Swift.CustomStringConvertible
+dispatch thunk of Swift.CustomStringConvertible.description.getter : Swift.String
+method descriptor for Swift.CustomStringConvertible.description.getter : Swift.String
+nominal type descriptor for Swift._ContiguousArrayStorage
+type metadata for Swift.DefaultStringInterpolation
+protocol witness table for Swift.DefaultStringInterpolation : Swift.TextOutputStream in Swift
+Swift._bridgeAnythingToObjectiveC<A>(A) -> Swift.AnyObject
+Swift._stringCompareWithSmolCheck(_: Swift._StringGuts, _: Swift._StringGuts, expecting: Swift._StringComparisonResult) -> Swift.Bool
+protocol descriptor for Swift.CustomDebugStringConvertible
+method descriptor for Swift.CustomDebugStringConvertible.debugDescription.getter : Swift.String
+protocol descriptor for Swift._HasCustomAnyHashableRepresentation
+method descriptor for Swift._HasCustomAnyHashableRepresentation._toCustomAnyHashable() -> Swift.AnyHashable?
+Swift.ELEMENT_TYPE_OF_SET_VIOLATES_HASHABLE_REQUIREMENTS(Any.Type) -> Swift.Never
+Swift.KEY_TYPE_OF_DICTIONARY_VIOLATES_HASHABLE_REQUIREMENTS(Any.Type) -> Swift.Never
+protocol descriptor for Swift.Error
+nominal type descriptor for Swift.SIMD2
+nominal type descriptor for Swift.SIMD3
+nominal type descriptor for Swift.SIMD4
+nominal type descriptor for Swift.UInt8
+type metadata for Swift.UInt8
+Swift.print(_: Any..., separator: Swift.String, terminator: Swift.String) -> ()
+static Swift.Hasher._hash(seed: Swift.Int, _: Swift.UInt64) -> Swift.Int
+Swift.Hasher.init(_seed: Swift.Int) -> Swift.Hasher
+Swift.Hasher._combine(Swift.UInt) -> ()
+Swift.Hasher._finalize() -> Swift.Int
+nominal type descriptor for Swift.UInt32
+type metadata for Swift.UInt32
+type metadata for Swift.UInt64
+protocol witness table for Swift.UInt64 : Swift.CustomStringConvertible in Swift
+protocol descriptor for Swift.CVarArg
+dispatch thunk of Swift.Decoder.container<A where A1: Swift.CodingKey>(keyedBy: A1.Type) throws -> Swift.KeyedDecodingContainer<A1>
+dispatch thunk of Swift.Encoder.container<A where A1: Swift.CodingKey>(keyedBy: A1.Type) -> Swift.KeyedEncodingContainer<A1>
+protocol descriptor for Swift.CodingKey
+method descriptor for Swift.CodingKey.stringValue.getter : Swift.String
+method descriptor for Swift.CodingKey.init(stringValue: Swift.String) -> A?
+method descriptor for Swift.CodingKey.intValue.getter : Swift.Int?
+method descriptor for Swift.CodingKey.init(intValue: Swift.Int) -> A?
+base conformance descriptor for Swift.CodingKey: Swift.CustomStringConvertible
+base conformance descriptor for Swift.CodingKey: Swift.CustomDebugStringConvertible
+(extension in Swift):Swift.CodingKey.description.getter : Swift.String
+(extension in Swift):Swift.CodingKey.debugDescription.getter : Swift.String
+Swift._typeName(_: Any.Type, qualified: Swift.Bool) -> Swift.String
+type metadata for Any
+value witness table for ()
+_CACurrentMediaTime
+_CFAttributedStringCreate
+_CGBitmapContextCreate
+_CGBitmapContextGetData
+_CGColorCreateSRGB
+_CGColorSpaceCreateDeviceRGB
+_CGRectContainsPoint
+_CTFontCreateUIFontForLanguage
+_CTFontCreateWithName
+_CTLineCreateWithAttributedString
+_CTLineDraw
+_CTLineGetTypographicBounds
+_MTLCreateSystemDefaultDevice
+_NSAboutPanelOptionApplicationName
+_NSAboutPanelOptionCredits
+_NSApp
+_NSDeviceRGBColorSpace
+_NSFontAttributeName
+_NSFontWeightBold
+_NSFontWeightMedium
+_NSFontWeightRegular
+_NSFontWeightSemibold
+_NSForegroundColorAttributeName
+_NSImageHintInterpolation
+_NSParagraphStyleAttributeName
+_NSWindowDidBecomeKeyNotification
+_OBJC_CLASS_$_AVAudioEngine
+_OBJC_CLASS_$_AVAudioFormat
+_OBJC_CLASS_$_AVAudioPCMBuffer
+_OBJC_CLASS_$_AVAudioSourceNode
+_OBJC_CLASS_$_AVSpeechSynthesisVoice
+_OBJC_CLASS_$_AVSpeechSynthesizer
+_OBJC_CLASS_$_AVSpeechUtterance
+_OBJC_CLASS_$_GCController
+_OBJC_CLASS_$_MTKView
+_OBJC_CLASS_$_MTLDepthStencilDescriptor
+_OBJC_CLASS_$_MTLRenderPassDescriptor
+_OBJC_CLASS_$_MTLRenderPipelineDescriptor
+_OBJC_CLASS_$_MTLTextureDescriptor
+_OBJC_CLASS_$_MTLVertexDescriptor
+_OBJC_CLASS_$_NSAlert
+_OBJC_CLASS_$_NSApplication
+_OBJC_CLASS_$_NSAttributedString
+_OBJC_CLASS_$_NSBitmapImageRep
+_OBJC_CLASS_$_NSBox
+_OBJC_CLASS_$_NSButton
+_OBJC_CLASS_$_NSColor
+_OBJC_CLASS_$_NSCursor
+_OBJC_CLASS_$_NSDateFormatter
+_OBJC_CLASS_$_NSEvent
+_OBJC_CLASS_$_NSFileManager
+_OBJC_CLASS_$_NSFont
+_OBJC_CLASS_$_NSGraphicsContext
+_OBJC_CLASS_$_NSLayoutConstraint
+_OBJC_CLASS_$_NSMenu
+_OBJC_CLASS_$_NSMenuItem
+_OBJC_CLASS_$_NSMutableAttributedString
+_OBJC_CLASS_$_NSMutableParagraphStyle
+_OBJC_CLASS_$_NSNotificationCenter
+_OBJC_CLASS_$_NSObject
+_OBJC_CLASS_$_NSOperationQueue
+_OBJC_CLASS_$_NSProcessInfo
+_OBJC_CLASS_$_NSRunningApplication
+_OBJC_CLASS_$_NSScreen
+_OBJC_CLASS_$_NSSlider
+_OBJC_CLASS_$_NSSound
+_OBJC_CLASS_$_NSStackView
+_OBJC_CLASS_$_NSTextField
+_OBJC_CLASS_$_NSTimer
+_OBJC_CLASS_$_NSUserDefaults
+_OBJC_CLASS_$_NSView
+_OBJC_CLASS_$_NSWindow
+_OBJC_CLASS_$_OS_dispatch_queue
+_OBJC_CLASS_$_OS_dispatch_source
+_OBJC_CLASS_$_SPUStandardUpdaterController
+_OBJC_CLASS_$_Swift._SwiftObject
+_OBJC_METACLASS_$_MTKView
+_OBJC_METACLASS_$_NSObject
+_OBJC_METACLASS_$_NSWindow
+_OBJC_METACLASS_$_Swift._SwiftObject
+__Block_copy
+__Block_release
+__NSConcreteStackBlock
+___chkstk_darwin
+___invert_f4
+___sincosf_stret
+___stack_chk_fail
+___stack_chk_guard
+__objc_empty_cache
+__swiftEmptyArrayStorage
+__swiftEmptyDictionarySingleton
+__swiftEmptySetSingleton
+__swift_FORCE_LOAD_$_swiftAVFoundation
+__swift_FORCE_LOAD_$_swiftCoreAudio
+__swift_FORCE_LOAD_$_swiftCoreFoundation
+__swift_FORCE_LOAD_$_swiftCoreImage
+__swift_FORCE_LOAD_$_swiftCoreMIDI
+__swift_FORCE_LOAD_$_swiftCoreMedia
+__swift_FORCE_LOAD_$_swiftDispatch
+__swift_FORCE_LOAD_$_swiftFoundation
+__swift_FORCE_LOAD_$_swiftIOKit
+__swift_FORCE_LOAD_$_swiftMetal
+__swift_FORCE_LOAD_$_swiftMetalKit
+__swift_FORCE_LOAD_$_swiftModelIO
+__swift_FORCE_LOAD_$_swiftOSLog
+__swift_FORCE_LOAD_$_swiftObjectiveC
+__swift_FORCE_LOAD_$_swiftQuartzCore
+__swift_FORCE_LOAD_$_swiftSpatial
+__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers
+__swift_FORCE_LOAD_$_swiftXPC
+__swift_FORCE_LOAD_$_swift_Builtin_float
+__swift_FORCE_LOAD_$_swiftos
+__swift_FORCE_LOAD_$_swiftsimd
+__swift_stdlib_reportUnimplementedInitializer
+_asinf
+_atan2f
+_atanf
+_bzero
+_cosf
+_exit
+_exp2f
+_expf
+_fmodf
+_kCFAllocatorDefault
+_kCTFontAttributeName
+_kCTForegroundColorAttributeName
+_malloc_size
+_matrix_identity_float4x4
+_memcpy
+_memmove
+_objc_allocWithZone
+_objc_autorelease
+_objc_autoreleaseReturnValue
+_objc_msgSend
+_objc_msgSendSuper2
+_objc_opt_self
+_objc_release
+_objc_retain
+_objc_retainAutorelease
+_objc_retainAutoreleasedReturnValue
+_os_unfair_lock_lock
+_os_unfair_lock_unlock
+_powf
+_setvbuf
+_sinf
+_swift_allocObject
+_swift_arrayDestroy
+_swift_arrayInitWithCopy
+_swift_beginAccess
+_swift_bridgeObjectRelease
+_swift_bridgeObjectRelease_n
+_swift_bridgeObjectRetain
+_swift_bridgeObjectRetain_n
+_swift_deallocClassInstance
+_swift_deallocObject
+_swift_deallocPartialClassInstance
+_swift_deletedMethodError
+_swift_dynamicCast
+_swift_dynamicCastClass
+_swift_dynamicCastObjCClass
+_swift_endAccess
+_swift_errorRelease
+_swift_errorRetain
+_swift_getForeignTypeMetadata
+_swift_getObjCClassMetadata
+_swift_getObjectType
+_swift_getSingletonMetadata
+_swift_getTypeByMangledNameInContext2
+_swift_getTypeByMangledNameInContextInMetadataState2
+_swift_getWitnessTable
+_swift_initStackObject
+_swift_initStaticObject
+_swift_isEscapingClosureAtFileLocation
+_swift_isUniquelyReferenced_nonNull_bridgeObject
+_swift_isUniquelyReferenced_nonNull_native
+_swift_once
+_swift_release
+_swift_retain
+_swift_retain_n
+_swift_setDeallocating
+_swift_slowAlloc
+_swift_slowDealloc
+_swift_stdlib_random
+_swift_task_getMainExecutor
+_swift_task_isCurrentExecutor
+_swift_unknownObjectRelease
+_swift_unknownObjectRetain
+_swift_unknownObjectWeakAssign
+_swift_unknownObjectWeakDestroy
+_swift_unknownObjectWeakInit
+_swift_unknownObjectWeakLoadStrong
+_swift_updateClassMetadata2
+_swift_weakAssign
+_swift_weakDestroy
+_swift_weakInit
+_swift_weakLoadStrong
+_swift_willThrow
+_tanf
+_tanhf

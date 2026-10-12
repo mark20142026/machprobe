@@ -1,0 +1,54 @@
+{
+  "exception" : "-[MPDeclaredNSAlert setInformativeText:]: unrecognized selector sent to instance 0xad90d4010",
+  "stack" : [
+    "0   CoreFoundation                      0x000000018069319c 9426FC9A-B36C-3096-B836-D17D6744A75B + 623004",
+    "1   libobjc.A.dylib                     0x0000000180410380 objc_exception_throw + 88",
+    "2   CoreFoundation                      0x000000018079290c 9426FC9A-B36C-3096-B836-D17D6744A75B + 1669388",
+    "3   CoreFoundation                      0x000000018064e8f8 9426FC9A-B36C-3096-B836-D17D6744A75B + 342264",
+    "4   CoreFoundation                      0x000000018064ebb0 9426FC9A-B36C-3096-B836-D17D6744A75B + 342960",
+    "5   MPGuest.dylib                       0x0000000101233a3c MPGuest.dylib + 6683196",
+    "6   MPGuest.dylib                       0x00000001026fb64c MPGuest.dylib + 28472908",
+    "7   MPGuest.dylib                       0x00000001014366f8 MPGuest.dylib + 8791800",
+    "8   MPGuest.dylib                       0x0000000101456594 MPGuest.dylib + 8922516",
+    "9   MPGuest.dylib                       0x0000000101456550 MPGuest.dylib + 8922448",
+    "10  MPGuest.dylib                       0x00000001014569e4 MPGuest.dylib + 8923620",
+    "11  MPGuest.dylib                       0x0000000103ae5548 MPGuest.dylib + 49354056",
+    "12  MPGuest.dylib                       0x0000000103ae57a4 MPGuest.dylib + 49354660",
+    "13  MPGuest.dylib                       0x000000010290af64 MPGuest.dylib + 30633828",
+    "14  MPGuest.dylib                       0x0000000103c70454 MPGuest.dylib + 50971732",
+    "15  MPGuest.dylib                       0x0000000102bb8f98 MPGuest.dylib + 33443736",
+    "16  MPGuest.dylib                       0x0000000102bb8e5c MPGuest.dylib + 33443420",
+    "17  VelorenHost                         0x0000000100058644 mp_image_main + 164",
+    "18  VelorenHost                         0x000000010005f828 main + 4044",
+    "19  dyld                                0x00000001804875b8 D3F59B02-EE07-371B-B091-3F150A078ED8 + 21944"
+  ],
+  "run_id" : "8320B1BD-3806-4F66-A83F-61158A6A930F",
+  "stage" : "exception",
+  "binds" : 1517,
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  },
+  "guest_sha256" : "786b7ba15f46982a1bfbd3af53373c505d5dce0efb344dfe19a159b7e6e00b1d",
+  "input" : {
+    "delivered" : 0,
+    "held" : [
+
+    ]
+  },
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "pid" : 1689,
+  "rebases" : 146786,
+  "metal" : {
+    "managed_textures_translated" : 0
+  }
+}

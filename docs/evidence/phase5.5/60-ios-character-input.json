@@ -1,0 +1,89 @@
+{
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "input" : {
+    "last_pointer" : {
+      "view_frame" : "{{0, 0}, {430, 932}}",
+      "view_bounds" : "{{0, 0}, {430, 932}}",
+      "point" : "{215, 920}",
+      "window_frame" : "{{0, 0}, {430, 932}}"
+    },
+    "delivered" : 12,
+    "held" : [
+
+    ],
+    "pointer_delivered" : 18
+  },
+  "run_id" : "DB6D583C-2BAE-4FCA-BCA3-65C83E43CC42",
+  "pid" : 2853,
+  "events" : [
+    "guest window created",
+    "guest window awaiting UIKit scene",
+    "native GPU border sampling verified (six cases)",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "entering UIKit lifecycle",
+    "guest window presented: Veloren",
+    "applicationDidFinishLaunching:",
+    "guest window presented: Veloren",
+    "application activation requested",
+    "guest launch callback returned",
+    "guest resize delivered: {430, 932}",
+    "deliver mouseMoved: to WinitView at {215, 431}",
+    "deliver mouseDown: to WinitView at {215, 431}",
+    "deliver mouseUp: to WinitView at {215, 431}",
+    "guest key down 35",
+    "guest key up 35",
+    "deliver mouseMoved: to WinitView at {215, 477}",
+    "deliver mouseDown: to WinitView at {215, 477}",
+    "deliver mouseUp: to WinitView at {215, 477}",
+    "deliver mouseMoved: to WinitView at {200, 68}",
+    "deliver mouseDown: to WinitView at {200, 68}",
+    "deliver mouseUp: to WinitView at {200, 68}",
+    "deliver mouseMoved: to WinitView at {272, 55}",
+    "deliver mouseDown: to WinitView at {272, 55}",
+    "deliver mouseUp: to WinitView at {272, 55}",
+    "guest cursor association enabled",
+    "deliver mouseMoved: to WinitView at {50, 46}",
+    "deliver mouseDown: to WinitView at {50, 46}",
+    "deliver mouseUp: to WinitView at {50, 46}",
+    "deliver mouseMoved: to WinitView at {215, 920}",
+    "deliver mouseDown: to WinitView at {215, 920}",
+    "deliver mouseUp: to WinitView at {215, 920}",
+    "guest key down 35",
+    "guest key up 35",
+    "guest key down 15",
+    "guest key up 15",
+    "guest key down 31",
+    "guest key up 31",
+    "guest key down 11",
+    "guest key up 11",
+    "guest key down 14",
+    "guest key up 14"
+  ],
+  "guest_sha256" : "786b7ba15f46982a1bfbd3af53373c505d5dce0efb344dfe19a159b7e6e00b1d",
+  "rebases" : 146786,
+  "binds" : 1517,
+  "metal" : {
+    "managed_textures_translated" : 0
+  },
+  "stage" : "guest key up 14",
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "frames": {
+    "elapsed_seconds": 0,
+    "guest_draw_callbacks": 0,
+    "mean_guest_callback_ms": 0,
+    "average_fps": 0,
+    "max_guest_callback_ms": 0
+  },
+  "input": {
+    "pointer_delivered": 1,
+    "delivered": 2,
+    "held": []
+  },
+  "run_id": "15AB0F88-45EA-4041-BBF9-A9CE514A31CF",
+  "pid": 2057,
+  "events": [
+    "guest window created",
+    "guest window awaiting UIKit scene",
+    "guest key down 13",
+    "guest key up 13",
+    "keyboard event has no guest responder"
+  ],
+  "uikit_probe": {
+    "passed": true,
+    "checks": {
+      "window_cleanup": 1,
+      "drag_registration": true,
+      "initial_responder": 1,
+      "drag_unregistration": 1,
+      "borderless_geometry": true,
+      "disabled_notification": 1,
+      "one_notification_per_frame_change": 1,
+      "released_key_state": 1,
+      "screen_scale": 1,
+      "input_reaches_responder": 1,
+      "context_owns_correct_client": 1,
+      "stable_context": 1
+    }
+  },
+  "metal": {
+    "managed_textures_translated": 0
+  },
+  "stage": "UIKit probe complete",
+  "audio": {
+    "engine_started": false,
+    "nonzero_samples": 0,
+    "peak_absolute": 0,
+    "error": "",
+    "frames_observed": 0
+  }
+}

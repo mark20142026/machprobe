@@ -1,0 +1,194 @@
+nominal type descriptor for CoreGraphics.CGFloat
+associated type descriptor for Combine.ObservableObject.ObjectWillChangePublisher
+associated type descriptor for SwiftUI.App.Body
+associated type descriptor for SwiftUI.View.Body
+protocol descriptor for Combine.ObservableObject
+associated conformance descriptor for Combine.ObservableObject.Combine.ObservableObject.ObjectWillChangePublisher: Combine.Publisher
+method descriptor for Combine.ObservableObject.objectWillChange.getter : A.ObjectWillChangePublisher
+(extension in Combine):Combine.ObservableObject< where A.ObjectWillChangePublisher == Combine.ObservableObjectPublisher>.objectWillChange.getter : Combine.ObservableObjectPublisher
+Combine.ObservableObjectPublisher.send() -> ()
+protocol witness table for Combine.ObservableObjectPublisher : Combine.Publisher in Combine
+nominal type descriptor for Combine.ObservableObjectPublisher
+SwiftUI.EdgeInsets.init(_all: CoreGraphics.CGFloat) -> SwiftUI.EdgeInsets
+nominal type descriptor for SwiftUI.AnyLocation
+SwiftUI.DragGesture.init(minimumDistance: CoreGraphics.CGFloat, coordinateSpace: SwiftUI.CoordinateSpace) -> SwiftUI.DragGesture
+type metadata accessor for SwiftUI.DragGesture.Value
+protocol conformance descriptor for SwiftUI.DragGesture.Value : Swift.Equatable in SwiftUI
+protocol witness table for SwiftUI.DragGesture : SwiftUI.Gesture in SwiftUI
+type metadata accessor for SwiftUI.DragGesture
+nominal type descriptor for SwiftUI.DragGesture
+static SwiftUI.GestureMask.all.getter : SwiftUI.GestureMask
+SwiftUI.WindowGroup.init(content: () -> A) -> SwiftUI.WindowGroup<A>
+nominal type descriptor for SwiftUI.WindowGroup
+protocol conformance descriptor for SwiftUI.WindowGroup<A> : SwiftUI.Scene in SwiftUI
+nominal type descriptor for SwiftUI._ClipEffect
+protocol conformance descriptor for SwiftUI._ClipEffect<A> : SwiftUI.ViewModifier in SwiftUI
+static SwiftUI.SceneBuilder.buildBlock<A where A: SwiftUI.Scene>(A) -> A
+SwiftUI._FrameLayout.init(width: CoreGraphics.CGFloat?, height: CoreGraphics.CGFloat?, alignment: SwiftUI.Alignment) -> SwiftUI._FrameLayout
+protocol witness table for SwiftUI._FrameLayout : SwiftUI.ViewModifier in SwiftUI
+nominal type descriptor for SwiftUI._FrameLayout
+nominal type descriptor for SwiftUI._EndedGesture
+protocol conformance descriptor for SwiftUI._EndedGesture<A> : SwiftUI.Gesture in SwiftUI
+nominal type descriptor for SwiftUI._OffsetEffect
+SwiftUI.ObservedObject.init(wrappedValue: A) -> SwiftUI.ObservedObject<A>
+nominal type descriptor for SwiftUI.ObservedObject
+nominal type descriptor for SwiftUI._PaddingLayout
+enum case for SwiftUI.CoordinateSpace.local(SwiftUI.CoordinateSpace.Type) -> SwiftUI.CoordinateSpace
+type metadata accessor for SwiftUI.CoordinateSpace
+nominal type descriptor for SwiftUI.ModifiedContent
+protocol conformance descriptor for < where A: SwiftUI.View, B: SwiftUI.ViewModifier> SwiftUI.ModifiedContent<A, B> : SwiftUI.View in SwiftUI
+nominal type descriptor for SwiftUI._ChangedGesture
+protocol conformance descriptor for SwiftUI._ChangedGesture<A> : SwiftUI.Gesture in SwiftUI
+type metadata accessor for SwiftUI.RoundedRectangle
+nominal type descriptor for SwiftUI.RoundedRectangle
+nominal type descriptor for SwiftUI._FixedSizeLayout
+SwiftUI.EnvironmentValues.lineSpacing.getter : CoreGraphics.CGFloat
+property descriptor for SwiftUI.EnvironmentValues.lineSpacing : CoreGraphics.CGFloat
+SwiftUI.EnvironmentValues.lineSpacing.setter : CoreGraphics.CGFloat
+SwiftUI.EnvironmentValues.foregroundColor.getter : SwiftUI.Color?
+property descriptor for SwiftUI.EnvironmentValues.foregroundColor : SwiftUI.Color?
+SwiftUI.EnvironmentValues.foregroundColor.setter : SwiftUI.Color?
+nominal type descriptor for SwiftUI.EnvironmentValues
+static SwiftUI.VerticalAlignment.center.getter : SwiftUI.VerticalAlignment
+enum case for SwiftUI.RoundedCornerStyle.circular(SwiftUI.RoundedCornerStyle.Type) -> SwiftUI.RoundedCornerStyle
+type metadata accessor for SwiftUI.RoundedCornerStyle
+protocol witness table for SwiftUI._AspectRatioLayout : SwiftUI.ViewModifier in SwiftUI
+nominal type descriptor for SwiftUI._AspectRatioLayout
+static SwiftUI.HorizontalAlignment.center.getter : SwiftUI.HorizontalAlignment
+nominal type descriptor for SwiftUI._BackgroundModifier
+protocol conformance descriptor for SwiftUI._BackgroundModifier<A> : SwiftUI.ViewModifier in SwiftUI
+nominal type descriptor for SwiftUI._EnvironmentKeyWritingModifier
+protocol descriptor for SwiftUI.App
+associated conformance descriptor for SwiftUI.App.SwiftUI.App.Body: SwiftUI.Scene
+method descriptor for SwiftUI.App.body.getter : A.Body
+static (extension in SwiftUI):SwiftUI.App.main() -> ()
+method descriptor for SwiftUI.App.init() -> A
+static SwiftUI.Edge.Set.trailing.getter : SwiftUI.Edge.Set
+static SwiftUI.Font.custom(_: Swift.String, size: CoreGraphics.CGFloat) -> SwiftUI.Font
+SwiftUI.Text.font(SwiftUI.Font?) -> SwiftUI.Text
+nominal type descriptor for SwiftUI.Text
+SwiftUI.Text.init<A where A: Swift.StringProtocol>(A) -> SwiftUI.Text
+protocol descriptor for SwiftUI.View
+method descriptor for static SwiftUI.View._makeView(view: SwiftUI._GraphValue<A>, inputs: SwiftUI._ViewInputs) -> SwiftUI._ViewOutputs
+method descriptor for static SwiftUI.View._makeViewList(view: SwiftUI._GraphValue<A>, inputs: SwiftUI._ViewListInputs) -> SwiftUI._ViewListOutputs
+method descriptor for static SwiftUI.View._viewListCount(inputs: SwiftUI._ViewListCountInputs) -> Swift.Int?
+associated conformance descriptor for SwiftUI.View.SwiftUI.View.Body: SwiftUI.View
+method descriptor for SwiftUI.View.body.getter : A.Body
+static (extension in SwiftUI):SwiftUI.View._makeView(view: SwiftUI._GraphValue<A>, inputs: SwiftUI._ViewInputs) -> SwiftUI._ViewOutputs
+static (extension in SwiftUI):SwiftUI.View._makeViewList(view: SwiftUI._GraphValue<A>, inputs: SwiftUI._ViewListInputs) -> SwiftUI._ViewListOutputs
+(extension in SwiftUI):SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -> ()) -> some
+opaque type descriptor for <<opaque return type of (extension in SwiftUI):SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -> ()) -> some>>
+static (extension in SwiftUI):SwiftUI.View._viewListCount(inputs: SwiftUI._ViewListCountInputs) -> Swift.Int?
+(extension in SwiftUI):SwiftUI.View.simultaneousGesture<A where A1: SwiftUI.Gesture>(_: A1, including: SwiftUI.GestureMask) -> some
+opaque type descriptor for <<opaque return type of (extension in SwiftUI):SwiftUI.View.simultaneousGesture<A where A1: SwiftUI.Gesture>(_: A1, including: SwiftUI.GestureMask) -> some>>
+static SwiftUI.Color.black.getter : SwiftUI.Color
+nominal type descriptor for SwiftUI.Color
+SwiftUI.Image.init(nsImage: __C.NSImage) -> SwiftUI.Image
+protocol witness table for SwiftUI.Image : SwiftUI.View in SwiftUI
+nominal type descriptor for SwiftUI.Image
+SwiftUI.Image.init(_: Swift.String, bundle: __C.NSBundle?) -> SwiftUI.Image
+protocol descriptor for SwiftUI.Scene
+SwiftUI.State.init(wrappedValue: A) -> SwiftUI.State<A>
+SwiftUI.State.wrappedValue.getter : A
+SwiftUI.State.wrappedValue.setter : A
+nominal type descriptor for SwiftUI.State
+nominal type descriptor for SwiftUI.Circle
+nominal type descriptor for SwiftUI.HStack
+nominal type descriptor for SwiftUI.Spacer
+nominal type descriptor for SwiftUI.VStack
+protocol conformance descriptor for SwiftUI.VStack<A> : SwiftUI.View in SwiftUI
+nominal type descriptor for SwiftUI.ZStack
+(extension in SwiftUI):SwiftUI.Gesture.onEnded((A.Value) -> ()) -> SwiftUI._EndedGesture<A>
+(extension in SwiftUI):SwiftUI.Gesture< where A.Value: Swift.Equatable>.onChanged((A.Value) -> ()) -> SwiftUI._ChangedGesture<A>
+static SwiftUI.Alignment.top.getter : SwiftUI.Alignment
+static SwiftUI.Alignment.bottom.getter : SwiftUI.Alignment
+static SwiftUI.Alignment.center.getter : SwiftUI.Alignment
+static SwiftUI.Alignment.trailing.getter : SwiftUI.Alignment
+nominal type descriptor for SwiftUI.TupleView
+value witness table for Builtin.NativeObject
+method descriptor for Swift.Hashable._rawHashValue(seed: Swift.Int) -> Swift.Int
+method descriptor for Swift.Hashable.hash(into: inout Swift.Hasher) -> ()
+method descriptor for Swift.Hashable.hashValue.getter : Swift.Int
+protocol descriptor for Swift.Hashable
+base conformance descriptor for Swift.Hashable: Swift.Equatable
+method descriptor for static Swift.Equatable.== infix(A, A) -> Swift.Bool
+protocol descriptor for Swift.Equatable
+(extension in Foundation):Swift.String._bridgeToObjectiveC() -> __C.NSString
+static (extension in Foundation):Swift.String._unconditionallyBridgeFromObjectiveC(__C.NSString?) -> Swift.String
+Swift.String.count.getter : Swift.Int
+Swift.String.append(Swift.String) -> ()
+Swift.String.hasPrefix(Swift.String) -> Swift.Bool
+type metadata for Swift.String
+protocol conformance descriptor for Swift.String : Swift.StringProtocol in Swift
+type metadata for Swift.Bool
+Swift.Double.description.getter : Swift.String
+Swift.Double.write<A where A: Swift.TextOutputStream>(to: inout A) -> ()
+static (extension in AppKit):__C.NSSound.beep() -> ()
+(extension in Foundation):Swift.StringProtocol.contains<A where A1: Swift.StringProtocol>(A1) -> Swift.Bool
+Swift._StringGuts._slowWithCString<A>((Swift.UnsafePointer<Swift.Int8>) throws -> A) throws -> A
+Swift._StringGuts.grow(Swift.Int) -> ()
+Swift._assertionFailure(_: Swift.StaticString, _: Swift.String, file: Swift.StaticString, line: Swift.UInt, flags: Swift.UInt32) -> Swift.Never
+protocol descriptor for Swift.CustomStringConvertible
+method descriptor for Swift.CustomStringConvertible.description.getter : Swift.String
+nominal type descriptor for Swift._ContiguousArrayStorage
+type metadata for Swift.DefaultStringInterpolation
+protocol witness table for Swift.DefaultStringInterpolation : Swift.TextOutputStream in Swift
+Swift._stringCompareWithSmolCheck(_: Swift._StringGuts, _: Swift._StringGuts, expecting: Swift._StringComparisonResult) -> Swift.Bool
+Swift.print(_: Any..., separator: Swift.String, terminator: Swift.String) -> ()
+Swift.Hasher.init(_seed: Swift.Int) -> Swift.Hasher
+Swift.Hasher._combine(Swift.UInt) -> ()
+Swift.Hasher._finalize() -> Swift.Int
+value witness table for ()
+_OBJC_CLASS_$_NSImage
+_OBJC_CLASS_$_NSNumber
+_OBJC_CLASS_$_NSNumberFormatter
+_OBJC_CLASS_$_NSSound
+_OBJC_CLASS_$_Swift._SwiftObject
+_OBJC_METACLASS_$_Swift._SwiftObject
+__NSConcreteGlobalBlock
+___chkstk_darwin
+__objc_empty_cache
+__swift_FORCE_LOAD_$_swiftAppKit
+__swift_FORCE_LOAD_$_swiftCoreData
+__swift_FORCE_LOAD_$_swiftCoreFoundation
+__swift_FORCE_LOAD_$_swiftCoreGraphics
+__swift_FORCE_LOAD_$_swiftCoreImage
+__swift_FORCE_LOAD_$_swiftDarwin
+__swift_FORCE_LOAD_$_swiftDispatch
+__swift_FORCE_LOAD_$_swiftFoundation
+__swift_FORCE_LOAD_$_swiftIOKit
+__swift_FORCE_LOAD_$_swiftMetal
+__swift_FORCE_LOAD_$_swiftObjectiveC
+__swift_FORCE_LOAD_$_swiftQuartzCore
+__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers
+__swift_FORCE_LOAD_$_swiftXPC
+__swift_FORCE_LOAD_$_swiftos
+__swift_stdlib_strtod_clocale
+_dispatch_once
+_dlsym
+_log10
+_objc_allocWithZone
+_objc_msgSend
+_objc_opt_self
+_objc_release
+_objc_retain
+_objc_retainAutoreleasedReturnValue
+_swift_allocObject
+_swift_beginAccess
+_swift_bridgeObjectRelease
+_swift_bridgeObjectRelease_n
+_swift_bridgeObjectRetain
+_swift_deallocClassInstance
+_swift_deallocObject
+_swift_deletedMethodError
+_swift_endAccess
+_swift_getKeyPath
+_swift_getObjCClassMetadata
+_swift_getOpaqueTypeConformance
+_swift_getTypeByMangledNameInContext
+_swift_getTypeByMangledNameInContextInMetadataState
+_swift_getWitnessTable
+_swift_initStaticObject
+_swift_release
+_swift_retain
+dyld_stub_binder

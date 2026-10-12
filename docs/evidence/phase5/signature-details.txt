@@ -1,0 +1,26 @@
+Executable=/Users/<user>/machprobe/build/phase5/original/extracted/Strataris.app/Contents/MacOS/Strataris
+Identifier=cc.jorviksoftware.Strataris
+Format=app bundle with Mach-O universal (x86_64 arm64)
+CodeDirectory v=20500 size=2183 flags=0x10000(runtime) hashes=57+7 location=embedded
+Hash type=sha256 size=32
+CandidateCDHash sha256=90f29638974833670e64f983b5a31bad414eeb78
+CandidateCDHashFull sha256=90f29638974833670e64f983b5a31bad414eeb789c2e73311d62f2f8b2197b36
+Hash choices=sha256
+CMSDigest=90f29638974833670e64f983b5a31bad414eeb789c2e73311d62f2f8b2197b36
+CMSDigestType=2
+CDHash=90f29638974833670e64f983b5a31bad414eeb78
+Signature size=9047
+Authority=Developer ID Application: Jonthan Hollin (EG86BCGUE7)
+Authority=Developer ID Certification Authority
+Authority=Apple Root CA
+Timestamp=25 Aug 2026 at 7:47:02 PM
+Notarization Ticket=stapled
+Info.plist entries=16
+TeamIdentifier=EG86BCGUE7
+Runtime Version=26.5.0
+Sealed Resources version=2 rules=13 files=2
+Internal requirements count=1 size=188
+warning: Specifying ':' in the path is deprecated and will not work in a future release
+Total signatures=1
+Chosen signature=1
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict></dict></plist>

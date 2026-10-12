@@ -1,0 +1,83 @@
+{
+  "checked_at_local": "2026-10-01 12:05:27 EEST",
+  "timezone": "Asia/Nicosia",
+  "normal_xcode_preflight": {
+    "developer_directory": "/Library/Developer/CommandLineTools",
+    "iphoneos_sdk_command": [
+      "xcrun",
+      "--sdk",
+      "iphoneos",
+      "--show-sdk-path"
+    ],
+    "iphoneos_sdk_return_code": 1,
+    "iphoneos_sdk_stderr": "xcrun: error: SDK \"iphoneos\" cannot be located\nxcrun: error: unable to lookup item 'Path' in SDK 'iphoneos'",
+    "xcodebuild_showdestinations_command": [
+      "xcodebuild",
+      "-project",
+      "HelloIOS.xcodeproj",
+      "-scheme",
+      "HelloIOS",
+      "-showdestinations"
+    ],
+    "xcodebuild_showdestinations_return_code": 1,
+    "xcodebuild_showdestinations_stderr": "xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance"
+  },
+  "experimental_build": {
+    "method": "Objective-C compiled for iOS using macOS 27 Foundation/CoreGraphics headers, a minimal hand-written UIKit declaration surface, and minimal generated iOS TAPI link stubs; not a complete iOS SDK build",
+    "original_app": "build/ios-on-mac/Payload/HelloIOS.app",
+    "ipa": "build/ios-on-mac/HelloIOS.ipa",
+    "sha256_ipa": "c080bdc4ad0cd48dd203dc70101aa2b43c645bee9e6dd29110e9025ca01317f4",
+    "binary_architecture": "arm64",
+    "binary_file_type": "MH_EXECUTE",
+    "lc_build_version": {
+      "platform": "iOS",
+      "platform_id": 2,
+      "minimum_os": "14.0.0",
+      "sdk": "0.0.0"
+    },
+    "encryption": {
+      "load_commands_present": false,
+      "encrypted": false,
+      "note": "No encryption command exists; no cryptid field is asserted."
+    },
+    "signature": "ad-hoc; codesign --verify --strict passed"
+  },
+  "runtime_observations": {
+    "original_platform_2_direct_launch": {
+      "status": "refused",
+      "command": "open -n",
+      "return_code": 1,
+      "error": "incorrect executable format",
+      "evidence_source": "docs/evidence/ios-on-mac.json original_launch command record"
+    },
+    "converted_catalyst_copy": {
+      "path": "build/ios-on-mac/HelloIOS-Catalyst.app",
+      "platform": "Mac Catalyst",
+      "platform_id": 6,
+      "open": "succeeded",
+      "ui": "Accessibility and visual inspection showed 'Hello from iOS ARM64' and 'iOS app on Mac: NO'",
+      "evidence_source": "docs/evidence/ios-on-mac.json and docs/evidence/ui-observation.json"
+    }
+  },
+  "playcover_research": {
+    "installed_or_run": false,
+    "repository": "https://github.com/PlayCover/PlayCover",
+    "source_commit": "8235158caca3232dcf526ad6ae9881707bd08728",
+    "finding": "Normal installation rewrites LC_BUILD_VERSION to PLATFORM_MACCATALYST (6), so it cannot preserve the platform-2 binary for this experiment.",
+    "playtools_injection": "optional",
+    "security_changes_performed": false,
+    "source_refs": {
+      "installer": "https://github.com/PlayCover/PlayCover/blob/8235158caca3232dcf526ad6ae9881707bd08728/PlayCover/AppInstaller/Installer.swift#L48",
+      "catalyst_conversion": "https://github.com/PlayCover/PlayCover/blob/8235158caca3232dcf526ad6ae9881707bd08728/PlayCover/Utils/Macho.swift#L132",
+      "playtools": "https://github.com/PlayCover/PlayCover/blob/8235158caca3232dcf526ad6ae9881707bd08728/PlayCover/Utils/PlayTools.swift#L76",
+      "official_security_troubleshooting": "https://docs.playcover.io/getting_started/troubleshoot_login"
+    }
+  },
+  "conclusion": "The platform-2 binary was produced and inspected but did not launch directly. Only the separately converted platform-6 Catalyst copy was observed opening. This does not demonstrate native iOS-on-Mac execution or prove that macOS can run iOS binaries directly.",
+  "reproducible_commands": [
+    "make all",
+    "python3 experiments/ios-on-mac/build_experiment.py --launch"
+  ],
+  "checked_at_utc": "2026-10-01T09:08:43.528539+00:00",
+  "text_section_unchanged": true
+}

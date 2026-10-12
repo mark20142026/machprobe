@@ -1,0 +1,46 @@
+DEFERRED UNSUPPORTED IMPORT: _CGAcquireDisplayFadeReservation from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayCapture from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayCopyAllDisplayModes from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayCopyDisplayMode from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayFade from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayGetDisplayIDFromUUID from /System/Library/Frameworks/ColorSync.framework/Versions/A/ColorSync
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayModeCopyPixelEncoding from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayModeGetPixelHeight from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayModeGetPixelWidth from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayModeGetRefreshRate from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayModeRelease from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayModeRetain from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayModelNumber from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayPixelsHigh from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayPixelsWide from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplayRelease from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGDisplaySetDisplayMode from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGGetActiveDisplayList from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGReleaseDisplayFadeReservation from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGRestorePermanentDisplayConfiguration from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGSMainConnectionID from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGSSetWindowBackgroundBlurRadius from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CGShieldingWindowLevel from /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+DEFERRED UNSUPPORTED IMPORT: _CVDisplayLinkCreateWithCGDisplay from /System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo
+DEFERRED UNSUPPORTED IMPORT: _CVDisplayLinkGetNominalOutputVideoRefreshPeriod from /System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo
+DEFERRED UNSUPPORTED IMPORT: _CVDisplayLinkRelease from /System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo
+DEFERRED UNSUPPORTED IMPORT: _SCDynamicStoreCopyValue from /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+DEFERRED UNSUPPORTED IMPORT: _SecTrustSettingsCopyCertificates from /System/Library/Frameworks/Security.framework/Versions/A/Security
+DEFERRED UNSUPPORTED IMPORT: _SecTrustSettingsCopyTrustSettings from /System/Library/Frameworks/Security.framework/Versions/A/Security
+2026-10-01 09:54:54.296 VelorenHost[3739:118849] IAPDHasLaunched: kIAPAvailableNotification iapdAvailableState 100 -> 0
+2026-10-01 09:54:54.297 VelorenHost[3739:118849] RetainConnectionToIAPDaemonOwningPhysicalConnector: iapd connection 0
+2026-10-01 09:54:54.297 VelorenHost[3739:118849] RetainConnectionToIAPDaemonOwningPhysicalConnector:1256 no connection to iapd!
+2026-10-01 09:54:54.297 VelorenHost[3739:118849] IAP2DHasLaunched: kIAP2AvailableNotification iap2dAvailableState 100 -> 0
+2026-10-01 09:54:54.297 VelorenHost[3739:118849] RetainConnectionToIAPDaemonOwningPhysicalConnector: iap2d connection 0
+2026-10-01 09:54:54.297 VelorenHost[3739:118849] RetainConnectionToIAPDaemonOwningPhysicalConnector:1311 no connection to iap2d!
+2026-10-01 09:54:54.298 VelorenHost[3739:118849] IAPAudioCopyDeviceStates: audioDeviceStates == NULL
+AUDIO HAL get object=1 selector=644f7574 scope=676c6f62 element=0 status=0 bytes=4
+AUDIO HAL get object=42 selector=73666d74 scope=6f757470 element=0 status=0 bytes=40
+AUDIO quantum capacity=16 duration=0.000000 rate=0.000000
+AUDIO native buffer quantum status=2003332927 size=0 frames=0
+AUDIO HAL get object=42 selector=66737a23 scope=676c6f62 element=0 status=2003332927 bytes=0
+AUDIO HAL get object=42 selector=73666d74 scope=6f757470 element=0 status=0 bytes=40
+AUDIO quantum capacity=16 duration=0.000000 rate=0.000000
+AUDIO native buffer quantum status=2003332927 size=0 frames=0
+AUDIO HAL get object=42 selector=66737a23 scope=676c6f62 element=0 status=2003332927 bytes=0
+MISSING LAZY IMPORT: _CGDisplayGetDisplayIDFromUUID from /System/Library/Frameworks/ColorSync.framework/Versions/A/ColorSync

@@ -1,0 +1,90 @@
+{
+  "metal" : {
+    "managed_textures_translated" : 0
+  },
+  "exception" : "+[MPDeclaredNSRunningApplication currentApplication]: unrecognized selector sent to class 0xa783b82d0",
+  "stack" : [
+    "0   CoreFoundation                      0x000000018069319c 9426FC9A-B36C-3096-B836-D17D6744A75B + 623004",
+    "1   libobjc.A.dylib                     0x0000000180410380 objc_exception_throw + 88",
+    "2   CoreFoundation                      0x000000018079278c 9426FC9A-B36C-3096-B836-D17D6744A75B + 1669004",
+    "3   CoreFoundation                      0x000000018064e8f8 9426FC9A-B36C-3096-B836-D17D6744A75B + 342264",
+    "4   CoreFoundation                      0x000000018064ebb0 9426FC9A-B36C-3096-B836-D17D6744A75B + 342960",
+    "5   MPGuest.dylib                       0x0000000103aa60b0 MPGuest.dylib + 43606192",
+    "6   VelorenHost                         0x00000001005894f0 -[MPGameApplication finishLaunching] + 480",
+    "7   VelorenHost                         0x0000000100588d78 -[MPGameScene scene:willConnectToSession:options:] + 644",
+    "8   UIKitCore                           0x00000001848e04b8 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 550072",
+    "9   UIKitCore                           0x0000000184976448 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 1164360",
+    "10  UIKitCore                           0x00000001849782e4 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 1172196",
+    "11  UIKitCore                           0x0000000184fa7e40 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 7659072",
+    "12  FrontBoardServices                  0x00000001a7d0214c 771F9DD0-E691-3F32-BD22-727E6EF4F1A6 + 143692",
+    "13  FrontBoardServices                  0x00000001a7ce8d54 771F9DD0-E691-3F32-BD22-727E6EF4F1A6 + 40276",
+    "14  FrontBoardServices                  0x00000001a7d01590 771F9DD0-E691-3F32-BD22-727E6EF4F1A6 + 140688",
+    "15  FrontBoardServices                  0x00000001a7d003c0 771F9DD0-E691-3F32-BD22-727E6EF4F1A6 + 136128",
+    "16  FrontBoardServices                  0x00000001a7ce9458 771F9DD0-E691-3F32-BD22-727E6EF4F1A6 + 42072",
+    "17  FrontBoardServices                  0x00000001a7d005d8 771F9DD0-E691-3F32-BD22-727E6EF4F1A6 + 136664",
+    "18  FrontBoardServices                  0x00000001a7d002a0 771F9DD0-E691-3F32-BD22-727E6EF4F1A6 + 135840",
+    "19  FrontBoardServices                  0x00000001a7ce9458 771F9DD0-E691-3F32-BD22-727E6EF4F1A6 + 42072",
+    "20  libdispatch.dylib                   0x00000001aeb09fb4 8CDF4610-F6A5-39CB-94BF-687FE349A4BE + 114612",
+    "21  libdispatch.dylib                   0x00000001aeaf4d34 8CDF4610-F6A5-39CB-94BF-687FE349A4BE + 27956",
+    "22  BoardServices                       0x000000018f950874 512CBBA4-B3F3-38D7-9022-845F567E8292 + 10356",
+    "23  BoardServices                       0x000000018f9506d4 512CBBA4-B3F3-38D7-9022-845F567E8292 + 9940",
+    "24  CoreFoundation                      0x0000000180654c20 9426FC9A-B36C-3096-B836-D17D6744A75B + 367648",
+    "25  CoreFoundation                      0x0000000180654b94 9426FC9A-B36C-3096-B836-D17D6744A75B + 367508",
+    "26  CoreFoundation                      0x00000001806362dc 9426FC9A-B36C-3096-B836-D17D6744A75B + 242396",
+    "27  CoreFoundation                      0x0000000180635384 9426FC9A-B36C-3096-B836-D17D6744A75B + 238468",
+    "28  CoreFoundation                      0x00000001806367f4 9426FC9A-B36C-3096-B836-D17D6744A75B + 243700",
+    "29  GraphicsServices                    0x000000022acf8f24 GSEventRunModal + 120",
+    "30  UIKitCore                           0x00000001849141cc UIApplicationMain + 336",
+    "31  VelorenHost                         0x00000001005892d4 -[MPGameApplication run] + 120",
+    "32  MPGuest.dylib                       0x0000000102cf847c MPGuest.dylib + 29262972",
+    "33  MPGuest.dylib                       0x00000001041ad11c MPGuest.dylib + 50975004",
+    "34  MPGuest.dylib                       0x00000001030f4f98 MPGuest.dylib + 33443736",
+    "35  MPGuest.dylib                       0x00000001030f4e5c MPGuest.dylib + 33443420",
+    "36  VelorenHost                         0x000000010057c644 mp_image_main + 164",
+    "37  VelorenHost                         0x0000000100583a78 main + 4636",
+    "38  dyld                                0x00000001804875b8 D3F59B02-EE07-371B-B091-3F150A078ED8 + 21944"
+  ],
+  "run_id" : "AE7313FB-2340-4EDE-A5FD-E6546E716FEF",
+  "stage" : "exception",
+  "binds" : 1517,
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  },
+  "guest_sha256" : "786b7ba15f46982a1bfbd3af53373c505d5dce0efb344dfe19a159b7e6e00b1d",
+  "input" : {
+    "pointer_delivered" : 0,
+    "delivered" : 0,
+    "held" : [
+
+    ]
+  },
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "pid" : 2182,
+  "rebases" : 146786,
+  "events" : [
+    "guest window created",
+    "guest window awaiting UIKit scene",
+    "native GPU border sampling verified (six cases)",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "entering UIKit lifecycle",
+    "guest window presented: Veloren",
+    "applicationDidFinishLaunching:"
+  ]
+}

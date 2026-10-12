@@ -1,0 +1,10 @@
+{
+  "ipa_sha256": "0ea2b741ed799c1a2910bf7c5b8c2b52aa5f196b53d694003083cde191ef9bd8",
+  "original_bundle_files_match": true,
+  "target_recompiled": false,
+  "target_resigned": false,
+  "target_metadata_modified": false,
+  "target_embedded_as": "base64 data; loader attempts extracted originals, not executable containers",
+  "probe_locally_signed": "ad hoc; no requested entitlements",
+  "probe_installer_entitlements": "see installed-probe.json"
+}

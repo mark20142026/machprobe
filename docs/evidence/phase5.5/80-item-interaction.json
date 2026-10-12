@@ -1,0 +1,29 @@
+{
+  "environment": "existing iOS 27 vphone research installation",
+  "pid": 3739,
+  "runtime_commit": "7408629",
+  "input": [
+    {
+      "method": "input.key",
+      "params": {
+        "name": "i"
+      }
+    },
+    {
+      "method": "ui.tap_element",
+      "params": {
+        "identifier": "toggle-mouse-button"
+      }
+    },
+    {
+      "method": "input.tap",
+      "params": {
+        "x": 360,
+        "y": 792
+      }
+    }
+  ],
+  "observed_before": "Inventory contains apple and cheese, 2/36 occupied slots",
+  "observed_after": "Cheese disappears, inventory 1/36, effect icon appears; rightMouseDown/rightMouseUp delivered to WinitView",
+  "guest_modifications": false
+}

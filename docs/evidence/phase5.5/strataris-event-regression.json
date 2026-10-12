@@ -1,0 +1,44 @@
+{
+  "frames" : {
+    "elapsed_seconds" : 8.8411965416653402,
+    "guest_draw_callbacks" : 506,
+    "mean_guest_callback_ms" : 14.583174242454744,
+    "average_fps" : 57.118965472616615,
+    "max_guest_callback_ms" : 299.50616666610586
+  },
+  "input" : {
+    "delivered" : 2,
+    "held" : [
+
+    ]
+  },
+  "run_id" : "5278A538-8B74-4E93-AF3D-342461D72969",
+  "pid" : 1756,
+  "events" : [
+    "entering UIKit lifecycle",
+    "applicationDidFinishLaunching:",
+    "desktop self-updater unsupported in iOS container; automatic start declined",
+    "guest window created",
+    "guest AVAudioEngine failed: Error Domain=com.apple.coreaudio.avfaudio Code=-10851 \"(null)\" UserInfo={failed call=err = PerformCommand(*outputNode, kAUInitialize, NULL, 0)}",
+    "Metal managed texture → shared unified-memory allocation",
+    "guest window presented: Strataris: Galactic Colony Defence",
+    "application activation requested",
+    "guest launch callback returned",
+    "guest key down 36",
+    "guest key up 36"
+  ],
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "rebases" : 3957,
+  "binds" : 686,
+  "metal" : {
+    "managed_textures_translated" : 1
+  },
+  "stage" : "guest key up 36",
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "Error Domain=com.apple.coreaudio.avfaudio Code=-10851 \"(null)\" UserInfo={failed call=err = PerformCommand(*outputNode, kAUInitialize, NULL, 0)}",
+    "frames_observed" : 0
+  }
+}

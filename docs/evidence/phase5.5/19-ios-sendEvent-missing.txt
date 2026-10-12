@@ -1,0 +1,37 @@
+[2m2026-10-01T14:58:13.794233Z[0m [32m INFO[0m [2mveloren_common_frontend[0m[2m:[0m Setup terminal and file logging. [3mpath[0m[2m=[0m"/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen/logs" [3mfile[0m[2m=[0m"2026-10-01_voxygen.log"
+[2m2026-10-01T14:58:13.794253Z[0m [32m INFO[0m [2mveloren_voxygen[0m[2m:[0m Using userdata dir at: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata
+[2m2026-10-01T14:58:13.794262Z[0m [32m INFO[0m [2mveloren_voxygen[0m[2m:[0m Using config dir at: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen
+[2m2026-10-01T14:58:13.894859Z[0m [32m INFO[0m [2mveloren_voxygen::audio[0m[2m:[0m Samplerate is 44100
+[2m2026-10-01T14:58:13.894884Z[0m [31mERROR[0m [2mveloren_voxygen::audio[0m[2m:[0m failed to construct audio frontend manager. Is `pulseaudio-alsa` installed? [3me[0m[2m=[0mCpalError(Error { kind: InvalidInput, message: Some("Unknown property") })
+[2m2026-10-01T14:58:13.894973Z[0m [32m INFO[0m [2mveloren_common_assets[0m[2m:[0m Assets found path=/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/assets
+[2m2026-10-01T14:58:13.905915Z[0m [31mERROR[0m [2mveloren_voxygen::panic_handler[0m[2m:[0m VOXYGEN HAS PANICKED
+
+A critical error has occurred and Voxygen has been forced to terminate in an unusual manner. Details about the error can be found below.
+
+Panic reason: NSApplication must have sendEvent: method
+
+> What should I do?
+
+We need your help to fix this! You can help by contacting us and reporting this problem. To do this, open an issue on the Veloren issue tracker:
+
+https://www.gitlab.com/veloren/veloren/issues/new
+
+If you're on the Veloren community Discord server, we'd be grateful if you could also post a message in the #support channel.
+            
+> What should I include?
+
+The error information below will be useful in finding and fixing the problem. Please include as much information about your setup and the events that led up to the panic as possible.
+            
+Voxygen has logged information about the problem (including this message) to the file /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen/logs/2026-10-01_voxygen.log. Please include the contents of this file in your bug report.
+            
+
+> Error information
+
+The information below is intended for developers and testers.
+
+PanicHookInfo: panicked at /Users/gitlab/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/platform_impl/macos/app.rs:74:49:
+NSApplication must have sendEvent: method 
+Game version: 6162d956 [2026-09-30]
+
+Backtrace:
+

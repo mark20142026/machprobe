@@ -1,0 +1,94 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000020; };
+		B10000000000000000000002 /* checks.c in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021; };
+		B10000000000000000000003 /* image.c in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000022; };
+		B10000000000000000000004 /* fixups.c in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000023; };
+		B10000000000000000000005 /* services.c in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000024; };
+		B10000000000000000000050 /* tls.c in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000051; };
+		B10000000000000000000006 /* hello in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000030; };
+		B10000000000000000000007 /* file_io in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000031; };
+		B10000000000000000000008 /* framework in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000032; };
+		B10000000000000000000009 /* metal_info in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000033; };
+		B1000000000000000000000A /* interactive in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000034; };
+		B1000000000000000000000B /* foundation in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000035; };
+		B1000000000000000000000C /* metal_compute in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000036; };
+		B1000000000000000000000D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10000000000000000000040; };
+		B1000000000000000000000E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10000000000000000000041; };
+		B1000000000000000000000F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10000000000000000000042; };
+		B10000000000000000000011 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10000000000000000000043; };
+		B10000000000000000000012 /* libobjc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B10000000000000000000044; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000020 /* Main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ../host/Main.m; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000021 /* checks.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../host/checks.c; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000022 /* image.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../../runtime/image.c; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000023 /* fixups.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../../runtime/fixups.c; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000024 /* services.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../../runtime/services.c; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000051 /* tls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../../runtime/tls.c; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000025 /* UIKitHost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../host/UIKitHost.h; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000026 /* runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../runtime/runtime.h; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000027 /* guest_abi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../runtime/guest_abi.h; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000028 /* checks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../host/checks.h; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Phase2Host/Info.plist; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000030 /* hello */ = {isa = PBXFileReference; lastKnownFileType = executable; path = ../../build/hello; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000031 /* file_io */ = {isa = PBXFileReference; lastKnownFileType = executable; path = ../../build/file_io; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000032 /* framework */ = {isa = PBXFileReference; lastKnownFileType = executable; path = ../../build/framework; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000033 /* metal_info */ = {isa = PBXFileReference; lastKnownFileType = executable; path = ../../build/metal_info; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000034 /* interactive */ = {isa = PBXFileReference; lastKnownFileType = executable; path = ../../build/phase2/interactive; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000035 /* foundation */ = {isa = PBXFileReference; lastKnownFileType = executable; path = ../../build/phase2/foundation; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000036 /* metal_compute */ = {isa = PBXFileReference; lastKnownFileType = executable; path = ../../build/phase2/metal_compute; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000040 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B10000000000000000000041 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B10000000000000000000042 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B10000000000000000000043 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		B10000000000000000000044 /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.text-based-dylib-definition; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
+		B10000000000000000000050 /* Phase2Host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phase2Host.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B10000000000000000000060 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (B1000000000000000000000D, B1000000000000000000000E, B1000000000000000000000F, B10000000000000000000011, B10000000000000000000012,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B10000000000000000000070 = {isa = PBXGroup; children = (B10000000000000000000071, B10000000000000000000072, B10000000000000000000073, B10000000000000000000074,); sourceTree = "<group>"; };
+		B10000000000000000000071 /* Host */ = {isa = PBXGroup; path = .; sourceTree = SOURCE_ROOT; children = (B10000000000000000000020, B10000000000000000000021, B10000000000000000000022, B10000000000000000000023, B10000000000000000000024, B10000000000000000000051, B10000000000000000000025, B10000000000000000000026, B10000000000000000000027, B10000000000000000000028, B10000000000000000000029,); };
+		B10000000000000000000072 /* Guest executables copied as resources */ = {isa = PBXGroup; children = (B10000000000000000000030, B10000000000000000000031, B10000000000000000000032, B10000000000000000000033, B10000000000000000000034, B10000000000000000000035, B10000000000000000000036,); name = Guests; sourceTree = "<group>"; };
+		B10000000000000000000073 /* Frameworks */ = {isa = PBXGroup; children = (B10000000000000000000040, B10000000000000000000041, B10000000000000000000042, B10000000000000000000043, B10000000000000000000044,); name = Frameworks; sourceTree = "<group>"; };
+		B10000000000000000000074 /* Products */ = {isa = PBXGroup; children = (B10000000000000000000050,); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B10000000000000000000010 /* Phase2Host */ = {isa = PBXNativeTarget; buildConfigurationList = B100000000000000000000A5; buildPhases = (B10000000000000000000090, B10000000000000000000060, B10000000000000000000091,); buildRules = (); dependencies = (); name = Phase2Host; productName = Phase2Host; productReference = B10000000000000000000050; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B10000000000000000000080 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1600;}; buildConfigurationList = B100000000000000000000A4; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; mainGroup = B10000000000000000000070; productRefGroup = B10000000000000000000074; projectDirPath = ""; projectRoot = ""; targets = (B10000000000000000000010,); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B10000000000000000000091 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B10000000000000000000006, B10000000000000000000007, B10000000000000000000008, B10000000000000000000009, B1000000000000000000000A, B1000000000000000000000B, B1000000000000000000000C,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B10000000000000000000090 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B10000000000000000000001, B10000000000000000000002, B10000000000000000000003, B10000000000000000000004, B10000000000000000000005, B10000000000000000000050,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B100000000000000000000A0 /* Project Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; IPHONEOS_DEPLOYMENT_TARGET = 14.0; SDKROOT = iphoneos;}; name = Debug; };
+		B100000000000000000000A1 /* Project Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; IPHONEOS_DEPLOYMENT_TARGET = 14.0; SDKROOT = iphoneos;}; name = Release; };
+		B100000000000000000000A2 /* Target Debug */ = {isa = XCBuildConfiguration; buildSettings = {ARCHS = arm64; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = NO; HEADER_SEARCH_PATHS = ("$(inherited)", "$(SRCROOT)/../host", "$(SRCROOT)/../../runtime",); INFOPLIST_FILE = Phase2Host/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 14.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",); OTHER_LDFLAGS = ("$(inherited)", "-framework", UIKit, "-framework", Foundation, "-framework", CoreFoundation, "-framework", Metal, "-lobjc",); PRODUCT_BUNDLE_IDENTIFIER = org.example.Phase2Host; PRODUCT_NAME = Phase2Host; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; TARGETED_DEVICE_FAMILY = "1,2";}; name = Debug; };
+		B100000000000000000000A3 /* Target Release */ = {isa = XCBuildConfiguration; buildSettings = {ARCHS = arm64; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = NO; HEADER_SEARCH_PATHS = ("$(inherited)", "$(SRCROOT)/../host", "$(SRCROOT)/../../runtime",); INFOPLIST_FILE = Phase2Host/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 14.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",); OTHER_LDFLAGS = ("$(inherited)", "-framework", UIKit, "-framework", Foundation, "-framework", CoreFoundation, "-framework", Metal, "-lobjc",); PRODUCT_BUNDLE_IDENTIFIER = org.example.Phase2Host; PRODUCT_NAME = Phase2Host; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; TARGETED_DEVICE_FAMILY = "1,2";}; name = Release; };
+		B100000000000000000000A4 /* Project configuration list */ = {isa = XCConfigurationList; buildConfigurations = (B100000000000000000000A0, B100000000000000000000A1,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B100000000000000000000A5 /* Target configuration list */ = {isa = XCConfigurationList; buildConfigurations = (B100000000000000000000A2, B100000000000000000000A3,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCBuildConfiguration section */
+	};
+	rootObject = B10000000000000000000080;
+}

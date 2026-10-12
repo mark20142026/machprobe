@@ -1,0 +1,18 @@
+{
+  "CFBundleDisplayName": "Strataris",
+  "CFBundleExecutable": "Strataris",
+  "CFBundleIconFile": "AppIcon",
+  "CFBundleIdentifier": "cc.jorviksoftware.Strataris",
+  "CFBundleName": "Strataris",
+  "CFBundlePackageType": "APPL",
+  "CFBundleShortVersionString": "1.0.1",
+  "CFBundleVersion": "20260825174611",
+  "LSApplicationCategoryType": "public.app-category.action-games",
+  "LSMinimumSystemVersion": "14.0",
+  "NSHighResolutionCapable": true,
+  "NSPrincipalClass": "NSApplication",
+  "SUEnableAutomaticChecks": true,
+  "SUFeedURL": "https://jorviksoftware.cc/appcasts/strataris.xml",
+  "SUPublicEDKey": "zVc7rs8EiLmlDAYpgaIItjnHtsCkvyVVub+I0/sSb3Q=",
+  "SUScheduledCheckInterval": 86400
+}

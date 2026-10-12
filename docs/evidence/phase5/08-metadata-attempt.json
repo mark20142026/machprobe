@@ -1,0 +1,7 @@
+{
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "error" : "unsupported AppKit import: _OBJC_CLASS_$_NSButton",
+  "run_id" : "66449E8B-E651-4833-B5BD-1099E030805A",
+  "pid" : 1084,
+  "stage" : "load failed"
+}

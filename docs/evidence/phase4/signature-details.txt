@@ -1,0 +1,33 @@
+Executable=/Users/<user>/machprobe/build/phase4/original/extracted/DashboardCalculator.app/Contents/MacOS/DashboardCalculator
+Identifier=com.tom.DashboardCalculator
+Format=app bundle with Mach-O universal (x86_64 arm64)
+CodeDirectory v=20500 size=1159 flags=0x10000(runtime) hashes=25+7 location=embedded
+VersionPlatform=1
+VersionMin=720896
+VersionSDK=786688
+Hash type=sha256 size=32
+CandidateCDHash sha256=38b4294f6175e8468b424b755cff65b6a4b7e3e4
+CandidateCDHashFull sha256=38b4294f6175e8468b424b755cff65b6a4b7e3e4fe1e857cab74f2b40ac5c96c
+Hash choices=sha256
+CMSDigest=38b4294f6175e8468b424b755cff65b6a4b7e3e4fe1e857cab74f2b40ac5c96c
+CMSDigestType=2
+Executable Segment base=0
+Executable Segment limit=49152
+Executable Segment flags=0x1
+Page size=4096
+CDHash=38b4294f6175e8468b424b755cff65b6a4b7e3e4
+Signature size=8936
+Authority=Developer ID Application: Thomas Povinelli (9KTV75G5K9)
+Authority=Developer ID Certification Authority
+Authority=Apple Root CA
+Timestamp=20 Jan 2022 at 8:48:49 PM
+Notarization Ticket=stapled
+Info.plist entries=24
+TeamIdentifier=9KTV75G5K9
+Runtime Version=12.1.0
+Sealed Resources version=2 rules=13 files=3
+Internal requirements count=1 size=220
+warning: Specifying ':' in the path is deprecated and will not work in a future release
+Total signatures=1
+Chosen signature=1
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict><key>com.apple.security.app-sandbox</key><true/><key>com.apple.security.files.user-selected.read-only</key><true/></dict></plist>

@@ -1,0 +1,11 @@
+{
+  "observed_at_utc": "2026-10-01T09:07:21.764877+00:00",
+  "method": "Codex computer-use accessibility tree and screenshot; tree rechecked after build_experiment.py --launch",
+  "bundle": "/Users/<user>/machprobe/build/ios-on-mac/HelloIOS-Catalyst.app",
+  "window_title": "Hello iOS \u2014 Catalyst experiment",
+  "visible_text": [
+    "Hello from iOS ARM64",
+    "iOS app on Mac: NO"
+  ],
+  "interpretation": "Converted Mac Catalyst copy rendered UIKit UI. Not unmodified iOS App on Mac."
+}

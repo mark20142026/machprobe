@@ -1,0 +1,19 @@
+{
+  "build": "1",
+  "bundle_id": "research.machprobe.Arena",
+  "bundle_path": "/private/var/containers/Bundle/Application/3168AAD2-118A-49E9-80ED-5AC52CA13E39/ArenaHost.app",
+  "data_path": "/private/var/mobile/Containers/Data/Application/DF4A5D5D-8496-4A6A-996F-6972195A14AD",
+  "encrypted": false,
+  "entitlements": {
+    "com.apple.private.security.container-required": "research.machprobe.Arena",
+    "jb.pmap_cs_custom_trust": "PMAP_CS_APP_STORE"
+  },
+  "executable": "/var/containers/Bundle/Application/3168AAD2-118A-49E9-80ED-5AC52CA13E39/ArenaHost.app/ArenaHost",
+  "group_containers": {},
+  "minimum_os": "14.0",
+  "name": "Mac Metal Arena",
+  "sdk": "",
+  "signer": "Apple iPhone OS Application Signing",
+  "type": "User",
+  "version": "1.0"
+}

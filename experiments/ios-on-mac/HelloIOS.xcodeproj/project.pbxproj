@@ -1,0 +1,66 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		A10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = { BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1600; };
+			buildConfigurationList = A10000000000000000000002;
+			compatibilityVersion = "Xcode 14.0";
+			mainGroup = A10000000000000000000003;
+			productRefGroup = A10000000000000000000004;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A10000000000000000000005,);
+		};
+		A10000000000000000000003 = { isa = PBXGroup; children = (A10000000000000000000006, A10000000000000000000007, A10000000000000000000008,); sourceTree = "<group>"; };
+		A10000000000000000000006 /* HelloIOS */ = { isa = PBXGroup; path = HelloIOS; sourceTree = "<group>"; children = (A10000000000000000000009, A1000000000000000000000A,); };
+		A10000000000000000000007 /* Products */ = { isa = PBXGroup; name = Products; sourceTree = "<group>"; children = (A1000000000000000000000B,); };
+		A10000000000000000000008 /* Frameworks */ = { isa = PBXGroup; name = Frameworks; sourceTree = "<group>"; children = (); };
+		A10000000000000000000004 = { isa = PBXGroup; name = Products; sourceTree = "<group>"; children = (A1000000000000000000000B,); };
+		A10000000000000000000009 /* main.m */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1000000000000000000000A /* Info.plist */ = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1000000000000000000000B /* HelloIOS.app */ = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000000000000000000000C /* Sources */ = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A1000000000000000000000D,); runOnlyForDeploymentPostprocessing = 0; };
+		A1000000000000000000000D /* main.m in Sources */ = { isa = PBXBuildFile; fileRef = A10000000000000000000009; };
+		A1000000000000000000000E /* Frameworks */ = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A1000000000000000000000F /* Resources */ = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A10000000000000000000010 /* App target */ = { isa = PBXNativeTarget; buildConfigurationList = A10000000000000000000011; buildPhases = (A1000000000000000000000C, A1000000000000000000000E, A1000000000000000000000F,); buildRules = (); dependencies = (); name = HelloIOS; productName = HelloIOS; productReference = A1000000000000000000000B; productType = "com.apple.product-type.application"; };
+		A10000000000000000000012 /* Project Debug */ = { isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; IPHONEOS_DEPLOYMENT_TARGET = 14.0; SDKROOT = iphoneos; }; name = Debug; };
+		A10000000000000000000013 /* Project Release */ = { isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; IPHONEOS_DEPLOYMENT_TARGET = 14.0; SDKROOT = iphoneos; }; name = Release; };
+		A10000000000000000000014 /* Target Debug */ = { isa = XCBuildConfiguration; buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HelloIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.example.HelloIOS;
+				PRODUCT_NAME = HelloIOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			}; name = Debug; };
+		A10000000000000000000015 /* Target Release */ = { isa = XCBuildConfiguration; buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HelloIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.example.HelloIOS;
+				PRODUCT_NAME = HelloIOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			}; name = Release; };
+		A10000000000000000000016 /* Project config list */ = { isa = XCConfigurationList; buildConfigurations = (A10000000000000000000012, A10000000000000000000013,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A10000000000000000000011 /* Target config list */ = { isa = XCConfigurationList; buildConfigurations = (A10000000000000000000014, A10000000000000000000015,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A10000000000000000000002 /* Project config list */ = { isa = XCConfigurationList; buildConfigurations = (A10000000000000000000016,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = A10000000000000000000001;
+}

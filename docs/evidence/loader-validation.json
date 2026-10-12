@@ -1,0 +1,18 @@
+{
+  "captured_at_utc": "2026-10-01T09:25:44.075852+00:00",
+  "commands": [
+    "make test-loader",
+    "make test-loader-sanitize"
+  ],
+  "test_methods_per_run": 8,
+  "result": "passed",
+  "output": "xcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -Wpedantic -O0 -g experiments/inprocess-hello/loader.c experiments/inprocess-hello/cli.c -o build/hello-loader\npython3 -m unittest discover -s experiments/inprocess-hello/tests -v\ntest_bad_entrypoint (test_loader.HelloLoaderTests.test_bad_entrypoint) ... ok\ntest_bad_magic_and_truncation (test_loader.HelloLoaderTests.test_bad_magic_and_truncation) ... ok\ntest_fresh_signed_copy_runs_in_process_and_remains_unchanged (test_loader.HelloLoaderTests.test_fresh_signed_copy_runs_in_process_and_remains_unchanged) ... ok\ntest_missing_file (test_loader.HelloLoaderTests.test_missing_file) ... ok\ntest_other_sample_rejected (test_loader.HelloLoaderTests.test_other_sample_rejected) ... ok\ntest_unknown_import_is_not_called (test_loader.HelloLoaderTests.test_unknown_import_is_not_called) ... ok\ntest_unsupported_rebase_type (test_loader.HelloLoaderTests.test_unsupported_rebase_type) ... ok\ntest_wrong_platform (test_loader.HelloLoaderTests.test_wrong_platform) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 1.147s\n\nOK\nxcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -Wpedantic -O0 -g -fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer experiments/inprocess-hello/loader.c experiments/inprocess-hello/cli.c -o build/hello-loader-sanitize\nHELLO_LOADER=build/hello-loader-sanitize python3 -m unittest discover -s experiments/inprocess-hello/tests -v\ntest_bad_entrypoint (test_loader.HelloLoaderTests.test_bad_entrypoint) ... ok\ntest_bad_magic_and_truncation (test_loader.HelloLoaderTests.test_bad_magic_and_truncation) ... ok\ntest_fresh_signed_copy_runs_in_process_and_remains_unchanged (test_loader.HelloLoaderTests.test_fresh_signed_copy_runs_in_process_and_remains_unchanged) ... ok\ntest_missing_file (test_loader.HelloLoaderTests.test_missing_file) ... ok\ntest_other_sample_rejected (test_loader.HelloLoaderTests.test_other_sample_rejected) ... ok\ntest_unknown_import_is_not_called (test_loader.HelloLoaderTests.test_unknown_import_is_not_called) ... ok\ntest_unsupported_rebase_type (test_loader.HelloLoaderTests.test_unsupported_rebase_type) ... ok\ntest_wrong_platform (test_loader.HelloLoaderTests.test_wrong_platform) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.903s\n\nOK\n",
+  "source_sha256": {
+    "experiments/inprocess-hello/loader.c": "e8d9d26db111a1eacc4d926e36e4a3213d0d24fca49ebdb676cef5feb06036a1",
+    "experiments/inprocess-hello/HostMain.m": "a811522fbe22170459227c401166be31df13a2de8812d572d4864c3f7ddde64c",
+    "experiments/inprocess-hello/cli.c": "7e99cbb02dc3c6574519fd7da2ba9233bc4a29c1f76c2c8603b9535a34e03a4d",
+    "experiments/inprocess-hello/HarnessUIKit.h": "060e11c74543449f4396f99dba088da72b03e9dceecd7eab95e8eece27dfc416",
+    "experiments/inprocess-hello/loader.h": "6af8550244415976f19309728c8829dfb2d4541781adb27c96455537edf649f2",
+    "experiments/inprocess-hello/tests/test_loader.py": "3a7d711626c35dd77a976e1a5b41ca7a687eb4364ea371aa3250e4a93501ac6e"
+  }
+}

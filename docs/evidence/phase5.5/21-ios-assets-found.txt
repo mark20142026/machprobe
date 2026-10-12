@@ -1,0 +1,6 @@
+[2m2026-10-01T15:08:07.230549Z[0m [32m INFO[0m [2mveloren_common_frontend[0m[2m:[0m Setup terminal and file logging. [3mpath[0m[2m=[0m"/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen/logs" [3mfile[0m[2m=[0m"2026-10-01_voxygen.log"
+[2m2026-10-01T15:08:07.230571Z[0m [32m INFO[0m [2mveloren_voxygen[0m[2m:[0m Using userdata dir at: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata
+[2m2026-10-01T15:08:07.230578Z[0m [32m INFO[0m [2mveloren_voxygen[0m[2m:[0m Using config dir at: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen
+[2m2026-10-01T15:08:07.345175Z[0m [32m INFO[0m [2mveloren_voxygen::audio[0m[2m:[0m Samplerate is 44100
+[2m2026-10-01T15:08:07.345198Z[0m [31mERROR[0m [2mveloren_voxygen::audio[0m[2m:[0m failed to construct audio frontend manager. Is `pulseaudio-alsa` installed? [3me[0m[2m=[0mCpalError(Error { kind: InvalidInput, message: Some("Unknown property") })
+[2m2026-10-01T15:08:07.345282Z[0m [32m INFO[0m [2mveloren_common_assets[0m[2m:[0m Assets found path=/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/assets

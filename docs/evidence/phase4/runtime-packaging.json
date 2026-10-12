@@ -1,0 +1,9 @@
+{
+  "original_guest_sha256": "87986a2aaa6a000c6d72ad0ea46ae67683d7ce8d724a79e2ed1655077065299b",
+  "original_car_sha256": "4c90c6976e4bd1c8d17590652c971334bcbda4f7d01c0455eaf0f0614e5bdce1",
+  "converted_car_sha256": "210be65f8c6d72f75eeee46fac42fb7abf5d1e92f5fb4e7853d7b807e8b4c631",
+  "asset_count": 55,
+  "ipa_sha256": "6c8113a3fe3d05f28dacf14079e00d409010b88727fb6c6b0b86455d09403e7b",
+  "target_executable_modified": false,
+  "resource_format_adapted": true
+}

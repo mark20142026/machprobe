@@ -1,0 +1,88 @@
+{
+  "metal" : {
+    "managed_textures_translated" : 1
+  },
+  "exception" : "-[MPPhysicalWindow beginSheet:completionHandler:]: unrecognized selector sent to instance 0x1013600e0",
+  "stack" : [
+    "0   CoreFoundation                      0x000000018069319c 9426FC9A-B36C-3096-B836-D17D6744A75B + 623004",
+    "1   libobjc.A.dylib                     0x0000000180410380 objc_exception_throw + 88",
+    "2   CoreFoundation                      0x000000018079290c 9426FC9A-B36C-3096-B836-D17D6744A75B + 1669388",
+    "3   UIKitCore                           0x0000000185af0308 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 19489544",
+    "4   CoreFoundation                      0x000000018064e8f8 9426FC9A-B36C-3096-B836-D17D6744A75B + 342264",
+    "5   CoreFoundation                      0x000000018064ebb0 9426FC9A-B36C-3096-B836-D17D6744A75B + 342960",
+    "6   MPGuest.dylib                       0x000000010185136c MPGuest.dylib + 349036",
+    "7   MPGuest.dylib                       0x0000000101805df4 MPGuest.dylib + 40436",
+    "8   MPGuest.dylib                       0x0000000101805940 MPGuest.dylib + 39232",
+    "9   MPGuest.dylib                       0x0000000101805fb0 MPGuest.dylib + 40880",
+    "10  GameHost                            0x0000000100c42e5c mp_game_key + 1520",
+    "11  GameHost                            0x0000000100c43910 -[MPInputController down:] + 124",
+    "12  UIKitCore                           0x0000000184dce0c4 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 5718212",
+    "13  UIKitCore                           0x0000000184dcdef4 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 5717748",
+    "14  UIKitCore                           0x0000000184dcd7f8 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 5715960",
+    "15  UIKitCore                           0x0000000184f2be94 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 7151252",
+    "16  UIKitCore                           0x0000000184f729fc AAC84A00-13AB-3B06-B622-A4E676971EB8 + 7440892",
+    "17  UIKitCore                           0x0000000184944a2c AAC84A00-13AB-3B06-B622-A4E676971EB8 + 961068",
+    "18  UIKitCore                           0x00000001849462a8 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 967336",
+    "19  GameHost                            0x0000000100c42700 -[MPPhysicalWindow sendEvent:] + 220",
+    "20  UIKitCore                           0x0000000184e3f874 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 6183028",
+    "21  UIKit                               0x0000000189f45c60 731439B9-866C-3335-9429-A7AC20AB87FC + 35936",
+    "22  UIKitCore                           0x000000018493cbdc AAC84A00-13AB-3B06-B622-A4E676971EB8 + 928732",
+    "23  UIKitCore                           0x00000001848c4d78 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 437624",
+    "24  UIKitCore                           0x00000001848c3b88 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 433032",
+    "25  UIKitCore                           0x00000001848c3928 AAC84A00-13AB-3B06-B622-A4E676971EB8 + 432424",
+    "26  UpdateCycle                         0x00000002b2f3bbc0 2FC1A9E2-8ADE-3559-A13F-0DD8E4DC6E74 + 3008",
+    "27  CoreFoundation                      0x0000000180654c20 9426FC9A-B36C-3096-B836-D17D6744A75B + 367648",
+    "28  CoreFoundation                      0x0000000180654b94 9426FC9A-B36C-3096-B836-D17D6744A75B + 367508",
+    "29  CoreFoundation                      0x0000000180636268 9426FC9A-B36C-3096-B836-D17D6744A75B + 242280",
+    "30  CoreFoundation                      0x0000000180635384 9426FC9A-B36C-3096-B836-D17D6744A75B + 238468",
+    "31  CoreFoundation                      0x00000001806367f4 9426FC9A-B36C-3096-B836-D17D6744A75B + 243700",
+    "32  GraphicsServices                    0x000000022acf8f24 GSEventRunModal + 120",
+    "33  UIKitCore                           0x00000001849141cc UIApplicationMain + 336",
+    "34  GameHost                            0x0000000100c3f1a0 -[MPGameApplication run] + 120",
+    "35  MPGuest.dylib                       0x0000000101801bc4 MPGuest.dylib + 23492",
+    "36  MPGuest.dylib                       0x0000000101801c6c MPGuest.dylib + 23660",
+    "37  MPGuest.dylib                       0x0000000101801b00 MPGuest.dylib + 23296",
+    "38  GameHost                            0x0000000100c38388 mp_image_main + 164",
+    "39  GameHost                            0x0000000100c3de40 main + 2752",
+    "40  dyld                                0x00000001804875b8 D3F59B02-EE07-371B-B091-3F150A078ED8 + 21944"
+  ],
+  "run_id" : "73041006-02B1-4384-B65E-35E315A7758A",
+  "stage" : "exception",
+  "binds" : 686,
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "Error Domain=com.apple.coreaudio.avfaudio Code=-10851 \"(null)\" UserInfo={failed call=err = PerformCommand(*outputNode, kAUInitialize, NULL, 0)}",
+    "frames_observed" : 0
+  },
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "input" : {
+    "delivered" : 1,
+    "held" : [
+      40
+    ]
+  },
+  "frames" : {
+    "elapsed_seconds" : 5.8235061666664478,
+    "guest_draw_callbacks" : 326,
+    "mean_guest_callback_ms" : 11.298177786280865,
+    "average_fps" : 55.808303571530324,
+    "max_guest_callback_ms" : 249.83229166628007
+  },
+  "pid" : 1274,
+  "rebases" : 3957,
+  "events" : [
+    "entering UIKit lifecycle",
+    "applicationDidFinishLaunching:",
+    "desktop self-updater unsupported in iOS container; automatic start declined",
+    "guest window created",
+    "guest AVAudioEngine failed: Error Domain=com.apple.coreaudio.avfaudio Code=-10851 \"(null)\" UserInfo={failed call=err = PerformCommand(*outputNode, kAUInitialize, NULL, 0)}",
+    "Metal managed texture → shared unified-memory allocation",
+    "guest window presented: Strataris: Galactic Colony Defence",
+    "application activation requested",
+    "guest launch callback returned",
+    "guest key down 40",
+    "guest window created"
+  ]
+}

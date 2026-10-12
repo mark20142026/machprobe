@@ -1,0 +1,66 @@
+{
+  "hello": {
+    "sha256": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+    "size": 50216,
+    "platform": "macOS",
+    "source": "build/hello",
+    "section": "__TEXT",
+    "container": "MPhello.dylib"
+  },
+  "interactive": {
+    "sha256": "3f446948d3d274fc7370560b79626763e3b9700ca0619caf638c557f4d638409",
+    "size": 51944,
+    "platform": "macOS",
+    "source": "build/phase2/interactive",
+    "section": "__TEXT",
+    "container": "MPinteractive.dylib"
+  },
+  "file_io": {
+    "sha256": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0",
+    "size": 51000,
+    "platform": "macOS",
+    "source": "build/file_io",
+    "section": "__TEXT",
+    "container": "MPfile_io.dylib"
+  },
+  "framework": {
+    "sha256": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280",
+    "size": 50424,
+    "platform": "macOS",
+    "source": "build/framework",
+    "section": "__TEXT",
+    "container": "MPframework.dylib"
+  },
+  "foundation": {
+    "sha256": "052fe8e2cd7655afd65d77f954e81425dbf841105ef3b37085a8b4fdb3d9a6c5",
+    "size": 52072,
+    "platform": "macOS",
+    "source": "build/phase2/foundation",
+    "section": "__TEXT",
+    "container": "MPfoundation.dylib"
+  },
+  "metal_info": {
+    "sha256": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3",
+    "size": 51096,
+    "platform": "macOS",
+    "source": "build/metal_info",
+    "section": "__TEXT",
+    "container": "MPmetal_info.dylib"
+  },
+  "metal_compute": {
+    "sha256": "9e7d45fbad5c204f844bafb6caf44881bb9fba1642f06c6100388b648194c503",
+    "size": 52544,
+    "platform": "macOS",
+    "source": "build/phase2/metal_compute",
+    "section": "__TEXT",
+    "container": "MPmetal_compute.dylib"
+  },
+  "appkit_gui": {
+    "sha256": "01485fd5302f1f69f441691f3bcfdf2e81ae7698034f1ccd0d1e70fa5356be9c",
+    "size": 53384,
+    "platform": "macOS",
+    "source": "build/phase3/appkit_gui",
+    "section": "__TEXT",
+    "container": "MPappkit_gui.dylib"
+  }
+}

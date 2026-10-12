@@ -1,0 +1,338 @@
+{
+  "complete": false,
+  "edges": [
+    {
+      "candidates": [
+        "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+      ],
+      "categories": [
+        "Darwin/system",
+        "Apple framework"
+      ],
+      "from": 0,
+      "install_name": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/libobjc.A.dylib"
+      ],
+      "categories": [
+        "Darwin/system",
+        "Objective-C runtime"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/libobjc.A.dylib",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/libobjc.A.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/libSystem.B.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/libSystem.B.dylib",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/libSystem.B.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit"
+      ],
+      "categories": [
+        "Darwin/system",
+        "Apple framework"
+      ],
+      "from": 0,
+      "install_name": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+      ],
+      "categories": [
+        "Darwin/system",
+        "Apple framework"
+      ],
+      "from": 0,
+      "install_name": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+      ],
+      "categories": [
+        "Darwin/system",
+        "Apple framework"
+      ],
+      "from": 0,
+      "install_name": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftAppKit.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftAppKit.dylib",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftAppKit.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftCore.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftCore.dylib",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftCore.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftCoreData.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftCoreData.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftCoreData.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftCoreFoundation.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftCoreFoundation.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftCoreFoundation.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftCoreGraphics.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftCoreGraphics.dylib",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftCoreGraphics.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftCoreImage.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftCoreImage.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftCoreImage.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftDarwin.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftDarwin.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftDarwin.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftDispatch.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftDispatch.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftDispatch.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftFoundation.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftFoundation.dylib",
+      "kind": "LC_LOAD_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftFoundation.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftIOKit.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftIOKit.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftIOKit.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftMetal.dylib"
+      ],
+      "categories": [
+        "Darwin/system",
+        "graphics/Metal"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftMetal.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftMetal.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftObjectiveC.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftObjectiveC.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftObjectiveC.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftQuartzCore.dylib"
+      ],
+      "categories": [
+        "Darwin/system",
+        "graphics/Metal"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftQuartzCore.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftQuartzCore.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftXPC.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftXPC.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftXPC.dylib",
+      "status": "cache-only"
+    },
+    {
+      "candidates": [
+        "/usr/lib/swift/libswiftos.dylib"
+      ],
+      "categories": [
+        "Darwin/system"
+      ],
+      "from": 0,
+      "install_name": "/usr/lib/swift/libswiftos.dylib",
+      "kind": "LC_LOAD_WEAK_DYLIB",
+      "reason": "Host dyld cache membership confirmed; image not parsed",
+      "resolved_path": "/usr/lib/swift/libswiftos.dylib",
+      "status": "cache-only"
+    }
+  ],
+  "limitations": "Static load commands only; no dlopen discovery, environment/fallback policy, cache image parsing, or guarantee of dyld acceptance",
+  "max_depth": 16,
+  "node_limit": 1024,
+  "nodes": [
+    {
+      "architecture": "arm64",
+      "depth": 0,
+      "id": 0,
+      "path": "/Users/<user>/machprobe/build/phase4/original/extracted/DashboardCalculator.app/Contents/MacOS/DashboardCalculator",
+      "runpaths": [
+        "/usr/lib/swift",
+        "/Users/<user>/machprobe/build/phase4/original/extracted/DashboardCalculator.app/Contents/Frameworks"
+      ],
+      "unmodeled_rpaths": []
+    }
+  ],
+  "root": "/Users/<user>/machprobe/build/phase4/original/extracted/DashboardCalculator.app/Contents/MacOS/DashboardCalculator",
+  "schema_version": 1
+}

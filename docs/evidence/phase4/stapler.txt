@@ -1,0 +1,2 @@
+Processing: /Users/<user>/machprobe/build/phase4/original/extracted/DashboardCalculator.app
+The validate action worked!

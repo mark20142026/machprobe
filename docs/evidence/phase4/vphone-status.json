@@ -1,0 +1,14 @@
+{
+  "activeBundle" : "2.2.5",
+  "bundleReady" : true,
+  "canInstallBundles" : true,
+  "developerTools" : true,
+  "helper" : "ready (9)",
+  "hostReady" : true,
+  "installing" : false,
+  "libraries" : [
+    "/Users/<user>/.vphone/machines"
+  ],
+  "machines" : 1,
+  "running" : 1
+}

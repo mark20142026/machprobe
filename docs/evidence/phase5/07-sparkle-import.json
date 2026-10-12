@@ -1,0 +1,7 @@
+{
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "error" : "unsupported import: _OBJC_CLASS_$_SPUStandardUpdaterController",
+  "run_id" : "0F621EE2-9CB9-4A61-A3B9-297949CFB8A5",
+  "pid" : 1075,
+  "stage" : "load failed"
+}

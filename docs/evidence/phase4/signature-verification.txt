@@ -1,0 +1,2 @@
+build/phase4/original/extracted/DashboardCalculator.app: valid on disk
+build/phase4/original/extracted/DashboardCalculator.app: satisfies its Designated Requirement

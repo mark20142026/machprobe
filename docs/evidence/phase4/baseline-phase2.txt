@@ -1,0 +1,16 @@
+cd /Users/<user>/machprobe && python3 -m unittest discover -s phase2/tests -v
+test_abi_guest_runner (test_runtime.RuntimeIntegrationTests.test_abi_guest_runner) ... ok
+test_file_io_success_cleanup_and_invalid_directory (test_runtime.RuntimeIntegrationTests.test_file_io_success_cleanup_and_invalid_directory) ... ok
+test_foundation_guest_behaviors (test_runtime.RuntimeIntegrationTests.test_foundation_guest_behaviors) ... ok
+test_metal_compute_values_and_checksum (test_runtime.RuntimeIntegrationTests.test_metal_compute_values_and_checksum) ... ok
+test_metal_device_is_reported (test_runtime.RuntimeIntegrationTests.test_metal_device_is_reported) ... ok
+test_original_hello_and_framework (test_runtime.RuntimeIntegrationTests.test_original_hello_and_framework) ... ok
+test_phase1_samples_match_recorded_hashes (test_runtime.RuntimeIntegrationTests.test_phase1_samples_match_recorded_hashes) ... ok
+test_phase2_guest_images_are_not_modified (test_runtime.RuntimeIntegrationTests.test_phase2_guest_images_are_not_modified) ... ok
+test_rejects_guest_tls_and_objc_class_registration (test_runtime.RuntimeIntegrationTests.test_rejects_guest_tls_and_objc_class_registration) ... ok
+test_rejects_malformed_and_unsupported_images (test_runtime.RuntimeIntegrationTests.test_rejects_malformed_and_unsupported_images) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.803s
+
+OK

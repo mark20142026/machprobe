@@ -1,0 +1,11 @@
+test_external_resources_identical (test_arena.ArenaTests.test_external_resources_identical) ... ok
+test_guest_is_macos_with_normal_frameworks (test_arena.ArenaTests.test_guest_is_macos_with_normal_frameworks) ... ok
+test_native_gpu_depth_and_texture (test_arena.ArenaTests.test_native_gpu_depth_and_texture) ... ok
+test_recorded_ios_input_and_gpu_evidence (test_arena.ArenaTests.test_recorded_ios_input_and_gpu_evidence) ... ok
+test_recorded_sustained_and_lifetimes (test_arena.ArenaTests.test_recorded_sustained_and_lifetimes) ... ok
+test_unchanged_guest_inside_signed_ios_container (test_arena.ArenaTests.test_unchanged_guest_inside_signed_ios_container) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.511s
+
+OK

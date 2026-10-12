@@ -1,0 +1,10 @@
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcrun clang -arch arm64 -mmacosx-version-min=11.0 -g -Wall -Wextra -I/Users/<user>/machprobe/runtime -I/Users/<user>/machprobe/phase4/runtime -I/Users/<user>/machprobe/phase5/runtime -O2 -Wl,-export_dynamic /Users/<user>/machprobe/phase5_5/guests/tls.c -o /Users/<user>/machprobe/build/phase5.5/tls-guest
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcrun clang -arch arm64 -mmacosx-version-min=11.0 -g -Wall -Wextra -I/Users/<user>/machprobe/runtime -I/Users/<user>/machprobe/phase4/runtime -I/Users/<user>/machprobe/phase5/runtime -fsanitize=address,undefined -fno-sanitize-recover=all /Users/<user>/machprobe/runtime/image.c /Users/<user>/machprobe/runtime/fixups.c /Users/<user>/machprobe/runtime/services.c /Users/<user>/machprobe/runtime/tls.c /Users/<user>/machprobe/phase5_5/tests/tls_host.c -framework Foundation -framework AppKit -framework CoreFoundation -framework Metal -lobjc -o /Users/<user>/machprobe/build/phase5.5/tls-test
+cd /Users/<user>/machprobe && python3 -m unittest discover -s phase5_5/tests -v
+test_size_policy (test_runtime.RuntimeTests.test_size_policy) ... ok
+test_tls_thread_isolation_and_teardown (test_runtime.RuntimeTests.test_tls_thread_isolation_and_teardown) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.323s
+
+OK

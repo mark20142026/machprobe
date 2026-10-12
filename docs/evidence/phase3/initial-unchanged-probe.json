@@ -1,0 +1,57 @@
+{
+  "environment": "iOS VM; installation may add entitlements",
+  "uid": 501,
+  "ios": "27.0",
+  "guests": {
+    "framework": {
+      "sha256": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280",
+      "error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "bytes_match_original": true,
+      "loads": 0,
+      "stage": "load"
+    },
+    "metal_compute": {
+      "sha256": "9e7d45fbad5c204f844bafb6caf44881bb9fba1642f06c6100388b648194c503",
+      "error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "bytes_match_original": true,
+      "loads": 0,
+      "stage": "load"
+    },
+    "file_io": {
+      "sha256": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0",
+      "error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "bytes_match_original": true,
+      "loads": 0,
+      "stage": "load"
+    },
+    "metal_info": {
+      "sha256": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3",
+      "error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "bytes_match_original": true,
+      "loads": 0,
+      "stage": "load"
+    },
+    "interactive": {
+      "sha256": "3f446948d3d274fc7370560b79626763e3b9700ca0619caf638c557f4d638409",
+      "error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "bytes_match_original": true,
+      "loads": 0,
+      "stage": "load"
+    },
+    "foundation": {
+      "sha256": "052fe8e2cd7655afd65d77f954e81425dbf841105ef3b37085a8b4fdb3d9a6c5",
+      "error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "bytes_match_original": true,
+      "loads": 0,
+      "stage": "load"
+    },
+    "hello": {
+      "sha256": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+      "error": "signature registration: Bad executable (or shared library) (errno=85)",
+      "bytes_match_original": true,
+      "loads": 0,
+      "stage": "load"
+    }
+  },
+  "complete": true
+}

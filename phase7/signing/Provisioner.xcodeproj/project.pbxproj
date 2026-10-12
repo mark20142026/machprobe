@@ -1,0 +1,23 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		A0000000000000000000001 /* main.m */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002; };
+		A0000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0000000000000000000003 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0000000000000000000004 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STKHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0000000000000000000005 = {isa = PBXGroup; children = (A0000000000000000000006, A0000000000000000000007); sourceTree = "<group>"; };
+		A0000000000000000000006 = {isa = PBXGroup; children = (A0000000000000000000002, A0000000000000000000003); path = Provisioner; sourceTree = "<group>"; };
+		A0000000000000000000007 = {isa = PBXGroup; children = (A0000000000000000000004); name = Products; sourceTree = "<group>"; };
+		A0000000000000000000008 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A0000000000000000000001); runOnlyForDeploymentPostprocessing = 0; };
+		A0000000000000000000009 = {isa = PBXNativeTarget; buildConfigurationList = A000000000000000000000C; buildPhases = (A0000000000000000000008); buildRules = (); dependencies = (); name = STKHost; productName = STKHost; productReference = A0000000000000000000004; productType = "com.apple.product-type.application"; };
+		A000000000000000000000A = {isa = PBXProject; attributes = {LastUpgradeCheck = 2700; TargetAttributes = {A0000000000000000000009 = {DevelopmentTeam = ""; ProvisioningStyle = Automatic;};};}; buildConfigurationList = A000000000000000000000B; compatibilityVersion = "Xcode 14.0"; mainGroup = A0000000000000000000005; productRefGroup = A0000000000000000000007; projectDirPath = ""; projectRoot = ""; targets = (A0000000000000000000009); };
+		A000000000000000000000B = {isa = XCConfigurationList; buildConfigurations = (A000000000000000000000D); defaultConfigurationName = Debug; };
+		A000000000000000000000C = {isa = XCConfigurationList; buildConfigurations = (A000000000000000000000E); defaultConfigurationName = Debug; };
+		A000000000000000000000D = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 15.0; ALWAYS_SEARCH_USER_PATHS = NO;}; name = Debug; };
+		A000000000000000000000E = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CODE_SIGN_ENTITLEMENTS = Provisioner/Provisioner.entitlements; DEVELOPMENT_TEAM = ""; INFOPLIST_FILE = Provisioner/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = research.machprobe.STKHost; PRODUCT_NAME = STKHost; SDKROOT = iphoneos; TARGETED_DEVICE_FAMILY = "1,2"; IPHONEOS_DEPLOYMENT_TARGET = 15.0; ALWAYS_SEARCH_USER_PATHS = NO; CODE_SIGN_IDENTITY = "Apple Development";}; name = Debug; };
+	};
+	rootObject = A000000000000000000000A;
+}

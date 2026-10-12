@@ -1,0 +1,92 @@
+[2m2026-10-01T15:44:57.855904Z[0m [32m INFO[0m [2mveloren_common_frontend[0m[2m:[0m Setup terminal and file logging. [3mpath[0m[2m=[0m"/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen/logs" [3mfile[0m[2m=[0m"2026-10-01_voxygen.log"
+[2m2026-10-01T15:44:57.855924Z[0m [32m INFO[0m [2mveloren_voxygen[0m[2m:[0m Using userdata dir at: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata
+[2m2026-10-01T15:44:57.855927Z[0m [32m INFO[0m [2mveloren_voxygen[0m[2m:[0m Using config dir at: /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen
+[2m2026-10-01T15:44:57.974220Z[0m [32m INFO[0m [2mveloren_voxygen::audio[0m[2m:[0m Samplerate is 44100
+[2m2026-10-01T15:44:57.974245Z[0m [31mERROR[0m [2mveloren_voxygen::audio[0m[2m:[0m failed to construct audio frontend manager. Is `pulseaudio-alsa` installed? [3me[0m[2m=[0mCpalError(Error { kind: InvalidInput, message: Some("Unknown property") })
+[2m2026-10-01T15:44:57.974337Z[0m [32m INFO[0m [2mveloren_common_assets[0m[2m:[0m Assets found path=/var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/assets
+[2m2026-10-01T15:44:58.002149Z[0m [31mERROR[0m [2mwinit::platform_impl::macos::event_handler[0m[2m:[0m tried to run event handler, but no handler was set
+[2m2026-10-01T15:44:58.351366Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m graphics device #0 [3minfo.name[0m[2m=[0m"Apple Paravirtual device GPU" [3minfo.vendor[0m[2m=[0m0 [3minfo.backend[0m[2m=[0mMetal [3minfo.device[0m[2m=[0m0 [3minfo.device_type[0m[2m=[0mIntegratedGpu [3msupported_limits.max_texture_dimension_2d[0m[2m=[0m16384
+[2m2026-10-01T15:44:58.354662Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m selected graphics device [3minfo.name[0m[2m=[0m"Apple Paravirtual device GPU" [3minfo.vendor[0m[2m=[0m0 [3minfo.backend[0m[2m=[0mMetal [3minfo.device[0m[2m=[0m0 [3minfo.device_type[0m[2m=[0mIntegratedGpu [3msupported_limits.max_texture_dimension_2d[0m[2m=[0m16384
+[2m2026-10-01T15:44:58.372321Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m The features for GPU profiling (timestamp queries) are not available on this adapter
+[2m2026-10-01T15:44:58.372343Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m Using Bgra8UnormSrgb as the surface format
+[2m2026-10-01T15:44:58.372349Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer[0m[2m:[0m Using Rgba16Float as the intermediate format
+[2m2026-10-01T15:44:58.382011Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling skybox-vert
+[2m2026-10-01T15:44:58.382733Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling skybox-frag
+[2m2026-10-01T15:44:58.392963Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling debug-vert
+[2m2026-10-01T15:44:58.393702Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling debug-frag
+[2m2026-10-01T15:44:58.396816Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [88] and [91] are not greater than 1
+[2m2026-10-01T15:44:58.406193Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling figure-vert
+[2m2026-10-01T15:44:58.414166Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling figure-frag
+[2m2026-10-01T15:44:58.416347Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [86] and [89] are not greater than 1
+[2m2026-10-01T15:44:58.429665Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling terrain-vert
+[2m2026-10-01T15:44:58.437962Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling terrain-frag
+[2m2026-10-01T15:44:58.441299Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [103] and [106] are not greater than 1
+[2m2026-10-01T15:44:58.449918Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling fluid-vert
+[2m2026-10-01T15:44:58.453080Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling fluid-frag.shiny
+[2m2026-10-01T15:44:58.456372Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [99] and [102] are not greater than 1
+[2m2026-10-01T15:44:58.468697Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling sprite-vert
+[2m2026-10-01T15:44:58.477056Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling sprite-frag
+[2m2026-10-01T15:44:58.480076Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [99] and [102] are not greater than 1
+[2m2026-10-01T15:44:58.488264Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling lod-object-vert
+[2m2026-10-01T15:44:58.496457Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling lod-object-frag
+[2m2026-10-01T15:44:58.508018Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling particle-vert
+[2m2026-10-01T15:44:58.526800Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling particle-frag
+[2m2026-10-01T15:44:58.529768Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [96] and [99] are not greater than 1
+[2m2026-10-01T15:44:58.537913Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling rope-vert
+[2m2026-10-01T15:44:58.543894Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling rope-frag
+[2m2026-10-01T15:44:58.545994Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [86] and [89] are not greater than 1
+[2m2026-10-01T15:44:58.560164Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling trail-vert
+[2m2026-10-01T15:44:58.560576Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling trail-frag
+[2m2026-10-01T15:44:58.563441Z[0m [33m WARN[0m [2mnaga::front::glsl::builtins[0m[2m:[0m Assuming gradients [89] and [92] are not greater than 1
+[2m2026-10-01T15:44:58.570878Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling ui-vert
+[2m2026-10-01T15:44:58.571642Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling ui-frag
+[2m2026-10-01T15:44:58.572738Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling premultiply-alpha-vert
+[2m2026-10-01T15:44:58.572998Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling premultiply-alpha-frag
+[2m2026-10-01T15:44:58.573237Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling lod-terrain-vert
+[2m2026-10-01T15:44:58.581149Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling lod-terrain-frag
+[2m2026-10-01T15:44:58.595634Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling clouds-vert
+[2m2026-10-01T15:44:58.596188Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling clouds-frag
+[2m2026-10-01T15:44:58.611400Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling dual-downsample-filtered-frag
+[2m2026-10-01T15:44:58.611843Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling dual-downsample-frag
+[2m2026-10-01T15:44:58.612142Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling dual-upsample-frag
+[2m2026-10-01T15:44:58.612481Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling postprocess-vert
+[2m2026-10-01T15:44:58.612945Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling postprocess-frag
+[2m2026-10-01T15:44:58.627643Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling blit-vert
+[2m2026-10-01T15:44:58.627842Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling blit-frag
+[2m2026-10-01T15:44:58.628070Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling point-light-shadows-vert
+[2m2026-10-01T15:44:58.628596Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling light-shadows-directed-vert
+[2m2026-10-01T15:44:58.629106Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling light-shadows-figure-vert
+[2m2026-10-01T15:44:58.629682Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling light-shadows-debug-vert
+[2m2026-10-01T15:44:58.630258Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling rain-occlusion-directed-vert
+[2m2026-10-01T15:44:58.630829Z[0m [32m INFO[0m [2mveloren_voxygen::render::renderer::pipeline_creation[0m[2m:[0m Compiling rain-occlusion-figure-vert
+[2m2026-10-01T15:44:58.749861Z[0m [31mERROR[0m [2mveloren_voxygen::panic_handler[0m[2m:[0m VOXYGEN HAS PANICKED
+
+A critical error has occurred and Voxygen has been forced to terminate in an unusual manner. Details about the error can be found below.
+
+Panic reason: class NSPasteboard could not be found
+
+> What should I do?
+
+We need your help to fix this! You can help by contacting us and reporting this problem. To do this, open an issue on the Veloren issue tracker:
+
+https://www.gitlab.com/veloren/veloren/issues/new
+
+If you're on the Veloren community Discord server, we'd be grateful if you could also post a message in the #support channel.
+            
+> What should I include?
+
+The error information below will be useful in finding and fixing the problem. Please include as much information about your setup and the events that led up to the panic as possible.
+            
+Voxygen has logged information about the problem (including this message) to the file /var/mobile/Containers/Data/Application/FB10A9F1-5132-487C-BE30-C29B62EA3555/Documents/userdata/voxygen/logs/2026-10-01_voxygen.log. Please include the contents of this file in your bug report.
+            
+
+> Error information
+
+The information below is intended for developers and testers.
+
+PanicHookInfo: panicked at /Users/gitlab/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/objc2-app-kit-0.2.2/src/generated/NSPasteboard.rs:128:1:
+class NSPasteboard could not be found 
+Game version: 6162d956 [2026-09-30]
+
+Backtrace:
+

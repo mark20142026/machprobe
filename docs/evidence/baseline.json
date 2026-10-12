@@ -1,0 +1,620 @@
+{
+  "auxiliary_tool_notes": [],
+  "captured_at_utc": "2026-10-01T09:07:21.837861+00:00",
+  "environment": {
+    "build_dry_run": {
+      "argv": [
+        "make",
+        "-Bn",
+        "all"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "mkdir -p build\nxcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -Wpedantic -O0 -g samples/hello.c -o build/hello\nxcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -Wpedantic -O0 -g samples/file_io.c -o build/file_io\nxcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -Wpedantic -O0 -g samples/framework.c -framework CoreFoundation -o build/framework\nxcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -Wpedantic -O0 -g -fobjc-arc samples/metal_info.m -framework Foundation -framework Metal -o build/metal_info\nxcrun clang++ -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -Wpedantic -O0 -g -std=c++17 -Iinclude src/main.cpp src/macho.cpp src/deps.cpp -o build/machprobe\n"
+    },
+    "clang_version": {
+      "argv": [
+        "xcrun",
+        "clang",
+        "--version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n"
+    },
+    "git_head": {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "8b49db1904e968d682ef7a69ac2527db563ce585\n"
+    },
+    "git_status": {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": " M README.md\n?? docs/\n?? experiments/\n?? progress.md\n?? scripts/research.py\n"
+    },
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "sdk_version": {
+      "argv": [
+        "xcrun",
+        "--sdk",
+        "macosx",
+        "--show-sdk-version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "27.0\n"
+    },
+    "sw_vers": {
+      "argv": [
+        "sw_vers"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0\nBuildVersion:\t\t26A428\n"
+    },
+    "uname": {
+      "argv": [
+        "uname",
+        "-a"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Darwin <host>.local 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:02:16 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8112 arm64\n"
+    },
+    "xcrun_sdk": {
+      "argv": [
+        "xcrun",
+        "--sdk",
+        "macosx",
+        "--show-sdk-path"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk\n"
+    }
+  },
+  "essential_failures": [],
+  "samples": {
+    "build/file_io": {
+      "commands": {
+        "codesign_details": {
+          "argv": [
+            "codesign",
+            "-dv",
+            "--verbose=4",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "Executable=/Users/<user>/machprobe/build/file_io\nIdentifier=file_io\nFormat=Mach-O thin (arm64)\nCodeDirectory v=20400 size=512 flags=0x20002(adhoc,linker-signed) hashes=13+0 location=embedded\nVersionPlatform=1\nVersionMin=720896\nVersionSDK=1769472\nHash type=sha256 size=32\nCandidateCDHash sha256=351ee01ca8e9c2a0e3ed1419790f9c83870aad38\nCandidateCDHashFull sha256=351ee01ca8e9c2a0e3ed1419790f9c83870aad38017ddf61b5ab1526b5fdc39c\nHash choices=sha256\nCMSDigest=351ee01ca8e9c2a0e3ed1419790f9c83870aad38017ddf61b5ab1526b5fdc39c\nCMSDigestType=2\nExecutable Segment base=0\nExecutable Segment limit=784\nExecutable Segment flags=0x1\nPage size=4096\nCDHash=351ee01ca8e9c2a0e3ed1419790f9c83870aad38\nSignature=adhoc\nInfo.plist=not bound\nTeamIdentifier=not set\nSealed Resources=none\nInternal requirements=none\n",
+          "stdout": ""
+        },
+        "codesign_verify": {
+          "argv": [
+            "codesign",
+            "--verify",
+            "--strict",
+            "--verbose=2",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "/Users/<user>/machprobe/build/file_io: valid on disk\n/Users/<user>/machprobe/build/file_io: satisfies its Designated Requirement\n",
+          "stdout": ""
+        },
+        "deps_json": {
+          "argv": [
+            "/Users/<user>/machprobe/build/machprobe",
+            "deps",
+            "/Users/<user>/machprobe/build/file_io",
+            "--arch",
+            "arm64",
+            "--json"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "{\n  \"complete\": false,\n  \"edges\": [\n    {\n      \"candidates\": [\n        \"/usr/lib/libSystem.B.dylib\"\n      ],\n      \"categories\": [\n        \"Darwin/system\"\n      ],\n      \"from\": 0,\n      \"install_name\": \"/usr/lib/libSystem.B.dylib\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"reason\": \"Host dyld cache membership confirmed; image not parsed\",\n      \"resolved_path\": \"/usr/lib/libSystem.B.dylib\",\n      \"status\": \"cache-only\"\n    }\n  ],\n  \"limitations\": \"Static load commands only; no dlopen discovery, environment/fallback policy, cache image parsing, or guarantee of dyld acceptance\",\n  \"max_depth\": 16,\n  \"node_limit\": 1024,\n  \"nodes\": [\n    {\n      \"architecture\": \"arm64\",\n      \"depth\": 0,\n      \"id\": 0,\n      \"path\": \"/Users/<user>/machprobe/build/file_io\",\n      \"runpaths\": [],\n      \"unmodeled_rpaths\": []\n    }\n  ],\n  \"root\": \"/Users/<user>/machprobe/build/file_io\",\n  \"schema_version\": 1\n}\n"
+        },
+        "file": {
+          "argv": [
+            "file",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/file_io: Mach-O 64-bit executable arm64\n"
+        },
+        "inspect_json": {
+          "argv": [
+            "/Users/<user>/machprobe/build/machprobe",
+            "inspect",
+            "/Users/<user>/machprobe/build/file_io",
+            "--arch",
+            "arm64",
+            "--json"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "{\n  \"build_versions\": [\n    {\n      \"minimum_os\": \"11.0.0\",\n      \"platform\": \"macOS\",\n      \"platform_id\": 1,\n      \"sdk\": \"27.0.0\",\n      \"source\": \"LC_BUILD_VERSION\",\n      \"tools\": [\n        {\n          \"tool\": 3,\n          \"version\": \"27037.1.0\"\n        }\n      ]\n    }\n  ],\n  \"code_signing\": [\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 50464,\n      \"size\": 536\n    }\n  ],\n  \"defined_external_symbols\": [\n    {\n      \"description\": 16,\n      \"name\": \"__mh_execute_header\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294967296\n    },\n    {\n      \"description\": 0,\n      \"name\": \"_main\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294968760\n    }\n  ],\n  \"diagnostics\": [],\n  \"dylibs\": [\n    {\n      \"compatibility_version\": \"1.0.0\",\n      \"current_version\": \"1359.0.0\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/usr/lib/libSystem.B.dylib\"\n    }\n  ],\n  \"encryption\": [],\n  \"entry_points\": [\n    {\n      \"entryoff\": 1464,\n      \"source\": \"LC_MAIN\",\n      \"stacksize\": 0,\n      \"virtual_address\": 4294968760\n    }\n  ],\n  \"exports\": [\n    {\n      \"address_or_offset\": 0,\n      \"flags\": 0,\n      \"name\": \"__mh_execute_header\",\n      \"source\": \"export_trie\"\n    },\n    {\n      \"address_or_offset\": 1464,\n      \"flags\": 0,\n      \"name\": \"_main\",\n      \"source\": \"export_trie\"\n    }\n  ],\n  \"header\": {\n    \"architecture\": \"arm64\",\n    \"cpu_subtype\": 0,\n    \"cpu_type\": 16777228,\n    \"file_type\": \"MH_EXECUTE\",\n    \"file_type_id\": 2,\n    \"flags\": 2097285,\n    \"ncmds\": 17,\n    \"sizeofcmds\": 1384,\n    \"subtype_base\": 0,\n    \"subtype_capabilities\": 0\n  },\n  \"linkedit\": [\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"rebase\",\n      \"offset\": 49152,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"bind\",\n      \"offset\": 49160,\n      \"size\": 64\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"weak_bind\",\n      \"offset\": 0,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"lazy_bind\",\n      \"offset\": 49224,\n      \"size\": 224\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"export\",\n      \"offset\": 49448,\n      \"size\": 48\n    },\n    {\n      \"command\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 49496,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DATA_IN_CODE\",\n      \"offset\": 49504,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 50464,\n      \"size\": 536\n    }\n  ],\n  \"load_commands\": [\n    {\n      \"command\": 25,\n      \"index\": 0,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 32,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 25,\n      \"index\": 1,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 104,\n      \"required_by_dyld\": false,\n      \"size\": 472\n    },\n    {\n      \"command\": 25,\n      \"index\": 2,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 576,\n      \"required_by_dyld\": false,\n      \"size\": 152\n    },\n    {\n      \"command\": 25,\n      \"index\": 3,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 728,\n      \"required_by_dyld\": false,\n      \"size\": 232\n    },\n    {\n      \"command\": 25,\n      \"index\": 4,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 960,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 2147483682,\n      \"index\": 5,\n      \"name\": \"LC_DYLD_INFO_ONLY\",\n      \"offset\": 1032,\n      \"required_by_dyld\": true,\n      \"size\": 48\n    },\n    {\n      \"command\": 2,\n      \"index\": 6,\n      \"name\": \"LC_SYMTAB\",\n      \"offset\": 1080,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 11,\n      \"index\": 7,\n      \"name\": \"LC_DYSYMTAB\",\n      \"offset\": 1104,\n      \"required_by_dyld\": false,\n      \"size\": 80\n    },\n    {\n      \"command\": 14,\n      \"index\": 8,\n      \"name\": \"LC_LOAD_DYLINKER\",\n      \"offset\": 1184,\n      \"required_by_dyld\": false,\n      \"size\": 32,\n      \"value\": \"/usr/lib/dyld\"\n    },\n    {\n      \"command\": 27,\n      \"index\": 9,\n      \"name\": \"LC_UUID\",\n      \"offset\": 1216,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 50,\n      \"index\": 10,\n      \"name\": \"LC_BUILD_VERSION\",\n      \"offset\": 1240,\n      \"required_by_dyld\": false,\n      \"size\": 32\n    },\n    {\n      \"command\": 42,\n      \"index\": 11,\n      \"name\": \"LC_SOURCE_VERSION\",\n      \"offset\": 1272,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 2147483688,\n      \"index\": 12,\n      \"name\": \"LC_MAIN\",\n      \"offset\": 1288,\n      \"required_by_dyld\": true,\n      \"size\": 24\n    },\n    {\n      \"command\": 12,\n      \"index\": 13,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 1312,\n      \"required_by_dyld\": false,\n      \"size\": 56\n    },\n    {\n      \"command\": 38,\n      \"index\": 14,\n      \"name\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 1368,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 41,\n      \"index\": 15,\n      \"name\": \"LC_DATA_IN_CODE\",\n      \"offset\": 1384,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 29,\n      \"index\": 16,\n      \"name\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 1400,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    }\n  ],\n  \"path\": \"/Users/<user>/machprobe/build/file_io\",\n  \"rpaths\": [],\n  \"schema_version\": 1,\n  \"segments\": [\n    {\n      \"fileoff\": 0,\n      \"filesize\": 0,\n      \"initprot\": 0,\n      \"maxprot\": 0,\n      \"name\": \"__PAGEZERO\",\n      \"sections\": [],\n      \"vmaddr\": 0,\n      \"vmsize\": 4294967296\n    },\n    {\n      \"fileoff\": 0,\n      \"filesize\": 16384,\n      \"initprot\": 5,\n      \"maxprot\": 5,\n      \"name\": \"__TEXT\",\n      \"sections\": [\n        {\n          \"address\": 4294968760,\n          \"flags\": 2147484672,\n          \"name\": \"__text\",\n          \"offset\": 1464,\n          \"segment\": \"__TEXT\",\n          \"size\": 784\n        },\n        {\n          \"address\": 4294969544,\n          \"flags\": 2147484680,\n          \"name\": \"__stubs\",\n          \"offset\": 2248,\n          \"segment\": \"__TEXT\",\n          \"size\": 180\n        },\n        {\n          \"address\": 4294969724,\n          \"flags\": 2147484672,\n          \"name\": \"__stub_helper\",\n          \"offset\": 2428,\n          \"segment\": \"__TEXT\",\n          \"size\": 204\n        },\n        {\n          \"address\": 4294969928,\n          \"flags\": 2,\n          \"name\": \"__cstring\",\n          \"offset\": 2632,\n          \"segment\": \"__TEXT\",\n          \"size\": 155\n        },\n        {\n          \"address\": 4294970084,\n          \"flags\": 0,\n          \"name\": \"__unwind_info\",\n          \"offset\": 2788,\n          \"segment\": \"__TEXT\",\n          \"size\": 88\n        }\n      ],\n      \"vmaddr\": 4294967296,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 16384,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA_CONST\",\n      \"sections\": [\n        {\n          \"address\": 4294983680,\n          \"flags\": 6,\n          \"name\": \"__got\",\n          \"offset\": 16384,\n          \"segment\": \"__DATA_CONST\",\n          \"size\": 24\n        }\n      ],\n      \"vmaddr\": 4294983680,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 32768,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA\",\n      \"sections\": [\n        {\n          \"address\": 4295000064,\n          \"flags\": 7,\n          \"name\": \"__la_symbol_ptr\",\n          \"offset\": 32768,\n          \"segment\": \"__DATA\",\n          \"size\": 120\n        },\n        {\n          \"address\": 4295000184,\n          \"flags\": 0,\n          \"name\": \"__data\",\n          \"offset\": 32888,\n          \"segment\": \"__DATA\",\n          \"size\": 8\n        }\n      ],\n      \"vmaddr\": 4295000064,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 49152,\n      \"filesize\": 1848,\n      \"initprot\": 1,\n      \"maxprot\": 1,\n      \"name\": \"__LINKEDIT\",\n      \"sections\": [],\n      \"vmaddr\": 4295016448,\n      \"vmsize\": 16384\n    }\n  ],\n  \"slice_offset\": 0,\n  \"slice_size\": 51000,\n  \"slices\": [],\n  \"symbol_coverage\": \"LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded\",\n  \"undefined_symbols\": [\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"___snprintf_chk\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"___stack_chk_fail\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"___stack_chk_guard\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"___stderrp\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_close\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_fclose\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_fdopen\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_fprintf\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_fputs\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_fread\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_fseek\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_fwrite\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_memcmp\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_mkstemp\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_perror\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_puts\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_unlink\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"dyld_stub_binder\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    }\n  ],\n  \"uuids\": [\n    \"2f33ed27-eef0-4e52-ae25-970870d5aaa5\"\n  ]\n}\n"
+        },
+        "lipo_archs": {
+          "argv": [
+            "lipo",
+            "-archs",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "arm64\n"
+        },
+        "nm_globals": {
+          "argv": [
+            "nm",
+            "-g",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "                 U ___snprintf_chk\n                 U ___stack_chk_fail\n                 U ___stack_chk_guard\n                 U ___stderrp\n0000000100000000 T __mh_execute_header\n                 U _close\n                 U _fclose\n                 U _fdopen\n                 U _fprintf\n                 U _fputs\n                 U _fread\n                 U _fseek\n                 U _fwrite\n00000001000005b8 T _main\n                 U _memcmp\n                 U _mkstemp\n                 U _perror\n                 U _puts\n                 U _unlink\n                 U dyld_stub_binder\n"
+        },
+        "nm_undefined": {
+          "argv": [
+            "nm",
+            "-u",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "___snprintf_chk\n___stack_chk_fail\n___stack_chk_guard\n___stderrp\n_close\n_fclose\n_fdopen\n_fprintf\n_fputs\n_fread\n_fseek\n_fwrite\n_memcmp\n_mkstemp\n_perror\n_puts\n_unlink\ndyld_stub_binder\n"
+        },
+        "otool_libraries": {
+          "argv": [
+            "otool",
+            "-L",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/file_io:\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)\n"
+        },
+        "otool_load_commands": {
+          "argv": [
+            "otool",
+            "-l",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/file_io:\nLoad command 0\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __PAGEZERO\n   vmaddr 0x0000000000000000\n   vmsize 0x0000000100000000\n  fileoff 0\n filesize 0\n  maxprot 0x00000000\n initprot 0x00000000\n   nsects 0\n    flags 0x0\nLoad command 1\n      cmd LC_SEGMENT_64\n  cmdsize 472\n  segname __TEXT\n   vmaddr 0x0000000100000000\n   vmsize 0x0000000000004000\n  fileoff 0\n filesize 16384\n  maxprot 0x00000005\n initprot 0x00000005\n   nsects 5\n    flags 0x0\nSection\n  sectname __text\n   segname __TEXT\n      addr 0x00000001000005b8\n      size 0x0000000000000310\n    offset 1464\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __stubs\n   segname __TEXT\n      addr 0x00000001000008c8\n      size 0x00000000000000b4\n    offset 2248\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000408\n reserved1 0 (index into indirect symbol table)\n reserved2 12 (size of stubs)\nSection\n  sectname __stub_helper\n   segname __TEXT\n      addr 0x000000010000097c\n      size 0x00000000000000cc\n    offset 2428\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __cstring\n   segname __TEXT\n      addr 0x0000000100000a48\n      size 0x000000000000009b\n    offset 2632\n     align 2^0 (1)\n    reloff 0\n    nreloc 0\n     flags 0x00000002\n reserved1 0\n reserved2 0\nSection\n  sectname __unwind_info\n   segname __TEXT\n      addr 0x0000000100000ae4\n      size 0x0000000000000058\n    offset 2788\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 2\n      cmd LC_SEGMENT_64\n  cmdsize 152\n  segname __DATA_CONST\n   vmaddr 0x0000000100004000\n   vmsize 0x0000000000004000\n  fileoff 16384\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 1\n    flags 0x10\nSection\n  sectname __got\n   segname __DATA_CONST\n      addr 0x0000000100004000\n      size 0x0000000000000018\n    offset 16384\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000006\n reserved1 15 (index into indirect symbol table)\n reserved2 0\nLoad command 3\n      cmd LC_SEGMENT_64\n  cmdsize 232\n  segname __DATA\n   vmaddr 0x0000000100008000\n   vmsize 0x0000000000004000\n  fileoff 32768\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 2\n    flags 0x0\nSection\n  sectname __la_symbol_ptr\n   segname __DATA\n      addr 0x0000000100008000\n      size 0x0000000000000078\n    offset 32768\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000007\n reserved1 18 (index into indirect symbol table)\n reserved2 0\nSection\n  sectname __data\n   segname __DATA\n      addr 0x0000000100008078\n      size 0x0000000000000008\n    offset 32888\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 4\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __LINKEDIT\n   vmaddr 0x000000010000c000\n   vmsize 0x0000000000004000\n  fileoff 49152\n filesize 1848\n  maxprot 0x00000001\n initprot 0x00000001\n   nsects 0\n    flags 0x0\nLoad command 5\n            cmd LC_DYLD_INFO_ONLY\n        cmdsize 48\n     rebase_off 49152\n    rebase_size 8\n       bind_off 49160\n      bind_size 64\n  weak_bind_off 0\n weak_bind_size 0\n  lazy_bind_off 49224\n lazy_bind_size 224\n     export_off 49448\n    export_size 48\nLoad command 6\n     cmd LC_SYMTAB\n cmdsize 24\n  symoff 49504\n   nsyms 30\n  stroff 50120\n strsize 336\nLoad command 7\n            cmd LC_DYSYMTAB\n        cmdsize 80\n      ilocalsym 0\n      nlocalsym 10\n     iextdefsym 10\n     nextdefsym 2\n      iundefsym 12\n      nundefsym 18\n         tocoff 0\n           ntoc 0\n      modtaboff 0\n        nmodtab 0\n   extrefsymoff 0\n    nextrefsyms 0\n indirectsymoff 49984\n  nindirectsyms 33\n      extreloff 0\n        nextrel 0\n      locreloff 0\n        nlocrel 0\nLoad command 8\n          cmd LC_LOAD_DYLINKER\n      cmdsize 32\n         name /usr/lib/dyld (offset 12)\nLoad command 9\n     cmd LC_UUID\n cmdsize 24\n    uuid 2F33ED27-EEF0-4E52-AE25-970870D5AAA5\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform 1\n    minos 11.0\n      sdk 27.0\n   ntools 1\n     tool 3\n  version 27037.1\nLoad command 11\n      cmd LC_SOURCE_VERSION\n  cmdsize 16\n  version 0.0\nLoad command 12\n       cmd LC_MAIN\n   cmdsize 24\n  entryoff 1464\n stacksize 0\nLoad command 13\n          cmd LC_LOAD_DYLIB\n      cmdsize 56\n         name /usr/lib/libSystem.B.dylib (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 1359.0.0\ncompatibility version 1.0.0\nLoad command 14\n      cmd LC_FUNCTION_STARTS\n  cmdsize 16\n  dataoff 49496\n datasize 8\nLoad command 15\n      cmd LC_DATA_IN_CODE\n  cmdsize 16\n  dataoff 49504\n datasize 0\nLoad command 16\n      cmd LC_CODE_SIGNATURE\n  cmdsize 16\n  dataoff 50464\n datasize 536\n"
+        },
+        "run": {
+          "argv": [
+            "/Users/<user>/machprobe/build/file_io",
+            "/var/folders/2f/9pms0jms5cz4_cv3llcwlczr0000gn/T/machprobe-evidence-dai7erg_"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "File I/O round trip OK\n"
+        },
+        "vtool_build": {
+          "argv": [
+            "vtool",
+            "-show-build",
+            "/Users/<user>/machprobe/build/file_io"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/file_io:\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform MACOS\n    minos 11.0\n      sdk 27.0\n   ntools 1\n     tool LD\n  version 27037.1\n"
+        }
+      },
+      "path": "build/file_io",
+      "sha256": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0"
+    },
+    "build/framework": {
+      "commands": {
+        "codesign_details": {
+          "argv": [
+            "codesign",
+            "-dv",
+            "--verbose=4",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "Executable=/Users/<user>/machprobe/build/framework\nIdentifier=framework\nFormat=Mach-O thin (arm64)\nCodeDirectory v=20400 size=514 flags=0x20002(adhoc,linker-signed) hashes=13+0 location=embedded\nVersionPlatform=1\nVersionMin=720896\nVersionSDK=1769472\nHash type=sha256 size=32\nCandidateCDHash sha256=2fbb4bc487afa53daeedcdd023ad0085844aeb42\nCandidateCDHashFull sha256=2fbb4bc487afa53daeedcdd023ad0085844aeb421507d846bf3bd9126a84ee4f\nHash choices=sha256\nCMSDigest=2fbb4bc487afa53daeedcdd023ad0085844aeb421507d846bf3bd9126a84ee4f\nCMSDigestType=2\nExecutable Segment base=0\nExecutable Segment limit=128\nExecutable Segment flags=0x1\nPage size=4096\nCDHash=2fbb4bc487afa53daeedcdd023ad0085844aeb42\nSignature=adhoc\nInfo.plist=not bound\nTeamIdentifier=not set\nSealed Resources=none\nInternal requirements=none\n",
+          "stdout": ""
+        },
+        "codesign_verify": {
+          "argv": [
+            "codesign",
+            "--verify",
+            "--strict",
+            "--verbose=2",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "/Users/<user>/machprobe/build/framework: valid on disk\n/Users/<user>/machprobe/build/framework: satisfies its Designated Requirement\n",
+          "stdout": ""
+        },
+        "deps_json": {
+          "argv": [
+            "/Users/<user>/machprobe/build/machprobe",
+            "deps",
+            "/Users/<user>/machprobe/build/framework",
+            "--arch",
+            "arm64",
+            "--json"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "{\n  \"complete\": false,\n  \"edges\": [\n    {\n      \"candidates\": [\n        \"/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\"\n      ],\n      \"categories\": [\n        \"Darwin/system\",\n        \"Apple framework\"\n      ],\n      \"from\": 0,\n      \"install_name\": \"/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"reason\": \"Host dyld cache membership confirmed; image not parsed\",\n      \"resolved_path\": \"/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\",\n      \"status\": \"cache-only\"\n    },\n    {\n      \"candidates\": [\n        \"/usr/lib/libSystem.B.dylib\"\n      ],\n      \"categories\": [\n        \"Darwin/system\"\n      ],\n      \"from\": 0,\n      \"install_name\": \"/usr/lib/libSystem.B.dylib\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"reason\": \"Host dyld cache membership confirmed; image not parsed\",\n      \"resolved_path\": \"/usr/lib/libSystem.B.dylib\",\n      \"status\": \"cache-only\"\n    }\n  ],\n  \"limitations\": \"Static load commands only; no dlopen discovery, environment/fallback policy, cache image parsing, or guarantee of dyld acceptance\",\n  \"max_depth\": 16,\n  \"node_limit\": 1024,\n  \"nodes\": [\n    {\n      \"architecture\": \"arm64\",\n      \"depth\": 0,\n      \"id\": 0,\n      \"path\": \"/Users/<user>/machprobe/build/framework\",\n      \"runpaths\": [],\n      \"unmodeled_rpaths\": []\n    }\n  ],\n  \"root\": \"/Users/<user>/machprobe/build/framework\",\n  \"schema_version\": 1\n}\n"
+        },
+        "file": {
+          "argv": [
+            "file",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/framework: Mach-O 64-bit executable arm64\n"
+        },
+        "inspect_json": {
+          "argv": [
+            "/Users/<user>/machprobe/build/machprobe",
+            "inspect",
+            "/Users/<user>/machprobe/build/framework",
+            "--arch",
+            "arm64",
+            "--json"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "{\n  \"build_versions\": [\n    {\n      \"minimum_os\": \"11.0.0\",\n      \"platform\": \"macOS\",\n      \"platform_id\": 1,\n      \"sdk\": \"27.0.0\",\n      \"source\": \"LC_BUILD_VERSION\",\n      \"tools\": [\n        {\n          \"tool\": 3,\n          \"version\": \"27037.1.0\"\n        }\n      ]\n    }\n  ],\n  \"code_signing\": [\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 49888,\n      \"size\": 536\n    }\n  ],\n  \"defined_external_symbols\": [\n    {\n      \"description\": 16,\n      \"name\": \"__mh_execute_header\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294967296\n    },\n    {\n      \"description\": 0,\n      \"name\": \"_main\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294968872\n    }\n  ],\n  \"diagnostics\": [],\n  \"dylibs\": [\n    {\n      \"compatibility_version\": \"150.0.0\",\n      \"current_version\": \"5027.0.69\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\"\n    },\n    {\n      \"compatibility_version\": \"1.0.0\",\n      \"current_version\": \"1359.0.0\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/usr/lib/libSystem.B.dylib\"\n    }\n  ],\n  \"encryption\": [],\n  \"entry_points\": [\n    {\n      \"entryoff\": 1576,\n      \"source\": \"LC_MAIN\",\n      \"stacksize\": 0,\n      \"virtual_address\": 4294968872\n    }\n  ],\n  \"exports\": [\n    {\n      \"address_or_offset\": 0,\n      \"flags\": 0,\n      \"name\": \"__mh_execute_header\",\n      \"source\": \"export_trie\"\n    },\n    {\n      \"address_or_offset\": 1576,\n      \"flags\": 0,\n      \"name\": \"_main\",\n      \"source\": \"export_trie\"\n    }\n  ],\n  \"header\": {\n    \"architecture\": \"arm64\",\n    \"cpu_subtype\": 0,\n    \"cpu_type\": 16777228,\n    \"file_type\": \"MH_EXECUTE\",\n    \"file_type_id\": 2,\n    \"flags\": 2097285,\n    \"ncmds\": 18,\n    \"sizeofcmds\": 1488,\n    \"subtype_base\": 0,\n    \"subtype_capabilities\": 0\n  },\n  \"linkedit\": [\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"rebase\",\n      \"offset\": 49152,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"bind\",\n      \"offset\": 49160,\n      \"size\": 24\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"weak_bind\",\n      \"offset\": 0,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"lazy_bind\",\n      \"offset\": 49184,\n      \"size\": 96\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"export\",\n      \"offset\": 49280,\n      \"size\": 48\n    },\n    {\n      \"command\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 49328,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DATA_IN_CODE\",\n      \"offset\": 49336,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 49888,\n      \"size\": 536\n    }\n  ],\n  \"load_commands\": [\n    {\n      \"command\": 25,\n      \"index\": 0,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 32,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 25,\n      \"index\": 1,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 104,\n      \"required_by_dyld\": false,\n      \"size\": 472\n    },\n    {\n      \"command\": 25,\n      \"index\": 2,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 576,\n      \"required_by_dyld\": false,\n      \"size\": 152\n    },\n    {\n      \"command\": 25,\n      \"index\": 3,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 728,\n      \"required_by_dyld\": false,\n      \"size\": 232\n    },\n    {\n      \"command\": 25,\n      \"index\": 4,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 960,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 2147483682,\n      \"index\": 5,\n      \"name\": \"LC_DYLD_INFO_ONLY\",\n      \"offset\": 1032,\n      \"required_by_dyld\": true,\n      \"size\": 48\n    },\n    {\n      \"command\": 2,\n      \"index\": 6,\n      \"name\": \"LC_SYMTAB\",\n      \"offset\": 1080,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 11,\n      \"index\": 7,\n      \"name\": \"LC_DYSYMTAB\",\n      \"offset\": 1104,\n      \"required_by_dyld\": false,\n      \"size\": 80\n    },\n    {\n      \"command\": 14,\n      \"index\": 8,\n      \"name\": \"LC_LOAD_DYLINKER\",\n      \"offset\": 1184,\n      \"required_by_dyld\": false,\n      \"size\": 32,\n      \"value\": \"/usr/lib/dyld\"\n    },\n    {\n      \"command\": 27,\n      \"index\": 9,\n      \"name\": \"LC_UUID\",\n      \"offset\": 1216,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 50,\n      \"index\": 10,\n      \"name\": \"LC_BUILD_VERSION\",\n      \"offset\": 1240,\n      \"required_by_dyld\": false,\n      \"size\": 32\n    },\n    {\n      \"command\": 42,\n      \"index\": 11,\n      \"name\": \"LC_SOURCE_VERSION\",\n      \"offset\": 1272,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 2147483688,\n      \"index\": 12,\n      \"name\": \"LC_MAIN\",\n      \"offset\": 1288,\n      \"required_by_dyld\": true,\n      \"size\": 24\n    },\n    {\n      \"command\": 12,\n      \"index\": 13,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 1312,\n      \"required_by_dyld\": false,\n      \"size\": 104\n    },\n    {\n      \"command\": 12,\n      \"index\": 14,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 1416,\n      \"required_by_dyld\": false,\n      \"size\": 56\n    },\n    {\n      \"command\": 38,\n      \"index\": 15,\n      \"name\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 1472,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 41,\n      \"index\": 16,\n      \"name\": \"LC_DATA_IN_CODE\",\n      \"offset\": 1488,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 29,\n      \"index\": 17,\n      \"name\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 1504,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    }\n  ],\n  \"path\": \"/Users/<user>/machprobe/build/framework\",\n  \"rpaths\": [],\n  \"schema_version\": 1,\n  \"segments\": [\n    {\n      \"fileoff\": 0,\n      \"filesize\": 0,\n      \"initprot\": 0,\n      \"maxprot\": 0,\n      \"name\": \"__PAGEZERO\",\n      \"sections\": [],\n      \"vmaddr\": 0,\n      \"vmsize\": 4294967296\n    },\n    {\n      \"fileoff\": 0,\n      \"filesize\": 16384,\n      \"initprot\": 5,\n      \"maxprot\": 5,\n      \"name\": \"__TEXT\",\n      \"sections\": [\n        {\n          \"address\": 4294968872,\n          \"flags\": 2147484672,\n          \"name\": \"__text\",\n          \"offset\": 1576,\n          \"segment\": \"__TEXT\",\n          \"size\": 128\n        },\n        {\n          \"address\": 4294969000,\n          \"flags\": 2147484680,\n          \"name\": \"__stubs\",\n          \"offset\": 1704,\n          \"segment\": \"__TEXT\",\n          \"size\": 48\n        },\n        {\n          \"address\": 4294969048,\n          \"flags\": 2147484672,\n          \"name\": \"__stub_helper\",\n          \"offset\": 1752,\n          \"segment\": \"__TEXT\",\n          \"size\": 72\n        },\n        {\n          \"address\": 4294969120,\n          \"flags\": 2,\n          \"name\": \"__cstring\",\n          \"offset\": 1824,\n          \"segment\": \"__TEXT\",\n          \"size\": 47\n        },\n        {\n          \"address\": 4294969168,\n          \"flags\": 0,\n          \"name\": \"__unwind_info\",\n          \"offset\": 1872,\n          \"segment\": \"__TEXT\",\n          \"size\": 88\n        }\n      ],\n      \"vmaddr\": 4294967296,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 16384,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA_CONST\",\n      \"sections\": [\n        {\n          \"address\": 4294983680,\n          \"flags\": 6,\n          \"name\": \"__got\",\n          \"offset\": 16384,\n          \"segment\": \"__DATA_CONST\",\n          \"size\": 8\n        }\n      ],\n      \"vmaddr\": 4294983680,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 32768,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA\",\n      \"sections\": [\n        {\n          \"address\": 4295000064,\n          \"flags\": 7,\n          \"name\": \"__la_symbol_ptr\",\n          \"offset\": 32768,\n          \"segment\": \"__DATA\",\n          \"size\": 32\n        },\n        {\n          \"address\": 4295000096,\n          \"flags\": 0,\n          \"name\": \"__data\",\n          \"offset\": 32800,\n          \"segment\": \"__DATA\",\n          \"size\": 8\n        }\n      ],\n      \"vmaddr\": 4295000064,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 49152,\n      \"filesize\": 1272,\n      \"initprot\": 1,\n      \"maxprot\": 1,\n      \"name\": \"__LINKEDIT\",\n      \"sections\": [],\n      \"vmaddr\": 4295016448,\n      \"vmsize\": 16384\n    }\n  ],\n  \"slice_offset\": 0,\n  \"slice_size\": 50424,\n  \"slices\": [],\n  \"symbol_coverage\": \"LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded\",\n  \"undefined_symbols\": [\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\",\n      \"library_ordinal\": 1,\n      \"name\": \"_CFRelease\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\",\n      \"library_ordinal\": 1,\n      \"name\": \"_CFStringCreateWithCString\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\",\n      \"library_ordinal\": 1,\n      \"name\": \"_CFStringGetLength\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 512,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 2,\n      \"name\": \"_printf\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 512,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 2,\n      \"name\": \"dyld_stub_binder\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    }\n  ],\n  \"uuids\": [\n    \"c5ddd4b4-d12f-40f8-92fa-007b692c5f67\"\n  ]\n}\n"
+        },
+        "lipo_archs": {
+          "argv": [
+            "lipo",
+            "-archs",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "arm64\n"
+        },
+        "nm_globals": {
+          "argv": [
+            "nm",
+            "-g",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "                 U _CFRelease\n                 U _CFStringCreateWithCString\n                 U _CFStringGetLength\n0000000100000000 T __mh_execute_header\n0000000100000628 T _main\n                 U _printf\n                 U dyld_stub_binder\n"
+        },
+        "nm_undefined": {
+          "argv": [
+            "nm",
+            "-u",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "_CFRelease\n_CFStringCreateWithCString\n_CFStringGetLength\n_printf\ndyld_stub_binder\n"
+        },
+        "otool_libraries": {
+          "argv": [
+            "otool",
+            "-L",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/framework:\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)\n"
+        },
+        "otool_load_commands": {
+          "argv": [
+            "otool",
+            "-l",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/framework:\nLoad command 0\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __PAGEZERO\n   vmaddr 0x0000000000000000\n   vmsize 0x0000000100000000\n  fileoff 0\n filesize 0\n  maxprot 0x00000000\n initprot 0x00000000\n   nsects 0\n    flags 0x0\nLoad command 1\n      cmd LC_SEGMENT_64\n  cmdsize 472\n  segname __TEXT\n   vmaddr 0x0000000100000000\n   vmsize 0x0000000000004000\n  fileoff 0\n filesize 16384\n  maxprot 0x00000005\n initprot 0x00000005\n   nsects 5\n    flags 0x0\nSection\n  sectname __text\n   segname __TEXT\n      addr 0x0000000100000628\n      size 0x0000000000000080\n    offset 1576\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __stubs\n   segname __TEXT\n      addr 0x00000001000006a8\n      size 0x0000000000000030\n    offset 1704\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000408\n reserved1 0 (index into indirect symbol table)\n reserved2 12 (size of stubs)\nSection\n  sectname __stub_helper\n   segname __TEXT\n      addr 0x00000001000006d8\n      size 0x0000000000000048\n    offset 1752\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __cstring\n   segname __TEXT\n      addr 0x0000000100000720\n      size 0x000000000000002f\n    offset 1824\n     align 2^0 (1)\n    reloff 0\n    nreloc 0\n     flags 0x00000002\n reserved1 0\n reserved2 0\nSection\n  sectname __unwind_info\n   segname __TEXT\n      addr 0x0000000100000750\n      size 0x0000000000000058\n    offset 1872\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 2\n      cmd LC_SEGMENT_64\n  cmdsize 152\n  segname __DATA_CONST\n   vmaddr 0x0000000100004000\n   vmsize 0x0000000000004000\n  fileoff 16384\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 1\n    flags 0x10\nSection\n  sectname __got\n   segname __DATA_CONST\n      addr 0x0000000100004000\n      size 0x0000000000000008\n    offset 16384\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000006\n reserved1 4 (index into indirect symbol table)\n reserved2 0\nLoad command 3\n      cmd LC_SEGMENT_64\n  cmdsize 232\n  segname __DATA\n   vmaddr 0x0000000100008000\n   vmsize 0x0000000000004000\n  fileoff 32768\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 2\n    flags 0x0\nSection\n  sectname __la_symbol_ptr\n   segname __DATA\n      addr 0x0000000100008000\n      size 0x0000000000000020\n    offset 32768\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000007\n reserved1 5 (index into indirect symbol table)\n reserved2 0\nSection\n  sectname __data\n   segname __DATA\n      addr 0x0000000100008020\n      size 0x0000000000000008\n    offset 32800\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 4\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __LINKEDIT\n   vmaddr 0x000000010000c000\n   vmsize 0x0000000000004000\n  fileoff 49152\n filesize 1272\n  maxprot 0x00000001\n initprot 0x00000001\n   nsects 0\n    flags 0x0\nLoad command 5\n            cmd LC_DYLD_INFO_ONLY\n        cmdsize 48\n     rebase_off 49152\n    rebase_size 8\n       bind_off 49160\n      bind_size 24\n  weak_bind_off 0\n weak_bind_size 0\n  lazy_bind_off 49184\n lazy_bind_size 96\n     export_off 49280\n    export_size 48\nLoad command 6\n     cmd LC_SYMTAB\n cmdsize 24\n  symoff 49336\n   nsyms 17\n  stroff 49648\n strsize 240\nLoad command 7\n            cmd LC_DYSYMTAB\n        cmdsize 80\n      ilocalsym 0\n      nlocalsym 10\n     iextdefsym 10\n     nextdefsym 2\n      iundefsym 12\n      nundefsym 5\n         tocoff 0\n           ntoc 0\n      modtaboff 0\n        nmodtab 0\n   extrefsymoff 0\n    nextrefsyms 0\n indirectsymoff 49608\n  nindirectsyms 9\n      extreloff 0\n        nextrel 0\n      locreloff 0\n        nlocrel 0\nLoad command 8\n          cmd LC_LOAD_DYLINKER\n      cmdsize 32\n         name /usr/lib/dyld (offset 12)\nLoad command 9\n     cmd LC_UUID\n cmdsize 24\n    uuid C5DDD4B4-D12F-40F8-92FA-007B692C5F67\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform 1\n    minos 11.0\n      sdk 27.0\n   ntools 1\n     tool 3\n  version 27037.1\nLoad command 11\n      cmd LC_SOURCE_VERSION\n  cmdsize 16\n  version 0.0\nLoad command 12\n       cmd LC_MAIN\n   cmdsize 24\n  entryoff 1576\n stacksize 0\nLoad command 13\n          cmd LC_LOAD_DYLIB\n      cmdsize 104\n         name /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 5027.0.69\ncompatibility version 150.0.0\nLoad command 14\n          cmd LC_LOAD_DYLIB\n      cmdsize 56\n         name /usr/lib/libSystem.B.dylib (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 1359.0.0\ncompatibility version 1.0.0\nLoad command 15\n      cmd LC_FUNCTION_STARTS\n  cmdsize 16\n  dataoff 49328\n datasize 8\nLoad command 16\n      cmd LC_DATA_IN_CODE\n  cmdsize 16\n  dataoff 49336\n datasize 0\nLoad command 17\n      cmd LC_CODE_SIGNATURE\n  cmdsize 16\n  dataoff 49888\n datasize 536\n"
+        },
+        "run": {
+          "argv": [
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "CoreFoundation string length: 11\n"
+        },
+        "vtool_build": {
+          "argv": [
+            "vtool",
+            "-show-build",
+            "/Users/<user>/machprobe/build/framework"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/framework:\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform MACOS\n    minos 11.0\n      sdk 27.0\n   ntools 1\n     tool LD\n  version 27037.1\n"
+        }
+      },
+      "path": "build/framework",
+      "sha256": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280"
+    },
+    "build/hello": {
+      "commands": {
+        "codesign_details": {
+          "argv": [
+            "codesign",
+            "-dv",
+            "--verbose=4",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "Executable=/Users/<user>/machprobe/build/hello\nIdentifier=hello\nFormat=Mach-O thin (arm64)\nCodeDirectory v=20400 size=510 flags=0x20002(adhoc,linker-signed) hashes=13+0 location=embedded\nVersionPlatform=1\nVersionMin=720896\nVersionSDK=1769472\nHash type=sha256 size=32\nCandidateCDHash sha256=dc1cf9dc0dd81d1f9695291fa582d0656ba48aa9\nCandidateCDHashFull sha256=dc1cf9dc0dd81d1f9695291fa582d0656ba48aa93d3cfff17ec55c879d872d98\nHash choices=sha256\nCMSDigest=dc1cf9dc0dd81d1f9695291fa582d0656ba48aa93d3cfff17ec55c879d872d98\nCMSDigestType=2\nExecutable Segment base=0\nExecutable Segment limit=52\nExecutable Segment flags=0x1\nPage size=4096\nCDHash=dc1cf9dc0dd81d1f9695291fa582d0656ba48aa9\nSignature=adhoc\nInfo.plist=not bound\nTeamIdentifier=not set\nSealed Resources=none\nInternal requirements=none\n",
+          "stdout": ""
+        },
+        "codesign_verify": {
+          "argv": [
+            "codesign",
+            "--verify",
+            "--strict",
+            "--verbose=2",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "/Users/<user>/machprobe/build/hello: valid on disk\n/Users/<user>/machprobe/build/hello: satisfies its Designated Requirement\n",
+          "stdout": ""
+        },
+        "deps_json": {
+          "argv": [
+            "/Users/<user>/machprobe/build/machprobe",
+            "deps",
+            "/Users/<user>/machprobe/build/hello",
+            "--arch",
+            "arm64",
+            "--json"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "{\n  \"complete\": false,\n  \"edges\": [\n    {\n      \"candidates\": [\n        \"/usr/lib/libSystem.B.dylib\"\n      ],\n      \"categories\": [\n        \"Darwin/system\"\n      ],\n      \"from\": 0,\n      \"install_name\": \"/usr/lib/libSystem.B.dylib\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"reason\": \"Host dyld cache membership confirmed; image not parsed\",\n      \"resolved_path\": \"/usr/lib/libSystem.B.dylib\",\n      \"status\": \"cache-only\"\n    }\n  ],\n  \"limitations\": \"Static load commands only; no dlopen discovery, environment/fallback policy, cache image parsing, or guarantee of dyld acceptance\",\n  \"max_depth\": 16,\n  \"node_limit\": 1024,\n  \"nodes\": [\n    {\n      \"architecture\": \"arm64\",\n      \"depth\": 0,\n      \"id\": 0,\n      \"path\": \"/Users/<user>/machprobe/build/hello\",\n      \"runpaths\": [],\n      \"unmodeled_rpaths\": []\n    }\n  ],\n  \"root\": \"/Users/<user>/machprobe/build/hello\",\n  \"schema_version\": 1\n}\n"
+        },
+        "file": {
+          "argv": [
+            "file",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/hello: Mach-O 64-bit executable arm64\n"
+        },
+        "inspect_json": {
+          "argv": [
+            "/Users/<user>/machprobe/build/machprobe",
+            "inspect",
+            "/Users/<user>/machprobe/build/hello",
+            "--arch",
+            "arm64",
+            "--json"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "{\n  \"build_versions\": [\n    {\n      \"minimum_os\": \"11.0.0\",\n      \"platform\": \"macOS\",\n      \"platform_id\": 1,\n      \"sdk\": \"27.0.0\",\n      \"source\": \"LC_BUILD_VERSION\",\n      \"tools\": [\n        {\n          \"tool\": 3,\n          \"version\": \"27037.1.0\"\n        }\n      ]\n    }\n  ],\n  \"code_signing\": [\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 49680,\n      \"size\": 536\n    }\n  ],\n  \"defined_external_symbols\": [\n    {\n      \"description\": 16,\n      \"name\": \"__mh_execute_header\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294967296\n    },\n    {\n      \"description\": 0,\n      \"name\": \"_main\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294968760\n    }\n  ],\n  \"diagnostics\": [],\n  \"dylibs\": [\n    {\n      \"compatibility_version\": \"1.0.0\",\n      \"current_version\": \"1359.0.0\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/usr/lib/libSystem.B.dylib\"\n    }\n  ],\n  \"encryption\": [],\n  \"entry_points\": [\n    {\n      \"entryoff\": 1464,\n      \"source\": \"LC_MAIN\",\n      \"stacksize\": 0,\n      \"virtual_address\": 4294968760\n    }\n  ],\n  \"exports\": [\n    {\n      \"address_or_offset\": 0,\n      \"flags\": 0,\n      \"name\": \"__mh_execute_header\",\n      \"source\": \"export_trie\"\n    },\n    {\n      \"address_or_offset\": 1464,\n      \"flags\": 0,\n      \"name\": \"_main\",\n      \"source\": \"export_trie\"\n    }\n  ],\n  \"header\": {\n    \"architecture\": \"arm64\",\n    \"cpu_subtype\": 0,\n    \"cpu_type\": 16777228,\n    \"file_type\": \"MH_EXECUTE\",\n    \"file_type_id\": 2,\n    \"flags\": 2097285,\n    \"ncmds\": 17,\n    \"sizeofcmds\": 1384,\n    \"subtype_base\": 0,\n    \"subtype_capabilities\": 0\n  },\n  \"linkedit\": [\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"rebase\",\n      \"offset\": 49152,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"bind\",\n      \"offset\": 49160,\n      \"size\": 24\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"weak_bind\",\n      \"offset\": 0,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"lazy_bind\",\n      \"offset\": 49184,\n      \"size\": 16\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"export\",\n      \"offset\": 49200,\n      \"size\": 48\n    },\n    {\n      \"command\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 49248,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DATA_IN_CODE\",\n      \"offset\": 49256,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 49680,\n      \"size\": 536\n    }\n  ],\n  \"load_commands\": [\n    {\n      \"command\": 25,\n      \"index\": 0,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 32,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 25,\n      \"index\": 1,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 104,\n      \"required_by_dyld\": false,\n      \"size\": 472\n    },\n    {\n      \"command\": 25,\n      \"index\": 2,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 576,\n      \"required_by_dyld\": false,\n      \"size\": 152\n    },\n    {\n      \"command\": 25,\n      \"index\": 3,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 728,\n      \"required_by_dyld\": false,\n      \"size\": 232\n    },\n    {\n      \"command\": 25,\n      \"index\": 4,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 960,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 2147483682,\n      \"index\": 5,\n      \"name\": \"LC_DYLD_INFO_ONLY\",\n      \"offset\": 1032,\n      \"required_by_dyld\": true,\n      \"size\": 48\n    },\n    {\n      \"command\": 2,\n      \"index\": 6,\n      \"name\": \"LC_SYMTAB\",\n      \"offset\": 1080,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 11,\n      \"index\": 7,\n      \"name\": \"LC_DYSYMTAB\",\n      \"offset\": 1104,\n      \"required_by_dyld\": false,\n      \"size\": 80\n    },\n    {\n      \"command\": 14,\n      \"index\": 8,\n      \"name\": \"LC_LOAD_DYLINKER\",\n      \"offset\": 1184,\n      \"required_by_dyld\": false,\n      \"size\": 32,\n      \"value\": \"/usr/lib/dyld\"\n    },\n    {\n      \"command\": 27,\n      \"index\": 9,\n      \"name\": \"LC_UUID\",\n      \"offset\": 1216,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 50,\n      \"index\": 10,\n      \"name\": \"LC_BUILD_VERSION\",\n      \"offset\": 1240,\n      \"required_by_dyld\": false,\n      \"size\": 32\n    },\n    {\n      \"command\": 42,\n      \"index\": 11,\n      \"name\": \"LC_SOURCE_VERSION\",\n      \"offset\": 1272,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 2147483688,\n      \"index\": 12,\n      \"name\": \"LC_MAIN\",\n      \"offset\": 1288,\n      \"required_by_dyld\": true,\n      \"size\": 24\n    },\n    {\n      \"command\": 12,\n      \"index\": 13,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 1312,\n      \"required_by_dyld\": false,\n      \"size\": 56\n    },\n    {\n      \"command\": 38,\n      \"index\": 14,\n      \"name\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 1368,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 41,\n      \"index\": 15,\n      \"name\": \"LC_DATA_IN_CODE\",\n      \"offset\": 1384,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 29,\n      \"index\": 16,\n      \"name\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 1400,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    }\n  ],\n  \"path\": \"/Users/<user>/machprobe/build/hello\",\n  \"rpaths\": [],\n  \"schema_version\": 1,\n  \"segments\": [\n    {\n      \"fileoff\": 0,\n      \"filesize\": 0,\n      \"initprot\": 0,\n      \"maxprot\": 0,\n      \"name\": \"__PAGEZERO\",\n      \"sections\": [],\n      \"vmaddr\": 0,\n      \"vmsize\": 4294967296\n    },\n    {\n      \"fileoff\": 0,\n      \"filesize\": 16384,\n      \"initprot\": 5,\n      \"maxprot\": 5,\n      \"name\": \"__TEXT\",\n      \"sections\": [\n        {\n          \"address\": 4294968760,\n          \"flags\": 2147484672,\n          \"name\": \"__text\",\n          \"offset\": 1464,\n          \"segment\": \"__TEXT\",\n          \"size\": 52\n        },\n        {\n          \"address\": 4294968812,\n          \"flags\": 2147484680,\n          \"name\": \"__stubs\",\n          \"offset\": 1516,\n          \"segment\": \"__TEXT\",\n          \"size\": 12\n        },\n        {\n          \"address\": 4294968824,\n          \"flags\": 2147484672,\n          \"name\": \"__stub_helper\",\n          \"offset\": 1528,\n          \"segment\": \"__TEXT\",\n          \"size\": 36\n        },\n        {\n          \"address\": 4294968860,\n          \"flags\": 2,\n          \"name\": \"__cstring\",\n          \"offset\": 1564,\n          \"segment\": \"__TEXT\",\n          \"size\": 23\n        },\n        {\n          \"address\": 4294968884,\n          \"flags\": 0,\n          \"name\": \"__unwind_info\",\n          \"offset\": 1588,\n          \"segment\": \"__TEXT\",\n          \"size\": 88\n        }\n      ],\n      \"vmaddr\": 4294967296,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 16384,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA_CONST\",\n      \"sections\": [\n        {\n          \"address\": 4294983680,\n          \"flags\": 6,\n          \"name\": \"__got\",\n          \"offset\": 16384,\n          \"segment\": \"__DATA_CONST\",\n          \"size\": 8\n        }\n      ],\n      \"vmaddr\": 4294983680,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 32768,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA\",\n      \"sections\": [\n        {\n          \"address\": 4295000064,\n          \"flags\": 7,\n          \"name\": \"__la_symbol_ptr\",\n          \"offset\": 32768,\n          \"segment\": \"__DATA\",\n          \"size\": 8\n        },\n        {\n          \"address\": 4295000072,\n          \"flags\": 0,\n          \"name\": \"__data\",\n          \"offset\": 32776,\n          \"segment\": \"__DATA\",\n          \"size\": 8\n        }\n      ],\n      \"vmaddr\": 4295000064,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 49152,\n      \"filesize\": 1064,\n      \"initprot\": 1,\n      \"maxprot\": 1,\n      \"name\": \"__LINKEDIT\",\n      \"sections\": [],\n      \"vmaddr\": 4295016448,\n      \"vmsize\": 16384\n    }\n  ],\n  \"slice_offset\": 0,\n  \"slice_size\": 50216,\n  \"slices\": [],\n  \"symbol_coverage\": \"LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded\",\n  \"undefined_symbols\": [\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"_puts\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 256,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 1,\n      \"name\": \"dyld_stub_binder\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    }\n  ],\n  \"uuids\": [\n    \"10cf0410-70d8-4efe-9b14-6975e106a888\"\n  ]\n}\n"
+        },
+        "lipo_archs": {
+          "argv": [
+            "lipo",
+            "-archs",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "arm64\n"
+        },
+        "nm_globals": {
+          "argv": [
+            "nm",
+            "-g",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "0000000100000000 T __mh_execute_header\n00000001000005b8 T _main\n                 U _puts\n                 U dyld_stub_binder\n"
+        },
+        "nm_undefined": {
+          "argv": [
+            "nm",
+            "-u",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "_puts\ndyld_stub_binder\n"
+        },
+        "otool_libraries": {
+          "argv": [
+            "otool",
+            "-L",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/hello:\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)\n"
+        },
+        "otool_load_commands": {
+          "argv": [
+            "otool",
+            "-l",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/hello:\nLoad command 0\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __PAGEZERO\n   vmaddr 0x0000000000000000\n   vmsize 0x0000000100000000\n  fileoff 0\n filesize 0\n  maxprot 0x00000000\n initprot 0x00000000\n   nsects 0\n    flags 0x0\nLoad command 1\n      cmd LC_SEGMENT_64\n  cmdsize 472\n  segname __TEXT\n   vmaddr 0x0000000100000000\n   vmsize 0x0000000000004000\n  fileoff 0\n filesize 16384\n  maxprot 0x00000005\n initprot 0x00000005\n   nsects 5\n    flags 0x0\nSection\n  sectname __text\n   segname __TEXT\n      addr 0x00000001000005b8\n      size 0x0000000000000034\n    offset 1464\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __stubs\n   segname __TEXT\n      addr 0x00000001000005ec\n      size 0x000000000000000c\n    offset 1516\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000408\n reserved1 0 (index into indirect symbol table)\n reserved2 12 (size of stubs)\nSection\n  sectname __stub_helper\n   segname __TEXT\n      addr 0x00000001000005f8\n      size 0x0000000000000024\n    offset 1528\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __cstring\n   segname __TEXT\n      addr 0x000000010000061c\n      size 0x0000000000000017\n    offset 1564\n     align 2^0 (1)\n    reloff 0\n    nreloc 0\n     flags 0x00000002\n reserved1 0\n reserved2 0\nSection\n  sectname __unwind_info\n   segname __TEXT\n      addr 0x0000000100000634\n      size 0x0000000000000058\n    offset 1588\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 2\n      cmd LC_SEGMENT_64\n  cmdsize 152\n  segname __DATA_CONST\n   vmaddr 0x0000000100004000\n   vmsize 0x0000000000004000\n  fileoff 16384\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 1\n    flags 0x10\nSection\n  sectname __got\n   segname __DATA_CONST\n      addr 0x0000000100004000\n      size 0x0000000000000008\n    offset 16384\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000006\n reserved1 1 (index into indirect symbol table)\n reserved2 0\nLoad command 3\n      cmd LC_SEGMENT_64\n  cmdsize 232\n  segname __DATA\n   vmaddr 0x0000000100008000\n   vmsize 0x0000000000004000\n  fileoff 32768\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 2\n    flags 0x0\nSection\n  sectname __la_symbol_ptr\n   segname __DATA\n      addr 0x0000000100008000\n      size 0x0000000000000008\n    offset 32768\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000007\n reserved1 2 (index into indirect symbol table)\n reserved2 0\nSection\n  sectname __data\n   segname __DATA\n      addr 0x0000000100008008\n      size 0x0000000000000008\n    offset 32776\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 4\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __LINKEDIT\n   vmaddr 0x000000010000c000\n   vmsize 0x0000000000004000\n  fileoff 49152\n filesize 1064\n  maxprot 0x00000001\n initprot 0x00000001\n   nsects 0\n    flags 0x0\nLoad command 5\n            cmd LC_DYLD_INFO_ONLY\n        cmdsize 48\n     rebase_off 49152\n    rebase_size 8\n       bind_off 49160\n      bind_size 24\n  weak_bind_off 0\n weak_bind_size 0\n  lazy_bind_off 49184\n lazy_bind_size 16\n     export_off 49200\n    export_size 48\nLoad command 6\n     cmd LC_SYMTAB\n cmdsize 24\n  symoff 49256\n   nsyms 14\n  stroff 49496\n strsize 176\nLoad command 7\n            cmd LC_DYSYMTAB\n        cmdsize 80\n      ilocalsym 0\n      nlocalsym 10\n     iextdefsym 10\n     nextdefsym 2\n      iundefsym 12\n      nundefsym 2\n         tocoff 0\n           ntoc 0\n      modtaboff 0\n        nmodtab 0\n   extrefsymoff 0\n    nextrefsyms 0\n indirectsymoff 49480\n  nindirectsyms 3\n      extreloff 0\n        nextrel 0\n      locreloff 0\n        nlocrel 0\nLoad command 8\n          cmd LC_LOAD_DYLINKER\n      cmdsize 32\n         name /usr/lib/dyld (offset 12)\nLoad command 9\n     cmd LC_UUID\n cmdsize 24\n    uuid 10CF0410-70D8-4EFE-9B14-6975E106A888\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform 1\n    minos 11.0\n      sdk 27.0\n   ntools 1\n     tool 3\n  version 27037.1\nLoad command 11\n      cmd LC_SOURCE_VERSION\n  cmdsize 16\n  version 0.0\nLoad command 12\n       cmd LC_MAIN\n   cmdsize 24\n  entryoff 1464\n stacksize 0\nLoad command 13\n          cmd LC_LOAD_DYLIB\n      cmdsize 56\n         name /usr/lib/libSystem.B.dylib (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 1359.0.0\ncompatibility version 1.0.0\nLoad command 14\n      cmd LC_FUNCTION_STARTS\n  cmdsize 16\n  dataoff 49248\n datasize 8\nLoad command 15\n      cmd LC_DATA_IN_CODE\n  cmdsize 16\n  dataoff 49256\n datasize 0\nLoad command 16\n      cmd LC_CODE_SIGNATURE\n  cmdsize 16\n  dataoff 49680\n datasize 536\n"
+        },
+        "run": {
+          "argv": [
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "Hello from macOS ARM64\n"
+        },
+        "vtool_build": {
+          "argv": [
+            "vtool",
+            "-show-build",
+            "/Users/<user>/machprobe/build/hello"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/hello:\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform MACOS\n    minos 11.0\n      sdk 27.0\n   ntools 1\n     tool LD\n  version 27037.1\n"
+        }
+      },
+      "path": "build/hello",
+      "sha256": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6"
+    },
+    "build/metal_info": {
+      "commands": {
+        "codesign_details": {
+          "argv": [
+            "codesign",
+            "-dv",
+            "--verbose=4",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "Executable=/Users/<user>/machprobe/build/metal_info\nIdentifier=metal_info\nFormat=Mach-O thin (arm64)\nCodeDirectory v=20400 size=515 flags=0x20002(adhoc,linker-signed) hashes=13+0 location=embedded\nVersionPlatform=1\nVersionMin=720896\nVersionSDK=1769472\nHash type=sha256 size=32\nCandidateCDHash sha256=0e25b587fd3075469df33bfcb51a7557d9ee74eb\nCandidateCDHashFull sha256=0e25b587fd3075469df33bfcb51a7557d9ee74eb56d4cb6841dfe2045d9e370e\nHash choices=sha256\nCMSDigest=0e25b587fd3075469df33bfcb51a7557d9ee74eb56d4cb6841dfe2045d9e370e\nCMSDigestType=2\nExecutable Segment base=0\nExecutable Segment limit=304\nExecutable Segment flags=0x1\nPage size=4096\nCDHash=0e25b587fd3075469df33bfcb51a7557d9ee74eb\nSignature=adhoc\nInfo.plist=not bound\nTeamIdentifier=not set\nSealed Resources=none\nInternal requirements=none\n",
+          "stdout": ""
+        },
+        "codesign_verify": {
+          "argv": [
+            "codesign",
+            "--verify",
+            "--strict",
+            "--verbose=2",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "/Users/<user>/machprobe/build/metal_info: valid on disk\n/Users/<user>/machprobe/build/metal_info: satisfies its Designated Requirement\n",
+          "stdout": ""
+        },
+        "deps_json": {
+          "argv": [
+            "/Users/<user>/machprobe/build/machprobe",
+            "deps",
+            "/Users/<user>/machprobe/build/metal_info",
+            "--arch",
+            "arm64",
+            "--json"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "{\n  \"complete\": false,\n  \"edges\": [\n    {\n      \"candidates\": [\n        \"/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation\"\n      ],\n      \"categories\": [\n        \"Darwin/system\",\n        \"Apple framework\"\n      ],\n      \"from\": 0,\n      \"install_name\": \"/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"reason\": \"Host dyld cache membership confirmed; image not parsed\",\n      \"resolved_path\": \"/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation\",\n      \"status\": \"cache-only\"\n    },\n    {\n      \"candidates\": [\n        \"/System/Library/Frameworks/Metal.framework/Versions/A/Metal\"\n      ],\n      \"categories\": [\n        \"Darwin/system\",\n        \"Apple framework\",\n        \"graphics/Metal\"\n      ],\n      \"from\": 0,\n      \"install_name\": \"/System/Library/Frameworks/Metal.framework/Versions/A/Metal\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"reason\": \"Host dyld cache membership confirmed; image not parsed\",\n      \"resolved_path\": \"/System/Library/Frameworks/Metal.framework/Versions/A/Metal\",\n      \"status\": \"cache-only\"\n    },\n    {\n      \"candidates\": [\n        \"/usr/lib/libobjc.A.dylib\"\n      ],\n      \"categories\": [\n        \"Darwin/system\",\n        \"Objective-C runtime\"\n      ],\n      \"from\": 0,\n      \"install_name\": \"/usr/lib/libobjc.A.dylib\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"reason\": \"Host dyld cache membership confirmed; image not parsed\",\n      \"resolved_path\": \"/usr/lib/libobjc.A.dylib\",\n      \"status\": \"cache-only\"\n    },\n    {\n      \"candidates\": [\n        \"/usr/lib/libSystem.B.dylib\"\n      ],\n      \"categories\": [\n        \"Darwin/system\"\n      ],\n      \"from\": 0,\n      \"install_name\": \"/usr/lib/libSystem.B.dylib\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"reason\": \"Host dyld cache membership confirmed; image not parsed\",\n      \"resolved_path\": \"/usr/lib/libSystem.B.dylib\",\n      \"status\": \"cache-only\"\n    }\n  ],\n  \"limitations\": \"Static load commands only; no dlopen discovery, environment/fallback policy, cache image parsing, or guarantee of dyld acceptance\",\n  \"max_depth\": 16,\n  \"node_limit\": 1024,\n  \"nodes\": [\n    {\n      \"architecture\": \"arm64\",\n      \"depth\": 0,\n      \"id\": 0,\n      \"path\": \"/Users/<user>/machprobe/build/metal_info\",\n      \"runpaths\": [],\n      \"unmodeled_rpaths\": []\n    }\n  ],\n  \"root\": \"/Users/<user>/machprobe/build/metal_info\",\n  \"schema_version\": 1\n}\n"
+        },
+        "file": {
+          "argv": [
+            "file",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/metal_info: Mach-O 64-bit executable arm64\n"
+        },
+        "inspect_json": {
+          "argv": [
+            "/Users/<user>/machprobe/build/machprobe",
+            "inspect",
+            "/Users/<user>/machprobe/build/metal_info",
+            "--arch",
+            "arm64",
+            "--json"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "{\n  \"build_versions\": [\n    {\n      \"minimum_os\": \"11.0.0\",\n      \"platform\": \"macOS\",\n      \"platform_id\": 1,\n      \"sdk\": \"27.0.0\",\n      \"source\": \"LC_BUILD_VERSION\",\n      \"tools\": [\n        {\n          \"tool\": 3,\n          \"version\": \"27037.1.0\"\n        }\n      ]\n    }\n  ],\n  \"code_signing\": [\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 50560,\n      \"size\": 536\n    }\n  ],\n  \"defined_external_symbols\": [\n    {\n      \"description\": 16,\n      \"name\": \"__mh_execute_header\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294967296\n    },\n    {\n      \"description\": 0,\n      \"name\": \"_main\",\n      \"private_external\": false,\n      \"section\": 1,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 15,\n      \"value\": 4294969328\n    }\n  ],\n  \"diagnostics\": [],\n  \"dylibs\": [\n    {\n      \"compatibility_version\": \"300.0.0\",\n      \"current_version\": \"5027.0.69\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation\"\n    },\n    {\n      \"compatibility_version\": \"1.0.0\",\n      \"current_version\": \"382.5.3\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/System/Library/Frameworks/Metal.framework/Versions/A/Metal\"\n    },\n    {\n      \"compatibility_version\": \"1.0.0\",\n      \"current_version\": \"228.0.0\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/usr/lib/libobjc.A.dylib\"\n    },\n    {\n      \"compatibility_version\": \"1.0.0\",\n      \"current_version\": \"1359.0.0\",\n      \"kind\": \"LC_LOAD_DYLIB\",\n      \"name\": \"/usr/lib/libSystem.B.dylib\"\n    }\n  ],\n  \"encryption\": [],\n  \"entry_points\": [\n    {\n      \"entryoff\": 2032,\n      \"source\": \"LC_MAIN\",\n      \"stacksize\": 0,\n      \"virtual_address\": 4294969328\n    }\n  ],\n  \"exports\": [\n    {\n      \"address_or_offset\": 0,\n      \"flags\": 0,\n      \"name\": \"__mh_execute_header\",\n      \"source\": \"export_trie\"\n    },\n    {\n      \"address_or_offset\": 2032,\n      \"flags\": 0,\n      \"name\": \"_main\",\n      \"source\": \"export_trie\"\n    }\n  ],\n  \"header\": {\n    \"architecture\": \"arm64\",\n    \"cpu_subtype\": 0,\n    \"cpu_type\": 16777228,\n    \"file_type\": \"MH_EXECUTE\",\n    \"file_type_id\": 2,\n    \"flags\": 2097285,\n    \"ncmds\": 20,\n    \"sizeofcmds\": 1944,\n    \"subtype_base\": 0,\n    \"subtype_capabilities\": 0\n  },\n  \"linkedit\": [\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"rebase\",\n      \"offset\": 49152,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"bind\",\n      \"offset\": 49160,\n      \"size\": 96\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"weak_bind\",\n      \"offset\": 0,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"lazy_bind\",\n      \"offset\": 49256,\n      \"size\": 224\n    },\n    {\n      \"command\": \"LC_DYLD_INFO_ONLY\",\n      \"kind\": \"export\",\n      \"offset\": 49480,\n      \"size\": 48\n    },\n    {\n      \"command\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 49528,\n      \"size\": 8\n    },\n    {\n      \"command\": \"LC_DATA_IN_CODE\",\n      \"offset\": 49536,\n      \"size\": 0\n    },\n    {\n      \"command\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 50560,\n      \"size\": 536\n    }\n  ],\n  \"load_commands\": [\n    {\n      \"command\": 25,\n      \"index\": 0,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 32,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 25,\n      \"index\": 1,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 104,\n      \"required_by_dyld\": false,\n      \"size\": 632\n    },\n    {\n      \"command\": 25,\n      \"index\": 2,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 736,\n      \"required_by_dyld\": false,\n      \"size\": 232\n    },\n    {\n      \"command\": 25,\n      \"index\": 3,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 968,\n      \"required_by_dyld\": false,\n      \"size\": 312\n    },\n    {\n      \"command\": 25,\n      \"index\": 4,\n      \"name\": \"LC_SEGMENT_64\",\n      \"offset\": 1280,\n      \"required_by_dyld\": false,\n      \"size\": 72\n    },\n    {\n      \"command\": 2147483682,\n      \"index\": 5,\n      \"name\": \"LC_DYLD_INFO_ONLY\",\n      \"offset\": 1352,\n      \"required_by_dyld\": true,\n      \"size\": 48\n    },\n    {\n      \"command\": 2,\n      \"index\": 6,\n      \"name\": \"LC_SYMTAB\",\n      \"offset\": 1400,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 11,\n      \"index\": 7,\n      \"name\": \"LC_DYSYMTAB\",\n      \"offset\": 1424,\n      \"required_by_dyld\": false,\n      \"size\": 80\n    },\n    {\n      \"command\": 14,\n      \"index\": 8,\n      \"name\": \"LC_LOAD_DYLINKER\",\n      \"offset\": 1504,\n      \"required_by_dyld\": false,\n      \"size\": 32,\n      \"value\": \"/usr/lib/dyld\"\n    },\n    {\n      \"command\": 27,\n      \"index\": 9,\n      \"name\": \"LC_UUID\",\n      \"offset\": 1536,\n      \"required_by_dyld\": false,\n      \"size\": 24\n    },\n    {\n      \"command\": 50,\n      \"index\": 10,\n      \"name\": \"LC_BUILD_VERSION\",\n      \"offset\": 1560,\n      \"required_by_dyld\": false,\n      \"size\": 32\n    },\n    {\n      \"command\": 42,\n      \"index\": 11,\n      \"name\": \"LC_SOURCE_VERSION\",\n      \"offset\": 1592,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 2147483688,\n      \"index\": 12,\n      \"name\": \"LC_MAIN\",\n      \"offset\": 1608,\n      \"required_by_dyld\": true,\n      \"size\": 24\n    },\n    {\n      \"command\": 12,\n      \"index\": 13,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 1632,\n      \"required_by_dyld\": false,\n      \"size\": 96\n    },\n    {\n      \"command\": 12,\n      \"index\": 14,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 1728,\n      \"required_by_dyld\": false,\n      \"size\": 88\n    },\n    {\n      \"command\": 12,\n      \"index\": 15,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 1816,\n      \"required_by_dyld\": false,\n      \"size\": 56\n    },\n    {\n      \"command\": 12,\n      \"index\": 16,\n      \"name\": \"LC_LOAD_DYLIB\",\n      \"offset\": 1872,\n      \"required_by_dyld\": false,\n      \"size\": 56\n    },\n    {\n      \"command\": 38,\n      \"index\": 17,\n      \"name\": \"LC_FUNCTION_STARTS\",\n      \"offset\": 1928,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 41,\n      \"index\": 18,\n      \"name\": \"LC_DATA_IN_CODE\",\n      \"offset\": 1944,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    },\n    {\n      \"command\": 29,\n      \"index\": 19,\n      \"name\": \"LC_CODE_SIGNATURE\",\n      \"offset\": 1960,\n      \"required_by_dyld\": false,\n      \"size\": 16\n    }\n  ],\n  \"path\": \"/Users/<user>/machprobe/build/metal_info\",\n  \"rpaths\": [],\n  \"schema_version\": 1,\n  \"segments\": [\n    {\n      \"fileoff\": 0,\n      \"filesize\": 0,\n      \"initprot\": 0,\n      \"maxprot\": 0,\n      \"name\": \"__PAGEZERO\",\n      \"sections\": [],\n      \"vmaddr\": 0,\n      \"vmsize\": 4294967296\n    },\n    {\n      \"fileoff\": 0,\n      \"filesize\": 16384,\n      \"initprot\": 5,\n      \"maxprot\": 5,\n      \"name\": \"__TEXT\",\n      \"sections\": [\n        {\n          \"address\": 4294969328,\n          \"flags\": 2147484672,\n          \"name\": \"__text\",\n          \"offset\": 2032,\n          \"segment\": \"__TEXT\",\n          \"size\": 304\n        },\n        {\n          \"address\": 4294969632,\n          \"flags\": 2147484680,\n          \"name\": \"__stubs\",\n          \"offset\": 2336,\n          \"segment\": \"__TEXT\",\n          \"size\": 96\n        },\n        {\n          \"address\": 4294969728,\n          \"flags\": 2147484672,\n          \"name\": \"__stub_helper\",\n          \"offset\": 2432,\n          \"segment\": \"__TEXT\",\n          \"size\": 120\n        },\n        {\n          \"address\": 4294969856,\n          \"flags\": 2147484672,\n          \"name\": \"__objc_stubs\",\n          \"offset\": 2560,\n          \"segment\": \"__TEXT\",\n          \"size\": 128\n        },\n        {\n          \"address\": 4294969984,\n          \"flags\": 2,\n          \"name\": \"__cstring\",\n          \"offset\": 2688,\n          \"segment\": \"__TEXT\",\n          \"size\": 89\n        },\n        {\n          \"address\": 4294970073,\n          \"flags\": 2,\n          \"name\": \"__objc_methname\",\n          \"offset\": 2777,\n          \"segment\": \"__TEXT\",\n          \"size\": 44\n        },\n        {\n          \"address\": 4294970120,\n          \"flags\": 0,\n          \"name\": \"__unwind_info\",\n          \"offset\": 2824,\n          \"segment\": \"__TEXT\",\n          \"size\": 88\n        }\n      ],\n      \"vmaddr\": 4294967296,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 16384,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA_CONST\",\n      \"sections\": [\n        {\n          \"address\": 4294983680,\n          \"flags\": 0,\n          \"name\": \"__objc_imageinfo\",\n          \"offset\": 16384,\n          \"segment\": \"__DATA_CONST\",\n          \"size\": 8\n        },\n        {\n          \"address\": 4294983688,\n          \"flags\": 6,\n          \"name\": \"__got\",\n          \"offset\": 16392,\n          \"segment\": \"__DATA_CONST\",\n          \"size\": 32\n        }\n      ],\n      \"vmaddr\": 4294983680,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 32768,\n      \"filesize\": 16384,\n      \"initprot\": 3,\n      \"maxprot\": 3,\n      \"name\": \"__DATA\",\n      \"sections\": [\n        {\n          \"address\": 4295000064,\n          \"flags\": 7,\n          \"name\": \"__la_symbol_ptr\",\n          \"offset\": 32768,\n          \"segment\": \"__DATA\",\n          \"size\": 64\n        },\n        {\n          \"address\": 4295000128,\n          \"flags\": 268435461,\n          \"name\": \"__objc_selrefs\",\n          \"offset\": 32832,\n          \"segment\": \"__DATA\",\n          \"size\": 32\n        },\n        {\n          \"address\": 4295000160,\n          \"flags\": 0,\n          \"name\": \"__data\",\n          \"offset\": 32864,\n          \"segment\": \"__DATA\",\n          \"size\": 8\n        }\n      ],\n      \"vmaddr\": 4295000064,\n      \"vmsize\": 16384\n    },\n    {\n      \"fileoff\": 49152,\n      \"filesize\": 1944,\n      \"initprot\": 1,\n      \"maxprot\": 1,\n      \"name\": \"__LINKEDIT\",\n      \"sections\": [],\n      \"vmaddr\": 4295016448,\n      \"vmsize\": 16384\n    }\n  ],\n  \"slice_offset\": 0,\n  \"slice_size\": 51096,\n  \"slices\": [],\n  \"symbol_coverage\": \"LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded\",\n  \"undefined_symbols\": [\n    {\n      \"common_symbol\": false,\n      \"description\": 512,\n      \"library\": \"/System/Library/Frameworks/Metal.framework/Versions/A/Metal\",\n      \"library_ordinal\": 2,\n      \"name\": \"_MTLCreateSystemDefaultDevice\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 1024,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 4,\n      \"name\": \"___stderrp\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 1024,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 4,\n      \"name\": \"_fputs\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 768,\n      \"library\": \"/usr/lib/libobjc.A.dylib\",\n      \"library_ordinal\": 3,\n      \"name\": \"_objc_autoreleasePoolPop\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 768,\n      \"library\": \"/usr/lib/libobjc.A.dylib\",\n      \"library_ordinal\": 3,\n      \"name\": \"_objc_autoreleasePoolPush\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 768,\n      \"library\": \"/usr/lib/libobjc.A.dylib\",\n      \"library_ordinal\": 3,\n      \"name\": \"_objc_msgSend\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 768,\n      \"library\": \"/usr/lib/libobjc.A.dylib\",\n      \"library_ordinal\": 3,\n      \"name\": \"_objc_release\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 768,\n      \"library\": \"/usr/lib/libobjc.A.dylib\",\n      \"library_ordinal\": 3,\n      \"name\": \"_objc_retainAutorelease\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 768,\n      \"library\": \"/usr/lib/libobjc.A.dylib\",\n      \"library_ordinal\": 3,\n      \"name\": \"_objc_retainAutoreleasedReturnValue\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 768,\n      \"library\": \"/usr/lib/libobjc.A.dylib\",\n      \"library_ordinal\": 3,\n      \"name\": \"_objc_storeStrong\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 1024,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 4,\n      \"name\": \"_printf\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    },\n    {\n      \"common_symbol\": false,\n      \"description\": 1024,\n      \"library\": \"/usr/lib/libSystem.B.dylib\",\n      \"library_ordinal\": 4,\n      \"name\": \"dyld_stub_binder\",\n      \"private_external\": false,\n      \"section\": 0,\n      \"source\": \"LC_SYMTAB\",\n      \"type\": 1,\n      \"value\": 0,\n      \"weak_import\": false\n    }\n  ],\n  \"uuids\": [\n    \"a4466a3d-cb7f-48ed-9a11-983cd9ff537c\"\n  ]\n}\n"
+        },
+        "lipo_archs": {
+          "argv": [
+            "lipo",
+            "-archs",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "arm64\n"
+        },
+        "nm_globals": {
+          "argv": [
+            "nm",
+            "-g",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "                 U _MTLCreateSystemDefaultDevice\n                 U ___stderrp\n0000000100000000 T __mh_execute_header\n                 U _fputs\n00000001000007f0 T _main\n                 U _objc_autoreleasePoolPop\n                 U _objc_autoreleasePoolPush\n                 U _objc_msgSend\n                 U _objc_release\n                 U _objc_retainAutorelease\n                 U _objc_retainAutoreleasedReturnValue\n                 U _objc_storeStrong\n                 U _printf\n                 U dyld_stub_binder\n"
+        },
+        "nm_undefined": {
+          "argv": [
+            "nm",
+            "-u",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "_MTLCreateSystemDefaultDevice\n___stderrp\n_fputs\n_objc_autoreleasePoolPop\n_objc_autoreleasePoolPush\n_objc_msgSend\n_objc_release\n_objc_retainAutorelease\n_objc_retainAutoreleasedReturnValue\n_objc_storeStrong\n_printf\ndyld_stub_binder\n"
+        },
+        "otool_libraries": {
+          "argv": [
+            "otool",
+            "-L",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/metal_info:\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5027.0.69)\n\t/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 1.0.0, current version 382.5.3)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)\n"
+        },
+        "otool_load_commands": {
+          "argv": [
+            "otool",
+            "-l",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/metal_info:\nLoad command 0\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __PAGEZERO\n   vmaddr 0x0000000000000000\n   vmsize 0x0000000100000000\n  fileoff 0\n filesize 0\n  maxprot 0x00000000\n initprot 0x00000000\n   nsects 0\n    flags 0x0\nLoad command 1\n      cmd LC_SEGMENT_64\n  cmdsize 632\n  segname __TEXT\n   vmaddr 0x0000000100000000\n   vmsize 0x0000000000004000\n  fileoff 0\n filesize 16384\n  maxprot 0x00000005\n initprot 0x00000005\n   nsects 7\n    flags 0x0\nSection\n  sectname __text\n   segname __TEXT\n      addr 0x00000001000007f0\n      size 0x0000000000000130\n    offset 2032\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __stubs\n   segname __TEXT\n      addr 0x0000000100000920\n      size 0x0000000000000060\n    offset 2336\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000408\n reserved1 0 (index into indirect symbol table)\n reserved2 12 (size of stubs)\nSection\n  sectname __stub_helper\n   segname __TEXT\n      addr 0x0000000100000980\n      size 0x0000000000000078\n    offset 2432\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __objc_stubs\n   segname __TEXT\n      addr 0x0000000100000a00\n      size 0x0000000000000080\n    offset 2560\n     align 2^5 (32)\n    reloff 0\n    nreloc 0\n     flags 0x80000400\n reserved1 0\n reserved2 0\nSection\n  sectname __cstring\n   segname __TEXT\n      addr 0x0000000100000a80\n      size 0x0000000000000059\n    offset 2688\n     align 2^0 (1)\n    reloff 0\n    nreloc 0\n     flags 0x00000002\n reserved1 0\n reserved2 0\nSection\n  sectname __objc_methname\n   segname __TEXT\n      addr 0x0000000100000ad9\n      size 0x000000000000002c\n    offset 2777\n     align 2^0 (1)\n    reloff 0\n    nreloc 0\n     flags 0x00000002\n reserved1 0\n reserved2 0\nSection\n  sectname __unwind_info\n   segname __TEXT\n      addr 0x0000000100000b08\n      size 0x0000000000000058\n    offset 2824\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 2\n      cmd LC_SEGMENT_64\n  cmdsize 232\n  segname __DATA_CONST\n   vmaddr 0x0000000100004000\n   vmsize 0x0000000000004000\n  fileoff 16384\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 2\n    flags 0x10\nSection\n  sectname __objc_imageinfo\n   segname __DATA_CONST\n      addr 0x0000000100004000\n      size 0x0000000000000008\n    offset 16384\n     align 2^2 (4)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nSection\n  sectname __got\n   segname __DATA_CONST\n      addr 0x0000000100004008\n      size 0x0000000000000020\n    offset 16392\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000006\n reserved1 8 (index into indirect symbol table)\n reserved2 0\nLoad command 3\n      cmd LC_SEGMENT_64\n  cmdsize 312\n  segname __DATA\n   vmaddr 0x0000000100008000\n   vmsize 0x0000000000004000\n  fileoff 32768\n filesize 16384\n  maxprot 0x00000003\n initprot 0x00000003\n   nsects 3\n    flags 0x0\nSection\n  sectname __la_symbol_ptr\n   segname __DATA\n      addr 0x0000000100008000\n      size 0x0000000000000040\n    offset 32768\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000007\n reserved1 12 (index into indirect symbol table)\n reserved2 0\nSection\n  sectname __objc_selrefs\n   segname __DATA\n      addr 0x0000000100008040\n      size 0x0000000000000020\n    offset 32832\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x10000005\n reserved1 0\n reserved2 0\nSection\n  sectname __data\n   segname __DATA\n      addr 0x0000000100008060\n      size 0x0000000000000008\n    offset 32864\n     align 2^3 (8)\n    reloff 0\n    nreloc 0\n     flags 0x00000000\n reserved1 0\n reserved2 0\nLoad command 4\n      cmd LC_SEGMENT_64\n  cmdsize 72\n  segname __LINKEDIT\n   vmaddr 0x000000010000c000\n   vmsize 0x0000000000004000\n  fileoff 49152\n filesize 1944\n  maxprot 0x00000001\n initprot 0x00000001\n   nsects 0\n    flags 0x0\nLoad command 5\n            cmd LC_DYLD_INFO_ONLY\n        cmdsize 48\n     rebase_off 49152\n    rebase_size 8\n       bind_off 49160\n      bind_size 96\n  weak_bind_off 0\n weak_bind_size 0\n  lazy_bind_off 49256\n lazy_bind_size 224\n     export_off 49480\n    export_size 48\nLoad command 6\n     cmd LC_SYMTAB\n cmdsize 24\n  symoff 49536\n   nsyms 28\n  stroff 50064\n strsize 488\nLoad command 7\n            cmd LC_DYSYMTAB\n        cmdsize 80\n      ilocalsym 0\n      nlocalsym 14\n     iextdefsym 14\n     nextdefsym 2\n      iundefsym 16\n      nundefsym 12\n         tocoff 0\n           ntoc 0\n      modtaboff 0\n        nmodtab 0\n   extrefsymoff 0\n    nextrefsyms 0\n indirectsymoff 49984\n  nindirectsyms 20\n      extreloff 0\n        nextrel 0\n      locreloff 0\n        nlocrel 0\nLoad command 8\n          cmd LC_LOAD_DYLINKER\n      cmdsize 32\n         name /usr/lib/dyld (offset 12)\nLoad command 9\n     cmd LC_UUID\n cmdsize 24\n    uuid A4466A3D-CB7F-48ED-9A11-983CD9FF537C\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform 1\n    minos 11.0\n      sdk 27.0\n   ntools 1\n     tool 3\n  version 27037.1\nLoad command 11\n      cmd LC_SOURCE_VERSION\n  cmdsize 16\n  version 0.0\nLoad command 12\n       cmd LC_MAIN\n   cmdsize 24\n  entryoff 2032\n stacksize 0\nLoad command 13\n          cmd LC_LOAD_DYLIB\n      cmdsize 96\n         name /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 5027.0.69\ncompatibility version 300.0.0\nLoad command 14\n          cmd LC_LOAD_DYLIB\n      cmdsize 88\n         name /System/Library/Frameworks/Metal.framework/Versions/A/Metal (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 382.5.3\ncompatibility version 1.0.0\nLoad command 15\n          cmd LC_LOAD_DYLIB\n      cmdsize 56\n         name /usr/lib/libobjc.A.dylib (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 228.0.0\ncompatibility version 1.0.0\nLoad command 16\n          cmd LC_LOAD_DYLIB\n      cmdsize 56\n         name /usr/lib/libSystem.B.dylib (offset 24)\n   time stamp 2 Thu Jan  1 02:00:02 1970\n      current version 1359.0.0\ncompatibility version 1.0.0\nLoad command 17\n      cmd LC_FUNCTION_STARTS\n  cmdsize 16\n  dataoff 49528\n datasize 8\nLoad command 18\n      cmd LC_DATA_IN_CODE\n  cmdsize 16\n  dataoff 49536\n datasize 0\nLoad command 19\n      cmd LC_CODE_SIGNATURE\n  cmdsize 16\n  dataoff 50560\n datasize 536\n"
+        },
+        "run": {
+          "argv": [
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "Metal device: Apple M2\nRegistry ID: 4294968552\nUnified memory: yes\n"
+        },
+        "vtool_build": {
+          "argv": [
+            "vtool",
+            "-show-build",
+            "/Users/<user>/machprobe/build/metal_info"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "/Users/<user>/machprobe/build/metal_info:\nLoad command 10\n      cmd LC_BUILD_VERSION\n  cmdsize 32\n platform MACOS\n    minos 11.0\n      sdk 27.0\n   ntools 1\n     tool LD\n  version 27037.1\n"
+        }
+      },
+      "path": "build/metal_info",
+      "sha256": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3"
+    }
+  },
+  "schema_version": 1
+}

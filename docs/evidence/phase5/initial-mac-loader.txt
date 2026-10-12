@@ -1,0 +1,1 @@
+LOAD ERROR: guest Objective-C class/category registration unsupported

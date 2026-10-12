@@ -1,0 +1,44 @@
+xcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -g -O0 -I/Users/<user>/machprobe/runtime /Users/<user>/machprobe/runtime/image.c /Users/<user>/machprobe/runtime/fixups.c /Users/<user>/machprobe/runtime/services.c /Users/<user>/machprobe/runtime/tls.c /Users/<user>/machprobe/phase2/host/cli.c -framework Foundation -framework CoreFoundation -framework Metal -lobjc -o /Users/<user>/machprobe/build/phase2/runner
+/Users/<user>/machprobe/phase2/host/cli.c:7:79: warning: missing field 'extensions' initializer [-Wmissing-field-initializers]
+    7 |  char error[256];MPImage *image=mp_image_open(argv[1],(MPServices){NULL,output},error);
+      |                                                                               ^
+1 warning generated.
+xcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -g -O0 -I/Users/<user>/machprobe/runtime /Users/<user>/machprobe/runtime/image.c /Users/<user>/machprobe/runtime/fixups.c /Users/<user>/machprobe/runtime/services.c /Users/<user>/machprobe/runtime/tls.c /Users/<user>/machprobe/phase2/tests/abi.c /Users/<user>/machprobe/phase2/host/checks.c -framework Foundation -framework CoreFoundation -framework Metal -lobjc -o /Users/<user>/machprobe/build/phase2/abi-test
+cd /Users/<user>/machprobe && python3 -m unittest discover -s phase2/tests -v
+test_abi_guest_runner (test_runtime.RuntimeIntegrationTests.test_abi_guest_runner) ... ok
+test_file_io_success_cleanup_and_invalid_directory (test_runtime.RuntimeIntegrationTests.test_file_io_success_cleanup_and_invalid_directory) ... ok
+test_foundation_guest_behaviors (test_runtime.RuntimeIntegrationTests.test_foundation_guest_behaviors) ... ok
+test_metal_compute_values_and_checksum (test_runtime.RuntimeIntegrationTests.test_metal_compute_values_and_checksum) ... ok
+test_metal_device_is_reported (test_runtime.RuntimeIntegrationTests.test_metal_device_is_reported) ... ok
+test_original_hello_and_framework (test_runtime.RuntimeIntegrationTests.test_original_hello_and_framework) ... ok
+test_phase1_samples_match_recorded_hashes (test_runtime.RuntimeIntegrationTests.test_phase1_samples_match_recorded_hashes) ... ok
+test_phase2_guest_images_are_not_modified (test_runtime.RuntimeIntegrationTests.test_phase2_guest_images_are_not_modified) ... ok
+test_rejects_guest_tls_and_objc_class_registration (test_runtime.RuntimeIntegrationTests.test_rejects_guest_tls_and_objc_class_registration) ... ok
+test_rejects_malformed_and_unsupported_images (test_runtime.RuntimeIntegrationTests.test_rejects_malformed_and_unsupported_images) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.752s
+
+OK
+xcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -g -O0 -I/Users/<user>/machprobe/runtime -fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer /Users/<user>/machprobe/runtime/image.c /Users/<user>/machprobe/runtime/fixups.c /Users/<user>/machprobe/runtime/services.c /Users/<user>/machprobe/runtime/tls.c /Users/<user>/machprobe/phase2/host/cli.c -framework Foundation -framework CoreFoundation -framework Metal -lobjc -o /Users/<user>/machprobe/build/phase2/runner-sanitize
+/Users/<user>/machprobe/phase2/host/cli.c:7:79: warning: missing field 'extensions' initializer [-Wmissing-field-initializers]
+    7 |  char error[256];MPImage *image=mp_image_open(argv[1],(MPServices){NULL,output},error);
+      |                                                                               ^
+1 warning generated.
+xcrun clang -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra -g -O0 -I/Users/<user>/machprobe/runtime -fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer /Users/<user>/machprobe/runtime/image.c /Users/<user>/machprobe/runtime/fixups.c /Users/<user>/machprobe/runtime/services.c /Users/<user>/machprobe/runtime/tls.c /Users/<user>/machprobe/phase2/tests/abi.c /Users/<user>/machprobe/phase2/host/checks.c -framework Foundation -framework CoreFoundation -framework Metal -lobjc -o /Users/<user>/machprobe/build/phase2/abi-test-sanitize
+cd /Users/<user>/machprobe && MP_RUNNER=build/phase2/runner-sanitize MP_ABI_TEST=build/phase2/abi-test-sanitize python3 -m unittest discover -s phase2/tests -v
+test_abi_guest_runner (test_runtime.RuntimeIntegrationTests.test_abi_guest_runner) ... ok
+test_file_io_success_cleanup_and_invalid_directory (test_runtime.RuntimeIntegrationTests.test_file_io_success_cleanup_and_invalid_directory) ... ok
+test_foundation_guest_behaviors (test_runtime.RuntimeIntegrationTests.test_foundation_guest_behaviors) ... ok
+test_metal_compute_values_and_checksum (test_runtime.RuntimeIntegrationTests.test_metal_compute_values_and_checksum) ... ok
+test_metal_device_is_reported (test_runtime.RuntimeIntegrationTests.test_metal_device_is_reported) ... ok
+test_original_hello_and_framework (test_runtime.RuntimeIntegrationTests.test_original_hello_and_framework) ... ok
+test_phase1_samples_match_recorded_hashes (test_runtime.RuntimeIntegrationTests.test_phase1_samples_match_recorded_hashes) ... ok
+test_phase2_guest_images_are_not_modified (test_runtime.RuntimeIntegrationTests.test_phase2_guest_images_are_not_modified) ... ok
+test_rejects_guest_tls_and_objc_class_registration (test_runtime.RuntimeIntegrationTests.test_rejects_guest_tls_and_objc_class_registration) ... ok
+test_rejects_malformed_and_unsupported_images (test_runtime.RuntimeIntegrationTests.test_rejects_malformed_and_unsupported_images) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.005s
+
+OK

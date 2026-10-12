@@ -1,0 +1,19 @@
+{
+  "build": "1",
+  "bundle_id": "research.machprobe.MacGuest",
+  "bundle_path": "/private/var/containers/Bundle/Application/9E3E93BC-BD4C-4DA5-9174-52686547D44C/MacGuest.app",
+  "data_path": "/private/var/mobile/Containers/Data/Application/3384C482-0424-45D1-8CE5-4C36F7F8A9A9",
+  "encrypted": false,
+  "entitlements": {
+    "com.apple.private.security.container-required": "research.machprobe.MacGuest",
+    "jb.pmap_cs_custom_trust": "PMAP_CS_APP_STORE"
+  },
+  "executable": "/var/containers/Bundle/Application/9E3E93BC-BD4C-4DA5-9174-52686547D44C/MacGuest.app/MacGuest",
+  "group_containers": {},
+  "minimum_os": "14.0",
+  "name": "Mac app runtime",
+  "sdk": "",
+  "signer": "Apple iPhone OS Application Signing",
+  "type": "User",
+  "version": "1.0"
+}

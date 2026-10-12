@@ -1,0 +1,24 @@
+{
+  "ok" : true,
+  "result" : {
+    "build" : "1",
+    "bundle_id" : "research.machprobe.Phase4Probe",
+    "bundle_path" : "/private/var/containers/Bundle/Application/77A1B5BF-EDD9-45AD-A3F1-963B1504A6D3/Phase4Probe.app",
+    "data_path" : "/private/var/mobile/Containers/Data/Application/C8F036B2-84A9-4D3F-919B-D7BDEB05E166",
+    "encrypted" : false,
+    "entitlements" : {
+      "com.apple.private.security.container-required" : "research.machprobe.Phase4Probe",
+      "jb.pmap_cs_custom_trust" : "PMAP_CS_APP_STORE"
+    },
+    "executable" : "/var/containers/Bundle/Application/77A1B5BF-EDD9-45AD-A3F1-963B1504A6D3/Phase4Probe.app/Phase4Probe",
+    "group_containers" : {
+
+    },
+    "minimum_os" : "14.0",
+    "name" : "Phase 4 diagnostics",
+    "sdk" : "",
+    "signer" : "Apple iPhone OS Application Signing",
+    "type" : "User",
+    "version" : "1.0"
+  }
+}

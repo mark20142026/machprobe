@@ -1,0 +1,16 @@
+{
+  "NSForegroundColorAttributeName" : "NSColor",
+  "NSParagraphStyleAttributeName" : "NSParagraphStyle",
+  "NSAboutPanelOptionApplicationName" : "ApplicationName",
+  "NSFontAttributeName" : "NSFont",
+  "weights" : [
+    0.40000000596046448,
+    0.23000000417232513,
+    0,
+    0.30000001192092896
+  ],
+  "NSAboutPanelOptionCredits" : "Credits",
+  "NSWindowDidBecomeKeyNotification" : "NSWindowDidBecomeKeyNotification",
+  "NSDeviceRGBColorSpace" : "NSDeviceRGBColorSpace",
+  "NSImageHintInterpolation" : "NSImageHintInterpolation"
+}

@@ -1,0 +1,6 @@
+NSAppearanceNameAqua = NSAppearanceNameAqua
+NSFilenamesPboardType = NSFilenamesPboardType
+NSPasteboardTypeString = public.utf8-plain-text
+NSShadowAttributeName = NSShadow
+NSViewFrameDidChangeNotification = NSViewFrameDidChangeNotification
+kTISPropertyUnicodeKeyLayoutData = TISPropertyUnicodeKeyLayoutData

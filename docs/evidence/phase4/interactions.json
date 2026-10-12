@@ -1,0 +1,33 @@
+{
+  "status": "VERIFIED by observed VM UI interaction",
+  "bundle_id": "research.machprobe.MacGuest",
+  "run_id": "BCBFFC6A-580F-49A4-AEFC-0B7748AF7D82",
+  "pid": 768,
+  "guest_sha256": "87986a2aaa6a000c6d72ad0ea46ae67683d7ce8d724a79e2ed1655077065299b",
+  "sequences": [
+    {
+      "buttons": [
+        "C",
+        "2",
+        "+",
+        "2",
+        "="
+      ],
+      "display": "4",
+      "screenshot": "calculation-2-plus-2.jpg"
+    },
+    {
+      "buttons": [
+        "C",
+        "7",
+        "\u00d7",
+        "8",
+        "="
+      ],
+      "display": "56",
+      "screenshot": null
+    }
+  ],
+  "automated_semantic_assertion": false,
+  "target_source_used": false
+}

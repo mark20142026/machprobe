@@ -1,0 +1,16 @@
+Executable=/Users/<user>/machprobe/build/phase5.5/original/extracted/veloren-server-cli
+Identifier=veloren_server_cli-2f11db27356f0879
+Format=Mach-O thin (arm64)
+CodeDirectory v=20400 size=380860 flags=0x20002(adhoc,linker-signed) hashes=11898+0 location=embedded
+Hash type=sha256 size=32
+CandidateCDHash sha256=164b5ab52d3351eabb9cb8345b0fe2d39048135a
+CandidateCDHashFull sha256=164b5ab52d3351eabb9cb8345b0fe2d39048135ab579eca9fa6ed6caffa75759
+Hash choices=sha256
+CMSDigest=164b5ab52d3351eabb9cb8345b0fe2d39048135ab579eca9fa6ed6caffa75759
+CMSDigestType=2
+CDHash=164b5ab52d3351eabb9cb8345b0fe2d39048135a
+Signature=adhoc
+Info.plist=not bound
+TeamIdentifier=not set
+Sealed Resources=none
+Internal requirements=none

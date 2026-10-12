@@ -1,0 +1,82 @@
+{
+  "metal" : {
+    "managed_textures_translated" : 0
+  },
+  "run_id" : "CD62F10B-806B-44B6-AD93-0CDB48A46D80",
+  "stage" : "guest cursor detached for relative input",
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  },
+  "presentation" : {
+    "gpu_present_buffer_rate" : 51.236060345474698,
+    "gpu_failed_present_buffers" : 0,
+    "elapsed_seconds" : 0,
+    "gpu_completion_elapsed_seconds" : 121.61356587500268,
+    "present_requests" : 6235,
+    "average_presented_fps" : 0,
+    "gpu_completed_present_buffers" : 6232,
+    "presented_frames" : 0
+  },
+  "guest_sha256" : "786b7ba15f46982a1bfbd3af53373c505d5dce0efb344dfe19a159b7e6e00b1d",
+  "binds" : 1517,
+  "input" : {
+    "last_pointer" : {
+      "view_frame" : "{{0, 0}, {430, 932}}",
+      "view_bounds" : "{{0, 0}, {430, 932}}",
+      "point" : "{268, 922}",
+      "window_frame" : "{{0, 0}, {430, 932}}"
+    },
+    "delivered" : 0,
+    "held" : [
+
+    ],
+    "pointer_delivered" : 12
+  },
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "pid" : 4909,
+  "rebases" : 146786,
+  "events" : [
+    "guest window created",
+    "guest window awaiting UIKit scene",
+    "native GPU border sampling verified (six cases)",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "entering UIKit lifecycle",
+    "guest window presented: Veloren",
+    "applicationDidFinishLaunching:",
+    "guest window presented: Veloren",
+    "application activation requested",
+    "guest launch callback returned",
+    "deliver mouseMoved: to WinitView at {215, 477}",
+    "deliver mouseDown: to WinitView at {215, 477}",
+    "deliver mouseUp: to WinitView at {215, 477}",
+    "deliver mouseMoved: to WinitView at {200, 68}",
+    "deliver mouseDown: to WinitView at {200, 68}",
+    "deliver mouseUp: to WinitView at {200, 68}",
+    "deliver mouseMoved: to WinitView at {272, 55}",
+    "deliver mouseDown: to WinitView at {272, 55}",
+    "deliver mouseUp: to WinitView at {272, 55}",
+    "deliver mouseMoved: to WinitView at {268, 922}",
+    "deliver mouseDown: to WinitView at {268, 922}",
+    "deliver mouseUp: to WinitView at {268, 922}",
+    "guest cursor detached for relative input",
+    "guest cursor association enabled",
+    "guest cursor detached for relative input"
+  ]
+}

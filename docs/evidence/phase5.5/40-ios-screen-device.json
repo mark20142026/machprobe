@@ -1,0 +1,63 @@
+{
+  "metal" : {
+    "managed_textures_translated" : 0
+  },
+  "exception" : "-[MPGameScreen deviceDescription]: unrecognized selector sent to instance 0x658d4c010",
+  "stack" : [
+    "0   CoreFoundation                      0x000000018069319c 9426FC9A-B36C-3096-B836-D17D6744A75B + 623004",
+    "1   libobjc.A.dylib                     0x0000000180410380 objc_exception_throw + 88",
+    "2   CoreFoundation                      0x000000018079290c 9426FC9A-B36C-3096-B836-D17D6744A75B + 1669388",
+    "3   CoreFoundation                      0x000000018064e8f8 9426FC9A-B36C-3096-B836-D17D6744A75B + 342264",
+    "4   CoreFoundation                      0x000000018064ebb0 9426FC9A-B36C-3096-B836-D17D6744A75B + 342960",
+    "5   MPGuest.dylib                       0x00000001036e6994 MPGuest.dylib + 43674004",
+    "6   MPGuest.dylib                       0x000000010281a3a0 MPGuest.dylib + 28156832",
+    "7   MPGuest.dylib                       0x0000000102a72054 MPGuest.dylib + 30613588",
+    "8   MPGuest.dylib                       0x0000000102a76dd0 MPGuest.dylib + 30633424",
+    "9   MPGuest.dylib                       0x0000000103ddc454 MPGuest.dylib + 50971732",
+    "10  MPGuest.dylib                       0x0000000102d24f98 MPGuest.dylib + 33443736",
+    "11  MPGuest.dylib                       0x0000000102d24e5c MPGuest.dylib + 33443420",
+    "12  VelorenHost                         0x000000010010c644 mp_image_main + 164",
+    "13  VelorenHost                         0x0000000100113a78 main + 4636",
+    "14  dyld                                0x00000001804875b8 D3F59B02-EE07-371B-B091-3F150A078ED8 + 21944"
+  ],
+  "run_id" : "A8B5B837-A3FD-4B5E-BD30-76CEC107873D",
+  "stage" : "exception",
+  "binds" : 1517,
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  },
+  "guest_sha256" : "786b7ba15f46982a1bfbd3af53373c505d5dce0efb344dfe19a159b7e6e00b1d",
+  "input" : {
+    "pointer_delivered" : 0,
+    "delivered" : 0,
+    "held" : [
+
+    ]
+  },
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "pid" : 2071,
+  "rebases" : 146786,
+  "events" : [
+    "guest window created",
+    "guest window awaiting UIKit scene",
+    "native GPU border sampling verified (six cases)",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1"
+  ]
+}

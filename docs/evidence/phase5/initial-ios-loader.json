@@ -1,0 +1,7 @@
+{
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "error" : "guest Objective-C class\/category registration unsupported",
+  "run_id" : "DD1645BE-5752-4567-814C-AFDE9315EDD9",
+  "pid" : 992,
+  "stage" : "load failed"
+}

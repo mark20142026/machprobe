@@ -1,0 +1,1307 @@
+{
+  "loader": {
+    "original": {
+      "error": "requires thin ordinary ARM64 MH_EXECUTE",
+      "matches": true,
+      "entry_called": false,
+      "loads": 0,
+      "sha256": "a903615ed98f816b0e77a4e4150957659a23f6171db55c73d004da29d0a12517"
+    },
+    "arm64": {
+      "error": "guest Objective-C class/category registration unsupported",
+      "matches": true,
+      "entry_called": false,
+      "loads": 0,
+      "sha256": "87986a2aaa6a000c6d72ad0ea46ae67683d7ce8d724a79e2ed1655077065299b"
+    }
+  },
+  "uid": 501,
+  "run_id": "C2A8310D-8545-411F-98F0-E39B6D72104A",
+  "ios": true,
+  "libraries": {
+    "/usr/lib/swift/libswiftCoreFoundation.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftCoreFoundation.dylib",
+      "available": 1
+    },
+    "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation": {
+      "error": "",
+      "host_path": "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftCoreGraphics.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftCoreGraphics.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftCoreData.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftCoreData.dylib",
+      "available": 1
+    },
+    "/System/Library/Frameworks/Combine.framework/Versions/A/Combine": {
+      "error": "",
+      "host_path": "/System/Library/Frameworks/Combine.framework/Combine",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftMetal.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftMetal.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftQuartzCore.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftQuartzCore.dylib",
+      "available": 1
+    },
+    "/usr/lib/libobjc.A.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/libobjc.A.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftAppKit.dylib": {
+      "error": "dlopen(/usr/lib/swift/libswiftAppKit.dylib, 0x0006): tried: '/usr/lib/swift/libswiftAppKit.dylib' (no such file), '/System/Cryptexes/OS/usr/lib/swift/libswiftAppKit.dylib' (no such file), '/usr/lib/swift/libswiftAppKit.dylib' (no such file, not in dyld cache)",
+      "host_path": "/usr/lib/swift/libswiftAppKit.dylib",
+      "available": 0
+    },
+    "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI": {
+      "error": "",
+      "host_path": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftFoundation.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftFoundation.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftos.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftos.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftObjectiveC.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftObjectiveC.dylib",
+      "available": 1
+    },
+    "/usr/lib/libSystem.B.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/libSystem.B.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftIOKit.dylib": {
+      "error": "dlopen(/usr/lib/swift/libswiftIOKit.dylib, 0x0006): tried: '/usr/lib/swift/libswiftIOKit.dylib' (no such file), '/System/Cryptexes/OS/usr/lib/swift/libswiftIOKit.dylib' (no such file), '/usr/lib/swift/libswiftIOKit.dylib' (no such file, not in dyld cache)",
+      "host_path": "/usr/lib/swift/libswiftIOKit.dylib",
+      "available": 0
+    },
+    "/usr/lib/swift/libswiftCoreImage.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftCoreImage.dylib",
+      "available": 1
+    },
+    "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit": {
+      "error": "dlopen(/System/Library/Frameworks/AppKit.framework/AppKit, 0x0006): tried: '/System/Library/Frameworks/AppKit.framework/AppKit' (no such file), '/System/Cryptexes/OS/System/Library/Frameworks/AppKit.framework/AppKit' (no such file), '/System/Library/Frameworks/AppKit.framework/AppKit' (no such file, not in dyld cache)",
+      "host_path": "/System/Library/Frameworks/AppKit.framework/AppKit",
+      "available": 0
+    },
+    "/usr/lib/swift/libswiftXPC.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftXPC.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftDispatch.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftDispatch.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftCore.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftCore.dylib",
+      "available": 1
+    },
+    "/usr/lib/swift/libswiftDarwin.dylib": {
+      "error": "",
+      "host_path": "/usr/lib/swift/libswiftDarwin.dylib",
+      "available": 1
+    }
+  },
+  "symbol_addresses_are_not_abi_proof": true,
+  "symbols": [
+    {
+      "weak": false,
+      "name": "_$s12CoreGraphics7CGFloatVMn",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCoreGraphics.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$s25ObjectWillChangePublisher7Combine010ObservableA0PTl",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+    },
+    {
+      "weak": false,
+      "name": "_$s4Body7SwiftUI3AppPTl",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s4Body7SwiftUI4ViewPTl",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7Combine16ObservableObjectMp",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+    },
+    {
+      "weak": false,
+      "name": "_$s7Combine16ObservableObjectP0C19WillChangePublisherAC_AA0F0Tn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+    },
+    {
+      "weak": false,
+      "name": "_$s7Combine16ObservableObjectP16objectWillChange0ceF9PublisherQzvgTq",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+    },
+    {
+      "weak": false,
+      "name": "_$s7Combine16ObservableObjectPA2A0bC9PublisherC0c10WillChangeD0RtzrlE06objecteF0AEvg",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+    },
+    {
+      "weak": false,
+      "name": "_$s7Combine25ObservableObjectPublisherC4sendyyF",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+    },
+    {
+      "weak": false,
+      "name": "_$s7Combine25ObservableObjectPublisherCAA0D0AAWP",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+    },
+    {
+      "weak": false,
+      "name": "_$s7Combine25ObservableObjectPublisherCMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI10EdgeInsetsV4_allAC12CoreGraphics7CGFloatV_tcfC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11AnyLocationCMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11DragGestureV15minimumDistance15coordinateSpaceAC12CoreGraphics7CGFloatV_AA010CoordinateH0OtcfC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11DragGestureV5ValueVMa",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11DragGestureV5ValueVSQAAMc",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11DragGestureVAA0D0AAWP",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11DragGestureVMa",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11DragGestureVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11GestureMaskV3allACvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11WindowGroupV7contentACyxGxyXE_tcfC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11WindowGroupVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11WindowGroupVyxGAA5SceneAAMc",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11_ClipEffectVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI11_ClipEffectVyxGAA12ViewModifierAAMc",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI12SceneBuilderV10buildBlockyxxAA0C0RzlFZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI12_FrameLayoutV5width6height9alignmentAC12CoreGraphics7CGFloatVSg_AjA9AlignmentVtcfC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI12_FrameLayoutVAA12ViewModifierAAWP",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI12_FrameLayoutVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI13_EndedGestureVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI13_EndedGestureVyxGAA0D0AAMc",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI13_OffsetEffectVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI14ObservedObjectV12wrappedValueACyxGx_tcfC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI14ObservedObjectVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI14_PaddingLayoutVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI15CoordinateSpaceO5localyA2CmFWC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI15CoordinateSpaceOMa",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI15ModifiedContentVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI15ModifiedContentVyxq_GAA4ViewA2aERzAA0E8ModifierR_rlMc",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI15_ChangedGestureVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI15_ChangedGestureVyxGAA0D0AAMc",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI16RoundedRectangleVMa",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI16RoundedRectangleVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI16_FixedSizeLayoutVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI17EnvironmentValuesV11lineSpacing12CoreGraphics7CGFloatVvg",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI17EnvironmentValuesV11lineSpacing12CoreGraphics7CGFloatVvpMV",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI17EnvironmentValuesV11lineSpacing12CoreGraphics7CGFloatVvs",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI17EnvironmentValuesV15foregroundColorAA0F0VSgvg",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI17EnvironmentValuesV15foregroundColorAA0F0VSgvpMV",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI17EnvironmentValuesV15foregroundColorAA0F0VSgvs",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI17EnvironmentValuesVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI17VerticalAlignmentV6centerACvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI18RoundedCornerStyleO8circularyA2CmFWC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI18RoundedCornerStyleOMa",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI18_AspectRatioLayoutVAA12ViewModifierAAWP",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI18_AspectRatioLayoutVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI19HorizontalAlignmentV6centerACvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI19_BackgroundModifierVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI19_BackgroundModifierVyxGAA04ViewD0AAMc",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI30_EnvironmentKeyWritingModifierVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI3AppMp",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI3AppP4BodyAC_AA5SceneTn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI3AppP4body4BodyQzvgTq",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI3AppPAAE4mainyyFZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI3AppPxycfCTq",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4EdgeO3SetV8trailingAEvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4FontV6custom_4sizeACSS_12CoreGraphics7CGFloatVtFZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4TextV4fontyAcA4FontVSgF",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4TextVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4TextVyACxcSyRzlufC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewMp",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewP05_makeC04view6inputsAA01_C7OutputsVAA11_GraphValueVyxG_AA01_C6InputsVtFZTq",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewP05_makeC4List4view6inputsAA01_cE7OutputsVAA11_GraphValueVyxG_AA01_cE6InputsVtFZTq",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewP14_viewListCount6inputsSiSgAA01_ceF6InputsV_tFZTq",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewP4BodyAC_AaBTn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewP4body4BodyQzvgTq",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewPAAE05_makeC04view6inputsAA01_C7OutputsVAA11_GraphValueVyxG_AA01_C6InputsVtFZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewPAAE05_makeC4List4view6inputsAA01_cE7OutputsVAA11_GraphValueVyxG_AA01_cE6InputsVtFZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewPAAE12onTapGesture5count7performQrSi_yyctF",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewPAAE12onTapGesture5count7performQrSi_yyctFQOMQ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewPAAE14_viewListCount6inputsSiSgAA01_ceF6InputsV_tFZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewPAAE19simultaneousGesture_9includingQrqd___AA0E4MaskVtAA0E0Rd__lF",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI4ViewPAAE19simultaneousGesture_9includingQrqd___AA0E4MaskVtAA0E0Rd__lFQOMQ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5ColorV5blackACvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5ColorVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5ImageV02nsC0ACSo7NSImageC_tcfC",
+      "available": 0,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5ImageVAA4ViewAAWP",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5ImageVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5ImageV_6bundleACSS_So8NSBundleCSgtcfC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5SceneMp",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5StateV12wrappedValueACyxGx_tcfC",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5StateV12wrappedValuexvg",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5StateV12wrappedValuexvs",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI5StateVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI6CircleVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI6HStackVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI6SpacerVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI6VStackVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI6VStackVyxGAA4ViewAAMc",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI6ZStackVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI7GesturePAAE7onEndedyAA01_eC0VyxGy5ValueQzcF",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI7GesturePAASQ5ValueRpzrlE9onChangedyAA01_fC0VyxGyAEcF",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI9AlignmentV3topACvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI9AlignmentV6bottomACvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI9AlignmentV6centerACvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI9AlignmentV8trailingACvgZ",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$s7SwiftUI9TupleViewVMn",
+      "available": 1,
+      "library": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+    },
+    {
+      "weak": false,
+      "name": "_$sBoWV",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSH13_rawHashValue4seedS2i_tFTq",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSH4hash4intoys6HasherVz_tFTq",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSH9hashValueSivgTq",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSHMp",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSHSQTb",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSQ2eeoiySbx_xtFZTq",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSQMp",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftFoundation.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftFoundation.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSS5countSivg",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSS6appendyySSF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSS9hasPrefixySbSSF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSSN",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSSSysMc",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSbN",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSd11descriptionSSvg",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSd5write2toyxz_ts16TextOutputStreamRzlF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSo7NSSoundC6AppKitE4beepyyFZ",
+      "available": 0,
+      "library": "/usr/lib/swift/libswiftAppKit.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sSy10FoundationE8containsySbqd__SyRd__lF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftFoundation.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss11_StringGutsV16_slowWithCStringyxxSPys4Int8VGKXEKlF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss11_StringGutsV4growyySiF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss17_assertionFailure__4file4line5flagss5NeverOs12StaticStringV_SSAHSus6UInt32VtF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss23CustomStringConvertibleMp",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss23CustomStringConvertibleP11descriptionSSvgTq",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss23_ContiguousArrayStorageCMn",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss26DefaultStringInterpolationVN",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss26DefaultStringInterpolationVs16TextOutputStreamsWP",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss27_stringCompareWithSmolCheck__9expectingSbs11_StringGutsV_ADs01_G16ComparisonResultOtF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss5print_9separator10terminatoryypd_S2StF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss6HasherV5_seedABSi_tcfC",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss6HasherV8_combineyySuF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$ss6HasherV9_finalizeSiyF",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_$sytWV",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_OBJC_CLASS_$_NSImage",
+      "available": 0,
+      "library": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit"
+    },
+    {
+      "weak": false,
+      "name": "_OBJC_CLASS_$_NSNumber",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+    },
+    {
+      "weak": false,
+      "name": "_OBJC_CLASS_$_NSNumberFormatter",
+      "available": 1,
+      "library": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+    },
+    {
+      "weak": false,
+      "name": "_OBJC_CLASS_$_NSSound",
+      "available": 0,
+      "library": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit"
+    },
+    {
+      "weak": false,
+      "name": "_OBJC_CLASS_$__TtCs12_SwiftObject",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_OBJC_METACLASS_$__TtCs12_SwiftObject",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "__NSConcreteGlobalBlock",
+      "available": 1,
+      "library": "/usr/lib/libSystem.B.dylib"
+    },
+    {
+      "weak": false,
+      "name": "___chkstk_darwin",
+      "available": 1,
+      "library": "/usr/lib/libSystem.B.dylib"
+    },
+    {
+      "weak": false,
+      "name": "__objc_empty_cache",
+      "available": 1,
+      "library": "/usr/lib/libobjc.A.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftAppKit",
+      "available": 0,
+      "library": "/usr/lib/swift/libswiftAppKit.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftCoreData",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCoreData.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftCoreGraphics",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCoreGraphics.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftCoreImage",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCoreImage.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftDarwin",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftDarwin.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftDispatch",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftDispatch.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftFoundation",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftFoundation.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftIOKit",
+      "available": 0,
+      "library": "/usr/lib/swift/libswiftIOKit.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftMetal",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftMetal.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftObjectiveC.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftQuartzCore",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftQuartzCore.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftXPC",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftXPC.dylib"
+    },
+    {
+      "weak": true,
+      "name": "__swift_FORCE_LOAD_$_swiftos",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftos.dylib"
+    },
+    {
+      "weak": false,
+      "name": "__swift_stdlib_strtod_clocale",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_dispatch_once",
+      "available": 1,
+      "library": "/usr/lib/libSystem.B.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_dlsym",
+      "available": 1,
+      "library": "/usr/lib/libSystem.B.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_log10",
+      "available": 1,
+      "library": "/usr/lib/libSystem.B.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_objc_allocWithZone",
+      "available": 1,
+      "library": "/usr/lib/libobjc.A.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_objc_msgSend",
+      "available": 1,
+      "library": "/usr/lib/libobjc.A.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_objc_opt_self",
+      "available": 1,
+      "library": "/usr/lib/libobjc.A.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_objc_release",
+      "available": 1,
+      "library": "/usr/lib/libobjc.A.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_objc_retain",
+      "available": 1,
+      "library": "/usr/lib/libobjc.A.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_objc_retainAutoreleasedReturnValue",
+      "available": 1,
+      "library": "/usr/lib/libobjc.A.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_allocObject",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_beginAccess",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_bridgeObjectRelease",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_bridgeObjectRelease_n",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_bridgeObjectRetain",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_deallocClassInstance",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_deallocObject",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_deletedMethodError",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_endAccess",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_getKeyPath",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_getObjCClassMetadata",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_getOpaqueTypeConformance",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_getTypeByMangledNameInContext",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_getTypeByMangledNameInContextInMetadataState",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_getWitnessTable",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_initStaticObject",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_release",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "_swift_retain",
+      "available": 1,
+      "library": "/usr/lib/swift/libswiftCore.dylib"
+    },
+    {
+      "weak": false,
+      "name": "dyld_stub_binder",
+      "available": 0,
+      "library": "/usr/lib/libSystem.B.dylib"
+    }
+  ],
+  "missing_strong": 5,
+  "vm_images": [
+    "/usr/lib/SystemHook-vphone.dylib",
+    "/usr/lib/libcamfix.dylib"
+  ],
+  "complete": true,
+  "pid": 647
+}

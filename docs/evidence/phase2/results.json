@@ -1,0 +1,4785 @@
+{
+  "captured_at_utc": "2026-10-01T09:57:09.577202+00:00",
+  "phase1_hashes_preserved": true,
+  "build": {
+    "argv": [
+      "make",
+      "-f",
+      "phase2/Makefile",
+      "all"
+    ],
+    "returncode": 0,
+    "stdout": "make: Nothing to be done for `all'.\n",
+    "stderr": ""
+  },
+  "source_sha256": {
+    "runtime/internal.h": "94bb771a217f5ba9c4a24d1171abd775427377aa57ed9b5c0c29041626128084",
+    "runtime/guest_abi.h": "a76f975ee08bc0e9401b1788f91c4bdb520e495973c4b27ef0c75e25d655a38a",
+    "runtime/fixups.c": "a749bae6bbf499e19faeabf01e81185114143a0c2985f691124ee51c14833901",
+    "runtime/image.c": "bbe6a7e8d86423842f92564c712edc6bee369be1ed146d16febae605ce056fd9",
+    "runtime/runtime.h": "64e6c9b706f8456c61a88db1ea420323f6e8bea7b88659a62e1fe2c7fae5b8b8",
+    "runtime/services.c": "bfd40b7021da4930dd6b79e39b144bea9c0b2989c136e271cc219aed8531496f",
+    "phase2/Makefile": "c38a9e211a9797d06da0a224e67d6280eb0ed8dd7be5afda8e3a228a7492540a",
+    "phase2/capture.py": "3bdcffa02a64c48c6f4ec87199692eaae7e3d0c6d21f16daa512b99011c77ec4",
+    "phase2/host/build.py": "43905438feb46bc0c525ac97053d8059b48724f5a81b2f60dd235d6351721fd7",
+    "phase2/host/cli.c": "33be8613128c7f801b87961de2d34fc05e57c73fa492d187b64a770e59a866ae",
+    "phase2/host/checks.h": "d7e85fd06d134d28f7d2eaa3f5012b76b46e62cb8e0c4c9690d43261be511e55",
+    "phase2/host/Main.m": "58634e79db0892e72a71857ad4d5713ca1953cb1064b51456a5d1f4e362ba84d",
+    "phase2/host/UIKitHost.h": "62f8f250f328b8c774ba09ec8d3d4c786a67eb9b9953a5a33a1a8ec970ac33e7",
+    "phase2/host/checks.c": "366a4f13bee4646110f6b9392227307719f555670cbd6283d7daf75bcf93a687",
+    "phase2/tests/abi.c": "795563969e29d186d22748789b78f7f4c69db9d5bfab0549a5016b7870bd1844",
+    "phase2/tests/test_runtime.py": "f4ce8f78ee93b78642e161108993678b0aa99ff3b97c587d6261c902fb053905",
+    "phase2/ios/README.md": "db749fdf5a03bd308d92635d9c9bcb4159d8b03fe2013a5343ae8b462075792d",
+    "phase2/guests/interactive.c": "00277afcf76f363efa63eb797f51dfdfd3f8ede114aac4ed7d14b24ac94da823",
+    "phase2/guests/metal_compute.m": "4b03c67d4c30de5afc390e2c86f9c77e7823dae347fccb93fab042c07f93252f",
+    "phase2/guests/foundation.m": "8d88386f79036f092319d7e8d378f6d583372ed896781ba136efbf38dca0e3e7",
+    "phase2/ios/Phase2Host/Info.plist": "c1e26b4b141ff0edc6f9e0093c4b7607b204d9b505924dde26ad747a5b572447",
+    "phase2/ios/Phase2Host.xcodeproj/project.pbxproj": "19dfe3409fa1705245b1e239e7b0e60a627eeb4c690cf7ea30aef5d17106bbf3",
+    "phase2/ios/scripts/preflight.sh": "706e696e362e42356e0084bfbb6c721cb03b05144e7c7ff18e6db481c4c6048f",
+    "phase2/ios/Phase2Host.xcodeproj/xcshareddata/xcschemes/Phase2Host.xcscheme": "f34157ebd7fd8945188e98ded1cb8f2ac19edf6d638ce10760e8d1e278b84a5b"
+  },
+  "environment": {
+    "os": {
+      "argv": [
+        "sw_vers"
+      ],
+      "returncode": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0\nBuildVersion:\t\t26A428\n",
+      "stderr": ""
+    },
+    "sdk": {
+      "argv": [
+        "xcrun",
+        "--show-sdk-version"
+      ],
+      "returncode": 0,
+      "stdout": "27.0\n",
+      "stderr": ""
+    },
+    "ios_sdk": {
+      "argv": [
+        "xcrun",
+        "--sdk",
+        "iphoneos",
+        "--show-sdk-path"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "xcrun: error: SDK \"iphoneos\" cannot be located\nxcrun: error: SDK \"iphoneos\" cannot be located\nxcrun: error: unable to lookup item 'Path' in SDK 'iphoneos'\n"
+    },
+    "simulator_sdk": {
+      "argv": [
+        "xcrun",
+        "--sdk",
+        "iphonesimulator",
+        "--show-sdk-path"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "xcrun: error: SDK \"iphonesimulator\" cannot be located\nxcrun: error: SDK \"iphonesimulator\" cannot be located\nxcrun: error: unable to lookup item 'Path' in SDK 'iphonesimulator'\n"
+    }
+  },
+  "guests": {
+    "hello": {
+      "sha256": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+      "kind": "untouched macOS executable (original Phase 1 binary)",
+      "inspection": {
+        "build_versions": [
+          {
+            "minimum_os": "11.0.0",
+            "platform": "macOS",
+            "platform_id": 1,
+            "sdk": "27.0.0",
+            "source": "LC_BUILD_VERSION",
+            "tools": [
+              {
+                "tool": 3,
+                "version": "27037.1.0"
+              }
+            ]
+          }
+        ],
+        "code_signing": [
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 49680,
+            "size": 536
+          }
+        ],
+        "defined_external_symbols": [
+          {
+            "description": 16,
+            "name": "__mh_execute_header",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294967296
+          },
+          {
+            "description": 0,
+            "name": "_main",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294968760
+          }
+        ],
+        "diagnostics": [],
+        "dylibs": [
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "1359.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libSystem.B.dylib"
+          }
+        ],
+        "encryption": [],
+        "entry_points": [
+          {
+            "entryoff": 1464,
+            "source": "LC_MAIN",
+            "stacksize": 0,
+            "virtual_address": 4294968760
+          }
+        ],
+        "exports": [
+          {
+            "address_or_offset": 0,
+            "flags": 0,
+            "name": "__mh_execute_header",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 1464,
+            "flags": 0,
+            "name": "_main",
+            "source": "export_trie"
+          }
+        ],
+        "header": {
+          "architecture": "arm64",
+          "cpu_subtype": 0,
+          "cpu_type": 16777228,
+          "file_type": "MH_EXECUTE",
+          "file_type_id": 2,
+          "flags": 2097285,
+          "ncmds": 17,
+          "sizeofcmds": 1384,
+          "subtype_base": 0,
+          "subtype_capabilities": 0
+        },
+        "linkedit": [
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "rebase",
+            "offset": 49152,
+            "size": 8
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "bind",
+            "offset": 49160,
+            "size": 24
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "weak_bind",
+            "offset": 0,
+            "size": 0
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "lazy_bind",
+            "offset": 49184,
+            "size": 16
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "export",
+            "offset": 49200,
+            "size": 48
+          },
+          {
+            "command": "LC_FUNCTION_STARTS",
+            "offset": 49248,
+            "size": 8
+          },
+          {
+            "command": "LC_DATA_IN_CODE",
+            "offset": 49256,
+            "size": 0
+          },
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 49680,
+            "size": 536
+          }
+        ],
+        "load_commands": [
+          {
+            "command": 25,
+            "index": 0,
+            "name": "LC_SEGMENT_64",
+            "offset": 32,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 25,
+            "index": 1,
+            "name": "LC_SEGMENT_64",
+            "offset": 104,
+            "required_by_dyld": false,
+            "size": 472
+          },
+          {
+            "command": 25,
+            "index": 2,
+            "name": "LC_SEGMENT_64",
+            "offset": 576,
+            "required_by_dyld": false,
+            "size": 152
+          },
+          {
+            "command": 25,
+            "index": 3,
+            "name": "LC_SEGMENT_64",
+            "offset": 728,
+            "required_by_dyld": false,
+            "size": 232
+          },
+          {
+            "command": 25,
+            "index": 4,
+            "name": "LC_SEGMENT_64",
+            "offset": 960,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 2147483682,
+            "index": 5,
+            "name": "LC_DYLD_INFO_ONLY",
+            "offset": 1032,
+            "required_by_dyld": true,
+            "size": 48
+          },
+          {
+            "command": 2,
+            "index": 6,
+            "name": "LC_SYMTAB",
+            "offset": 1080,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 11,
+            "index": 7,
+            "name": "LC_DYSYMTAB",
+            "offset": 1104,
+            "required_by_dyld": false,
+            "size": 80
+          },
+          {
+            "command": 14,
+            "index": 8,
+            "name": "LC_LOAD_DYLINKER",
+            "offset": 1184,
+            "required_by_dyld": false,
+            "size": 32,
+            "value": "/usr/lib/dyld"
+          },
+          {
+            "command": 27,
+            "index": 9,
+            "name": "LC_UUID",
+            "offset": 1216,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 50,
+            "index": 10,
+            "name": "LC_BUILD_VERSION",
+            "offset": 1240,
+            "required_by_dyld": false,
+            "size": 32
+          },
+          {
+            "command": 42,
+            "index": 11,
+            "name": "LC_SOURCE_VERSION",
+            "offset": 1272,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 2147483688,
+            "index": 12,
+            "name": "LC_MAIN",
+            "offset": 1288,
+            "required_by_dyld": true,
+            "size": 24
+          },
+          {
+            "command": 12,
+            "index": 13,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1312,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 38,
+            "index": 14,
+            "name": "LC_FUNCTION_STARTS",
+            "offset": 1368,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 41,
+            "index": 15,
+            "name": "LC_DATA_IN_CODE",
+            "offset": 1384,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 29,
+            "index": 16,
+            "name": "LC_CODE_SIGNATURE",
+            "offset": 1400,
+            "required_by_dyld": false,
+            "size": 16
+          }
+        ],
+        "path": "/Users/<user>/machprobe/build/hello",
+        "rpaths": [],
+        "schema_version": 1,
+        "segments": [
+          {
+            "fileoff": 0,
+            "filesize": 0,
+            "initprot": 0,
+            "maxprot": 0,
+            "name": "__PAGEZERO",
+            "sections": [],
+            "vmaddr": 0,
+            "vmsize": 4294967296
+          },
+          {
+            "fileoff": 0,
+            "filesize": 16384,
+            "initprot": 5,
+            "maxprot": 5,
+            "name": "__TEXT",
+            "sections": [
+              {
+                "address": 4294968760,
+                "flags": 2147484672,
+                "name": "__text",
+                "offset": 1464,
+                "segment": "__TEXT",
+                "size": 52
+              },
+              {
+                "address": 4294968812,
+                "flags": 2147484680,
+                "name": "__stubs",
+                "offset": 1516,
+                "segment": "__TEXT",
+                "size": 12
+              },
+              {
+                "address": 4294968824,
+                "flags": 2147484672,
+                "name": "__stub_helper",
+                "offset": 1528,
+                "segment": "__TEXT",
+                "size": 36
+              },
+              {
+                "address": 4294968860,
+                "flags": 2,
+                "name": "__cstring",
+                "offset": 1564,
+                "segment": "__TEXT",
+                "size": 23
+              },
+              {
+                "address": 4294968884,
+                "flags": 0,
+                "name": "__unwind_info",
+                "offset": 1588,
+                "segment": "__TEXT",
+                "size": 88
+              }
+            ],
+            "vmaddr": 4294967296,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 16384,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA_CONST",
+            "sections": [
+              {
+                "address": 4294983680,
+                "flags": 6,
+                "name": "__got",
+                "offset": 16384,
+                "segment": "__DATA_CONST",
+                "size": 8
+              }
+            ],
+            "vmaddr": 4294983680,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 32768,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA",
+            "sections": [
+              {
+                "address": 4295000064,
+                "flags": 7,
+                "name": "__la_symbol_ptr",
+                "offset": 32768,
+                "segment": "__DATA",
+                "size": 8
+              },
+              {
+                "address": 4295000072,
+                "flags": 0,
+                "name": "__data",
+                "offset": 32776,
+                "segment": "__DATA",
+                "size": 8
+              }
+            ],
+            "vmaddr": 4295000064,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 49152,
+            "filesize": 1064,
+            "initprot": 1,
+            "maxprot": 1,
+            "name": "__LINKEDIT",
+            "sections": [],
+            "vmaddr": 4295016448,
+            "vmsize": 16384
+          }
+        ],
+        "slice_offset": 0,
+        "slice_size": 50216,
+        "slices": [],
+        "symbol_coverage": "LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded",
+        "undefined_symbols": [
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_puts",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "dyld_stub_binder",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          }
+        ],
+        "uuids": [
+          "10cf0410-70d8-4efe-9b14-6975e106a888"
+        ]
+      },
+      "native": {
+        "argv": [
+          "/Users/<user>/machprobe/build/hello"
+        ],
+        "returncode": 0,
+        "stdout": "Hello from macOS ARM64\n",
+        "stderr": ""
+      },
+      "through_runtime": {
+        "argv": [
+          "build/phase2/runner",
+          "/Users/<user>/machprobe/build/hello"
+        ],
+        "returncode": 0,
+        "stdout": "Hello from macOS ARM64\n",
+        "stderr": "runtime: segments=4 rebases=1 binds=2 selectors=0 initializers=0 guest_return=0\n"
+      },
+      "signature": {
+        "argv": [
+          "codesign",
+          "--verify",
+          "--strict",
+          "/Users/<user>/machprobe/build/hello"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "file_io": {
+      "sha256": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0",
+      "kind": "untouched macOS executable (original Phase 1 binary)",
+      "inspection": {
+        "build_versions": [
+          {
+            "minimum_os": "11.0.0",
+            "platform": "macOS",
+            "platform_id": 1,
+            "sdk": "27.0.0",
+            "source": "LC_BUILD_VERSION",
+            "tools": [
+              {
+                "tool": 3,
+                "version": "27037.1.0"
+              }
+            ]
+          }
+        ],
+        "code_signing": [
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 50464,
+            "size": 536
+          }
+        ],
+        "defined_external_symbols": [
+          {
+            "description": 16,
+            "name": "__mh_execute_header",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294967296
+          },
+          {
+            "description": 0,
+            "name": "_main",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294968760
+          }
+        ],
+        "diagnostics": [],
+        "dylibs": [
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "1359.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libSystem.B.dylib"
+          }
+        ],
+        "encryption": [],
+        "entry_points": [
+          {
+            "entryoff": 1464,
+            "source": "LC_MAIN",
+            "stacksize": 0,
+            "virtual_address": 4294968760
+          }
+        ],
+        "exports": [
+          {
+            "address_or_offset": 0,
+            "flags": 0,
+            "name": "__mh_execute_header",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 1464,
+            "flags": 0,
+            "name": "_main",
+            "source": "export_trie"
+          }
+        ],
+        "header": {
+          "architecture": "arm64",
+          "cpu_subtype": 0,
+          "cpu_type": 16777228,
+          "file_type": "MH_EXECUTE",
+          "file_type_id": 2,
+          "flags": 2097285,
+          "ncmds": 17,
+          "sizeofcmds": 1384,
+          "subtype_base": 0,
+          "subtype_capabilities": 0
+        },
+        "linkedit": [
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "rebase",
+            "offset": 49152,
+            "size": 8
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "bind",
+            "offset": 49160,
+            "size": 64
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "weak_bind",
+            "offset": 0,
+            "size": 0
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "lazy_bind",
+            "offset": 49224,
+            "size": 224
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "export",
+            "offset": 49448,
+            "size": 48
+          },
+          {
+            "command": "LC_FUNCTION_STARTS",
+            "offset": 49496,
+            "size": 8
+          },
+          {
+            "command": "LC_DATA_IN_CODE",
+            "offset": 49504,
+            "size": 0
+          },
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 50464,
+            "size": 536
+          }
+        ],
+        "load_commands": [
+          {
+            "command": 25,
+            "index": 0,
+            "name": "LC_SEGMENT_64",
+            "offset": 32,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 25,
+            "index": 1,
+            "name": "LC_SEGMENT_64",
+            "offset": 104,
+            "required_by_dyld": false,
+            "size": 472
+          },
+          {
+            "command": 25,
+            "index": 2,
+            "name": "LC_SEGMENT_64",
+            "offset": 576,
+            "required_by_dyld": false,
+            "size": 152
+          },
+          {
+            "command": 25,
+            "index": 3,
+            "name": "LC_SEGMENT_64",
+            "offset": 728,
+            "required_by_dyld": false,
+            "size": 232
+          },
+          {
+            "command": 25,
+            "index": 4,
+            "name": "LC_SEGMENT_64",
+            "offset": 960,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 2147483682,
+            "index": 5,
+            "name": "LC_DYLD_INFO_ONLY",
+            "offset": 1032,
+            "required_by_dyld": true,
+            "size": 48
+          },
+          {
+            "command": 2,
+            "index": 6,
+            "name": "LC_SYMTAB",
+            "offset": 1080,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 11,
+            "index": 7,
+            "name": "LC_DYSYMTAB",
+            "offset": 1104,
+            "required_by_dyld": false,
+            "size": 80
+          },
+          {
+            "command": 14,
+            "index": 8,
+            "name": "LC_LOAD_DYLINKER",
+            "offset": 1184,
+            "required_by_dyld": false,
+            "size": 32,
+            "value": "/usr/lib/dyld"
+          },
+          {
+            "command": 27,
+            "index": 9,
+            "name": "LC_UUID",
+            "offset": 1216,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 50,
+            "index": 10,
+            "name": "LC_BUILD_VERSION",
+            "offset": 1240,
+            "required_by_dyld": false,
+            "size": 32
+          },
+          {
+            "command": 42,
+            "index": 11,
+            "name": "LC_SOURCE_VERSION",
+            "offset": 1272,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 2147483688,
+            "index": 12,
+            "name": "LC_MAIN",
+            "offset": 1288,
+            "required_by_dyld": true,
+            "size": 24
+          },
+          {
+            "command": 12,
+            "index": 13,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1312,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 38,
+            "index": 14,
+            "name": "LC_FUNCTION_STARTS",
+            "offset": 1368,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 41,
+            "index": 15,
+            "name": "LC_DATA_IN_CODE",
+            "offset": 1384,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 29,
+            "index": 16,
+            "name": "LC_CODE_SIGNATURE",
+            "offset": 1400,
+            "required_by_dyld": false,
+            "size": 16
+          }
+        ],
+        "path": "/Users/<user>/machprobe/build/file_io",
+        "rpaths": [],
+        "schema_version": 1,
+        "segments": [
+          {
+            "fileoff": 0,
+            "filesize": 0,
+            "initprot": 0,
+            "maxprot": 0,
+            "name": "__PAGEZERO",
+            "sections": [],
+            "vmaddr": 0,
+            "vmsize": 4294967296
+          },
+          {
+            "fileoff": 0,
+            "filesize": 16384,
+            "initprot": 5,
+            "maxprot": 5,
+            "name": "__TEXT",
+            "sections": [
+              {
+                "address": 4294968760,
+                "flags": 2147484672,
+                "name": "__text",
+                "offset": 1464,
+                "segment": "__TEXT",
+                "size": 784
+              },
+              {
+                "address": 4294969544,
+                "flags": 2147484680,
+                "name": "__stubs",
+                "offset": 2248,
+                "segment": "__TEXT",
+                "size": 180
+              },
+              {
+                "address": 4294969724,
+                "flags": 2147484672,
+                "name": "__stub_helper",
+                "offset": 2428,
+                "segment": "__TEXT",
+                "size": 204
+              },
+              {
+                "address": 4294969928,
+                "flags": 2,
+                "name": "__cstring",
+                "offset": 2632,
+                "segment": "__TEXT",
+                "size": 155
+              },
+              {
+                "address": 4294970084,
+                "flags": 0,
+                "name": "__unwind_info",
+                "offset": 2788,
+                "segment": "__TEXT",
+                "size": 88
+              }
+            ],
+            "vmaddr": 4294967296,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 16384,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA_CONST",
+            "sections": [
+              {
+                "address": 4294983680,
+                "flags": 6,
+                "name": "__got",
+                "offset": 16384,
+                "segment": "__DATA_CONST",
+                "size": 24
+              }
+            ],
+            "vmaddr": 4294983680,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 32768,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA",
+            "sections": [
+              {
+                "address": 4295000064,
+                "flags": 7,
+                "name": "__la_symbol_ptr",
+                "offset": 32768,
+                "segment": "__DATA",
+                "size": 120
+              },
+              {
+                "address": 4295000184,
+                "flags": 0,
+                "name": "__data",
+                "offset": 32888,
+                "segment": "__DATA",
+                "size": 8
+              }
+            ],
+            "vmaddr": 4295000064,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 49152,
+            "filesize": 1848,
+            "initprot": 1,
+            "maxprot": 1,
+            "name": "__LINKEDIT",
+            "sections": [],
+            "vmaddr": 4295016448,
+            "vmsize": 16384
+          }
+        ],
+        "slice_offset": 0,
+        "slice_size": 51000,
+        "slices": [],
+        "symbol_coverage": "LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded",
+        "undefined_symbols": [
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "___snprintf_chk",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "___stack_chk_fail",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "___stack_chk_guard",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "___stderrp",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_close",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_fclose",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_fdopen",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_fprintf",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_fputs",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_fread",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_fseek",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_fwrite",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_memcmp",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_mkstemp",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_perror",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_puts",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_unlink",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "dyld_stub_binder",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          }
+        ],
+        "uuids": [
+          "2f33ed27-eef0-4e52-ae25-970870d5aaa5"
+        ]
+      },
+      "native": {
+        "argv": [
+          "/Users/<user>/machprobe/build/file_io",
+          "/Users/<user>/machprobe/build"
+        ],
+        "returncode": 0,
+        "stdout": "File I/O round trip OK\n",
+        "stderr": ""
+      },
+      "through_runtime": {
+        "argv": [
+          "build/phase2/runner",
+          "/Users/<user>/machprobe/build/file_io",
+          "/Users/<user>/machprobe/build"
+        ],
+        "returncode": 0,
+        "stdout": "File I/O round trip OK\n",
+        "stderr": "runtime: segments=4 rebases=15 binds=18 selectors=0 initializers=0 guest_return=0\n"
+      },
+      "signature": {
+        "argv": [
+          "codesign",
+          "--verify",
+          "--strict",
+          "/Users/<user>/machprobe/build/file_io"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "framework": {
+      "sha256": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280",
+      "kind": "untouched macOS executable (original Phase 1 binary)",
+      "inspection": {
+        "build_versions": [
+          {
+            "minimum_os": "11.0.0",
+            "platform": "macOS",
+            "platform_id": 1,
+            "sdk": "27.0.0",
+            "source": "LC_BUILD_VERSION",
+            "tools": [
+              {
+                "tool": 3,
+                "version": "27037.1.0"
+              }
+            ]
+          }
+        ],
+        "code_signing": [
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 49888,
+            "size": 536
+          }
+        ],
+        "defined_external_symbols": [
+          {
+            "description": 16,
+            "name": "__mh_execute_header",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294967296
+          },
+          {
+            "description": 0,
+            "name": "_main",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294968872
+          }
+        ],
+        "diagnostics": [],
+        "dylibs": [
+          {
+            "compatibility_version": "150.0.0",
+            "current_version": "5027.0.69",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "1359.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libSystem.B.dylib"
+          }
+        ],
+        "encryption": [],
+        "entry_points": [
+          {
+            "entryoff": 1576,
+            "source": "LC_MAIN",
+            "stacksize": 0,
+            "virtual_address": 4294968872
+          }
+        ],
+        "exports": [
+          {
+            "address_or_offset": 0,
+            "flags": 0,
+            "name": "__mh_execute_header",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 1576,
+            "flags": 0,
+            "name": "_main",
+            "source": "export_trie"
+          }
+        ],
+        "header": {
+          "architecture": "arm64",
+          "cpu_subtype": 0,
+          "cpu_type": 16777228,
+          "file_type": "MH_EXECUTE",
+          "file_type_id": 2,
+          "flags": 2097285,
+          "ncmds": 18,
+          "sizeofcmds": 1488,
+          "subtype_base": 0,
+          "subtype_capabilities": 0
+        },
+        "linkedit": [
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "rebase",
+            "offset": 49152,
+            "size": 8
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "bind",
+            "offset": 49160,
+            "size": 24
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "weak_bind",
+            "offset": 0,
+            "size": 0
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "lazy_bind",
+            "offset": 49184,
+            "size": 96
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "export",
+            "offset": 49280,
+            "size": 48
+          },
+          {
+            "command": "LC_FUNCTION_STARTS",
+            "offset": 49328,
+            "size": 8
+          },
+          {
+            "command": "LC_DATA_IN_CODE",
+            "offset": 49336,
+            "size": 0
+          },
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 49888,
+            "size": 536
+          }
+        ],
+        "load_commands": [
+          {
+            "command": 25,
+            "index": 0,
+            "name": "LC_SEGMENT_64",
+            "offset": 32,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 25,
+            "index": 1,
+            "name": "LC_SEGMENT_64",
+            "offset": 104,
+            "required_by_dyld": false,
+            "size": 472
+          },
+          {
+            "command": 25,
+            "index": 2,
+            "name": "LC_SEGMENT_64",
+            "offset": 576,
+            "required_by_dyld": false,
+            "size": 152
+          },
+          {
+            "command": 25,
+            "index": 3,
+            "name": "LC_SEGMENT_64",
+            "offset": 728,
+            "required_by_dyld": false,
+            "size": 232
+          },
+          {
+            "command": 25,
+            "index": 4,
+            "name": "LC_SEGMENT_64",
+            "offset": 960,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 2147483682,
+            "index": 5,
+            "name": "LC_DYLD_INFO_ONLY",
+            "offset": 1032,
+            "required_by_dyld": true,
+            "size": 48
+          },
+          {
+            "command": 2,
+            "index": 6,
+            "name": "LC_SYMTAB",
+            "offset": 1080,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 11,
+            "index": 7,
+            "name": "LC_DYSYMTAB",
+            "offset": 1104,
+            "required_by_dyld": false,
+            "size": 80
+          },
+          {
+            "command": 14,
+            "index": 8,
+            "name": "LC_LOAD_DYLINKER",
+            "offset": 1184,
+            "required_by_dyld": false,
+            "size": 32,
+            "value": "/usr/lib/dyld"
+          },
+          {
+            "command": 27,
+            "index": 9,
+            "name": "LC_UUID",
+            "offset": 1216,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 50,
+            "index": 10,
+            "name": "LC_BUILD_VERSION",
+            "offset": 1240,
+            "required_by_dyld": false,
+            "size": 32
+          },
+          {
+            "command": 42,
+            "index": 11,
+            "name": "LC_SOURCE_VERSION",
+            "offset": 1272,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 2147483688,
+            "index": 12,
+            "name": "LC_MAIN",
+            "offset": 1288,
+            "required_by_dyld": true,
+            "size": 24
+          },
+          {
+            "command": 12,
+            "index": 13,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1312,
+            "required_by_dyld": false,
+            "size": 104
+          },
+          {
+            "command": 12,
+            "index": 14,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1416,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 38,
+            "index": 15,
+            "name": "LC_FUNCTION_STARTS",
+            "offset": 1472,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 41,
+            "index": 16,
+            "name": "LC_DATA_IN_CODE",
+            "offset": 1488,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 29,
+            "index": 17,
+            "name": "LC_CODE_SIGNATURE",
+            "offset": 1504,
+            "required_by_dyld": false,
+            "size": 16
+          }
+        ],
+        "path": "/Users/<user>/machprobe/build/framework",
+        "rpaths": [],
+        "schema_version": 1,
+        "segments": [
+          {
+            "fileoff": 0,
+            "filesize": 0,
+            "initprot": 0,
+            "maxprot": 0,
+            "name": "__PAGEZERO",
+            "sections": [],
+            "vmaddr": 0,
+            "vmsize": 4294967296
+          },
+          {
+            "fileoff": 0,
+            "filesize": 16384,
+            "initprot": 5,
+            "maxprot": 5,
+            "name": "__TEXT",
+            "sections": [
+              {
+                "address": 4294968872,
+                "flags": 2147484672,
+                "name": "__text",
+                "offset": 1576,
+                "segment": "__TEXT",
+                "size": 128
+              },
+              {
+                "address": 4294969000,
+                "flags": 2147484680,
+                "name": "__stubs",
+                "offset": 1704,
+                "segment": "__TEXT",
+                "size": 48
+              },
+              {
+                "address": 4294969048,
+                "flags": 2147484672,
+                "name": "__stub_helper",
+                "offset": 1752,
+                "segment": "__TEXT",
+                "size": 72
+              },
+              {
+                "address": 4294969120,
+                "flags": 2,
+                "name": "__cstring",
+                "offset": 1824,
+                "segment": "__TEXT",
+                "size": 47
+              },
+              {
+                "address": 4294969168,
+                "flags": 0,
+                "name": "__unwind_info",
+                "offset": 1872,
+                "segment": "__TEXT",
+                "size": 88
+              }
+            ],
+            "vmaddr": 4294967296,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 16384,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA_CONST",
+            "sections": [
+              {
+                "address": 4294983680,
+                "flags": 6,
+                "name": "__got",
+                "offset": 16384,
+                "segment": "__DATA_CONST",
+                "size": 8
+              }
+            ],
+            "vmaddr": 4294983680,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 32768,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA",
+            "sections": [
+              {
+                "address": 4295000064,
+                "flags": 7,
+                "name": "__la_symbol_ptr",
+                "offset": 32768,
+                "segment": "__DATA",
+                "size": 32
+              },
+              {
+                "address": 4295000096,
+                "flags": 0,
+                "name": "__data",
+                "offset": 32800,
+                "segment": "__DATA",
+                "size": 8
+              }
+            ],
+            "vmaddr": 4295000064,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 49152,
+            "filesize": 1272,
+            "initprot": 1,
+            "maxprot": 1,
+            "name": "__LINKEDIT",
+            "sections": [],
+            "vmaddr": 4295016448,
+            "vmsize": 16384
+          }
+        ],
+        "slice_offset": 0,
+        "slice_size": 50424,
+        "slices": [],
+        "symbol_coverage": "LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded",
+        "undefined_symbols": [
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+            "library_ordinal": 1,
+            "name": "_CFRelease",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+            "library_ordinal": 1,
+            "name": "_CFStringCreateWithCString",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+            "library_ordinal": 1,
+            "name": "_CFStringGetLength",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 512,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 2,
+            "name": "_printf",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 512,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 2,
+            "name": "dyld_stub_binder",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          }
+        ],
+        "uuids": [
+          "c5ddd4b4-d12f-40f8-92fa-007b692c5f67"
+        ]
+      },
+      "native": {
+        "argv": [
+          "/Users/<user>/machprobe/build/framework"
+        ],
+        "returncode": 0,
+        "stdout": "CoreFoundation string length: 11\n",
+        "stderr": ""
+      },
+      "through_runtime": {
+        "argv": [
+          "build/phase2/runner",
+          "/Users/<user>/machprobe/build/framework"
+        ],
+        "returncode": 0,
+        "stdout": "CoreFoundation string length: 11\n",
+        "stderr": "runtime: segments=4 rebases=4 binds=5 selectors=0 initializers=0 guest_return=0\n"
+      },
+      "signature": {
+        "argv": [
+          "codesign",
+          "--verify",
+          "--strict",
+          "/Users/<user>/machprobe/build/framework"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "metal_info": {
+      "sha256": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3",
+      "kind": "untouched macOS executable (original Phase 1 binary)",
+      "inspection": {
+        "build_versions": [
+          {
+            "minimum_os": "11.0.0",
+            "platform": "macOS",
+            "platform_id": 1,
+            "sdk": "27.0.0",
+            "source": "LC_BUILD_VERSION",
+            "tools": [
+              {
+                "tool": 3,
+                "version": "27037.1.0"
+              }
+            ]
+          }
+        ],
+        "code_signing": [
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 50560,
+            "size": 536
+          }
+        ],
+        "defined_external_symbols": [
+          {
+            "description": 16,
+            "name": "__mh_execute_header",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294967296
+          },
+          {
+            "description": 0,
+            "name": "_main",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294969328
+          }
+        ],
+        "diagnostics": [],
+        "dylibs": [
+          {
+            "compatibility_version": "300.0.0",
+            "current_version": "5027.0.69",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "382.5.3",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "228.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libobjc.A.dylib"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "1359.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libSystem.B.dylib"
+          }
+        ],
+        "encryption": [],
+        "entry_points": [
+          {
+            "entryoff": 2032,
+            "source": "LC_MAIN",
+            "stacksize": 0,
+            "virtual_address": 4294969328
+          }
+        ],
+        "exports": [
+          {
+            "address_or_offset": 0,
+            "flags": 0,
+            "name": "__mh_execute_header",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 2032,
+            "flags": 0,
+            "name": "_main",
+            "source": "export_trie"
+          }
+        ],
+        "header": {
+          "architecture": "arm64",
+          "cpu_subtype": 0,
+          "cpu_type": 16777228,
+          "file_type": "MH_EXECUTE",
+          "file_type_id": 2,
+          "flags": 2097285,
+          "ncmds": 20,
+          "sizeofcmds": 1944,
+          "subtype_base": 0,
+          "subtype_capabilities": 0
+        },
+        "linkedit": [
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "rebase",
+            "offset": 49152,
+            "size": 8
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "bind",
+            "offset": 49160,
+            "size": 96
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "weak_bind",
+            "offset": 0,
+            "size": 0
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "lazy_bind",
+            "offset": 49256,
+            "size": 224
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "export",
+            "offset": 49480,
+            "size": 48
+          },
+          {
+            "command": "LC_FUNCTION_STARTS",
+            "offset": 49528,
+            "size": 8
+          },
+          {
+            "command": "LC_DATA_IN_CODE",
+            "offset": 49536,
+            "size": 0
+          },
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 50560,
+            "size": 536
+          }
+        ],
+        "load_commands": [
+          {
+            "command": 25,
+            "index": 0,
+            "name": "LC_SEGMENT_64",
+            "offset": 32,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 25,
+            "index": 1,
+            "name": "LC_SEGMENT_64",
+            "offset": 104,
+            "required_by_dyld": false,
+            "size": 632
+          },
+          {
+            "command": 25,
+            "index": 2,
+            "name": "LC_SEGMENT_64",
+            "offset": 736,
+            "required_by_dyld": false,
+            "size": 232
+          },
+          {
+            "command": 25,
+            "index": 3,
+            "name": "LC_SEGMENT_64",
+            "offset": 968,
+            "required_by_dyld": false,
+            "size": 312
+          },
+          {
+            "command": 25,
+            "index": 4,
+            "name": "LC_SEGMENT_64",
+            "offset": 1280,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 2147483682,
+            "index": 5,
+            "name": "LC_DYLD_INFO_ONLY",
+            "offset": 1352,
+            "required_by_dyld": true,
+            "size": 48
+          },
+          {
+            "command": 2,
+            "index": 6,
+            "name": "LC_SYMTAB",
+            "offset": 1400,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 11,
+            "index": 7,
+            "name": "LC_DYSYMTAB",
+            "offset": 1424,
+            "required_by_dyld": false,
+            "size": 80
+          },
+          {
+            "command": 14,
+            "index": 8,
+            "name": "LC_LOAD_DYLINKER",
+            "offset": 1504,
+            "required_by_dyld": false,
+            "size": 32,
+            "value": "/usr/lib/dyld"
+          },
+          {
+            "command": 27,
+            "index": 9,
+            "name": "LC_UUID",
+            "offset": 1536,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 50,
+            "index": 10,
+            "name": "LC_BUILD_VERSION",
+            "offset": 1560,
+            "required_by_dyld": false,
+            "size": 32
+          },
+          {
+            "command": 42,
+            "index": 11,
+            "name": "LC_SOURCE_VERSION",
+            "offset": 1592,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 2147483688,
+            "index": 12,
+            "name": "LC_MAIN",
+            "offset": 1608,
+            "required_by_dyld": true,
+            "size": 24
+          },
+          {
+            "command": 12,
+            "index": 13,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1632,
+            "required_by_dyld": false,
+            "size": 96
+          },
+          {
+            "command": 12,
+            "index": 14,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1728,
+            "required_by_dyld": false,
+            "size": 88
+          },
+          {
+            "command": 12,
+            "index": 15,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1816,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 12,
+            "index": 16,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1872,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 38,
+            "index": 17,
+            "name": "LC_FUNCTION_STARTS",
+            "offset": 1928,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 41,
+            "index": 18,
+            "name": "LC_DATA_IN_CODE",
+            "offset": 1944,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 29,
+            "index": 19,
+            "name": "LC_CODE_SIGNATURE",
+            "offset": 1960,
+            "required_by_dyld": false,
+            "size": 16
+          }
+        ],
+        "path": "/Users/<user>/machprobe/build/metal_info",
+        "rpaths": [],
+        "schema_version": 1,
+        "segments": [
+          {
+            "fileoff": 0,
+            "filesize": 0,
+            "initprot": 0,
+            "maxprot": 0,
+            "name": "__PAGEZERO",
+            "sections": [],
+            "vmaddr": 0,
+            "vmsize": 4294967296
+          },
+          {
+            "fileoff": 0,
+            "filesize": 16384,
+            "initprot": 5,
+            "maxprot": 5,
+            "name": "__TEXT",
+            "sections": [
+              {
+                "address": 4294969328,
+                "flags": 2147484672,
+                "name": "__text",
+                "offset": 2032,
+                "segment": "__TEXT",
+                "size": 304
+              },
+              {
+                "address": 4294969632,
+                "flags": 2147484680,
+                "name": "__stubs",
+                "offset": 2336,
+                "segment": "__TEXT",
+                "size": 96
+              },
+              {
+                "address": 4294969728,
+                "flags": 2147484672,
+                "name": "__stub_helper",
+                "offset": 2432,
+                "segment": "__TEXT",
+                "size": 120
+              },
+              {
+                "address": 4294969856,
+                "flags": 2147484672,
+                "name": "__objc_stubs",
+                "offset": 2560,
+                "segment": "__TEXT",
+                "size": 128
+              },
+              {
+                "address": 4294969984,
+                "flags": 2,
+                "name": "__cstring",
+                "offset": 2688,
+                "segment": "__TEXT",
+                "size": 89
+              },
+              {
+                "address": 4294970073,
+                "flags": 2,
+                "name": "__objc_methname",
+                "offset": 2777,
+                "segment": "__TEXT",
+                "size": 44
+              },
+              {
+                "address": 4294970120,
+                "flags": 0,
+                "name": "__unwind_info",
+                "offset": 2824,
+                "segment": "__TEXT",
+                "size": 88
+              }
+            ],
+            "vmaddr": 4294967296,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 16384,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA_CONST",
+            "sections": [
+              {
+                "address": 4294983680,
+                "flags": 0,
+                "name": "__objc_imageinfo",
+                "offset": 16384,
+                "segment": "__DATA_CONST",
+                "size": 8
+              },
+              {
+                "address": 4294983688,
+                "flags": 6,
+                "name": "__got",
+                "offset": 16392,
+                "segment": "__DATA_CONST",
+                "size": 32
+              }
+            ],
+            "vmaddr": 4294983680,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 32768,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA",
+            "sections": [
+              {
+                "address": 4295000064,
+                "flags": 7,
+                "name": "__la_symbol_ptr",
+                "offset": 32768,
+                "segment": "__DATA",
+                "size": 64
+              },
+              {
+                "address": 4295000128,
+                "flags": 268435461,
+                "name": "__objc_selrefs",
+                "offset": 32832,
+                "segment": "__DATA",
+                "size": 32
+              },
+              {
+                "address": 4295000160,
+                "flags": 0,
+                "name": "__data",
+                "offset": 32864,
+                "segment": "__DATA",
+                "size": 8
+              }
+            ],
+            "vmaddr": 4295000064,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 49152,
+            "filesize": 1944,
+            "initprot": 1,
+            "maxprot": 1,
+            "name": "__LINKEDIT",
+            "sections": [],
+            "vmaddr": 4295016448,
+            "vmsize": 16384
+          }
+        ],
+        "slice_offset": 0,
+        "slice_size": 51096,
+        "slices": [],
+        "symbol_coverage": "LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded",
+        "undefined_symbols": [
+          {
+            "common_symbol": false,
+            "description": 512,
+            "library": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal",
+            "library_ordinal": 2,
+            "name": "_MTLCreateSystemDefaultDevice",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 4,
+            "name": "___stderrp",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 4,
+            "name": "_fputs",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 768,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 3,
+            "name": "_objc_autoreleasePoolPop",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 768,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 3,
+            "name": "_objc_autoreleasePoolPush",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 768,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 3,
+            "name": "_objc_msgSend",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 768,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 3,
+            "name": "_objc_release",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 768,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 3,
+            "name": "_objc_retainAutorelease",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 768,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 3,
+            "name": "_objc_retainAutoreleasedReturnValue",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 768,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 3,
+            "name": "_objc_storeStrong",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 4,
+            "name": "_printf",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 4,
+            "name": "dyld_stub_binder",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          }
+        ],
+        "uuids": [
+          "a4466a3d-cb7f-48ed-9a11-983cd9ff537c"
+        ]
+      },
+      "native": {
+        "argv": [
+          "/Users/<user>/machprobe/build/metal_info"
+        ],
+        "returncode": 0,
+        "stdout": "Metal device: Apple M2\nRegistry ID: 4294968552\nUnified memory: yes\n",
+        "stderr": ""
+      },
+      "through_runtime": {
+        "argv": [
+          "build/phase2/runner",
+          "/Users/<user>/machprobe/build/metal_info"
+        ],
+        "returncode": 0,
+        "stdout": "Metal device: Apple M2\nRegistry ID: 4294968552\nUnified memory: yes\n",
+        "stderr": "runtime: segments=4 rebases=12 binds=12 selectors=4 initializers=0 guest_return=0\n"
+      },
+      "signature": {
+        "argv": [
+          "codesign",
+          "--verify",
+          "--strict",
+          "/Users/<user>/machprobe/build/metal_info"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "interactive": {
+      "sha256": "3f446948d3d274fc7370560b79626763e3b9700ca0619caf638c557f4d638409",
+      "kind": "new macOS-target guest, unchanged after build",
+      "inspection": {
+        "build_versions": [
+          {
+            "minimum_os": "11.0.0",
+            "platform": "macOS",
+            "platform_id": 1,
+            "sdk": "27.0.0",
+            "source": "LC_BUILD_VERSION",
+            "tools": [
+              {
+                "tool": 3,
+                "version": "27037.1.0"
+              }
+            ]
+          }
+        ],
+        "code_signing": [
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 51408,
+            "size": 536
+          }
+        ],
+        "defined_external_symbols": [
+          {
+            "description": 16,
+            "name": "__mh_execute_header",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294967296
+          },
+          {
+            "description": 0,
+            "name": "_abi_buffer",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294969948
+          },
+          {
+            "description": 0,
+            "name": "_abi_callback",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294970192
+          },
+          {
+            "description": 0,
+            "name": "_abi_errno",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294970372
+          },
+          {
+            "description": 0,
+            "name": "_abi_errno_address",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294970428
+          },
+          {
+            "description": 0,
+            "name": "_abi_initialized",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294970464
+          },
+          {
+            "description": 0,
+            "name": "_abi_integer",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294969856
+          },
+          {
+            "description": 0,
+            "name": "_abi_struct",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294969896
+          },
+          {
+            "description": 0,
+            "name": "_abi_variadic",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294970252
+          },
+          {
+            "description": 0,
+            "name": "_main",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294970476
+          },
+          {
+            "description": 0,
+            "name": "_mp_guest_open",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294968920
+          }
+        ],
+        "diagnostics": [],
+        "dylibs": [
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "1359.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libSystem.B.dylib"
+          }
+        ],
+        "encryption": [],
+        "entry_points": [
+          {
+            "entryoff": 3180,
+            "source": "LC_MAIN",
+            "stacksize": 0,
+            "virtual_address": 4294970476
+          }
+        ],
+        "exports": [
+          {
+            "address_or_offset": 0,
+            "flags": 0,
+            "name": "__mh_execute_header",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 2652,
+            "flags": 0,
+            "name": "_abi_buffer",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 2896,
+            "flags": 0,
+            "name": "_abi_callback",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 3076,
+            "flags": 0,
+            "name": "_abi_errno",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 3132,
+            "flags": 0,
+            "name": "_abi_errno_address",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 3168,
+            "flags": 0,
+            "name": "_abi_initialized",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 2560,
+            "flags": 0,
+            "name": "_abi_integer",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 2600,
+            "flags": 0,
+            "name": "_abi_struct",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 2956,
+            "flags": 0,
+            "name": "_abi_variadic",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 3180,
+            "flags": 0,
+            "name": "_main",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 1624,
+            "flags": 0,
+            "name": "_mp_guest_open",
+            "source": "export_trie"
+          }
+        ],
+        "header": {
+          "architecture": "arm64",
+          "cpu_subtype": 0,
+          "cpu_type": 16777228,
+          "file_type": "MH_EXECUTE",
+          "file_type_id": 2,
+          "flags": 2097285,
+          "ncmds": 17,
+          "sizeofcmds": 1544,
+          "subtype_base": 0,
+          "subtype_capabilities": 0
+        },
+        "linkedit": [
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "rebase",
+            "offset": 49152,
+            "size": 8
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "bind",
+            "offset": 49160,
+            "size": 56
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "weak_bind",
+            "offset": 0,
+            "size": 0
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "lazy_bind",
+            "offset": 49216,
+            "size": 120
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "export",
+            "offset": 49336,
+            "size": 200
+          },
+          {
+            "command": "LC_FUNCTION_STARTS",
+            "offset": 49536,
+            "size": 24
+          },
+          {
+            "command": "LC_DATA_IN_CODE",
+            "offset": 49560,
+            "size": 0
+          },
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 51408,
+            "size": 536
+          }
+        ],
+        "load_commands": [
+          {
+            "command": 25,
+            "index": 0,
+            "name": "LC_SEGMENT_64",
+            "offset": 32,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 25,
+            "index": 1,
+            "name": "LC_SEGMENT_64",
+            "offset": 104,
+            "required_by_dyld": false,
+            "size": 472
+          },
+          {
+            "command": 25,
+            "index": 2,
+            "name": "LC_SEGMENT_64",
+            "offset": 576,
+            "required_by_dyld": false,
+            "size": 232
+          },
+          {
+            "command": 25,
+            "index": 3,
+            "name": "LC_SEGMENT_64",
+            "offset": 808,
+            "required_by_dyld": false,
+            "size": 312
+          },
+          {
+            "command": 25,
+            "index": 4,
+            "name": "LC_SEGMENT_64",
+            "offset": 1120,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 2147483682,
+            "index": 5,
+            "name": "LC_DYLD_INFO_ONLY",
+            "offset": 1192,
+            "required_by_dyld": true,
+            "size": 48
+          },
+          {
+            "command": 2,
+            "index": 6,
+            "name": "LC_SYMTAB",
+            "offset": 1240,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 11,
+            "index": 7,
+            "name": "LC_DYSYMTAB",
+            "offset": 1264,
+            "required_by_dyld": false,
+            "size": 80
+          },
+          {
+            "command": 14,
+            "index": 8,
+            "name": "LC_LOAD_DYLINKER",
+            "offset": 1344,
+            "required_by_dyld": false,
+            "size": 32,
+            "value": "/usr/lib/dyld"
+          },
+          {
+            "command": 27,
+            "index": 9,
+            "name": "LC_UUID",
+            "offset": 1376,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 50,
+            "index": 10,
+            "name": "LC_BUILD_VERSION",
+            "offset": 1400,
+            "required_by_dyld": false,
+            "size": 32
+          },
+          {
+            "command": 42,
+            "index": 11,
+            "name": "LC_SOURCE_VERSION",
+            "offset": 1432,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 2147483688,
+            "index": 12,
+            "name": "LC_MAIN",
+            "offset": 1448,
+            "required_by_dyld": true,
+            "size": 24
+          },
+          {
+            "command": 12,
+            "index": 13,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1472,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 38,
+            "index": 14,
+            "name": "LC_FUNCTION_STARTS",
+            "offset": 1528,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 41,
+            "index": 15,
+            "name": "LC_DATA_IN_CODE",
+            "offset": 1544,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 29,
+            "index": 16,
+            "name": "LC_CODE_SIGNATURE",
+            "offset": 1560,
+            "required_by_dyld": false,
+            "size": 16
+          }
+        ],
+        "path": "/Users/<user>/machprobe/build/phase2/interactive",
+        "rpaths": [],
+        "schema_version": 1,
+        "segments": [
+          {
+            "fileoff": 0,
+            "filesize": 0,
+            "initprot": 0,
+            "maxprot": 0,
+            "name": "__PAGEZERO",
+            "sections": [],
+            "vmaddr": 0,
+            "vmsize": 4294967296
+          },
+          {
+            "fileoff": 0,
+            "filesize": 16384,
+            "initprot": 5,
+            "maxprot": 5,
+            "name": "__TEXT",
+            "sections": [
+              {
+                "address": 4294968920,
+                "flags": 2147484672,
+                "name": "__text",
+                "offset": 1624,
+                "segment": "__TEXT",
+                "size": 1608
+              },
+              {
+                "address": 4294970528,
+                "flags": 2147484680,
+                "name": "__stubs",
+                "offset": 3232,
+                "segment": "__TEXT",
+                "size": 84
+              },
+              {
+                "address": 4294970612,
+                "flags": 2147484672,
+                "name": "__stub_helper",
+                "offset": 3316,
+                "segment": "__TEXT",
+                "size": 108
+              },
+              {
+                "address": 4294970720,
+                "flags": 2,
+                "name": "__cstring",
+                "offset": 3424,
+                "segment": "__TEXT",
+                "size": 85
+              },
+              {
+                "address": 4294970808,
+                "flags": 0,
+                "name": "__unwind_info",
+                "offset": 3512,
+                "segment": "__TEXT",
+                "size": 128
+              }
+            ],
+            "vmaddr": 4294967296,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 16384,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA_CONST",
+            "sections": [
+              {
+                "address": 4294983680,
+                "flags": 9,
+                "name": "__mod_init_func",
+                "offset": 16384,
+                "segment": "__DATA_CONST",
+                "size": 8
+              },
+              {
+                "address": 4294983688,
+                "flags": 6,
+                "name": "__got",
+                "offset": 16392,
+                "segment": "__DATA_CONST",
+                "size": 16
+              }
+            ],
+            "vmaddr": 4294983680,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 32768,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA",
+            "sections": [
+              {
+                "address": 4295000064,
+                "flags": 7,
+                "name": "__la_symbol_ptr",
+                "offset": 32768,
+                "segment": "__DATA",
+                "size": 56
+              },
+              {
+                "address": 4295000120,
+                "flags": 0,
+                "name": "__data",
+                "offset": 32824,
+                "segment": "__DATA",
+                "size": 8
+              },
+              {
+                "address": 4295000128,
+                "flags": 1,
+                "name": "__bss",
+                "offset": 0,
+                "segment": "__DATA",
+                "size": 4
+              }
+            ],
+            "vmaddr": 4295000064,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 49152,
+            "filesize": 2792,
+            "initprot": 1,
+            "maxprot": 1,
+            "name": "__LINKEDIT",
+            "sections": [],
+            "vmaddr": 4295016448,
+            "vmsize": 16384
+          }
+        ],
+        "slice_offset": 0,
+        "slice_size": 51944,
+        "slices": [],
+        "symbol_coverage": "LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded",
+        "undefined_symbols": [
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "___error",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "___snprintf_chk",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "___stack_chk_fail",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "___stack_chk_guard",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_calloc",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_free",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_puts",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "_strlen",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 1,
+            "name": "dyld_stub_binder",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          }
+        ],
+        "uuids": [
+          "f2e9b2bb-119c-4349-8a8c-a15350121dbe"
+        ]
+      },
+      "native": {
+        "argv": [
+          "/Users/<user>/machprobe/build/phase2/interactive"
+        ],
+        "returncode": 0,
+        "stdout": "Interactive guest requires mp_guest_open ABI v1\n",
+        "stderr": ""
+      },
+      "through_runtime": {
+        "argv": [
+          "build/phase2/runner",
+          "/Users/<user>/machprobe/build/phase2/interactive"
+        ],
+        "returncode": 0,
+        "stdout": "Interactive guest requires mp_guest_open ABI v1\n",
+        "stderr": "runtime: segments=4 rebases=8 binds=9 selectors=0 initializers=1 guest_return=0\n"
+      },
+      "signature": {
+        "argv": [
+          "codesign",
+          "--verify",
+          "--strict",
+          "/Users/<user>/machprobe/build/phase2/interactive"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "foundation": {
+      "sha256": "052fe8e2cd7655afd65d77f954e81425dbf841105ef3b37085a8b4fdb3d9a6c5",
+      "kind": "new macOS-target guest, unchanged after build",
+      "inspection": {
+        "build_versions": [
+          {
+            "minimum_os": "11.0.0",
+            "platform": "macOS",
+            "platform_id": 1,
+            "sdk": "27.0.0",
+            "source": "LC_BUILD_VERSION",
+            "tools": [
+              {
+                "tool": 3,
+                "version": "27037.1.0"
+              }
+            ]
+          }
+        ],
+        "code_signing": [
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 51536,
+            "size": 536
+          }
+        ],
+        "defined_external_symbols": [
+          {
+            "description": 16,
+            "name": "__mh_execute_header",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294967296
+          },
+          {
+            "description": 0,
+            "name": "_foundation_check",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294969440
+          },
+          {
+            "description": 0,
+            "name": "_main",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294970440
+          }
+        ],
+        "diagnostics": [],
+        "dylibs": [
+          {
+            "compatibility_version": "300.0.0",
+            "current_version": "5027.0.69",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+          },
+          {
+            "compatibility_version": "150.0.0",
+            "current_version": "5027.0.69",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "382.5.3",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "228.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libobjc.A.dylib"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "1359.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libSystem.B.dylib"
+          }
+        ],
+        "encryption": [],
+        "entry_points": [
+          {
+            "entryoff": 3144,
+            "source": "LC_MAIN",
+            "stacksize": 0,
+            "virtual_address": 4294970440
+          }
+        ],
+        "exports": [
+          {
+            "address_or_offset": 0,
+            "flags": 0,
+            "name": "__mh_execute_header",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 2144,
+            "flags": 0,
+            "name": "_foundation_check",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 3144,
+            "flags": 0,
+            "name": "_main",
+            "source": "export_trie"
+          }
+        ],
+        "header": {
+          "architecture": "arm64",
+          "cpu_subtype": 0,
+          "cpu_type": 16777228,
+          "file_type": "MH_EXECUTE",
+          "file_type_id": 2,
+          "flags": 2097285,
+          "ncmds": 21,
+          "sizeofcmds": 2048,
+          "subtype_base": 0,
+          "subtype_capabilities": 0
+        },
+        "linkedit": [
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "rebase",
+            "offset": 49152,
+            "size": 8
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "bind",
+            "offset": 49160,
+            "size": 184
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "weak_bind",
+            "offset": 0,
+            "size": 0
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "lazy_bind",
+            "offset": 49344,
+            "size": 416
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "export",
+            "offset": 49760,
+            "size": 72
+          },
+          {
+            "command": "LC_FUNCTION_STARTS",
+            "offset": 49832,
+            "size": 8
+          },
+          {
+            "command": "LC_DATA_IN_CODE",
+            "offset": 49840,
+            "size": 0
+          },
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 51536,
+            "size": 536
+          }
+        ],
+        "load_commands": [
+          {
+            "command": 25,
+            "index": 0,
+            "name": "LC_SEGMENT_64",
+            "offset": 32,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 25,
+            "index": 1,
+            "name": "LC_SEGMENT_64",
+            "offset": 104,
+            "required_by_dyld": false,
+            "size": 552
+          },
+          {
+            "command": 25,
+            "index": 2,
+            "name": "LC_SEGMENT_64",
+            "offset": 656,
+            "required_by_dyld": false,
+            "size": 232
+          },
+          {
+            "command": 25,
+            "index": 3,
+            "name": "LC_SEGMENT_64",
+            "offset": 888,
+            "required_by_dyld": false,
+            "size": 392
+          },
+          {
+            "command": 25,
+            "index": 4,
+            "name": "LC_SEGMENT_64",
+            "offset": 1280,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 2147483682,
+            "index": 5,
+            "name": "LC_DYLD_INFO_ONLY",
+            "offset": 1352,
+            "required_by_dyld": true,
+            "size": 48
+          },
+          {
+            "command": 2,
+            "index": 6,
+            "name": "LC_SYMTAB",
+            "offset": 1400,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 11,
+            "index": 7,
+            "name": "LC_DYSYMTAB",
+            "offset": 1424,
+            "required_by_dyld": false,
+            "size": 80
+          },
+          {
+            "command": 14,
+            "index": 8,
+            "name": "LC_LOAD_DYLINKER",
+            "offset": 1504,
+            "required_by_dyld": false,
+            "size": 32,
+            "value": "/usr/lib/dyld"
+          },
+          {
+            "command": 27,
+            "index": 9,
+            "name": "LC_UUID",
+            "offset": 1536,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 50,
+            "index": 10,
+            "name": "LC_BUILD_VERSION",
+            "offset": 1560,
+            "required_by_dyld": false,
+            "size": 32
+          },
+          {
+            "command": 42,
+            "index": 11,
+            "name": "LC_SOURCE_VERSION",
+            "offset": 1592,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 2147483688,
+            "index": 12,
+            "name": "LC_MAIN",
+            "offset": 1608,
+            "required_by_dyld": true,
+            "size": 24
+          },
+          {
+            "command": 12,
+            "index": 13,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1632,
+            "required_by_dyld": false,
+            "size": 96
+          },
+          {
+            "command": 12,
+            "index": 14,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1728,
+            "required_by_dyld": false,
+            "size": 104
+          },
+          {
+            "command": 12,
+            "index": 15,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1832,
+            "required_by_dyld": false,
+            "size": 88
+          },
+          {
+            "command": 12,
+            "index": 16,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1920,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 12,
+            "index": 17,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1976,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 38,
+            "index": 18,
+            "name": "LC_FUNCTION_STARTS",
+            "offset": 2032,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 41,
+            "index": 19,
+            "name": "LC_DATA_IN_CODE",
+            "offset": 2048,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 29,
+            "index": 20,
+            "name": "LC_CODE_SIGNATURE",
+            "offset": 2064,
+            "required_by_dyld": false,
+            "size": 16
+          }
+        ],
+        "path": "/Users/<user>/machprobe/build/phase2/foundation",
+        "rpaths": [],
+        "schema_version": 1,
+        "segments": [
+          {
+            "fileoff": 0,
+            "filesize": 0,
+            "initprot": 0,
+            "maxprot": 0,
+            "name": "__PAGEZERO",
+            "sections": [],
+            "vmaddr": 0,
+            "vmsize": 4294967296
+          },
+          {
+            "fileoff": 0,
+            "filesize": 16384,
+            "initprot": 5,
+            "maxprot": 5,
+            "name": "__TEXT",
+            "sections": [
+              {
+                "address": 4294969440,
+                "flags": 2147484672,
+                "name": "__text",
+                "offset": 2144,
+                "segment": "__TEXT",
+                "size": 1032
+              },
+              {
+                "address": 4294970472,
+                "flags": 2147484680,
+                "name": "__stubs",
+                "offset": 3176,
+                "segment": "__TEXT",
+                "size": 192
+              },
+              {
+                "address": 4294970664,
+                "flags": 2147484672,
+                "name": "__stub_helper",
+                "offset": 3368,
+                "segment": "__TEXT",
+                "size": 216
+              },
+              {
+                "address": 4294970880,
+                "flags": 2147484672,
+                "name": "__objc_stubs",
+                "offset": 3584,
+                "segment": "__TEXT",
+                "size": 224
+              },
+              {
+                "address": 4294971104,
+                "flags": 2,
+                "name": "__cstring",
+                "offset": 3808,
+                "segment": "__TEXT",
+                "size": 189
+              },
+              {
+                "address": 4294971293,
+                "flags": 2,
+                "name": "__objc_methname",
+                "offset": 3997,
+                "segment": "__TEXT",
+                "size": 98
+              }
+            ],
+            "vmaddr": 4294967296,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 16384,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA_CONST",
+            "sections": [
+              {
+                "address": 4294983680,
+                "flags": 0,
+                "name": "__objc_imageinfo",
+                "offset": 16384,
+                "segment": "__DATA_CONST",
+                "size": 8
+              },
+              {
+                "address": 4294983688,
+                "flags": 6,
+                "name": "__got",
+                "offset": 16392,
+                "segment": "__DATA_CONST",
+                "size": 32
+              }
+            ],
+            "vmaddr": 4294983680,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 32768,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA",
+            "sections": [
+              {
+                "address": 4295000064,
+                "flags": 7,
+                "name": "__la_symbol_ptr",
+                "offset": 32768,
+                "segment": "__DATA",
+                "size": 128
+              },
+              {
+                "address": 4295000192,
+                "flags": 268435461,
+                "name": "__objc_selrefs",
+                "offset": 32896,
+                "segment": "__DATA",
+                "size": 56
+              },
+              {
+                "address": 4295000248,
+                "flags": 268435456,
+                "name": "__objc_classrefs",
+                "offset": 32952,
+                "segment": "__DATA",
+                "size": 24
+              },
+              {
+                "address": 4295000272,
+                "flags": 0,
+                "name": "__data",
+                "offset": 32976,
+                "segment": "__DATA",
+                "size": 8
+              }
+            ],
+            "vmaddr": 4295000064,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 49152,
+            "filesize": 2920,
+            "initprot": 1,
+            "maxprot": 1,
+            "name": "__LINKEDIT",
+            "sections": [],
+            "vmaddr": 4295016448,
+            "vmsize": 16384
+          }
+        ],
+        "slice_offset": 0,
+        "slice_size": 52072,
+        "slices": [],
+        "symbol_coverage": "LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded",
+        "undefined_symbols": [
+          {
+            "common_symbol": false,
+            "description": 512,
+            "library": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+            "library_ordinal": 2,
+            "name": "_OBJC_CLASS_$_NSMutableArray",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_OBJC_CLASS_$_NSObject",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+            "library_ordinal": 1,
+            "name": "_OBJC_CLASS_$_NSString",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "___stderrp",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "_fprintf",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_alloc_init",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_autoreleasePoolPop",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_autoreleasePoolPush",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_destroyWeak",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_getClass",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_loadWeakRetained",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_msgSend",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_opt_isKindOfClass",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_opt_respondsToSelector",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_release",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_retainAutorelease",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_retainAutoreleasedReturnValue",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_storeStrong",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_storeWeak",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "_printf",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_sel_registerName",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "dyld_stub_binder",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          }
+        ],
+        "uuids": [
+          "9106290a-bf8c-48b5-baa4-ce8f0545f39d"
+        ]
+      },
+      "native": {
+        "argv": [
+          "/Users/<user>/machprobe/build/phase2/foundation"
+        ],
+        "returncode": 0,
+        "stdout": "FOUNDATION_RESULT weak=cleared class=NSString selector=length length=17 count=2 value=phase2-foundation|PHASE2-FOUNDATION\n",
+        "stderr": ""
+      },
+      "through_runtime": {
+        "argv": [
+          "build/phase2/runner",
+          "/Users/<user>/machprobe/build/phase2/foundation"
+        ],
+        "returncode": 0,
+        "stdout": "FOUNDATION_RESULT weak=cleared class=NSString selector=length length=17 count=2 value=phase2-foundation|PHASE2-FOUNDATION\n",
+        "stderr": "runtime: segments=4 rebases=23 binds=23 selectors=7 initializers=0 guest_return=0\n"
+      },
+      "signature": {
+        "argv": [
+          "codesign",
+          "--verify",
+          "--strict",
+          "/Users/<user>/machprobe/build/phase2/foundation"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "metal_compute": {
+      "sha256": "9e7d45fbad5c204f844bafb6caf44881bb9fba1642f06c6100388b648194c503",
+      "kind": "new macOS-target guest, unchanged after build",
+      "inspection": {
+        "build_versions": [
+          {
+            "minimum_os": "11.0.0",
+            "platform": "macOS",
+            "platform_id": 1,
+            "sdk": "27.0.0",
+            "source": "LC_BUILD_VERSION",
+            "tools": [
+              {
+                "tool": 3,
+                "version": "27037.1.0"
+              }
+            ]
+          }
+        ],
+        "code_signing": [
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 52000,
+            "size": 544
+          }
+        ],
+        "defined_external_symbols": [
+          {
+            "description": 16,
+            "name": "__mh_execute_header",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294967296
+          },
+          {
+            "description": 0,
+            "name": "_main",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294971780
+          },
+          {
+            "description": 0,
+            "name": "_metal_compute_check",
+            "private_external": false,
+            "section": 1,
+            "source": "LC_SYMTAB",
+            "type": 15,
+            "value": 4294969440
+          }
+        ],
+        "diagnostics": [],
+        "dylibs": [
+          {
+            "compatibility_version": "300.0.0",
+            "current_version": "5027.0.69",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+          },
+          {
+            "compatibility_version": "150.0.0",
+            "current_version": "5027.0.69",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "382.5.3",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "228.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libobjc.A.dylib"
+          },
+          {
+            "compatibility_version": "1.0.0",
+            "current_version": "1359.0.0",
+            "kind": "LC_LOAD_DYLIB",
+            "name": "/usr/lib/libSystem.B.dylib"
+          }
+        ],
+        "encryption": [],
+        "entry_points": [
+          {
+            "entryoff": 4484,
+            "source": "LC_MAIN",
+            "stacksize": 0,
+            "virtual_address": 4294971780
+          }
+        ],
+        "exports": [
+          {
+            "address_or_offset": 0,
+            "flags": 0,
+            "name": "__mh_execute_header",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 4484,
+            "flags": 0,
+            "name": "_main",
+            "source": "export_trie"
+          },
+          {
+            "address_or_offset": 2144,
+            "flags": 0,
+            "name": "_metal_compute_check",
+            "source": "export_trie"
+          }
+        ],
+        "header": {
+          "architecture": "arm64",
+          "cpu_subtype": 0,
+          "cpu_type": 16777228,
+          "file_type": "MH_EXECUTE",
+          "file_type_id": 2,
+          "flags": 2097285,
+          "ncmds": 21,
+          "sizeofcmds": 2048,
+          "subtype_base": 0,
+          "subtype_capabilities": 0
+        },
+        "linkedit": [
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "rebase",
+            "offset": 49152,
+            "size": 8
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "bind",
+            "offset": 49160,
+            "size": 152
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "weak_bind",
+            "offset": 0,
+            "size": 0
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "lazy_bind",
+            "offset": 49312,
+            "size": 296
+          },
+          {
+            "command": "LC_DYLD_INFO_ONLY",
+            "kind": "export",
+            "offset": 49608,
+            "size": 80
+          },
+          {
+            "command": "LC_FUNCTION_STARTS",
+            "offset": 49688,
+            "size": 8
+          },
+          {
+            "command": "LC_DATA_IN_CODE",
+            "offset": 49696,
+            "size": 0
+          },
+          {
+            "command": "LC_CODE_SIGNATURE",
+            "offset": 52000,
+            "size": 544
+          }
+        ],
+        "load_commands": [
+          {
+            "command": 25,
+            "index": 0,
+            "name": "LC_SEGMENT_64",
+            "offset": 32,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 25,
+            "index": 1,
+            "name": "LC_SEGMENT_64",
+            "offset": 104,
+            "required_by_dyld": false,
+            "size": 552
+          },
+          {
+            "command": 25,
+            "index": 2,
+            "name": "LC_SEGMENT_64",
+            "offset": 656,
+            "required_by_dyld": false,
+            "size": 232
+          },
+          {
+            "command": 25,
+            "index": 3,
+            "name": "LC_SEGMENT_64",
+            "offset": 888,
+            "required_by_dyld": false,
+            "size": 392
+          },
+          {
+            "command": 25,
+            "index": 4,
+            "name": "LC_SEGMENT_64",
+            "offset": 1280,
+            "required_by_dyld": false,
+            "size": 72
+          },
+          {
+            "command": 2147483682,
+            "index": 5,
+            "name": "LC_DYLD_INFO_ONLY",
+            "offset": 1352,
+            "required_by_dyld": true,
+            "size": 48
+          },
+          {
+            "command": 2,
+            "index": 6,
+            "name": "LC_SYMTAB",
+            "offset": 1400,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 11,
+            "index": 7,
+            "name": "LC_DYSYMTAB",
+            "offset": 1424,
+            "required_by_dyld": false,
+            "size": 80
+          },
+          {
+            "command": 14,
+            "index": 8,
+            "name": "LC_LOAD_DYLINKER",
+            "offset": 1504,
+            "required_by_dyld": false,
+            "size": 32,
+            "value": "/usr/lib/dyld"
+          },
+          {
+            "command": 27,
+            "index": 9,
+            "name": "LC_UUID",
+            "offset": 1536,
+            "required_by_dyld": false,
+            "size": 24
+          },
+          {
+            "command": 50,
+            "index": 10,
+            "name": "LC_BUILD_VERSION",
+            "offset": 1560,
+            "required_by_dyld": false,
+            "size": 32
+          },
+          {
+            "command": 42,
+            "index": 11,
+            "name": "LC_SOURCE_VERSION",
+            "offset": 1592,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 2147483688,
+            "index": 12,
+            "name": "LC_MAIN",
+            "offset": 1608,
+            "required_by_dyld": true,
+            "size": 24
+          },
+          {
+            "command": 12,
+            "index": 13,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1632,
+            "required_by_dyld": false,
+            "size": 96
+          },
+          {
+            "command": 12,
+            "index": 14,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1728,
+            "required_by_dyld": false,
+            "size": 104
+          },
+          {
+            "command": 12,
+            "index": 15,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1832,
+            "required_by_dyld": false,
+            "size": 88
+          },
+          {
+            "command": 12,
+            "index": 16,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1920,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 12,
+            "index": 17,
+            "name": "LC_LOAD_DYLIB",
+            "offset": 1976,
+            "required_by_dyld": false,
+            "size": 56
+          },
+          {
+            "command": 38,
+            "index": 18,
+            "name": "LC_FUNCTION_STARTS",
+            "offset": 2032,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 41,
+            "index": 19,
+            "name": "LC_DATA_IN_CODE",
+            "offset": 2048,
+            "required_by_dyld": false,
+            "size": 16
+          },
+          {
+            "command": 29,
+            "index": 20,
+            "name": "LC_CODE_SIGNATURE",
+            "offset": 2064,
+            "required_by_dyld": false,
+            "size": 16
+          }
+        ],
+        "path": "/Users/<user>/machprobe/build/phase2/metal_compute",
+        "rpaths": [],
+        "schema_version": 1,
+        "segments": [
+          {
+            "fileoff": 0,
+            "filesize": 0,
+            "initprot": 0,
+            "maxprot": 0,
+            "name": "__PAGEZERO",
+            "sections": [],
+            "vmaddr": 0,
+            "vmsize": 4294967296
+          },
+          {
+            "fileoff": 0,
+            "filesize": 16384,
+            "initprot": 5,
+            "maxprot": 5,
+            "name": "__TEXT",
+            "sections": [
+              {
+                "address": 4294969440,
+                "flags": 2147484672,
+                "name": "__text",
+                "offset": 2144,
+                "segment": "__TEXT",
+                "size": 2372
+              },
+              {
+                "address": 4294971812,
+                "flags": 2147484680,
+                "name": "__stubs",
+                "offset": 4516,
+                "segment": "__TEXT",
+                "size": 144
+              },
+              {
+                "address": 4294971956,
+                "flags": 2147484672,
+                "name": "__stub_helper",
+                "offset": 4660,
+                "segment": "__TEXT",
+                "size": 168
+              },
+              {
+                "address": 4294972128,
+                "flags": 2147484672,
+                "name": "__objc_stubs",
+                "offset": 4832,
+                "segment": "__TEXT",
+                "size": 640
+              },
+              {
+                "address": 4294972768,
+                "flags": 2,
+                "name": "__cstring",
+                "offset": 5472,
+                "segment": "__TEXT",
+                "size": 588
+              },
+              {
+                "address": 4294973356,
+                "flags": 2,
+                "name": "__objc_methname",
+                "offset": 6060,
+                "segment": "__TEXT",
+                "size": 406
+              }
+            ],
+            "vmaddr": 4294967296,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 16384,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA_CONST",
+            "sections": [
+              {
+                "address": 4294983680,
+                "flags": 0,
+                "name": "__objc_imageinfo",
+                "offset": 16384,
+                "segment": "__DATA_CONST",
+                "size": 8
+              },
+              {
+                "address": 4294983688,
+                "flags": 6,
+                "name": "__got",
+                "offset": 16392,
+                "segment": "__DATA_CONST",
+                "size": 40
+              }
+            ],
+            "vmaddr": 4294983680,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 32768,
+            "filesize": 16384,
+            "initprot": 3,
+            "maxprot": 3,
+            "name": "__DATA",
+            "sections": [
+              {
+                "address": 4295000064,
+                "flags": 7,
+                "name": "__la_symbol_ptr",
+                "offset": 32768,
+                "segment": "__DATA",
+                "size": 96
+              },
+              {
+                "address": 4295000160,
+                "flags": 268435461,
+                "name": "__objc_selrefs",
+                "offset": 32864,
+                "segment": "__DATA",
+                "size": 160
+              },
+              {
+                "address": 4295000320,
+                "flags": 268435456,
+                "name": "__objc_classrefs",
+                "offset": 33024,
+                "segment": "__DATA",
+                "size": 8
+              },
+              {
+                "address": 4295000328,
+                "flags": 0,
+                "name": "__data",
+                "offset": 33032,
+                "segment": "__DATA",
+                "size": 8
+              }
+            ],
+            "vmaddr": 4295000064,
+            "vmsize": 16384
+          },
+          {
+            "fileoff": 49152,
+            "filesize": 3392,
+            "initprot": 1,
+            "maxprot": 1,
+            "name": "__LINKEDIT",
+            "sections": [],
+            "vmaddr": 4295016448,
+            "vmsize": 16384
+          }
+        ],
+        "slice_offset": 0,
+        "slice_size": 52544,
+        "slices": [],
+        "symbol_coverage": "LC_SYMTAB externals plus export trie; bind opcodes/chained imports and runtime lookups are not decoded",
+        "undefined_symbols": [
+          {
+            "common_symbol": false,
+            "description": 768,
+            "library": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal",
+            "library_ordinal": 3,
+            "name": "_MTLCreateSystemDefaultDevice",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 256,
+            "library": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+            "library_ordinal": 1,
+            "name": "_OBJC_CLASS_$_NSString",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "___stack_chk_fail",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "___stack_chk_guard",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "___stderrp",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "_fprintf",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "_fputs",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "_memcpy",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "_memset",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_autoreleasePoolPop",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_autoreleasePoolPush",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_msgSend",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_release",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_retainAutorelease",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_retainAutoreleasedReturnValue",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1024,
+            "library": "/usr/lib/libobjc.A.dylib",
+            "library_ordinal": 4,
+            "name": "_objc_storeStrong",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "_printf",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          },
+          {
+            "common_symbol": false,
+            "description": 1280,
+            "library": "/usr/lib/libSystem.B.dylib",
+            "library_ordinal": 5,
+            "name": "dyld_stub_binder",
+            "private_external": false,
+            "section": 0,
+            "source": "LC_SYMTAB",
+            "type": 1,
+            "value": 0,
+            "weak_import": false
+          }
+        ],
+        "uuids": [
+          "5c524212-0ecd-46ce-b627-c55cde3c2c4d"
+        ]
+      },
+      "native": {
+        "argv": [
+          "/Users/<user>/machprobe/build/phase2/metal_compute"
+        ],
+        "returncode": 0,
+        "stdout": "METAL_RESULT count=16 values=7,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52 checksum=472\n",
+        "stderr": ""
+      },
+      "through_runtime": {
+        "argv": [
+          "build/phase2/runner",
+          "/Users/<user>/machprobe/build/phase2/metal_compute"
+        ],
+        "returncode": 0,
+        "stdout": "METAL_RESULT count=16 values=7,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52 checksum=472\n",
+        "stderr": "runtime: segments=4 rebases=32 binds=18 selectors=20 initializers=0 guest_return=0\n"
+      },
+      "signature": {
+        "argv": [
+          "codesign",
+          "--verify",
+          "--strict",
+          "/Users/<user>/machprobe/build/phase2/metal_compute"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  },
+  "validation": {
+    "phase2_normal": {
+      "argv": [
+        "make",
+        "-f",
+        "phase2/Makefile",
+        "test"
+      ],
+      "returncode": 0,
+      "stdout": "cd /Users/<user>/machprobe && python3 -m unittest discover -s phase2/tests -v\n",
+      "stderr": "test_abi_guest_runner (test_runtime.RuntimeIntegrationTests.test_abi_guest_runner) ... ok\ntest_file_io_success_cleanup_and_invalid_directory (test_runtime.RuntimeIntegrationTests.test_file_io_success_cleanup_and_invalid_directory) ... ok\ntest_foundation_guest_behaviors (test_runtime.RuntimeIntegrationTests.test_foundation_guest_behaviors) ... ok\ntest_metal_compute_values_and_checksum (test_runtime.RuntimeIntegrationTests.test_metal_compute_values_and_checksum) ... ok\ntest_metal_device_is_reported (test_runtime.RuntimeIntegrationTests.test_metal_device_is_reported) ... ok\ntest_original_hello_and_framework (test_runtime.RuntimeIntegrationTests.test_original_hello_and_framework) ... ok\ntest_phase1_samples_match_recorded_hashes (test_runtime.RuntimeIntegrationTests.test_phase1_samples_match_recorded_hashes) ... ok\ntest_phase2_guest_images_are_not_modified (test_runtime.RuntimeIntegrationTests.test_phase2_guest_images_are_not_modified) ... ok\ntest_rejects_guest_tls_and_objc_class_registration (test_runtime.RuntimeIntegrationTests.test_rejects_guest_tls_and_objc_class_registration) ... ok\ntest_rejects_malformed_and_unsupported_images (test_runtime.RuntimeIntegrationTests.test_rejects_malformed_and_unsupported_images) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 1.322s\n\nOK\n"
+    },
+    "phase2_sanitizers": {
+      "argv": [
+        "make",
+        "-f",
+        "phase2/Makefile",
+        "sanitize"
+      ],
+      "returncode": 0,
+      "stdout": "cd /Users/<user>/machprobe && MP_RUNNER=build/phase2/runner-sanitize MP_ABI_TEST=build/phase2/abi-test-sanitize python3 -m unittest discover -s phase2/tests -v\n",
+      "stderr": "test_abi_guest_runner (test_runtime.RuntimeIntegrationTests.test_abi_guest_runner) ... ok\ntest_file_io_success_cleanup_and_invalid_directory (test_runtime.RuntimeIntegrationTests.test_file_io_success_cleanup_and_invalid_directory) ... ok\ntest_foundation_guest_behaviors (test_runtime.RuntimeIntegrationTests.test_foundation_guest_behaviors) ... ok\ntest_metal_compute_values_and_checksum (test_runtime.RuntimeIntegrationTests.test_metal_compute_values_and_checksum) ... ok\ntest_metal_device_is_reported (test_runtime.RuntimeIntegrationTests.test_metal_device_is_reported) ... ok\ntest_original_hello_and_framework (test_runtime.RuntimeIntegrationTests.test_original_hello_and_framework) ... ok\ntest_phase1_samples_match_recorded_hashes (test_runtime.RuntimeIntegrationTests.test_phase1_samples_match_recorded_hashes) ... ok\ntest_phase2_guest_images_are_not_modified (test_runtime.RuntimeIntegrationTests.test_phase2_guest_images_are_not_modified) ... ok\ntest_rejects_guest_tls_and_objc_class_registration (test_runtime.RuntimeIntegrationTests.test_rejects_guest_tls_and_objc_class_registration) ... ok\ntest_rejects_malformed_and_unsupported_images (test_runtime.RuntimeIntegrationTests.test_rejects_malformed_and_unsupported_images) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 1.177s\n\nOK\n"
+    },
+    "phase1_normal": {
+      "argv": [
+        "make",
+        "test"
+      ],
+      "returncode": 0,
+      "stdout": "python3 -m unittest discover -s tests -v\n",
+      "stderr": "test_cycle_and_missing_and_identity (test_dependencies.DependencyTests.test_cycle_and_missing_and_identity) ... ok\ntest_depth_limit (test_dependencies.DependencyTests.test_depth_limit) ... ok\ntest_inherited_rpath_and_precedence (test_dependencies.DependencyTests.test_inherited_rpath_and_precedence) ... ok\ntest_malformed_and_unsupported_dependencies (test_dependencies.DependencyTests.test_malformed_and_unsupported_dependencies) ... ok\ntest_native_chain_executes_and_resolves (test_dependencies.DependencyTests.test_native_chain_executes_and_resolves) ... ok\ntest_node_limit (test_dependencies.DependencyTests.test_node_limit) ... ok\ntest_relative_path_is_explicitly_unmodeled (test_dependencies.DependencyTests.test_relative_path_is_explicitly_unmodeled) ... ok\ntest_same_library_different_runpath_context (test_dependencies.DependencyTests.test_same_library_different_runpath_context) ... ok\ntest_bad_universal_metadata (test_parser.ParserTests.test_bad_universal_metadata) ... ok\ntest_build_versions_and_unknown_commands (test_parser.ParserTests.test_build_versions_and_unknown_commands) ... ok\ntest_dylib_variants_and_rpath (test_parser.ParserTests.test_dylib_variants_and_rpath) ... ok\ntest_export_malformed (test_parser.ParserTests.test_export_malformed) ... ok\ntest_export_reexport (test_parser.ParserTests.test_export_reexport) ... ok\ntest_export_trie_and_legacy_export (test_parser.ParserTests.test_export_trie_and_legacy_export) ... ok\ntest_json_byte_escaping_and_terminal_safety (test_parser.ParserTests.test_json_byte_escaping_and_terminal_safety) ... ok\ntest_legacy_platforms (test_parser.ParserTests.test_legacy_platforms) ... ok\ntest_malformed_commands (test_parser.ParserTests.test_malformed_commands) ... ok\ntest_mutation_smoke (test_parser.ParserTests.test_mutation_smoke) ... ok\ntest_real_modern_linkedit (test_parser.ParserTests.test_real_modern_linkedit) ... ok\ntest_signing_encryption_and_fixup_ranges (test_parser.ParserTests.test_signing_encryption_and_fixup_ranges) ... ok\ntest_subtype_capabilities (test_parser.ParserTests.test_subtype_capabilities) ... ok\ntest_symtab_imports_and_definitions (test_parser.ParserTests.test_symtab_imports_and_definitions) ... ok\ntest_thread_entry (test_parser.ParserTests.test_thread_entry) ... ok\ntest_universal_containers (test_parser.ParserTests.test_universal_containers) ... ok\ntest_usage_errors (test_parser.ParserTests.test_usage_errors) ... ok\ntest_dependency_report_classifies_system_and_metal (test_samples.SampleIntegrationTests.test_dependency_report_classifies_system_and_metal) ... ok\ntest_expected_external_symbols (test_samples.SampleIntegrationTests.test_expected_external_symbols) ... ok\ntest_inspection_matches_system_tools (test_samples.SampleIntegrationTests.test_inspection_matches_system_tools) ... ok\ntest_metal_sample_reports_device_properties (test_samples.SampleIntegrationTests.test_metal_sample_reports_device_properties) ... ok\ntest_samples_run_and_file_io_cleans_up (test_samples.SampleIntegrationTests.test_samples_run_and_file_io_cleans_up) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 1.999s\n\nOK\n"
+    },
+    "phase1_sanitizers": {
+      "argv": [
+        "make",
+        "test-sanitize"
+      ],
+      "returncode": 0,
+      "stdout": "MACHPROBE=build/machprobe-sanitize python3 -m unittest discover -s tests -v\n",
+      "stderr": "test_cycle_and_missing_and_identity (test_dependencies.DependencyTests.test_cycle_and_missing_and_identity) ... ok\ntest_depth_limit (test_dependencies.DependencyTests.test_depth_limit) ... ok\ntest_inherited_rpath_and_precedence (test_dependencies.DependencyTests.test_inherited_rpath_and_precedence) ... ok\ntest_malformed_and_unsupported_dependencies (test_dependencies.DependencyTests.test_malformed_and_unsupported_dependencies) ... ok\ntest_native_chain_executes_and_resolves (test_dependencies.DependencyTests.test_native_chain_executes_and_resolves) ... ok\ntest_node_limit (test_dependencies.DependencyTests.test_node_limit) ... ok\ntest_relative_path_is_explicitly_unmodeled (test_dependencies.DependencyTests.test_relative_path_is_explicitly_unmodeled) ... ok\ntest_same_library_different_runpath_context (test_dependencies.DependencyTests.test_same_library_different_runpath_context) ... ok\ntest_bad_universal_metadata (test_parser.ParserTests.test_bad_universal_metadata) ... ok\ntest_build_versions_and_unknown_commands (test_parser.ParserTests.test_build_versions_and_unknown_commands) ... ok\ntest_dylib_variants_and_rpath (test_parser.ParserTests.test_dylib_variants_and_rpath) ... ok\ntest_export_malformed (test_parser.ParserTests.test_export_malformed) ... ok\ntest_export_reexport (test_parser.ParserTests.test_export_reexport) ... ok\ntest_export_trie_and_legacy_export (test_parser.ParserTests.test_export_trie_and_legacy_export) ... ok\ntest_json_byte_escaping_and_terminal_safety (test_parser.ParserTests.test_json_byte_escaping_and_terminal_safety) ... ok\ntest_legacy_platforms (test_parser.ParserTests.test_legacy_platforms) ... ok\ntest_malformed_commands (test_parser.ParserTests.test_malformed_commands) ... ok\ntest_mutation_smoke (test_parser.ParserTests.test_mutation_smoke) ... ok\ntest_real_modern_linkedit (test_parser.ParserTests.test_real_modern_linkedit) ... ok\ntest_signing_encryption_and_fixup_ranges (test_parser.ParserTests.test_signing_encryption_and_fixup_ranges) ... ok\ntest_subtype_capabilities (test_parser.ParserTests.test_subtype_capabilities) ... ok\ntest_symtab_imports_and_definitions (test_parser.ParserTests.test_symtab_imports_and_definitions) ... ok\ntest_thread_entry (test_parser.ParserTests.test_thread_entry) ... ok\ntest_universal_containers (test_parser.ParserTests.test_universal_containers) ... ok\ntest_usage_errors (test_parser.ParserTests.test_usage_errors) ... ok\ntest_dependency_report_classifies_system_and_metal (test_samples.SampleIntegrationTests.test_dependency_report_classifies_system_and_metal) ... ok\ntest_expected_external_symbols (test_samples.SampleIntegrationTests.test_expected_external_symbols) ... ok\ntest_inspection_matches_system_tools (test_samples.SampleIntegrationTests.test_inspection_matches_system_tools) ... ok\ntest_metal_sample_reports_device_properties (test_samples.SampleIntegrationTests.test_metal_sample_reports_device_properties) ... ok\ntest_samples_run_and_file_io_cleans_up (test_samples.SampleIntegrationTests.test_samples_run_and_file_io_cleans_up) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 3.166s\n\nOK\n"
+    },
+    "phase1_loader": {
+      "argv": [
+        "make",
+        "test-loader"
+      ],
+      "returncode": 0,
+      "stdout": "python3 -m unittest discover -s experiments/inprocess-hello/tests -v\n",
+      "stderr": "test_bad_entrypoint (test_loader.HelloLoaderTests.test_bad_entrypoint) ... ok\ntest_bad_magic_and_truncation (test_loader.HelloLoaderTests.test_bad_magic_and_truncation) ... ok\ntest_fresh_signed_copy_runs_in_process_and_remains_unchanged (test_loader.HelloLoaderTests.test_fresh_signed_copy_runs_in_process_and_remains_unchanged) ... ok\ntest_missing_file (test_loader.HelloLoaderTests.test_missing_file) ... ok\ntest_other_sample_rejected (test_loader.HelloLoaderTests.test_other_sample_rejected) ... ok\ntest_unknown_import_is_not_called (test_loader.HelloLoaderTests.test_unknown_import_is_not_called) ... ok\ntest_unsupported_rebase_type (test_loader.HelloLoaderTests.test_unsupported_rebase_type) ... ok\ntest_wrong_platform (test_loader.HelloLoaderTests.test_wrong_platform) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.734s\n\nOK\n"
+    },
+    "phase1_loader_sanitizers": {
+      "argv": [
+        "make",
+        "test-loader-sanitize"
+      ],
+      "returncode": 0,
+      "stdout": "HELLO_LOADER=build/hello-loader-sanitize python3 -m unittest discover -s experiments/inprocess-hello/tests -v\n",
+      "stderr": "test_bad_entrypoint (test_loader.HelloLoaderTests.test_bad_entrypoint) ... ok\ntest_bad_magic_and_truncation (test_loader.HelloLoaderTests.test_bad_magic_and_truncation) ... ok\ntest_fresh_signed_copy_runs_in_process_and_remains_unchanged (test_loader.HelloLoaderTests.test_fresh_signed_copy_runs_in_process_and_remains_unchanged) ... ok\ntest_missing_file (test_loader.HelloLoaderTests.test_missing_file) ... ok\ntest_other_sample_rejected (test_loader.HelloLoaderTests.test_other_sample_rejected) ... ok\ntest_unknown_import_is_not_called (test_loader.HelloLoaderTests.test_unknown_import_is_not_called) ... ok\ntest_unsupported_rebase_type (test_loader.HelloLoaderTests.test_unsupported_rebase_type) ... ok\ntest_wrong_platform (test_loader.HelloLoaderTests.test_wrong_platform) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.457s\n\nOK\n"
+    }
+  },
+  "abi": {
+    "argv": [
+      "build/phase2/abi-test",
+      "build/phase2/interactive"
+    ],
+    "returncode": 0,
+    "stdout": "ABI_OK integer pointer buffer struct callback errors variadic errno_threads init input isolation cleanup cycles=40\n",
+    "stderr": ""
+  },
+  "ios_preflight": {
+    "argv": [
+      "phase2/ios/scripts/preflight.sh"
+    ],
+    "returncode": 2,
+    "stdout": "Selected developer directory:\n/Library/Developer/CommandLineTools\nXcode version:\n",
+    "stderr": "xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance\nA full Xcode installation is required; the selected developer directory does not provide xcodebuild/iOS SDKs.\n"
+  }
+}

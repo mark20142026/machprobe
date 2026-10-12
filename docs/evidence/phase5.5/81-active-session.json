@@ -1,0 +1,910 @@
+{
+  "samples": [
+    {
+      "utc": 1790873907.299907,
+      "elapsed": 0.5441292909999902,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 13",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 31.023310821654835,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 209.71327133333216,
+        "present_requests": 6510,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 6507,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 14,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 263.9561194583333,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2292074584,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 853835776,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790873917.582516,
+      "elapsed": 10.826660291000735,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 13",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 30.509288589058347,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 219.70358241666509,
+        "present_requests": 6707,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 6704,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 14,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 282.0887417083333,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2321631320,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 866156544,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790873927.9914181,
+      "elapsed": 21.235487458001444,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 29",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 29.855254576006622,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 231.68450908333216,
+        "present_requests": 6921,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 6918,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 16,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 291.3837071666667,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2388445296,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 760692736,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790873938.277575,
+      "elapsed": 31.52156979099891,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 29",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 29.358401748796123,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 241.73659249999946,
+        "present_requests": 7101,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 7098,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 16,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 300.6099590833333,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2400766064,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 715456512,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790873948.635421,
+      "elapsed": 41.87933595800132,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key down 2",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 28.91923286225566,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 251.6664267916658,
+        "present_requests": 7282,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 7279,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 19,
+        "held": [
+          2
+        ],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 311.1064817916667,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2410629256,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 768950272,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790873958.87492,
+      "elapsed": 52.11875916600184,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 2",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 28.417699881771526,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 261.70309458333213,
+        "present_requests": 7441,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 7438,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 20,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 318.7642397916667,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2414250120,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 771948544,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790873969.31053,
+      "elapsed": 62.55429133299913,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 2",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 27.944101401118647,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 271.72102945833285,
+        "present_requests": 7597,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 7594,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 20,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 330.1433185,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2412316808,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 780926976,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790873979.758386,
+      "elapsed": 73.00206900000194,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 2",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 27.51668204728191,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 281.7200121249989,
+        "present_requests": 7756,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 7753,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 20,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 338.594415125,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2415921288,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 791871488,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790873990.112936,
+      "elapsed": 83.35654416599937,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key down 13",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 27.154535766734803,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 293.6894251666654,
+        "present_requests": 7977,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 7976,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 21,
+        "held": [
+          13
+        ],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 357.2099573333333,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2368964768,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 692862976,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874000.522871,
+      "elapsed": 93.76640087499982,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 13",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 27.18672139548717,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 303.7144449999996,
+        "present_requests": 8261,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 8258,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 22,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 378.044103625,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2363820192,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 643891200,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874011.0291772,
+      "elapsed": 104.27262904099916,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 13",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 27.39320878752331,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 313.6908883749984,
+        "present_requests": 8596,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 8594,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 22,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 392.79500725,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2391525536,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 589103104,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874021.370202,
+      "elapsed": 114.6135770410001,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 13",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 27.582481834309263,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 323.7199630416653,
+        "present_requests": 8933,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 8930,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 22,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 404.039059875,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2408712352,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 573128704,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874031.7823858,
+      "elapsed": 125.02568416600116,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 13",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 27.695641828411777,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 333.73481854166675,
+        "present_requests": 9246,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 9244,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 22,
+        "held": [],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 415.583105375,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2410596536,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 586547200,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874042.150901,
+      "elapsed": 135.39412479100065,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key down 1",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 27.920405358185686,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 345.6969867083335,
+        "present_requests": 9656,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 9653,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 23,
+        "held": [
+          1
+        ],
+        "pointer_delivered": 37
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 427.3040278333333,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2421885112,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 584187904,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874052.4944582,
+      "elapsed": 145.73760324999967,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest cursor detached for relative input",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 28.078730712926024,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 355.71408487499866,
+        "present_requests": 9992,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 9989,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 24,
+        "held": [],
+        "pointer_delivered": 55
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 439.2210787083333,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2436368568,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 578846720,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874067.100218,
+      "elapsed": 160.343255415999,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest cursor association enabled",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 28.215154183102317,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 369.73039141666595,
+        "present_requests": 10436,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 10433,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 28,
+        "held": [],
+        "pointer_delivered": 55
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 453.79705079166666,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2454309048,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 561594368,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874077.472773,
+      "elapsed": 170.71573154100042,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest cursor association enabled",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 28.20716191994639,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 379.72625641666673,
+        "present_requests": 10715,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 10712,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 28,
+        "held": [],
+        "pointer_delivered": 55
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 466.5499043333333,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2455767224,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 575913984,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874087.797554,
+      "elapsed": 181.0404361660003,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 8",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 28.245596777461547,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 391.707071625,
+        "present_requests": 11068,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 11065,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 30,
+        "held": [],
+        "pointer_delivered": 55
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 477.8302446666667,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2460256440,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 578306048,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874098.101014,
+      "elapsed": 191.34381991600094,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 8",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 28.309915836506416,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 401.6967081666662,
+        "present_requests": 11376,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 11373,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 30,
+        "held": [],
+        "pointer_delivered": 55
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 487.2382825416667,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2464499896,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 589955072,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    },
+    {
+      "utc": 1790874108.439631,
+      "elapsed": 201.68236012499983,
+      "run_id": "4A04115B-2D49-449D-81F8-A22775F180B0",
+      "pid": 3739,
+      "stage": "guest key up 53",
+      "exception": null,
+      "presentation": {
+        "gpu_present_buffer_rate": 28.32919676274677,
+        "gpu_failed_present_buffers": 0,
+        "elapsed_seconds": 0,
+        "gpu_completion_elapsed_seconds": 411.6954002499988,
+        "present_requests": 11667,
+        "average_presented_fps": 0,
+        "gpu_completed_present_buffers": 11664,
+        "presented_frames": 0
+      },
+      "input": {
+        "last_pointer": {
+          "view_frame": "{{0, 0}, {430, 932}}",
+          "view_bounds": "{{0, 0}, {430, 932}}",
+          "point": "{360, 792}",
+          "window_frame": "{{0, 0}, {430, 932}}"
+        },
+        "delivered": 34,
+        "held": [],
+        "pointer_delivered": 55
+      },
+      "processes": [
+        {
+          "bundle_id": "research.machprobe.VelorenHost",
+          "cpu_seconds": 496.3100450416667,
+          "executable": "/private/var/containers/Bundle/Application/C8A5E8C0-B305-4CFB-9F36-7E175620AE5F/VelorenHost.app/VelorenHost",
+          "footprint_bytes": 2465532112,
+          "jetsam_limit_mb": 2147483647,
+          "jetsam_priority": 100,
+          "name": "VelorenHost",
+          "pid": 3739,
+          "ppid": 1,
+          "resident_bytes": 579256320,
+          "start_time": 1790873693.90848,
+          "uid": 501
+        }
+      ]
+    }
+  ]
+}

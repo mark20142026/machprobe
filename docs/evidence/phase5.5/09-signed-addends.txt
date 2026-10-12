@@ -1,0 +1,2 @@
+LOADED: rebases=146786 binds=1517 selectors=0
+METADATA: registered (process lifetime)

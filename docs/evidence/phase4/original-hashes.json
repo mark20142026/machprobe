@@ -1,0 +1,37 @@
+{
+  "archive_sha256": "1fb6534ee226be1d6b1d97c622b2482d5bda6658de773cdd9347a4abef8a433b",
+  "files": {
+    "Contents/CodeResources": {
+      "sha256": "40d79780207ba21dc875125bbe97d920b452e4ca67a329154be741694d523f45",
+      "size": 1675
+    },
+    "Contents/Info.plist": {
+      "sha256": "518c34c1111ad60996eecefda7da773b96d1c6f3e2587ae513b13eb8e6f769da",
+      "size": 1636
+    },
+    "Contents/MacOS/DashboardCalculator": {
+      "sha256": "a903615ed98f816b0e77a4e4150957659a23f6171db55c73d004da29d0a12517",
+      "size": 267616
+    },
+    "Contents/PkgInfo": {
+      "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0",
+      "size": 8
+    },
+    "Contents/Resources/Assets.car": {
+      "sha256": "4c90c6976e4bd1c8d17590652c971334bcbda4f7d01c0455eaf0f0614e5bdce1",
+      "size": 741840
+    },
+    "Contents/Resources/DB LCD Temp-Black.ttf": {
+      "sha256": "6172040453a2bdf4c8910b04edb7d20491f330c0ee2fe21e6ec77fff87a02952",
+      "size": 9532
+    },
+    "Contents/Resources/Fonts/DB LCD Temp-Black.ttf": {
+      "sha256": "6172040453a2bdf4c8910b04edb7d20491f330c0ee2fe21e6ec77fff87a02952",
+      "size": 9532
+    },
+    "Contents/_CodeSignature/CodeResources": {
+      "sha256": "6dbb7e265a5748cc7243725880ab52065f8db6241df3574a3958dad368be16f7",
+      "size": 2950
+    }
+  }
+}

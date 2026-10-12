@@ -1,0 +1,25 @@
+LOADED: rebases=146786 binds=1517 selectors=0
+METADATA: registered (process lifetime)
+Usage: veloren-voxygen [OPTIONS] [COMMAND]
+
+Commands:
+  list-wgpu-backends  List available wgpu backends. This is called by Airshipper to show a dropbox of available backends
+  list-wgpu-devices   List available wgpu devices. This is called by Airshipper to show a dropbox of available devices
+  help                Print this message or the help of the given subcommand(s)
+
+Options:
+  -s, --server <SERVER>
+          Value to auto-fill into the server field.
+          
+          This allows passing in server selection performed in airshipper.
+
+  -c, --client-type <CLIENT_TYPE>
+          The [`ClientType`] voxygen will use to initialize the client.
+          
+          The only supported values are currently `game` and `silent_spectator`, the latter one only being usable by moderators.
+          
+          [env: VELOREN_CLIENT_TYPE=]
+          [default: game]
+
+  -h, --help
+          Print help (see a summary with '-h')

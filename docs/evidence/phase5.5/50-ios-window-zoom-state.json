@@ -1,0 +1,78 @@
+{
+  "metal" : {
+    "managed_textures_translated" : 0
+  },
+  "exception" : "-[WinitWindow isZoomed]: unrecognized selector sent to instance 0xa9acfc240",
+  "stack" : [
+    "0   CoreFoundation                      0x000000018069319c 9426FC9A-B36C-3096-B836-D17D6744A75B + 623004",
+    "1   libobjc.A.dylib                     0x0000000180410380 objc_exception_throw + 88",
+    "2   CoreFoundation                      0x000000018079290c 9426FC9A-B36C-3096-B836-D17D6744A75B + 1669388",
+    "3   CoreFoundation                      0x000000018064e8f8 9426FC9A-B36C-3096-B836-D17D6744A75B + 342264",
+    "4   CoreFoundation                      0x000000018064ebb0 9426FC9A-B36C-3096-B836-D17D6744A75B + 342960",
+    "5   MPGuest.dylib                       0x0000000103768928 MPGuest.dylib + 43567400",
+    "6   VelorenHost                         0x000000010028f488 __33-[MPGameWindow toggleFullScreen:]_block_invoke + 600",
+    "7   libdispatch.dylib                   0x00000001aeaefccc 8CDF4610-F6A5-39CB-94BF-687FE349A4BE + 7372",
+    "8   libdispatch.dylib                   0x00000001aeb09fb4 8CDF4610-F6A5-39CB-94BF-687FE349A4BE + 114612",
+    "9   libdispatch.dylib                   0x00000001aeaff374 8CDF4610-F6A5-39CB-94BF-687FE349A4BE + 70516",
+    "10  libdispatch.dylib                   0x00000001aeaff044 _dispatch_main_queue_callback_4CF + 44",
+    "11  CoreFoundation                      0x00000001806447a0 9426FC9A-B36C-3096-B836-D17D6744A75B + 300960",
+    "12  CoreFoundation                      0x000000018063588c 9426FC9A-B36C-3096-B836-D17D6744A75B + 239756",
+    "13  CoreFoundation                      0x00000001806367f4 9426FC9A-B36C-3096-B836-D17D6744A75B + 243700",
+    "14  GraphicsServices                    0x000000022acf8f24 GSEventRunModal + 120",
+    "15  UIKitCore                           0x00000001849141cc UIApplicationMain + 336",
+    "16  VelorenHost                         0x000000010028d51c -[MPGameApplication run] + 120",
+    "17  MPGuest.dylib                       0x00000001029c447c MPGuest.dylib + 29262972",
+    "18  MPGuest.dylib                       0x0000000103e7911c MPGuest.dylib + 50975004",
+    "19  MPGuest.dylib                       0x0000000102dc0f98 MPGuest.dylib + 33443736",
+    "20  MPGuest.dylib                       0x0000000102dc0e5c MPGuest.dylib + 33443420",
+    "21  VelorenHost                         0x0000000100280644 mp_image_main + 164",
+    "22  VelorenHost                         0x0000000100287a78 main + 4636",
+    "23  dyld                                0x00000001804875b8 D3F59B02-EE07-371B-B091-3F150A078ED8 + 21944"
+  ],
+  "run_id" : "9C492B46-FFAF-4629-81AB-CE9E507CA0C1",
+  "stage" : "exception",
+  "binds" : 1517,
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  },
+  "guest_sha256" : "786b7ba15f46982a1bfbd3af53373c505d5dce0efb344dfe19a159b7e6e00b1d",
+  "input" : {
+    "pointer_delivered" : 0,
+    "delivered" : 0,
+    "held" : [
+
+    ]
+  },
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "pid" : 2275,
+  "rebases" : 146786,
+  "events" : [
+    "guest window created",
+    "guest window awaiting UIKit scene",
+    "native GPU border sampling verified (six cases)",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "experimental legacy Metal feature set 10000 = 1",
+    "experimental legacy Metal feature set 10001 = 1",
+    "entering UIKit lifecycle",
+    "guest window presented: Veloren",
+    "applicationDidFinishLaunching:",
+    "guest window presented: Veloren",
+    "application activation requested",
+    "guest launch callback returned"
+  ]
+}

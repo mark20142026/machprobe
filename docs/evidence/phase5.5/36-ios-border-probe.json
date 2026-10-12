@@ -1,0 +1,207 @@
+{
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "input" : {
+    "pointer_delivered" : 0,
+    "delivered" : 0,
+    "held" : [
+
+    ]
+  },
+  "run_id" : "315090F5-4B0E-41AF-8CB3-9852063962F0",
+  "pid" : 2002,
+  "metal_probe" : {
+    "mac_feature_sets" : {
+      "10003" : false,
+      "10002" : false,
+      "10005" : false,
+      "10001" : false,
+      "10004" : false,
+      "10000" : false
+    },
+    "passed" : true,
+    "device" : "Apple Paravirtual device GPU",
+    "runs" : [
+      {
+        "passed" : true,
+        "border" : 0,
+        "filter" : 0,
+        "error" : "",
+        "values" : [
+          0.25098040699958801,
+          0.50196081399917603,
+          0.75294119119644165,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "passed" : true,
+        "border" : 0,
+        "filter" : 1,
+        "error" : "",
+        "values" : [
+          0.25098040699958801,
+          0.50196081399917603,
+          0.75294119119644165,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "passed" : true,
+        "border" : 1,
+        "filter" : 0,
+        "error" : "",
+        "values" : [
+          0.25098040699958801,
+          0.50196081399917603,
+          0.75294119119644165,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "passed" : true,
+        "border" : 1,
+        "filter" : 1,
+        "error" : "",
+        "values" : [
+          0.25098040699958801,
+          0.50196081399917603,
+          0.75294119119644165,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "passed" : true,
+        "border" : 2,
+        "filter" : 0,
+        "error" : "",
+        "values" : [
+          0.25098040699958801,
+          0.50196081399917603,
+          0.75294119119644165,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "passed" : true,
+        "border" : 2,
+        "filter" : 1,
+        "error" : "",
+        "values" : [
+          0.25098040699958801,
+          0.50196081399917603,
+          0.75294119119644165,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "families" : {
+      "1009" : false,
+      "1011" : false,
+      "1001" : true,
+      "1005" : true,
+      "2002" : false,
+      "3003" : true,
+      "1008" : false,
+      "1010" : false,
+      "1004" : true,
+      "2001" : false,
+      "3002" : true,
+      "5001" : false,
+      "1007" : false,
+      "1003" : true,
+      "5002" : false,
+      "3001" : true,
+      "1006" : false,
+      "1002" : true
+    }
+  },
+  "metal" : {
+    "managed_textures_translated" : 0
+  },
+  "stage" : "Metal probe complete",
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  }
+}

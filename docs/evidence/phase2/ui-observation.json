@@ -1,0 +1,46 @@
+{
+  "captured_at_utc": "2026-10-01T09:59:08.949687+00:00",
+  "method": "CUA native accessibility observation after final build; development screenshot also inspected",
+  "environment": "macOS 27.0 / Catalyst platform 6, not iOS",
+  "host_sha256": "95da3aa8f39e642c6e3536db5878ec9d35f6c26c5335ce90938854c50b2f9256",
+  "guest_sha256": {
+    "hello": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+    "file_io": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0",
+    "framework": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280",
+    "metal_info": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3",
+    "interactive": "3f446948d3d274fc7370560b79626763e3b9700ca0619caf638c557f4d638409",
+    "foundation": "052fe8e2cd7655afd65d77f954e81425dbf841105ef3b37085a8b4fdb3d9a6c5",
+    "metal_compute": "9e7d45fbad5c204f844bafb6caf44881bb9fba1642f06c6100388b648194c503"
+  },
+  "guest_hashes_preserved": true,
+  "final_controls": [
+    "Increment",
+    "Decrement",
+    "Reset"
+  ],
+  "final_automated_sequence": [
+    {
+      "action": "launch",
+      "counter": 0
+    },
+    {
+      "action": "Increment",
+      "counter": 1
+    },
+    {
+      "action": "Decrement",
+      "counter": 0
+    },
+    {
+      "action": "Decrement",
+      "counter": -1
+    },
+    {
+      "action": "Reset",
+      "counter": 0
+    }
+  ],
+  "framework_text": "hello: passed\nfile_io: passed\nframework: passed\nfoundation: passed\nMetal device: Apple M2\nRegistry ID: 4294968552\nUnified memory: yes\nMetal compute: 16 verified values, checksum 472",
+  "user_interaction": "User explicitly said concurrent counter changes came from their clicks; earlier observations of 11 and 57 were not attributed to automation. Final sequence above had a fresh observed state after each action.",
+  "limits": "Visual checks are distinct from automated ABI assertions. UIKit physical input and callbacks tested on Catalyst only; keyboard mapping not tested."
+}

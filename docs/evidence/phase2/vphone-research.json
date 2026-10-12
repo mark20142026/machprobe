@@ -1,0 +1,111 @@
+{
+  "commit": "67d0734a6f5ef960b9a12320b216e73d6491ed18",
+  "source": "https://github.com/Lakr233/vphone-cli",
+  "relevant_paths": [
+    "Documents/Guides/compatibility.md",
+    "Documents/Guides/host-setup.md",
+    "VPhoneExecutable/VPhoneCommand/FirmwarePatcher/Kernel/BasePatches/Security/KernelPatchDebugger.swift",
+    "VPhoneExecutable/VPhoneCommand/FirmwarePatcherTests/Core/VerboseCustomFirmwareDebug.swift",
+    "VPhoneExecutable/VPhoneCommand/VPhoneCommand/Host/VPhonePCCGPURecovery.swift",
+    "VPhoneKit/VPhoneCoreKit/Firmware/VPhonePCCGPUDriver.swift",
+    "VPhoneKit/VPhoneCoreKitTests/Firmware/PCCGPUDriverTests.swift"
+  ],
+  "source_observations": [
+    {
+      "path": "VPhoneExecutable/VPhoneCommand/FirmwarePatcher/Kernel/CustomFirmwarePatches/Sandbox/KernelCustomFirmwarePatchFpfsScopedOpen.swift",
+      "matches": [
+        [
+          53,
+          "/// vphone600 struct offsets recovered via the kernel gdb stub; cave bytes verified by"
+        ]
+      ]
+    },
+    {
+      "path": "VPhoneExecutable/VPhoneCommand/VPhoneCommand/Firmware/VPhoneCustomFirmwareDyldSharedCacheVerbsCommand.swift",
+      "matches": [
+        [
+          82,
+          "contains it is one of the paravirt consumers that must keep seeing the"
+        ],
+        [
+          84,
+          "break if they think they are on bare metal. A site whose containing"
+        ],
+        [
+          176,
+          "callback path, which the 26.4 paravirt GPU never receives \u2014 so the host"
+        ],
+        [
+          180,
+          "userclient method-5 path the paravirt GPU does scan out."
+        ]
+      ]
+    },
+    {
+      "path": "VPhoneExecutable/VPhoneCommand/VPhoneCommand/Firmware/VPhoneCustomFirmwareInstaller.swift",
+      "matches": [
+        [
+          659,
+          "if on(\"system-debugserver-cfw-install\") {"
+        ],
+        [
+          660,
+          "try patchDebugserver(system: system, work: work)"
+        ],
+        [
+          823,
+          "/// Replace the paravirtual GPU bundle with the one `fw prepare` staged in"
+        ],
+        [
+          837,
+          "let gpu = \"System/Library/Extensions/AppleParavirtGPUMetalIOGPUFamily.bundle\""
+        ],
+        [
+          840,
+          "for file in [gpu, \"\\(gpu)/AppleParavirtGPUMetalIOGPUFamily\", \"\\(gpu)/_CodeSignature\"] {"
+        ],
+        [
+          843,
+          "let compilerPlugin = \"\\(gpu)/libAppleParavirtCompilerPluginIOGPUFamily.dylib\""
+        ],
+        [
+          1112,
+          "private func patchDebugserver(system: VPhoneConfinedDirectory, work: WorkDirectory) throws {"
+        ],
+        [
+          1113,
+          "let target = \"usr/libexec/debugserver\""
+        ],
+        [
+          1114,
+          "guard let staged = try stageOptional(target, from: system, work: work, label: \"debugserver\") else { return }"
+        ],
+        [
+          1122,
+          "print(\"[!] debugserver has no readable entitlements; patch skipped\")"
+        ]
+      ]
+    },
+    {
+      "path": "VPhoneKit/VPhoneCoreKit/Firmware/VPhonePCCGPUDriver.swift",
+      "matches": [
+        [
+          3,
+          "/// Stages Apple's paravirtual GPU bundle from a restored PCC System volume or"
+        ],
+        [
+          6,
+          "public static let name = \"AppleParavirtGPUMetalIOGPUFamily.bundle\""
+        ],
+        [
+          51,
+          "for file in [\"AppleParavirtGPUMetalIOGPUFamily\","
+        ],
+        [
+          64,
+          "\"com.apple.driver.AppleParavirtGPUMetalIOGPUFamily\""
+        ]
+      ]
+    }
+  ]
+}

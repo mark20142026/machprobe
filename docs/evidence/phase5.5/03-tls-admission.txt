@@ -1,0 +1,1 @@
+LOAD: dependency outside framework whitelist

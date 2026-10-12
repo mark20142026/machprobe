@@ -1,0 +1,18 @@
+{
+  "events" : [
+    "entering UIKit lifecycle",
+    "applicationDidFinishLaunching:",
+    "desktop self-updater unsupported in iOS container; automatic start declined",
+    "guest window created",
+    "Metal managed texture → shared unified-memory allocation",
+    "guest window presented: Strataris: Galactic Colony Defence",
+    "application activation requested",
+    "guest launch callback returned"
+  ],
+  "run_id" : "CB5286C4-3BBF-42F2-9BE1-F3782EA78F94",
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "rebases" : 3957,
+  "binds" : 686,
+  "stage" : "guest launch callback returned",
+  "pid" : 1193
+}

@@ -1,0 +1,50 @@
+python3 -m unittest discover -s tests -v
+test_cycle_and_missing_and_identity (test_dependencies.DependencyTests.test_cycle_and_missing_and_identity) ... ok
+test_depth_limit (test_dependencies.DependencyTests.test_depth_limit) ... ok
+test_inherited_rpath_and_precedence (test_dependencies.DependencyTests.test_inherited_rpath_and_precedence) ... ok
+test_malformed_and_unsupported_dependencies (test_dependencies.DependencyTests.test_malformed_and_unsupported_dependencies) ... ok
+test_native_chain_executes_and_resolves (test_dependencies.DependencyTests.test_native_chain_executes_and_resolves) ... ok
+test_node_limit (test_dependencies.DependencyTests.test_node_limit) ... ok
+test_relative_path_is_explicitly_unmodeled (test_dependencies.DependencyTests.test_relative_path_is_explicitly_unmodeled) ... ok
+test_same_library_different_runpath_context (test_dependencies.DependencyTests.test_same_library_different_runpath_context) ... ok
+test_bad_universal_metadata (test_parser.ParserTests.test_bad_universal_metadata) ... ok
+test_build_versions_and_unknown_commands (test_parser.ParserTests.test_build_versions_and_unknown_commands) ... ok
+test_dylib_variants_and_rpath (test_parser.ParserTests.test_dylib_variants_and_rpath) ... ok
+test_export_malformed (test_parser.ParserTests.test_export_malformed) ... ok
+test_export_reexport (test_parser.ParserTests.test_export_reexport) ... ok
+test_export_trie_and_legacy_export (test_parser.ParserTests.test_export_trie_and_legacy_export) ... ok
+test_json_byte_escaping_and_terminal_safety (test_parser.ParserTests.test_json_byte_escaping_and_terminal_safety) ... ok
+test_legacy_platforms (test_parser.ParserTests.test_legacy_platforms) ... ok
+test_malformed_commands (test_parser.ParserTests.test_malformed_commands) ... ok
+test_mutation_smoke (test_parser.ParserTests.test_mutation_smoke) ... ok
+test_real_modern_linkedit (test_parser.ParserTests.test_real_modern_linkedit) ... ok
+test_signing_encryption_and_fixup_ranges (test_parser.ParserTests.test_signing_encryption_and_fixup_ranges) ... ok
+test_subtype_capabilities (test_parser.ParserTests.test_subtype_capabilities) ... ok
+test_symtab_imports_and_definitions (test_parser.ParserTests.test_symtab_imports_and_definitions) ... ok
+test_thread_entry (test_parser.ParserTests.test_thread_entry) ... ok
+test_universal_containers (test_parser.ParserTests.test_universal_containers) ... ok
+test_usage_errors (test_parser.ParserTests.test_usage_errors) ... ok
+test_dependency_report_classifies_system_and_metal (test_samples.SampleIntegrationTests.test_dependency_report_classifies_system_and_metal) ... ok
+test_expected_external_symbols (test_samples.SampleIntegrationTests.test_expected_external_symbols) ... ok
+test_inspection_matches_system_tools (test_samples.SampleIntegrationTests.test_inspection_matches_system_tools) ... ok
+test_metal_sample_reports_device_properties (test_samples.SampleIntegrationTests.test_metal_sample_reports_device_properties) ... ok
+test_samples_run_and_file_io_cleans_up (test_samples.SampleIntegrationTests.test_samples_run_and_file_io_cleans_up) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 1.476s
+
+OK
+python3 -m unittest discover -s experiments/inprocess-hello/tests -v
+test_bad_entrypoint (test_loader.HelloLoaderTests.test_bad_entrypoint) ... ok
+test_bad_magic_and_truncation (test_loader.HelloLoaderTests.test_bad_magic_and_truncation) ... ok
+test_fresh_signed_copy_runs_in_process_and_remains_unchanged (test_loader.HelloLoaderTests.test_fresh_signed_copy_runs_in_process_and_remains_unchanged) ... ok
+test_missing_file (test_loader.HelloLoaderTests.test_missing_file) ... ok
+test_other_sample_rejected (test_loader.HelloLoaderTests.test_other_sample_rejected) ... ok
+test_unknown_import_is_not_called (test_loader.HelloLoaderTests.test_unknown_import_is_not_called) ... ok
+test_unsupported_rebase_type (test_loader.HelloLoaderTests.test_unsupported_rebase_type) ... ok
+test_wrong_platform (test_loader.HelloLoaderTests.test_wrong_platform) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.086s
+
+OK

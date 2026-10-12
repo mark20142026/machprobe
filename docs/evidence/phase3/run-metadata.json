@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-01",
+  "xcode": "27.0 (27A266a)",
+  "sdk": "iPhoneOS 27.0",
+  "vphone_launchpad": "2.2.5",
+  "vphone_bundle": "2.2.5",
+  "vm": "iphone",
+  "firmware_build": "24A435",
+  "guest_execution": "blocked before mapping at F_ADDFILESIGS_RETURN, errno 85",
+  "tests": {
+    "existing_normal": 48,
+    "new_package_and_saved_evidence": 5,
+    "phase2_sanitizer": 10
+  },
+  "artifacts": {
+    "build/phase3-ios/MachProbe.ipa": {
+      "size": 57291,
+      "sha256": "e1b67af02801ce3a172f86936d68672bb3e8fcb101036389199ed441eea4a230"
+    },
+    "build/phase3-ios/Payload/MachProbe.app/MachProbe": {
+      "size": 119376,
+      "sha256": "9e6f4a817dca7ab2076c9e70c101ca437ee8f2d7d9667afffeb0a2b8e428b3f4"
+    },
+    "build/phase3-ios/hello-ios": {
+      "size": 50096,
+      "sha256": "0408b2ecb7d1552e7e73318c6a03d1e8ed814c61855ff6d3be6b30a22b7ca2b3"
+    }
+  }
+}

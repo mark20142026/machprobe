@@ -1,0 +1,15 @@
+[
+  {
+    "is_directory": true,
+    "is_symlink": false,
+    "link_target_dir": false,
+    "modified": "2026-10-01T17:16:42Z",
+    "mtime": 1790875002,
+    "name": "Assistant",
+    "path": "/private/var/mobile/Library/Logs/CrashReporter/Assistant",
+    "perm": "755",
+    "resolved_path": "/private/var/mobile/Library/Logs/CrashReporter/Assistant",
+    "size": 96,
+    "type": "dir"
+  }
+]

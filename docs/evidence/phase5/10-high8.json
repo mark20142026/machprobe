@@ -1,0 +1,22 @@
+{
+  "run_id" : "FEA8B272-E8C7-44E2-97B6-A674E1623555",
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "stack" : [
+    "0   CoreFoundation                      0x000000018069319c 9426FC9A-B36C-3096-B836-D17D6744A75B + 623004",
+    "1   libobjc.A.dylib                     0x0000000180410380 objc_exception_throw + 88",
+    "2   CoreFoundation                      0x000000018079290c 9426FC9A-B36C-3096-B836-D17D6744A75B + 1669388",
+    "3   CoreFoundation                      0x000000018064e8f8 9426FC9A-B36C-3096-B836-D17D6744A75B + 342264",
+    "4   CoreFoundation                      0x000000018064ebb0 9426FC9A-B36C-3096-B836-D17D6744A75B + 342960",
+    "5   MPGuest.dylib                       0x0000000104b09bb0 MPGuest.dylib + 23472",
+    "6   MPGuest.dylib                       0x0000000104b09c6c MPGuest.dylib + 23660",
+    "7   MPGuest.dylib                       0x0000000104b09b00 MPGuest.dylib + 23296",
+    "8   GameHost                            0x000000010499c388 mp_image_main + 164",
+    "9   GameHost                            0x00000001049a1a68 main + 2508",
+    "10  dyld                                0x00000001804875b8 D3F59B02-EE07-371B-B091-3F150A078ED8 + 21944"
+  ],
+  "rebases" : 3957,
+  "binds" : 686,
+  "exception" : "-[ArenaApplication setDelegate:]: unrecognized selector sent to instance 0x105374840",
+  "stage" : "exception",
+  "pid" : 1120
+}

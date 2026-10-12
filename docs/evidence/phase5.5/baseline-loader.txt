@@ -1,0 +1,13 @@
+test_bad_entrypoint (test_loader.HelloLoaderTests.test_bad_entrypoint) ... ok
+test_bad_magic_and_truncation (test_loader.HelloLoaderTests.test_bad_magic_and_truncation) ... ok
+test_fresh_signed_copy_runs_in_process_and_remains_unchanged (test_loader.HelloLoaderTests.test_fresh_signed_copy_runs_in_process_and_remains_unchanged) ... ok
+test_missing_file (test_loader.HelloLoaderTests.test_missing_file) ... ok
+test_other_sample_rejected (test_loader.HelloLoaderTests.test_other_sample_rejected) ... ok
+test_unknown_import_is_not_called (test_loader.HelloLoaderTests.test_unknown_import_is_not_called) ... ok
+test_unsupported_rebase_type (test_loader.HelloLoaderTests.test_unsupported_rebase_type) ... ok
+test_wrong_platform (test_loader.HelloLoaderTests.test_wrong_platform) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.080s
+
+OK

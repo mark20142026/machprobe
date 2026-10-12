@@ -1,0 +1,7 @@
+{
+  "guest_sha256" : "d31b5cacaba1948a3d0da03f34a5b9a6dcf222ca6deddcbd1305c28e92fda5d2",
+  "error" : "chained rebase target outside image",
+  "run_id" : "CEB164FA-CB26-4CB0-95B2-7902C77CFF1F",
+  "pid" : 1107,
+  "stage" : "load failed"
+}

@@ -1,0 +1,16 @@
+Executable=/Users/<user>/machprobe/build/phase5.5/original/extracted/veloren-voxygen
+Identifier=veloren_voxygen-d9ba0d732412f5ab
+Format=Mach-O thin (arm64)
+CodeDirectory v=20400 size=586937 flags=0x20002(adhoc,linker-signed) hashes=18338+0 location=embedded
+Hash type=sha256 size=32
+CandidateCDHash sha256=8bef15e477681e06d5b504e865efd6c8981be36c
+CandidateCDHashFull sha256=8bef15e477681e06d5b504e865efd6c8981be36c6283a1a0e7d84281e8f9e93f
+Hash choices=sha256
+CMSDigest=8bef15e477681e06d5b504e865efd6c8981be36c6283a1a0e7d84281e8f9e93f
+CMSDigestType=2
+CDHash=8bef15e477681e06d5b504e865efd6c8981be36c
+Signature=adhoc
+Info.plist=not bound
+TeamIdentifier=not set
+Sealed Resources=none
+Internal requirements=none

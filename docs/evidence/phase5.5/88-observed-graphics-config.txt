@@ -1,0 +1,21 @@
+        toggle_debug: true,
+        toggle_egui_debug: false,
+        ui_scale: RelativeToWindow((
+        lossy_terrain_compression: false,
+        terrain_view_distance: 10,
+        entity_view_distance: 65,
+        sprite_render_distance: 100,
+        max_fps: Max(60),
+        max_background_fps: Max(30),
+        render_mode: (
+            cloud: High,
+            reflection: High,
+            lighting: BlinnPhong,
+                resolution: 1.0,
+            rain_enabled: true,
+            rain_occlusion: (
+                resolution: 1.0,
+            upscale_mode: (
+        fullscreen: (
+            resolution: (1920, 1080),
+        rain_ambience_enabled: true,

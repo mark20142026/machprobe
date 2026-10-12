@@ -1,0 +1,95 @@
+{
+  "frames": {
+    "elapsed_seconds": 0,
+    "guest_draw_callbacks": 0,
+    "mean_guest_callback_ms": 0,
+    "average_fps": 0,
+    "max_guest_callback_ms": 0
+  },
+  "input": {
+    "last_pointer": {
+      "view_frame": "{{-50, -40}, {100, 80}}",
+      "view_bounds": "{{0, 0}, {100, 80}}",
+      "point": "{2, 3}",
+      "window_frame": "{{0, 0}, {100, 80}}"
+    },
+    "delivered": 2,
+    "held": [],
+    "pointer_delivered": 6
+  },
+  "run_id": "F5BC276D-9A62-4F0F-88EC-A77B0681E1B3",
+  "presentation": {
+    "gpu_present_buffer_rate": 0,
+    "gpu_failed_present_buffers": 0,
+    "elapsed_seconds": 0,
+    "gpu_completion_elapsed_seconds": 0,
+    "present_requests": 0,
+    "average_presented_fps": 0,
+    "gpu_completed_present_buffers": 0,
+    "presented_frames": 0
+  },
+  "audio": {
+    "engine_started": false,
+    "nonzero_samples": 0,
+    "peak_absolute": 0,
+    "error": "",
+    "frames_observed": 0
+  },
+  "events": [
+    "guest window created",
+    "guest window awaiting UIKit scene",
+    "guest key down 13",
+    "guest key up 13",
+    "keyboard event has no guest responder",
+    "deliver mouseDown: to MPProbeResponder at {3, 4}",
+    "deliver rightMouseDown: to MPProbeResponder at {3, 4}",
+    "deliver rightMouseDragged: to MPProbeResponder at {4, 5}",
+    "deliver rightMouseUp: to MPProbeResponder at {4, 5}",
+    "guest cursor detached for relative input",
+    "deliver mouseDown: to MPProbeResponder at {40, 50}",
+    "guest cursor association enabled",
+    "deliver mouseDown: to MPProbeResponder at {2, 3}"
+  ],
+  "uikit_probe": {
+    "passed": true,
+    "checks": {
+      "tracking_userdata": 1,
+      "nominal_display_rate": 1,
+      "unknown_display_rejected": 1,
+      "display_identity_roundtrip": 1,
+      "event_copy_snapshot": 1,
+      "one_notification_per_frame_change": 1,
+      "tracking_enter_exit": 1,
+      "input_reaches_responder": 1,
+      "borderless_geometry": true,
+      "released_key_state": 1,
+      "screen_scale": 1,
+      "unflipped_pointer_coordinates": true,
+      "window_registry": true,
+      "retained_mode_dimensions": 1,
+      "disabled_notification": 1,
+      "initial_responder": 1,
+      "context_owns_correct_client": 1,
+      "drag_unregistration": 1,
+      "stable_context": 1,
+      "tracking_removal": 1,
+      "single_current_display_mode": 1,
+      "detached_cursor_position": true,
+      "associated_cursor_position": true,
+      "invalid_cursor_warp": 1,
+      "window_cleanup": 1,
+      "secondary_mouse_events": 1,
+      "cursor_rect_discard": 1,
+      "flipped_pointer_coordinates": true,
+      "invalid_display_mode_rejected": 1,
+      "display_pixel_encoding": 1,
+      "drag_registration": true,
+      "cursor_rect_registration": 1
+    }
+  },
+  "metal": {
+    "managed_textures_translated": 0
+  },
+  "stage": "UIKit probe complete",
+  "pid": 3984
+}

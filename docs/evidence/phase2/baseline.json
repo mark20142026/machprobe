@@ -1,0 +1,57 @@
+{
+  "captured_at_utc": "2026-10-01T09:34:54.585080+00:00",
+  "git_head": "c2333fef8c1ae865c734088f372769143be42852",
+  "preserved_sha256": {
+    "docs/evidence/inprocess-hello.json": "230b50a05b2ab373bb35346c19e75920985da3cf274ff508815c2a820fd46e4b",
+    "docs/evidence/baseline.json": "81718c78e06ca4530fc9724aec846c7ce63ad4ee496de27dc353cd761f58b3ea",
+    "docs/evidence/research.json": "fe1ed4995bbe551c47bc4a8583b6a3b040ab6ec0c89063011374c255319975c2",
+    "docs/evidence/ui-observation.json": "509e9a1be88d93888860d2688680bfd95d78c015c77a396604cc5f874cbf94e9",
+    "docs/evidence/validation.json": "ceae00844c63bb46a670483d5db6d5d16bf555276d4139ae7e9262eb4b437fff",
+    "docs/evidence/ios-on-mac.json": "6f5d1578ccfcd4f2e8a2252ffe26f8352e95f489a01f8caf014ad9085a24f36c",
+    "docs/evidence/loader-validation.json": "29cb0da4d82f9bbcb64a9a4b7209876909502900cd61c44fad5ca6e27e2a940d",
+    "docs/evidence/inprocess-ui-observation.json": "5b13e6858648f5109c05ffd617f7bddd2d19b309f0bc581c719ee5d2bd8b42a4",
+    "docs/evidence/completion.json": "6c72164117a168005ff498bcc08f202bf99470bafca529d5aa7669b9b86f9392",
+    "build/hello": "aec8da11a2bfab1cf2359fc08fce7ae76ec2af9e62613498a7f966e704c822a6",
+    "build/file_io": "b0a259d6fa338f3ae402d4bb03d8570780c42da68d6b7d51ae45a9a9da227aa0",
+    "build/framework": "fc77c84204affc9b662a86b738f61c17c258aa63a140a3167a055c198d142280",
+    "build/metal_info": "f804d3c317cd9bbed1e334d18c0cf62cca42506f71e4c3bc1a82a682984d96f3"
+  },
+  "runs": [
+    {
+      "command": [
+        "make",
+        "test"
+      ],
+      "returncode": 0,
+      "stdout": "python3 -m unittest discover -s tests -v\n",
+      "stderr": "test_cycle_and_missing_and_identity (test_dependencies.DependencyTests.test_cycle_and_missing_and_identity) ... ok\ntest_depth_limit (test_dependencies.DependencyTests.test_depth_limit) ... ok\ntest_inherited_rpath_and_precedence (test_dependencies.DependencyTests.test_inherited_rpath_and_precedence) ... ok\ntest_malformed_and_unsupported_dependencies (test_dependencies.DependencyTests.test_malformed_and_unsupported_dependencies) ... ok\ntest_native_chain_executes_and_resolves (test_dependencies.DependencyTests.test_native_chain_executes_and_resolves) ... ok\ntest_node_limit (test_dependencies.DependencyTests.test_node_limit) ... ok\ntest_relative_path_is_explicitly_unmodeled (test_dependencies.DependencyTests.test_relative_path_is_explicitly_unmodeled) ... ok\ntest_same_library_different_runpath_context (test_dependencies.DependencyTests.test_same_library_different_runpath_context) ... ok\ntest_bad_universal_metadata (test_parser.ParserTests.test_bad_universal_metadata) ... ok\ntest_build_versions_and_unknown_commands (test_parser.ParserTests.test_build_versions_and_unknown_commands) ... ok\ntest_dylib_variants_and_rpath (test_parser.ParserTests.test_dylib_variants_and_rpath) ... ok\ntest_export_malformed (test_parser.ParserTests.test_export_malformed) ... ok\ntest_export_reexport (test_parser.ParserTests.test_export_reexport) ... ok\ntest_export_trie_and_legacy_export (test_parser.ParserTests.test_export_trie_and_legacy_export) ... ok\ntest_json_byte_escaping_and_terminal_safety (test_parser.ParserTests.test_json_byte_escaping_and_terminal_safety) ... ok\ntest_legacy_platforms (test_parser.ParserTests.test_legacy_platforms) ... ok\ntest_malformed_commands (test_parser.ParserTests.test_malformed_commands) ... ok\ntest_mutation_smoke (test_parser.ParserTests.test_mutation_smoke) ... ok\ntest_real_modern_linkedit (test_parser.ParserTests.test_real_modern_linkedit) ... ok\ntest_signing_encryption_and_fixup_ranges (test_parser.ParserTests.test_signing_encryption_and_fixup_ranges) ... ok\ntest_subtype_capabilities (test_parser.ParserTests.test_subtype_capabilities) ... ok\ntest_symtab_imports_and_definitions (test_parser.ParserTests.test_symtab_imports_and_definitions) ... ok\ntest_thread_entry (test_parser.ParserTests.test_thread_entry) ... ok\ntest_universal_containers (test_parser.ParserTests.test_universal_containers) ... ok\ntest_usage_errors (test_parser.ParserTests.test_usage_errors) ... ok\ntest_dependency_report_classifies_system_and_metal (test_samples.SampleIntegrationTests.test_dependency_report_classifies_system_and_metal) ... ok\ntest_expected_external_symbols (test_samples.SampleIntegrationTests.test_expected_external_symbols) ... ok\ntest_inspection_matches_system_tools (test_samples.SampleIntegrationTests.test_inspection_matches_system_tools) ... ok\ntest_metal_sample_reports_device_properties (test_samples.SampleIntegrationTests.test_metal_sample_reports_device_properties) ... ok\ntest_samples_run_and_file_io_cleans_up (test_samples.SampleIntegrationTests.test_samples_run_and_file_io_cleans_up) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 2.470s\n\nOK\n"
+    },
+    {
+      "command": [
+        "make",
+        "test-sanitize"
+      ],
+      "returncode": 0,
+      "stdout": "MACHPROBE=build/machprobe-sanitize python3 -m unittest discover -s tests -v\n",
+      "stderr": "test_cycle_and_missing_and_identity (test_dependencies.DependencyTests.test_cycle_and_missing_and_identity) ... ok\ntest_depth_limit (test_dependencies.DependencyTests.test_depth_limit) ... ok\ntest_inherited_rpath_and_precedence (test_dependencies.DependencyTests.test_inherited_rpath_and_precedence) ... ok\ntest_malformed_and_unsupported_dependencies (test_dependencies.DependencyTests.test_malformed_and_unsupported_dependencies) ... ok\ntest_native_chain_executes_and_resolves (test_dependencies.DependencyTests.test_native_chain_executes_and_resolves) ... ok\ntest_node_limit (test_dependencies.DependencyTests.test_node_limit) ... ok\ntest_relative_path_is_explicitly_unmodeled (test_dependencies.DependencyTests.test_relative_path_is_explicitly_unmodeled) ... ok\ntest_same_library_different_runpath_context (test_dependencies.DependencyTests.test_same_library_different_runpath_context) ... ok\ntest_bad_universal_metadata (test_parser.ParserTests.test_bad_universal_metadata) ... ok\ntest_build_versions_and_unknown_commands (test_parser.ParserTests.test_build_versions_and_unknown_commands) ... ok\ntest_dylib_variants_and_rpath (test_parser.ParserTests.test_dylib_variants_and_rpath) ... ok\ntest_export_malformed (test_parser.ParserTests.test_export_malformed) ... ok\ntest_export_reexport (test_parser.ParserTests.test_export_reexport) ... ok\ntest_export_trie_and_legacy_export (test_parser.ParserTests.test_export_trie_and_legacy_export) ... ok\ntest_json_byte_escaping_and_terminal_safety (test_parser.ParserTests.test_json_byte_escaping_and_terminal_safety) ... ok\ntest_legacy_platforms (test_parser.ParserTests.test_legacy_platforms) ... ok\ntest_malformed_commands (test_parser.ParserTests.test_malformed_commands) ... ok\ntest_mutation_smoke (test_parser.ParserTests.test_mutation_smoke) ... ok\ntest_real_modern_linkedit (test_parser.ParserTests.test_real_modern_linkedit) ... ok\ntest_signing_encryption_and_fixup_ranges (test_parser.ParserTests.test_signing_encryption_and_fixup_ranges) ... ok\ntest_subtype_capabilities (test_parser.ParserTests.test_subtype_capabilities) ... ok\ntest_symtab_imports_and_definitions (test_parser.ParserTests.test_symtab_imports_and_definitions) ... ok\ntest_thread_entry (test_parser.ParserTests.test_thread_entry) ... ok\ntest_universal_containers (test_parser.ParserTests.test_universal_containers) ... ok\ntest_usage_errors (test_parser.ParserTests.test_usage_errors) ... ok\ntest_dependency_report_classifies_system_and_metal (test_samples.SampleIntegrationTests.test_dependency_report_classifies_system_and_metal) ... ok\ntest_expected_external_symbols (test_samples.SampleIntegrationTests.test_expected_external_symbols) ... ok\ntest_inspection_matches_system_tools (test_samples.SampleIntegrationTests.test_inspection_matches_system_tools) ... ok\ntest_metal_sample_reports_device_properties (test_samples.SampleIntegrationTests.test_metal_sample_reports_device_properties) ... ok\ntest_samples_run_and_file_io_cleans_up (test_samples.SampleIntegrationTests.test_samples_run_and_file_io_cleans_up) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 3.395s\n\nOK\n"
+    },
+    {
+      "command": [
+        "make",
+        "test-loader"
+      ],
+      "returncode": 0,
+      "stdout": "python3 -m unittest discover -s experiments/inprocess-hello/tests -v\n",
+      "stderr": "test_bad_entrypoint (test_loader.HelloLoaderTests.test_bad_entrypoint) ... ok\ntest_bad_magic_and_truncation (test_loader.HelloLoaderTests.test_bad_magic_and_truncation) ... ok\ntest_fresh_signed_copy_runs_in_process_and_remains_unchanged (test_loader.HelloLoaderTests.test_fresh_signed_copy_runs_in_process_and_remains_unchanged) ... ok\ntest_missing_file (test_loader.HelloLoaderTests.test_missing_file) ... ok\ntest_other_sample_rejected (test_loader.HelloLoaderTests.test_other_sample_rejected) ... ok\ntest_unknown_import_is_not_called (test_loader.HelloLoaderTests.test_unknown_import_is_not_called) ... ok\ntest_unsupported_rebase_type (test_loader.HelloLoaderTests.test_unsupported_rebase_type) ... ok\ntest_wrong_platform (test_loader.HelloLoaderTests.test_wrong_platform) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.721s\n\nOK\n"
+    },
+    {
+      "command": [
+        "make",
+        "test-loader-sanitize"
+      ],
+      "returncode": 0,
+      "stdout": "HELLO_LOADER=build/hello-loader-sanitize python3 -m unittest discover -s experiments/inprocess-hello/tests -v\n",
+      "stderr": "test_bad_entrypoint (test_loader.HelloLoaderTests.test_bad_entrypoint) ... ok\ntest_bad_magic_and_truncation (test_loader.HelloLoaderTests.test_bad_magic_and_truncation) ... ok\ntest_fresh_signed_copy_runs_in_process_and_remains_unchanged (test_loader.HelloLoaderTests.test_fresh_signed_copy_runs_in_process_and_remains_unchanged) ... ok\ntest_missing_file (test_loader.HelloLoaderTests.test_missing_file) ... ok\ntest_other_sample_rejected (test_loader.HelloLoaderTests.test_other_sample_rejected) ... ok\ntest_unknown_import_is_not_called (test_loader.HelloLoaderTests.test_unknown_import_is_not_called) ... ok\ntest_unsupported_rebase_type (test_loader.HelloLoaderTests.test_unsupported_rebase_type) ... ok\ntest_wrong_platform (test_loader.HelloLoaderTests.test_wrong_platform) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.460s\n\nOK\n"
+    }
+  ]
+}

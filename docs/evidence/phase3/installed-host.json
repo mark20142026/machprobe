@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "result": {
+    "build": "1",
+    "bundle_id": "research.machprobe.Admission",
+    "bundle_path": "/private/var/containers/Bundle/Application/AD860013-FFE6-4453-AA96-730A1EB2CF5B/MachProbe.app",
+    "data_path": "/private/var/mobile/Containers/Data/Application/F75FEDE4-2EA7-4501-917F-38D151C42C09",
+    "encrypted": false,
+    "entitlements": {
+      "com.apple.private.security.container-required": "research.machprobe.Admission",
+      "jb.pmap_cs_custom_trust": "PMAP_CS_APP_STORE"
+    },
+    "executable": "/var/containers/Bundle/Application/AD860013-FFE6-4453-AA96-730A1EB2CF5B/MachProbe.app/MachProbe",
+    "group_containers": {},
+    "minimum_os": "14.0",
+    "name": "MachProbe iOS",
+    "sdk": "",
+    "signer": "Apple iPhone OS Application Signing",
+    "type": "User",
+    "version": "1.0"
+  }
+}

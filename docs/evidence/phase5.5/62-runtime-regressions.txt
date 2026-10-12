@@ -1,0 +1,10 @@
+cd /Users/<user>/machprobe && python3 -m unittest discover -s phase5_5/tests -v
+test_embedded_bss_gap_and_restore (test_runtime.RuntimeTests.test_embedded_bss_gap_and_restore) ... ok
+test_keyboard_matches_native_us_layout (test_runtime.RuntimeTests.test_keyboard_matches_native_us_layout) ... ok
+test_size_policy (test_runtime.RuntimeTests.test_size_policy) ... ok
+test_tls_thread_isolation_and_teardown (test_runtime.RuntimeTests.test_tls_thread_isolation_and_teardown) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.910s
+
+OK

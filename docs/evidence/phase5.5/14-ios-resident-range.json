@@ -1,0 +1,30 @@
+{
+  "frames" : {
+    "elapsed_seconds" : 0,
+    "guest_draw_callbacks" : 0,
+    "mean_guest_callback_ms" : 0,
+    "average_fps" : 0,
+    "max_guest_callback_ms" : 0
+  },
+  "input" : {
+    "delivered" : 0,
+    "held" : [
+
+    ]
+  },
+  "run_id" : "2B927144-83B3-4C22-B50C-3EF6DC15EF21",
+  "pid" : 1521,
+  "error" : "invalid resident guest range",
+  "guest_sha256" : "786b7ba15f46982a1bfbd3af53373c505d5dce0efb344dfe19a159b7e6e00b1d",
+  "metal" : {
+    "managed_textures_translated" : 0
+  },
+  "stage" : "load failed",
+  "audio" : {
+    "engine_started" : false,
+    "nonzero_samples" : 0,
+    "peak_absolute" : 0,
+    "error" : "",
+    "frames_observed" : 0
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "admission": "signed iOS container; VM trust independence unverified",
+  "bridge": {
+    "window_calls": 2,
+    "input_calls": 0,
+    "pixel_copies_per_frame": 0,
+    "monitor_alive": 1,
+    "surface_alive": 1,
+    "input_seconds_including_guest": 0,
+    "render_translation_calls_per_frame": 0
+  },
+  "uid": 501,
+  "run_id": "8C86DBAD-0575-4CDE-B0C6-B738BF784677",
+  "samples": [
+    {
+      "guest": {
+        "gpu_seconds": 0,
+        "gpu_errors": 0,
+        "uniform_bytes_per_draw": 144,
+        "completed": 0,
+        "static_buffers": 2,
+        "events": 0,
+        "running": true,
+        "angle": 0,
+        "camera_x": 0,
+        "skipped": 0,
+        "spinning": true,
+        "fps": 0,
+        "guest_cpu_seconds": 0,
+        "draws": 4,
+        "sync_waits": 2,
+        "compile_seconds": 0.0024149999999281135,
+        "pipeline_creations": 1,
+        "device_class": "MTLDebugDevice",
+        "max_frame_interval": 0,
+        "elapsed": 0.143713000000389,
+        "error": "",
+        "frames": 0,
+        "yaw": 0,
+        "library_compiles": 1,
+        "actions": 0,
+        "camera_z": 6,
+        "asset_textures": 1,
+        "device": "Apple Paravirtual device GPU"
+      },
+      "memory": {
+        "footprint": 12288600,
+        "resident": 76136448,
+        "process_cpu_seconds": 0.399253
+      },
+      "time": 3146.868998958334,
+      "fps_interval": 0
+    },
+    {
+      "guest": {
+        "gpu_seconds": 0.066057583334441,
+        "gpu_errors": 0,
+        "uniform_bytes_per_draw": 144,
+        "completed": 26,
+        "static_buffers": 2,
+        "events": 0,
+        "running": true,
+        "angle": 0.658133327960968,
+        "camera_x": 0,
+        "skipped": 0,
+        "spinning": true,
+        "fps": 22.54339820918752,
+        "guest_cpu_seconds": 0.10305271000000049,
+        "draws": 160,
+        "sync_waits": 2,
+        "compile_seconds": 0.0024149999999281135,
+        "pipeline_creations": 1,
+        "device_class": "MTLDebugDevice",
+        "max_frame_interval": 0.118261000000075,
+        "elapsed": 1.1533309999999801,
+        "error": "",
+        "frames": 26,
+        "yaw": 0,
+        "library_compiles": 1,
+        "actions": 0,
+        "camera_z": 6,
+        "asset_textures": 1,
+        "device": "Apple Paravirtual device GPU"
+      },
+      "memory": {
+        "footprint": 56279760,
+        "resident": 97714176,
+        "process_cpu_seconds": 0.9238759999999999
+      },
+      "time": 3147.878242708334,
+      "fps_interval": 25.7618637717657
+    },
+    {
+      "guest": {
+        "gpu_seconds": 0.13194779166860826,
+        "gpu_errors": 0,
+        "uniform_bytes_per_draw": 144,
+        "completed": 56,
+        "static_buffers": 2,
+        "events": 0,
+        "running": true,
+        "angle": 1.3580479621887207,
+        "camera_x": 0,
+        "skipped": 0,
+        "spinning": true,
+        "fps": 26.005096999010764,
+        "guest_cpu_seconds": 0.13729833400000047,
+        "draws": 340,
+        "sync_waits": 2,
+        "compile_seconds": 0.0024149999999281135,
+        "pipeline_creations": 1,
+        "device_class": "MTLDebugDevice",
+        "max_frame_interval": 0.118261000000075,
+        "elapsed": 2.1534240000000864,
+        "error": "",
+        "frames": 56,
+        "yaw": 0,
+        "library_compiles": 1,
+        "actions": 0,
+        "camera_z": 6,
+        "asset_textures": 1,
+        "device": "Apple Paravirtual device GPU"
+      },
+      "memory": {
+        "footprint": 56263376,
+        "resident": 97878016,
+        "process_cpu_seconds": 1.035451
+      },
+      "time": 3148.877282833334,
+      "fps_interval": 30.028823917351893
+    }
+  ],
+  "ios": "27.0",
+  "live_images": 1,
+  "guest_sha256": "011e31d3b070c0ca4422502f91122945718141b1be9c49debecebe431067a22d",
+  "guest_exit": 0,
+  "verification": {
+    "passed": true,
+    "depth_off_rgb": [
+      1,
+      1,
+      31
+    ],
+    "depth_on_rgb": [
+      186,
+      9,
+      9
+    ],
+    "pixels": 16384,
+    "texture_ranges": [
+      [
+        31,
+        58
+      ],
+      [
+        61,
+        186
+      ]
+    ]
+  },
+  "guest": {
+    "gpu_seconds": 0.13194779166860826,
+    "gpu_errors": 0,
+    "uniform_bytes_per_draw": 144,
+    "completed": 56,
+    "static_buffers": 2,
+    "events": 0,
+    "running": true,
+    "angle": 1.3580479621887207,
+    "camera_x": 0,
+    "skipped": 0,
+    "spinning": true,
+    "fps": 26.005096999010764,
+    "guest_cpu_seconds": 0.13729833400000047,
+    "draws": 340,
+    "sync_waits": 2,
+    "compile_seconds": 0.0024149999999281135,
+    "pipeline_creations": 1,
+    "device_class": "MTLDebugDevice",
+    "max_frame_interval": 0.118261000000075,
+    "elapsed": 2.1534240000000864,
+    "error": "",
+    "frames": 56,
+    "yaw": 0,
+    "library_compiles": 1,
+    "actions": 0,
+    "camera_z": 6,
+    "asset_textures": 1,
+    "device": "Apple Paravirtual device GPU"
+  },
+  "pid": 924,
+  "cycles": []
+}
